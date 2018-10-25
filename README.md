@@ -32,6 +32,28 @@ Mod Features:
 - New block types. Snow, Ice, and Titanium.
 - Custom terrain decorations to explore. Vehicles, trees, trash, stumps and more.
 - Huge backpack and storage. Encumbrance is enabled. 
+- One Block Crouch.
+
+
+SDX MOD LIST:
+- Hundreds of weapons, items, decorations by Ryan James
+- The Holy Hand Grenade of Antioch by Ryan James
+- Animation SDX by Sphereii
+- Guppycur's Blood moon Trickle fix by Guppycur
+- Custom Workstation Categories by Sphereii
+- Entity Player by Sphereii
+- Hal's DLL Fixes by HAL9000
+- Bad Company Zombies by Bad Company and MANUX
+- Bigger Backpack, storage by MANUX
+- Custom Vehicles by MANUX
+- Miner Robot by MANUX
+- Simple UI by Stedman420
+- Survivors and Bandits by MANUX inspired by Bad Company
+- Nanite Terrain by StompyNZ
+- Take and Replace by Sphereii
+- Winter Decorations by Sphereii
+- Zombie Transmogrifier by Sphereii
+
 
 
 Performance Note: Due to the density of the forests, the amount of Zeds spawned, and the fact the zed bodies stay until you get rid of them, This mod can lean towards the resource heavy side of things. 
@@ -56,26 +78,7 @@ Do you have a question, problem or idea?: I love to help! Join my discord and i'
 Updates: I update Welcome to Canada quite often. It's very difficult for me to offer support for outdated version of the mod so Please try to stay up to date! The best way to do this is by checking the box titled "Refresh Mods Automatically" below the "play mod" button on the 7d2d Mod Launcher. 
 
 
-THANK YOU:  Super big thank you to R0C_7, DamStr8gaming, Hk_Kill, Qb1junkie, like_a_boss2016, RizzoMF, MaxFox_Gaming, James_Woods, sunbunnie888, Reclining Gamer, holm-z, SentientOne, Lady_FireHeart, DoctorDirtyDave, Dr Nestle and Mindcrimer for all the help with testing and bug finding! 
+THANK YOU:  Super big thank you to R0C_7, DamStr8gaming, Hk_Kill, Qb1junkie, like_a_boss2016, RizzoMF, MaxFox_Gaming, James_Woods, sunbunnie888, Krit215, Reclining Gamer, holm-z, SentientOne, Lady_FireHeart, DoctorDirtyDave, CanadianBlueBeer, Dr Nestle and Mindcrimer for all the help with testing and bug finding! 
 Massive thank you to SphereII for creating such great tools for modding 7d2d. Thanks to HaidrGna, MANUX, Guppycur, DUST2DEATH, Khaine, stedman420, StompyNZ, Max Fox and More!
 
-
-This mod includes work by other great modders! Here is a list of all the mods this mod is currently using. 
-SDX MOD LIST:
-- Hundreds of weapons, items, decorations by Ryan James
-- The Holy Hand Grenade of Antioch by Ryan James
-- Animation SDX by Sphereii
-- Guppycur's Blood moon Trickle fix by Guppycur
-- Custom Workstation Categories by Sphereii
-- Entity Player by Sphereii
-- Hal's DLL Fixes by HAL9000
-- Bad Company Zombies by Bad Company and MANUX
-- Bigger Backpack, storage by MANUX
-- Custom Vehicles by MANUX
-- Miner Robot by MANUX
-- Simple UI by Stedman420
-- Survivors and Bandits by MANUX inspired by Bad Company
-- Nanite Terrain by StompyNZ
-- Take and Replace by Sphereii
-- Winter Decorations by Sphereii
-- Zombie Transmogrifier by Sphereii
+Last of all the biggest thanks of all goes to everyone who plays and enjoys the mod. It's you guys that keep me working on this and making it better. Thank you so much!
