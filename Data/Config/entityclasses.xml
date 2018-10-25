@@ -1995,7 +1995,7 @@
 		<property name="NPCID" value="traderric" />
 	</entity_class>
 	<!-- Creepy friggin Doll -->
-	<entity_class name="entityCreepyDoll">
+	<!-- <entity_class name="entityCreepyDoll">
 		<property name="EntityType" value="Zombie" />
 		<property name="HandItem" value="handCreepyDoll" />
 		<property name="Mesh" value="#dollCreepy?dollCreepyPrefab" />
@@ -2053,11 +2053,10 @@
 		<property class="MechanimDeathStates">
 			<property name="state0" value="Death" />
 		</property>
-		<!-- ### -->
 		<property name="HeadShots" value="false" />
 		<property name="RandomSpeeds" value="false" />
 		<property name="RandomSize" value="false" />
-	</entity_class>
+	</entity_class> -->
 
 	
 	<!-- ###############################################################################################################  -->
