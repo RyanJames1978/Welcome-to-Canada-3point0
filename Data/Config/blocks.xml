@@ -19652,7 +19652,7 @@
 			<property name="IsGrowOnTopEnabled" value="true" />
 			<property name="GrowOnTop" value="steelBlock" />
 		</property>
-	</block> ->
+	</block> -->
 	<!-- Swap With above block to spawn nanitesteel on top -->
 	<!-- <block id="*" name="multiWall_Steel_2m"> -->
 	<!-- <property name="Class" value="PlantGrowing" /> -->
