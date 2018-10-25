@@ -19395,7 +19395,7 @@
 		<property name="LootList" value="144" />
 	</block>
 	<!-- Nano Terrain -->
-	<!--<block id="440" name="nano_silverOre">
+	<block id="440" name="nano_silverOre">
 		<property name="Extends" value="silverOre" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="silverOre" />
@@ -19606,7 +19606,7 @@
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="steelBlock" />
 		<property name="CustomIcon" value="steelBlock" />
-	</block> -->
+	</block>
 	<!-- Multiwall steelBlock example, extend height by adding more copies -->
 	<!-- <block id="*" name="multiWall_Steel_4m"> -->
 	<!-- <property name="Class" value="PlantGrowing" /> -->
@@ -19623,7 +19623,7 @@
 	<!-- <property name="GrowOnTop" value="multiWall_Steel_3m" /> -->
 	<!-- </property> -->
 	<!-- </block> -->
-	<!-- <block id="867" name="multiWall_Steel_3m">
+	<block id="867" name="multiWall_Steel_3m">
 		<property name="Class" value="PlantGrowing" />
 		<property name="CustomIcon" value="steelBlock" />
 		<property name="Material" value="Msteel" />
@@ -19652,7 +19652,7 @@
 			<property name="IsGrowOnTopEnabled" value="true" />
 			<property name="GrowOnTop" value="steelBlock" />
 		</property>
-	</block> -->
+	</block>
 	<!-- Swap With above block to spawn nanitesteel on top -->
 	<!-- <block id="*" name="multiWall_Steel_2m"> -->
 	<!-- <property name="Class" value="PlantGrowing" /> -->
