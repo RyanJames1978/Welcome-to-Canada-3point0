@@ -25,7 +25,6 @@
 		<reward type="Item" id="wood" value="30" />
 		<reward type="Item" id="rockSmall" value="40" />
 		<reward type="Item" id="yuccaFibers" value="25" />
-		<!-- <reward type="Item" id="macheteSurvival" value="500"/> -->
 		<reward type="Quest" id="quest_BasicSurvival4" />
 	</quest>
 	<!-- Basic Survival 4 - Craft tools in the workbench/> -->
@@ -44,7 +43,7 @@
 	<!-- Basic Survival 6 - Start an igloo /> -->
 	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_map_house" category_key="quest" difficulty="veryeasy">
 		<objective type="FetchKeep" id="snowBall" value="120" />
-		<objective type="Craft" id="snowBlock" value="6" />
+		<objective type="FetchKeep" id="snowBlock" value="6" />
 		<objective type="BlockPlace" id="snowBlock" value="6" />
 		<reward type="Quest" id="quest_BasicSurvival7" />
 	</quest>
