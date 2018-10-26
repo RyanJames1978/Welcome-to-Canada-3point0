@@ -33,7 +33,6 @@ Mod Features:
 - Custom terrain decorations to explore. Vehicles, trees, trash, stumps and more.
 - Huge backpack and storage. Encumbrance is enabled. 
 - One Block Crouch: makes break and enter and base design interesting
-- 
 
 
 SDX MOD LIST:
@@ -79,9 +78,11 @@ Do you have a question, problem or idea?: I love to help! Join my discord and i'
 Updates: I update Welcome to Canada quite often. It's very difficult for me to offer support for outdated version of the mod so Please try to stay up to date! The best way to do this is by checking the box titled "Refresh Mods Automatically" below the "play mod" button on the 7d2d Mod Launcher. 
 
 
-THANK YOU: Super big thank you to R0C_7, DamStr8gaming, Hk_Kill, Qb1junkie, like_a_boss2016, RizzoMF, MaxFox_Gaming, ArkhamUnhinged, James_Woods, sunbunnie888, Krit215, Reclining Gamer, holm-z, SentientOne, Lady_FireHeart, DoctorDirtyDave, CanadianBlueBeer, Dr Nestle and Mindcrimer for all the help with testing and bug finding! 
-Massive thank you to SphereII for creating such great tools for modding 7d2d. 
-I started this mod off by myself just figuring things out but the mod would never have got to where it is without the help and support of other great modders.
+THANK YOU: I started this mod off by myself just figuring things out but the mod would never have got to where it is without the help and support of other great modders.
 Thank you so much to HaidrGna, MANUX, Guppycur, DUST2DEATH, Khaine, stedman420, StompyNZ, Max Fox, Sphereii, Choas, Xyth, and More!
+Super big thank you to all my beta testers and steamers who play the mod: 
+R0C_7, DamStr8gaming, Hk_Kill, Qb1junkie, like_a_boss2016, RizzoMF, MaxFox_Gaming, ArkhamUnhinged, James_Woods, sunbunnie888, Krit215, Reclining Gamer, holm-z, SentientOne, Lady_FireHeart, DoctorDirtyDave, CanadianBlueBeer, Dr Nestle and Mindcrimer. 
+Massive thank you to SphereII for creating such great tools for modding 7d2d. 
+
 
 Last of all the biggest thanks of all goes to everyone who plays and enjoys the mod. It's you guys that keep me working on this and making it better. Thank you so much!
