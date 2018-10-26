@@ -15968,19 +15968,6 @@
 		<entity name="sanZombieFrozen_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier04">
-		<!--Vanilla-->
-		<entity name="zombieFemaleFatFeral" />
-		<entity name="zombieMoeFeral" />
-		<entity name="zombieSpiderFeral" />
-		<entity name="zombieFatHawaiian" />
-		<entity name="zombieFarmerFeral" />
-		<entity name="zombieStripperFeral" />
-		<entity name="badZombieMoe_Rager" />
-		<entity name="badZombieSnow_Rager" />
-		<entity name="badZombieSpider_Rager" />
-		<entity name="badZombieBurnt_Rager" />
-		<entity name="badZombieStripper_Rager" />
-		<entity name="badZombieFarmer_Rager" />
 		<!--Bad Company-->
 		<entity name="badZombieMord" />
 		<entity name="sanZombieExperiment" />
@@ -16000,11 +15987,6 @@
 		<entity name="sanZombieFreak_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier05">
-		<!--Vanilla-->
-		<entity name="zombieSnowFeral" />
-		<entity name="zombieSoldierFeral" />
-		<entity name="badZombieSoldier_Rager" />
-		<entity name="badZombieBiker_Rager" />
 		<!--Bad Company-->
 		<entity name="badZombieBabyBoomer" />
 		<entity name="valZombieRavagerSpider" />
@@ -16028,10 +16010,6 @@
 		<entity name="sanZombieBanditJuggernaut_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier06">
-		<!--Vanilla-->
-		<entity name="zombieFatHawaiianFeral" />
-		<entity name="zombieSpiderFeralRadiated" />
-		<entity name="zombieFatCop" />
 		<!--Bad Company-->
 		<entity name="badZombieWarlord" />
 		<entity name="badZombieSuicideMole" />
@@ -16039,8 +16017,6 @@
 		<!--No Ragers-->
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier07">
-		<!--Vanilla-->
-		<entity name="zombieWightFeral" />
 		<!--Bad Company-->
 		<entity name="valZombieBrute" />
 		<entity name="valZombieBruteBoss" />
@@ -16050,23 +16026,17 @@
 		<entity name="sanZombieClown_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier08">
-		<!--Vanilla-->
-		<entity name="zombieFatCopFeral" />
 		<!--Bad Company-->
 		<entity name="badZombieWarlord_Rager" />
 		<entity name="badZombieSuicideMole_Rager" />
 		<entity name="gupZombieBiff_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier09">
-		<!--Vanilla-->
-		<entity name="zombieWightFeralRadiated" />
 		<!--Bad Company-->
 		<entity name="valZombieBrute_Rager" />
 		<entity name="valZombieBruteBoss_Rager" />
 	</entitygroup>
 	<entitygroup name="ZombiesBCTier10">
-		<!--Vanilla-->
-		<entity name="zombieFatCopFeralRadiated" />
 		<!--Bad Company-->
 	</entitygroup>
 	<!-- GS 1 to 400 -->

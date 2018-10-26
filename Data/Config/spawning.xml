@@ -11,7 +11,7 @@
         <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
 			<!-- Survivors ANY -->
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsLeaders"/>
+			<!-- <spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsLeaders"/>
 			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsBrutes"/>
 			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeAdv"/>
 			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeHilb"/>
@@ -20,9 +20,9 @@
 			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsAdv"/>
 			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsHilb"/>
 			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsRasta"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsTeen"/>
+			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsTeen"/> -->
 			<!-- Bandits NIGHT -->
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsLeaders"/>
+			<!-- <spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsLeaders"/>
 			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsBrutes"/>
 			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleePunk"/>
 			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeBarb"/>
@@ -31,7 +31,7 @@
 			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsPunk"/>
 			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsBarb"/>
 			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsNazi"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsClown"/>
+			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsClown"/> -->
     </biome>
 
     <biome name="city_wasteland">
@@ -40,28 +40,6 @@
       <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
       <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
-			<!-- Survivors ANY -->
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeAdv"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeHilb"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeRasta"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeTeen"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsAdv"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsHilb"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsRasta"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsTeen"/>
-			<!-- Bandits NIGHT -->
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleePunk"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeBarb"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeNazi"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeClown"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsPunk"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsBarb"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsNazi"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsClown"/>
     </biome>
 
     <biome name="wasteland_hub">
@@ -69,28 +47,6 @@
       <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 	  <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
-			<!-- Survivors ANY -->
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeAdv"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeHilb"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeRasta"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeTeen"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsAdv"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsHilb"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsRasta"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsTeen"/>
-			<!-- Bandits NIGHT -->
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleePunk"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeBarb"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeNazi"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeClown"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsPunk"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsBarb"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsNazi"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsClown"/>
     </biome>
     
 <!-- ############################### Ice ###############################  -->

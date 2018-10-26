@@ -429,7 +429,11 @@
 			<prefab name="tree_burntpine_01" />
 			<prefab name="tree_burntpine_02" />
 			<prefab name="tree_burntpine_03" />
-			<prefab name="water_tower_03" />
+			<prefab name="water_tower_03" max_count="2" />
+			<prefab name="vacant_lot_med_01" />
+			<prefab name="vacant_lot_med_02" />
+			<prefab name="vacant_lot_sm_01" />
+			<prefab name="vacant_lot_sm_02" />
 		</prefab_rule>
 		<prefab_rule name="traderGroup">
 			<prefab name="settlement_trader_01" />
