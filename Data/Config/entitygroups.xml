@@ -15763,7 +15763,12 @@
 		<entity name="animalZombieDog" />
 		<entity name="zombieFatCopFeralRadiated" prob="1.431" />
 	</entitygroup>
-	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->	
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
 	<!-- MANUX - Bad Company Zombies -->
 	<!--BAD COMPANY-->
 	<entitygroup name="ZombiesBCTier01">

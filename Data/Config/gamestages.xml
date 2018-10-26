@@ -3270,7 +3270,12 @@
 			<spawn group="ZombiesNight" num="600" maxAlive="50" />
 		</gamestage>
 	</spawner>
-	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated feral horde gamestages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->	
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
 	<!-- MANUX - Bad Company Zombies -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Bad Company Sleeper Spawns XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<spawner name="SleeperGSList">
