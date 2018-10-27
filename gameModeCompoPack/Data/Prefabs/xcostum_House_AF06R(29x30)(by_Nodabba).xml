@@ -8,7 +8,7 @@
     <property name="RotationToFaceNorth" value="1"/>
     <property name="DistantPOIYOffset" value="0"/>
     <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
-    <property name="AllowedTownships" value="rural,town,wilderness"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
     <property name="SleeperVolumeStart" value="8,1,6#12,5,8"/>
     <property name="SleeperVolumeSize" value="19,3,19#9,3,19"/>
     <property name="SleeperVolumeGroup" value="S_LootRoom_XS,S_Default_Med"/>

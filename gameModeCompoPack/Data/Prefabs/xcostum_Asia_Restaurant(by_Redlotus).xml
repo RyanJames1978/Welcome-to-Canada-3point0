@@ -8,7 +8,7 @@
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>
-    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland_hub"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
     <property name="AllowedTownships" value="city,rural,town"/>
     <property name="SleeperVolumeStart" value="6,1,16#20,1,16#6,8,16#20,8,16#6,19,16#1,1,0"/>
     <property name="SleeperVolumeSize" value="14,3,14#17,3,14#14,3,14#17,3,14#31,3,14#42,3,15"/>
