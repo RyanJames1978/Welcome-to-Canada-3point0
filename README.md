@@ -79,7 +79,7 @@ Updates: I update Welcome to Canada quite often. It's very difficult for me to o
 
 
 THANK YOU: I started this mod off by myself just figuring things out but the mod would never have got to where it is without the help and support of other great modders.
-Thank you so much to HaidrGna, MANUX, Guppycur, DUST2DEATH, Khaine, stedman420, StompyNZ, Max Fox, Sphereii, Choas, Xyth, and More!
+Thank you so much to HaidrGna, MANUX, Guppycur, DUST2DEATH, Khaine, stedman420, StompyNZ, Max Fox, Sphereii, Choas, Xyth, TormentedEmu and More!
 Super big thank you to all my beta testers and steamers who play the mod: 
 R0C_7, DamStr8gaming, Hk_Kill, Qb1junkie, like_a_boss2016, RizzoMF, MaxFox_Gaming, ArkhamUnhinged, James_Woods, sunbunnie888, Krit215, Reclining Gamer, holm-z, SentientOne, Lady_FireHeart, DoctorDirtyDave, CanadianBlueBeer, Dr Nestle and Mindcrimer. 
 Massive thank you to SphereII for creating such great tools for modding 7d2d. 
