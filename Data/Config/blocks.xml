@@ -4,10 +4,8 @@
 		<property name="Shape" value="Invisible" />
 		<property name="Texture" value="250" />
 	</block>
-	<!-- Block thingy -->
-	<block id="750" name="boardedWindowsSheet_weak">
+	<block id="17" name="boardedWindowsSheet_weak">
 		<property name="CustomIcon" value="boardedWindowsSheet4" />
-		<property name="DescriptionKey" value="boardedWindowsSheet_weakDesc" />
 		<property name="Material" value="wood_weak" />
 		<property name="LightOpacity" value="5" />
 		<property name="Shape" value="Ext3dModel" />
@@ -10568,9 +10566,6 @@
 		<property name="Texture" value="423" />
 		<drop event="Destroy" count="0" />
 		<property name="DowngradeBlock" value="cntTrailerBoxJeansOpen" />
-		<property name="Class" value="TakeAndReplace, Mods" />
-		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
-		<property name="TakeDelay" value="7" />
 	</block>
 	<block id="1051" name="cntTrailerBoxJeansOpen">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
@@ -10596,9 +10591,6 @@
 		<property name="Texture" value="423" />
 		<drop event="Destroy" count="0" />
 		<property name="DowngradeBlock" value="cntTrailerBoxSpamOpen" />
-		<property name="Class" value="TakeAndReplace, Mods" />
-		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
-		<property name="TakeDelay" value="7" />
 	</block>
 	<block id="1053" name="cntTrailerBoxSpamOpen">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
@@ -10624,9 +10616,6 @@
 		<property name="Texture" value="423" />
 		<drop event="Destroy" count="0" />
 		<property name="DowngradeBlock" value="cntTrailerBox1337Open" />
-		<property name="Class" value="TakeAndReplace, Mods" />
-		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
-		<property name="TakeDelay" value="7" />
 	</block>
 	<block id="1078" name="cntTrailerBox1337Open">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
@@ -10969,7 +10958,6 @@
 		<property name="Group" value="Building,Decor/Miscellaneous" />
 		<property name="EconomicValue" value="2600" />
 	</block>
-
 	<block id="1092" name="scrapIronBlock">
 		<property name="Extends" value="scrapIronMaster" />
 		<property class="UpgradeBlock">
@@ -11478,7 +11466,6 @@
 		<property name="PlantGrowing.Next" value="plantedCotton3Harvest" />
 		<drop event="Destroy" name="plantedCotton1" count="1" />
 	</block>
-	
 	<block id="1157" name="brickStairs25">
 		<property name="Extends" value="brickMaster" />
 		<property name="Shape" value="New" />
@@ -14707,7 +14694,6 @@
 		<property name="MultiBlockDim" value="3,4,19" />
 		<property name="Model" value="#truckSemiFull?vehicleSemiFullPrefab" />
 	</block>
-
 	<block id="1463" name="scrapHatch_v1">
 		<property name="Class" value="DoorSecure" />
 		<property name="Material" value="Mmetal_medium" />
@@ -14967,7 +14953,6 @@
 		<property name="IsTerrainDecoration" value="true" />
 		<drop event="Destroy" name="brokenGlass" count="1" prob="1" />
 	</block>
-
 	<!-- RJ Chairs -->
 	<!-- Lobby -->
 	<block id="1492" name="chairLobby">
@@ -17295,7 +17280,6 @@
 		<property name="Model" value="font_z" />
 	</block>
 	<!-- do not use 1800-1900, reserved for font blocks -->
-
 	<!-- RJ 1878 - 1900 free? 75 -->
 	<block id="1901" name="conduit01Corner">
 		<property name="Extends" value="conduit01" />
@@ -18776,14 +18760,219 @@
 		<property name="DescriptionKey" value="AdvancedWorkbenchDesc" />
 		<property name="EconomicValue" value="776" />
 		<property name="Group" value="Building" />
-	</block>	
-<!-- ###############################################################################################################  -->
-<!-- ###############################################################################################################  -->
-<!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
-<!-- ###############################################################################################################  -->
-<!-- ###############################################################################################################  -->
+	</block>
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ############## Do not edit or change anything passed this point you freaking dumbass ##########################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- Our master water block will hold most of our custom entities-->
+	<!-- The model offset will never really be correct, because of the way it spawns in as a resource block -->
+	<!-- Sometimes the block will be spawned underneath the sand block, and needs to be offset, while others -->
+	<!-- spawn on top of the block, and will appear floating. -->
+	<!-- The balance is an attempt because either the blocks spawn completely under the ground, or flush on top. -->
+	<block id="36" name="WaterBlock-Master">
+		<property name="Material" value="plants" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#WaterPlant?WaterPlant_X" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="ModelOffset" value="0,0.8,0" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<drop event="Destroy" name="yuccaFibers" count="1" />
+	</block>
+	<block id="67" name="WaterPlant">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#WaterPlant?WaterPlant_X" />
+	</block>
+	<block id="68" name="SeaShell">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaShell?SeaShell_X" />
+		<property name="ModelOffset" value="0,0.85,0" />
+	</block>
+	<block id="69" name="SeaWeed01Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed01Prefab" />
+	</block>
+	<block id="74" name="SeaWeed02Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed02Prefab" />
+	</block>
+	<block id="75" name="SeaWeed03Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed03Prefab" />
+	</block>
+	<block id="76" name="SeaWeed04Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed04Prefab" />
+	</block>
+	<block id="77" name="SeaWeed05Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed05Prefab" />
+	</block>
+	<block id="78" name="SeaWeed06Prefab">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#SeaWeed?SeaWeed06Prefab" />
+	</block>
+	<block id="79" name="Halophila">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#Halophila?Halophila_X" />
+	</block>
+	<block id="80" name="Syringodium">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#Syringodium?Syringodium_X" />
+	</block>
+	<block id="81" name="Pavonica">
+		<property name="Extends" value="WaterBlock-Master" />
+		<property name="Model" value="#Pavonica?Pavonica_X" />
+	</block>
+	<!-- Cat tails spawn as terrain documentation, so their offset can sit flush to the block -->
+	<block id="82" name="Cattails">
+		<property name="Material" value="plants" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Model" value="#Cattails?Cattails_X" />
+		<property name="ModelOffset" value="0,0,0" />
+		<drop event="Destroy" name="yuccaFibers" count="2" />
+	</block>
+	<block id="83" name="Stipa">
+		<property name="Material" value="plants" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Model" value="#Stipa?Stipa_X" />
+		<property name="ModelOffset" value="0,0,0" />
+		<drop event="Destroy" name="yuccaFibers" count="2" />
+	</block>
+	<block id="84" name="Thalassia">
+		<property name="Material" value="plants" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Model" value="#Thalassia?Thalassia_X" />
+		<property name="ModelOffset" value="0,0,0" />
+		<drop event="Destroy" name="yuccaFibers" count="2" />
+	</block>
+	<block id="85" name="Fanplant">
+		<property name="Material" value="plants" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Model" value="#Fanplant?Fanplant_X" />
+		<property name="ModelOffset" value="0,0,0" />
+		<drop event="Destroy" name="yuccaFibers" count="2" />
+	</block>
+	<!-- Rusty block has the same issue as the plants, so we want to update the offset on that-->
+	<!-- and change the material to metal for the correct sound -->
+	<block id="86" name="RustyBucket">
+		<property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#RustyBucket?RustyBucket_X" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="DowngradeBlock" value="water" />
+		<property name="ModelOffset" value="0,1,0" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+	</block>
+	<!-- Rusty car is a multi-dim -->
+	<!-- Because of the spawning as a resource block, sometimes it looks sunken in clay / mud. -->
+	<block id="87" name="RustyCar01">
+		<property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#RustyCar01?RustyCar01_X" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="BigDecorationRadius" value="7" />
+		<property name="DowngradeBlock" value="water" />
+		<property name="MultiBlockDim" value="7,2,3" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="Class" value="MortSpawner, Mods" />
+		<property name="EntityGroup" value="AnimalSwiming" />
+		<property name="MaxSpawned" value="5" />
+		<property name="NumberToSpawn" value="5" />
+		<property name="LootList" value="101" />
+	</block>
+	<block id="88" name="Butterflies_00">
+		<property name="Material" value="air" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Model" value="#Butterflies?Butterflies_00" />
+	</block>
+	<block id="89" name="Butterflies_01">
+		<property name="Material" value="air" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Model" value="#Butterflies?Butterflies_01" />
+	</block>
+	<block id="90" name="Butterflies_02">
+		<property name="Material" value="air" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Model" value="#Butterflies?Butterflies_02" />
+	</block>
+	<block id="91" name="cntSecureTreasureChest">
+		<property name="CreativeMode" value="None" />
+		<property name="Class" value="SecureLoot" />
+		<property name="CustomIcon" value="cntChest01" />
+		<property name="Material" value="wood+wood" />
+		<property name="StabilitySupport" value="false" />
+		<!-- build restriction -->
+		<property name="Shape" value="Ext3dModel" />
+		<property name="ModelOffset" value="0,-0.35,0" />
+		<property name="Texture" value="293" />
+		<property name="Mesh" value="models" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="300" />
+		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
+		<property name="HandleFace" value="Bottom" />
+		<property name="ImposterExchange" value="imposterQuarter" param1="154" />
+		<property name="LootList" value="100" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Destroy" name="wood" count="1,3" />
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="DowngradeBlock" value="cntTreasureChest" />
+		<property name="Group" value="Basics,Building" />
+		<property name="DescriptionKey" value="cntSecureStorageChestDesc" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+	</block>
+	<block id="92" name="cntTreasureChest">
+		<property name="CreativeMode" value="None" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntChest01" />
+		<property name="Material" value="wood+wood" />
+		<property name="StabilitySupport" value="false" />
+		<!-- build restriction -->
+		<property name="Shape" value="Ext3dModel" />
+		<property name="ModelOffset" value="0,-0.35,0" />
+		<property name="Texture" value="293" />
+		<property name="Mesh" value="models" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="300" />
+		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
+		<property name="HandleFace" value="Bottom" />
+		<property name="ImposterExchange" value="imposterQuarter" param1="154" />
+		<property name="LootList" value="100" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Destroy" name="wood" count="1,3" />
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="DowngradeBlock" value="water" />
+		<property name="Group" value="Basics,Building" />
+		<property name="DescriptionKey" value="cntSecureStorageChestDesc" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+	</block>
 	<!-- MANUX Miner -->
-	<block id="36" name="minerGeneric">
+	<block id="93" name="minerGeneric">
 		<property name="Class" value="Miner, Mods" />
 		<!-- Class Powered to be able to pickup the device and display it's name -->
 		<!--<property name="Class" value="Powered"/>-->
@@ -18823,7 +19012,7 @@
 		<property name="EconomicValue" value="14000" />
 	</block>
 	<!-- miner RARE ORES -->
-	<block id="67" name="minerRareOres">
+	<block id="94" name="minerRareOres">
 		<property name="Extends" value="minerGeneric" />
 		<property name="DescriptionKey" value="minersDesc" />
 		<property name="CustomIcon" value="minerGeneric" />
@@ -18835,7 +19024,7 @@
 		</property>
 		<drop event="Destroy" name="scrapIron" count="80,150" prob="1" />
 	</block>
-	<block id="68" name="minerRareOresProcessing">
+	<block id="95" name="minerRareOresProcessing">
 		<property name="Extends" value="minerGeneric" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="minerGeneric" />
@@ -18852,7 +19041,7 @@
 			<property name="LightLevelGrow" value="0" />
 		</property>
 	</block>
-	<block id="69" name="minerRareOresGrowing">
+	<block id="96" name="minerRareOresGrowing">
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="minerGeneric" />
 		<property name="CanPickup" value="false" />
@@ -18864,7 +19053,7 @@
 		<property name="UpgradeRated.Rate" value="60" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<block id="74" name="minerRareOresHarvest">
+	<block id="97" name="minerRareOresHarvest">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Class" value="Loot" />
 		<property name="CustomIcon" value="minerGeneric" />
@@ -18883,32 +19072,32 @@
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<!-- miner REGULAR ORES -->
-	<block id="75" name="minerRegularOres">
+	<block id="98" name="minerRegularOres">
 		<property name="Extends" value="minerRareOres" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="minerRegularOresProcessing" />
 			<property name="ItemCount" value="1000" />
 		</property>
 	</block>
-	<block id="76" name="minerRegularOresProcessing">
+	<block id="99" name="minerRegularOresProcessing">
 		<property name="Extends" value="minerRareOresProcessing" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="PlantGrowing.Next" value="minerRegularOres" />
 		<property name="PlantGrowing.GrowOnTop" value="minerRegularOresGrowing" param1="1" param2="minerRegularOresGrowing" />
 	</block>
-	<block id="77" name="minerRegularOresGrowing">
+	<block id="100" name="minerRegularOresGrowing">
 		<property name="Extends" value="minerRareOresGrowing" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="UpgradeRated.ToBlock" value="minerRegularOresHarvest" />
 		<property name="UpgradeRated.Rate" value="60" />
 	</block>
-	<block id="78" name="minerRegularOresHarvest">
+	<block id="101" name="minerRegularOresHarvest">
 		<property name="Extends" value="minerRareOresHarvest" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="LootList" value="101" />
 	</block>
 	<!-- MANUX Survivors And Bandits -->
-	<block id="79" name="banditLeaderCorpse">
+	<block id="102" name="banditLeaderCorpse">
 		<property name="IsDeveloper" value="true" />
 		<property name="CustomIcon" value="GoreBlock1Prefab" />
 		<property name="Class" value="Loot" />
@@ -18929,422 +19118,422 @@
 		<drop event="Destroy" name="animalFat" count="2" prob=".33" tool_category="Butcher" />
 		<property name="DroppedEntityClass" value="EvisceratedRemains" />
 	</block>
-	<block id="80" name="banditPistolCorpse">
+	<block id="103" name="banditPistolCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="239" />
 	</block>
-	<block id="81" name="bandit44MagnumCorpse">
+	<block id="104" name="bandit44MagnumCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="240" />
 	</block>
-	<block id="82" name="banditSawedOffPumpShotgunCorpse">
+	<block id="105" name="banditSawedOffPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="241" />
 	</block>
-	<block id="83" name="banditPumpShotgunCorpse">
+	<block id="106" name="banditPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="242" />
 	</block>
-	<block id="84" name="banditMP5Corpse">
+	<block id="107" name="banditMP5Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="243" />
 	</block>
-	<block id="85" name="banditAK47Corpse">
+	<block id="108" name="banditAK47Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="244" />
 	</block>
-	<block id="86" name="banditHuntingRifleCorpse">
+	<block id="109" name="banditHuntingRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="245" />
 	</block>
-	<block id="87" name="banditSniperRifleCorpse">
+	<block id="110" name="banditSniperRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="246" />
 	</block>
-	<block id="88" name="banditRocketLauncherCorpse">
+	<block id="111" name="banditRocketLauncherCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="247" />
 	</block>
-	<block id="89" name="banditSledgeCorpse">
+	<block id="112" name="banditSledgeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="248" />
 	</block>
-	<block id="90" name="banditMacheteCorpse">
+	<block id="113" name="banditMacheteCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="249" />
 	</block>
-	<block id="91" name="banditFireaxeCorpse">
+	<block id="114" name="banditFireaxeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="250" />
 	</block>
-	<block id="92" name="banditSpikedClubCorpse">
+	<block id="123" name="banditSpikedClubCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="251" />
 	</block>
-	<block id="93" name="banditHuntingKnifeCorpse">
+	<block id="127" name="banditHuntingKnifeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="252" />
 	</block>
-	<block id="94" name="banditChainsawCorpse">
+	<block id="139" name="banditChainsawCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="253" />
 	</block>
 	<!-- SURVIVORS -->
-	<block id="95" name="survivorPistolCorpse">
+	<block id="437" name="survivorPistolCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="119" />
 	</block>
-	<block id="96" name="survivor44MagnumCorpse">
+	<block id="438" name="survivor44MagnumCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="120" />
 	</block>
-	<block id="97" name="survivorSawedOffPumpShotgunCorpse">
+	<block id="439" name="survivorSawedOffPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="121" />
 	</block>
-	<block id="98" name="survivorPumpShotgunCorpse">
+	<block id="440" name="survivorPumpShotgunCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="122" />
 	</block>
-	<block id="99" name="survivorMP5Corpse">
+	<block id="441" name="survivorMP5Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="123" />
 	</block>
-	<block id="100" name="survivorAK47Corpse">
+	<block id="442" name="survivorAK47Corpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="124" />
 	</block>
-	<block id="101" name="survivorHuntingRifleCorpse">
+	<block id="443" name="survivorHuntingRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="125" />
 	</block>
-	<block id="102" name="survivorSniperRifleCorpse">
+	<block id="444" name="survivorSniperRifleCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="126" />
 	</block>
-	<block id="103" name="survivorRocketLauncherCorpse">
+	<block id="445" name="survivorRocketLauncherCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="127" />
 	</block>
-	<block id="104" name="survivorSledgeCorpse">
+	<block id="446" name="survivorSledgeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="128" />
 	</block>
-	<block id="105" name="survivorMacheteCorpse">
+	<block id="447" name="survivorMacheteCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="129" />
 	</block>
-	<block id="106" name="survivorFireaxeCorpse">
+	<block id="448" name="survivorFireaxeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="130" />
 	</block>
-	<block id="107" name="survivorSpikedClubCorpse">
+	<block id="449" name="survivorSpikedClubCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="131" />
 	</block>
-	<block id="108" name="survivorHuntingKnifeCorpse">
+	<block id="450" name="survivorHuntingKnifeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="132" />
 	</block>
-	<block id="109" name="survivorChainsawCorpse">
+	<block id="451" name="survivorChainsawCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="133" />
 	</block>
-	<block id="110" name="survivorLeaderCorpse">
+	<block id="452" name="survivorLeaderCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="134" />
 	</block>
 	<!-- BRUTES -->
-	<block id="111" name="banditBruteSledgeCorpse">
+	<block id="453" name="banditBruteSledgeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="135" />
 	</block>
-	<block id="112" name="banditBruteFireaxeCorpse">
+	<block id="454" name="banditBruteFireaxeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="136" />
 	</block>
-	<block id="113" name="banditBruteSpikedClubCorpse">
+	<block id="455" name="banditBruteSpikedClubCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="137" />
 	</block>
-	<block id="114" name="banditBruteChainsawCorpse">
+	<block id="456" name="banditBruteChainsawCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="138" />
 	</block>
-	<block id="123" name="survivorBruteSledgeCorpse">
+	<block id="457" name="survivorBruteSledgeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="139" />
 	</block>
-	<block id="127" name="survivorBruteFireaxeCorpse">
+	<block id="458" name="survivorBruteFireaxeCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="140" />
 	</block>
-	<block id="139" name="survivorBruteSpikedClubCorpse">
+	<block id="459" name="survivorBruteSpikedClubCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="141" />
 	</block>
-	<block id="437" name="survivorBruteChainsawCorpse">
+	<block id="460" name="survivorBruteChainsawCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="142" />
 	</block>
 	<!-- LEADERS SPECIAL -->
-	<block id="438" name="banditLeaderRocketLauncherCorpse">
+	<block id="461" name="banditLeaderRocketLauncherCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="143" />
 	</block>
-	<block id="439" name="survivorLeaderRocketLauncherCorpse">
+	<block id="462" name="survivorLeaderRocketLauncherCorpse">
 		<property name="Extends" value="banditLeaderCorpse" />
 		<property name="IsDeveloper" value="true" />
 		<property name="LootList" value="144" />
 	</block>
 	<!-- Nano Terrain -->
-	<block id="440" name="nano_silverOre">
+	<block id="484" name="nano_silverOre">
 		<property name="Extends" value="silverOre" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="silverOre" />
 		<property name="CustomIcon" value="silverOre" />
 	</block>
-	<block id="441" name="nano_flagstoneBlock">
+	<block id="609" name="nano_flagstoneBlock">
 		<property name="Extends" value="flagstoneBlock" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="flagstoneBlock" />
 		<property name="CustomIcon" value="flagstoneBlock" />
 	</block>
-	<block id="442" name="nano_cobblestoneBlock">
+	<block id="610" name="nano_cobblestoneBlock">
 		<property name="Extends" value="cobblestoneBlock" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="cobblestoneBlock" />
 		<property name="CustomIcon" value="cobblestoneBlock" />
 	</block>
-	<block id="443" name="nano_rConcreteBlock">
+	<block id="611" name="nano_rConcreteBlock">
 		<property name="Extends" value="rConcreteBlock" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="rConcreteBlock" />
 		<property name="CustomIcon" value="rConcreteBlock" />
 	</block>
-	<block id="444" name="nano_stone">
+	<block id="660" name="nano_stone">
 		<property name="Extends" value="stone" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="stone" />
 		<property name="CustomIcon" value="stone" />
 	</block>
-	<block id="445" name="nano_grass">
+	<block id="661" name="nano_grass">
 		<property name="Extends" value="grass" param1="PlaceAltBlockValue" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="grass" />
 		<property name="CustomIcon" value="grass" />
 	</block>
-	<block id="446" name="nano_dirt">
+	<block id="700" name="nano_dirt">
 		<property name="Extends" value="dirt" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="dirt" />
 		<property name="CustomIcon" value="dirt" />
 	</block>
-	<block id="447" name="nano_plainsGround">
+	<block id="702" name="nano_plainsGround">
 		<property name="Extends" value="plainsGround" param1="PlaceAltBlockValue" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="plainsGround" />
 		<property name="CustomIcon" value="plainsGround" />
 	</block>
-	<block id="448" name="nano_radiated">
+	<block id="750" name="nano_radiated">
 		<property name="Extends" value="radiated" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="radiated" />
 		<property name="CustomIcon" value="radiated" />
 		<property name="Material" value="dirt" />
 	</block>
-	<block id="449" name="nano_potassiumNitrate">
+	<block id="805" name="nano_potassiumNitrate">
 		<property name="Extends" value="potassiumNitrate" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="potassiumNitrate" />
 		<property name="CustomIcon" value="potassiumNitrate" />
 		<property name="Material" value="coal" />
 	</block>
-	<block id="450" name="nano_ironOre">
+	<block id="827" name="nano_ironOre">
 		<property name="Extends" value="ironOre" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="ironOre" />
 		<property name="CustomIcon" value="ironOre" />
 	</block>
-	<block id="451" name="nano_sand">
+	<block id="865" name="nano_sand">
 		<property name="Extends" value="sand" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="sand" />
 		<property name="CustomIcon" value="sand" />
 	</block>
-	<block id="452" name="nano_snow">
+	<block id="866" name="nano_snow">
 		<property name="Extends" value="snow" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="snow" />
 		<property name="CustomIcon" value="snow" />
 	</block>
-	<block id="453" name="nano_clay">
+	<block id="867" name="nano_clay">
 		<property name="Extends" value="clay" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="clay" />
 		<property name="CustomIcon" value="clay" />
 	</block>
-	<block id="454" name="nano_leadOre">
+	<block id="868" name="nano_leadOre">
 		<property name="Extends" value="leadOre" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="leadOre" />
 		<property name="CustomIcon" value="leadOre" />
 	</block>
-	<block id="455" name="nano_bedrock">
+	<block id="904" name="nano_bedrock">
 		<property name="Extends" value="bedrock" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="bedrock" />
 		<property name="CustomIcon" value="bedrock" />
 	</block>
-	<block id="456" name="nano_sandStone">
+	<block id="905" name="nano_sandStone">
 		<property name="Extends" value="sandStone" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="sandStone" />
 		<property name="CustomIcon" value="sandStone" />
 	</block>
-	<block id="457" name="nano_desertGround">
+	<block id="906" name="nano_desertGround">
 		<property name="Extends" value="desertGround" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="desertGround" />
 		<property name="CustomIcon" value="desertGround" />
 	</block>
-	<block id="458" name="nano_asphalt">
+	<block id="972" name="nano_asphalt">
 		<property name="Extends" value="asphalt" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="asphalt" />
 		<property name="CustomIcon" value="asphalt" />
 	</block>
-	<block id="459" name="nano_gravel">
+	<block id="1019" name="nano_gravel">
 		<property name="Extends" value="gravel" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="gravel" />
 		<property name="CustomIcon" value="gravel" />
 	</block>
-	<block id="460" name="nano_ice">
+	<block id="1020" name="nano_ice">
 		<property name="Extends" value="ice" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="ice" />
 		<property name="CustomIcon" value="ice" />
 	</block>
-	<block id="461" name="nano_fertileDirt">
+	<block id="1021" name="nano_fertileDirt">
 		<property name="Extends" value="fertileDirt" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="fertileDirt" />
 		<property name="CustomIcon" value="fertileDirt" />
 	</block>
-	<block id="462" name="nano_fertileGrass">
+	<block id="1022" name="nano_fertileGrass">
 		<property name="Extends" value="fertileGrass" param1="PlaceAltBlockValue" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="fertileGrass" />
 		<property name="CustomIcon" value="grass" />
 	</block>
-	<block id="484" name="nano_fertileFarmland">
+	<block id="1023" name="nano_fertileFarmland">
 		<property name="Extends" value="fertileFarmland" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="fertileFarmland" />
 		<property name="CustomIcon" value="fertileFarmland" />
 	</block>
-	<block id="609" name="nano_burntForestGround">
+	<block id="1024" name="nano_burntForestGround">
 		<property name="Extends" value="burntForestGround" param1="PlaceAltBlockValue" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="burntForestGround" />
 		<property name="CustomIcon" value="burntForestGround" />
 	</block>
-	<block id="610" name="nano_forestGround">
+	<block id="1025" name="nano_forestGround">
 		<property name="Extends" value="forestGround" param1="PlaceAltBlockValue" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="forestGround" />
 		<property name="CustomIcon" value="forestGround" />
 	</block>
-	<block id="611" name="nano_destroyedStone">
+	<block id="1026" name="nano_destroyedStone">
 		<property name="Extends" value="destroyedStone" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="destroyedStone" />
 		<property name="CustomIcon" value="destroyedStone" />
 	</block>
-	<block id="660" name="nano_coalOre">
+	<block id="1027" name="nano_coalOre">
 		<property name="Extends" value="coalOre" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="coalOre" />
 		<property name="CustomIcon" value="coalOre" />
 	</block>
-	<block id="661" name="nano_terrainFiller">
+	<block id="1028" name="nano_terrainFiller">
 		<property name="Extends" value="terrainFiller" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="terrainFiller" />
 		<property name="CustomIcon" value="terrainFiller" />
 	</block>
-	<block id="700" name="nano_sod">
+	<block id="1082" name="nano_sod">
 		<property name="Extends" value="sod" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="sod" />
 		<property name="CustomIcon" value="sod" />
 	</block>
-	<block id="702" name="nano_hardSod">
+	<block id="1083" name="nano_hardSod">
 		<property name="Extends" value="hardSod" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="hardSod" />
 		<property name="CustomIcon" value="sod" />
 	</block>
-	<block id="805" name="nano_woodDebris">
+	<block id="1084" name="nano_woodDebris">
 		<property name="Extends" value="woodDebris" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="woodDebris" />
 		<property name="CustomIcon" value="woodDebris" />
 	</block>
-	<block id="827" name="nano_oilDeposit">
+	<block id="1085" name="nano_oilDeposit">
 		<property name="Extends" value="oilDeposit" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="oilDeposit" />
 		<property name="CustomIcon" value="oilDeposit" />
 	</block>
-	<block id="865" name="nano_fertilizedFarmland">
+	<block id="1086" name="nano_fertilizedFarmland">
 		<property name="Extends" value="fertilizedFarmland" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="fertilizedFarmland" />
 		<property name="CustomIcon" value="fertileFarmland" />
 	</block>
-	<block id="866" name="nano_steelBlock">
+	<block id="1087" name="nano_steelBlock">
 		<property name="Extends" value="steelBlock" />
 		<property name="Class" value="LiquidMoving" />
 		<property name="LiquidStatic" value="steelBlock" />
@@ -19366,7 +19555,7 @@
 	<!-- <property name="GrowOnTop" value="multiWall_Steel_3m" /> -->
 	<!-- </property> -->
 	<!-- </block> -->
-	<block id="867" name="multiWall_Steel_3m">
+	<block id="1088" name="multiWall_Steel_3m">
 		<property name="Class" value="PlantGrowing" />
 		<property name="CustomIcon" value="steelBlock" />
 		<property name="Material" value="Msteel" />
@@ -19381,7 +19570,7 @@
 			<property name="GrowOnTop" value="multiWall_Steel_2m" />
 		</property>
 	</block>
-	<block id="868" name="multiWall_Steel_2m">
+	<block id="1089" name="multiWall_Steel_2m">
 		<property name="Class" value="PlantGrowing" />
 		<property name="CustomIcon" value="steelBlock" />
 		<property name="Material" value="Msteel" />
@@ -19412,274 +19601,420 @@
 	<!-- <property name="GrowOnTop" value="nano_steelBlock"/> -->
 	<!-- </property> -->
 	<!-- </block> -->
-	
-	<!-- RJ sphereii older trees not used -->
-	<!-- <block id="1019" name="BrokenTree4Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?BrokenTree4Prefab" />
+	<block id="1090" name="Grass1">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?Grass1" />
 	</block>
-	<block id="1020" name="BrokenTree3Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?BrokenTree3Prefab" />
+	<block id="1091" name="Grass2">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?Grass2" />
 	</block>
-	<block id="1021" name="BrokenTree2Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?BrokenTree2Prefab" />
+	<block id="1147" name="Grass3">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?Grass3" />
 	</block>
-	<block id="1022" name="BrokenTreePrefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?BrokenTreePrefab" />
+	<block id="1148" name="Grass4">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?Grass4" />
 	</block>
-	<block id="1023" name="PineTreePrefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?PineTreePrefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1149" name="Grass5">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?Grass5" />
 	</block>
-	<block id="1024" name="PineTree2Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?PineTree2Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1150" name="SummerBush2">
+		<property name="Extends" value="treeSnowyDeadBush" />
+		<property name="Model" value="#SummerDecorations?SummerBush2" />
 	</block>
-	<block id="1025" name="Tree5Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Tree5Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1151" name="SummerBush3">
+		<property name="Extends" value="treeSnowyDeadBush" />
+		<property name="Model" value="#SummerDecorations?SummerBush3" />
 	</block>
-	<block id="1026" name="Tree4Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Tree4Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1152" name="SummerBush4">
+		<property name="Extends" value="treeSnowyDeadBush" />
+		<property name="Model" value="#SummerDecorations?SummerBush4" />
 	</block>
-	<block id="1027" name="Tree3Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Tree3Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1153" name="SummerBush5">
+		<property name="Extends" value="treeSnowyDeadBush" />
+		<property name="Model" value="#SummerDecorations?SummerBush5" />
 	</block>
-	<block id="1028" name="Tree2Prefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Tree2Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
-	</block>	
-	<block id="1082" name="TreePrefab">
-		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?TreePrefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+	<block id="1154" name="SummerBush">
+		<property name="Extends" value="treeSnowyDeadBush" />
+		<property name="Model" value="#SummerDecorations?SummerBush" />
 	</block>
-	<block id="1083" name="Conifer3Prefab">
+	<block id="1155" name="SummerConifer1">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Conifer3Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+		<property name="Model" value="#SummerDecorations?SummerConifer1" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
 	</block>
-	<block id="1084" name="Conifer2Prefab">
+	<block id="1156" name="SummerConifer2">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Conifer2Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+		<property name="Model" value="#SummerDecorations?SummerConifer2" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
 	</block>
-	<block id="1085" name="ConiferPrefab">
+	<block id="1170" name="SummerConifer3">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?ConiferPrefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+		<property name="Model" value="#SummerDecorations?SummerConifer3" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
 	</block>
-	<block id="1086" name="Birch3Prefab">
+	<block id="1171" name="SummerConifer4">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Birch3Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+		<property name="Model" value="#SummerDecorations?SummerConifer4" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
 	</block>
-	<block id="1087" name="Birch2Prefab">
+	<block id="1172" name="SummerConifer5">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?Birch2Prefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
+		<property name="Model" value="#SummerDecorations?SummerConifer5" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
 	</block>
-	<block id="1088" name="BirchPrefab">
+	<block id="1223" name="SummerConifer6">
 		<property name="Extends" value="treeMaster" />
-		<property name="Model" value="#WinterWonderland?BirchPrefab" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
-	</block> -->
-	<!-- RJ sphereii trees -->
-	<!-- Start legit SDK -->
-	<block id="1089" name="WinterBirch2">
+		<property name="Model" value="#SummerDecorations?SummerConifer6" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1224" name="SummerConifer7">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerConifer7" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1225" name="SummerConifer8">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerConifer8" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1345" name="SummerFlower10">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower10" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1371" name="SummerFlower11">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower11" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1372" name="SummerFlower12">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower12" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1421" name="SummerFlower13">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower13" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1423" name="SummerFlower14">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower14" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1442" name="SummerFlower15">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower15" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1443" name="SummerFlower17">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower17" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1444" name="SummerFlower18">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower18" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1445" name="SummerFlower19">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower19" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1446" name="SummerFlower1">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower1" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1447" name="SummerFlower20">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower20" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1459" name="SummerFlower21">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower21" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1460" name="SummerFlower22">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower22" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1461" name="SummerFlower23">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower23" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1462" name="SummerFlower2">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower2" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1466" name="SummerFlower3">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower3" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1476" name="SummerFlower4">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower4" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1478" name="SummerFlower5">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower5" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1479" name="SummerFlower6">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower6" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1485" name="SummerFlower7">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower7" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1486" name="SummerFlower8">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower8" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1487" name="SummerFlower9">
+		<property name="Extends" value="grass" />
+		<property name="Model" value="#SummerDecorations?SummerFlower9" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1488" name="SummerTree10">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree10" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1489" name="SummerTree11">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree11" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1490" name="SummerTree12">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree12" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1491" name="SummerTree13">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree13" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1501" name="SummerTree14">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree14" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1502" name="SummerTree16">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree16" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1504" name="SummerTree17">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree17" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1506" name="SummerTree1">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree1" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1507" name="SummerTree2">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree2" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1508" name="SummerTree3">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree3" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1533" name="SummerTree4">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree4" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1534" name="SummerTree5">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree5" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1535" name="SummerTree6">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree6" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1543" name="SummerTree7">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree7" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1544" name="SummerTree8">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree8" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1547" name="SummerTree9">
+		<property name="Extends" value="treeMaster" />
+		<property name="Model" value="#SummerDecorations?SummerTree9" />
+		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
+	</block>
+	<block id="1555" name="WinterBirch2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBirch2" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1090" name="WinterBirch3">
+	<block id="1566" name="WinterBirch3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBirch3" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1091" name="WinterBirch">
+	<block id="1570" name="WinterBirch">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBirch" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1147" name="WinterBranch2">
+	<block id="1571" name="WinterBranch2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBranch2" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1148" name="WinterBranch3">
+	<block id="1572" name="WinterBranch3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBranch3" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1149" name="WinterBranch4">
+	<block id="1573" name="WinterBranch4">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBranch4" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1150" name="WinterBranch5">
+	<block id="1574" name="WinterBranch5">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBranch5" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1151" name="WinterBranch">
+	<block id="1588" name="WinterBranch">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBranch" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1152" name="WinterBrokenTree1">
+	<block id="1589" name="WinterBrokenTree1">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBrokenTree1" />
 		<drop event="Harvest" name="wood" count="10" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1153" name="WinterBrokenTree2">
+	<block id="1590" name="WinterBrokenTree2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBrokenTree2" />
 		<drop event="Harvest" name="wood" count="10" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1154" name="WinterBrokenTree3">
+	<block id="1591" name="WinterBrokenTree3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBrokenTree3" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1155" name="WinterBrokenTree4">
+	<block id="1594" name="WinterBrokenTree4">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBrokenTree4" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1156" name="burntWoodWedge7">
-		<property name="Extends" value="burntWoodBlock1" />
-		<property name="CustomIcon" value="burntWoodRamp7" />
-		<property name="Model" value="siding_burnt07" />
-		<property name="ImposterExclude" value="true" />
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="solidWoodFrameWedge" />
-		</property>
-	</block>
-	<block id="1442" name="WinterBush1">
+	<block id="1595" name="WinterBush1">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBush1" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
 	</block>
-	<block id="1443" name="WinterBush2">
+	<block id="1596" name="WinterBush2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBush2" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
 	</block>
-	<block id="1444" name="WinterBush3">
+	<block id="1597" name="WinterBush3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBush3" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
 	</block>
-	<block id="1445" name="WinterBush4">
+	<block id="1598" name="WinterBush4">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterBush4" />
 		<drop event="Harvest" name="wood" count="1,4" tool_category="harvestingTools" />
 	</block>
-	<block id="1446" name="WinterConifer1">
+	<block id="1599" name="WinterConifer1">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterConifer1" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1447" name="WinterConifer2">
+	<block id="1600" name="WinterConifer2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterConifer2" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1459" name="WinterConifer3">
+	<block id="1601" name="WinterConifer3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterConifer3" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1460" name="WinterPineTree1">
+	<block id="1602" name="WinterPineTree1">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterPineTree1" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1461" name="WinterPineTree2">
+	<block id="1603" name="WinterPineTree2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterPineTree2" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1462" name="WinterTree1">
+	<block id="1604" name="WinterTree1">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTree1" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1485" name="WinterTree2">
+	<block id="1605" name="WinterTree2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTree2" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1486" name="WinterTree3">
+	<block id="1606" name="WinterTree3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTree3" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1487" name="WinterTree4">
+	<block id="1607" name="WinterTree4">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTree4" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1488" name="WinterTree5">
+	<block id="1608" name="WinterTree5">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTree5" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1489" name="WinterTreeScene2">
+	<block id="1609" name="WinterTreeScene2">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTreeScene2" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1490" name="WinterTreeScene3">
+	<block id="1614" name="WinterTreeScene3">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTreeScene3" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-	<block id="1491" name="WinterTreeScene">
+	<block id="1615" name="WinterTreeScene">
 		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#WinterDecorations?WinterTreeScene" />
 		<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools" />
-		<drop event="Destroy" name="woodLogPillar100" count="1,4" />
 	</block>
-<!-- ###############################################################################################################  -->
-<!-- ###############################################################################################################  -->
-<!-- ############## Do not edit or change anything passed this point you freaking dumbass ##########################  -->
-<!-- ###############################################################################################################  -->
-<!-- ###############################################################################################################  -->
 </blocks>
 <!-- Block limit: No block can have an ID greater 2047. -->

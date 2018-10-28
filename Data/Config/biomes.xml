@@ -309,7 +309,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.00003" />
 			<decoration type="block" blockname="lawnGnome" prob ="0.00005" />
-			
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -475,6 +474,66 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWaterTank" prob ="0.00003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000018" />
+			<!-- Sphereii summer decor -->
+				<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
+				<decoration type="block" blockname="Butterflies_01" prob="0.001" rotatemax="4" />
+				<decoration type="block" blockname="Butterflies_02" prob="0.001" rotatemax="4" />
+				<decoration type="block" blockname="Grass1" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="Grass2" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="Grass3" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="Grass4" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="Grass5" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerBush2" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerBush3" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerBush4" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerBush5" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerBush" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer1" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer2" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer3" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer4" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer5" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer6" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer7" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerConifer8" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower10" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower11" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower12" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower13" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower14" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower15" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower17" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower18" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower19" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower1" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower20" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower21" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower22" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower23" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower2" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower3" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower4" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower5" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower6" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower7" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower8" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerFlower9" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree10" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree11" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree12" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree13" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree14" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree16" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree17" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree1" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree2" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree3" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree4" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree5" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree6" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree7" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree8" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="SummerTree9" prob="0.001" rotatemax="7" />
 		</decorations>
 		<terrain class="Water" />
 	</biome>
@@ -1071,7 +1130,23 @@ If you do not declare them, the decorations of the main biome are used.
 			<layer filluptorg="58" blockname="ice" >
 			<resource filluptorg="56" blockname="water" cluster="1" prob="0.1130" rwgGenerationType="all" />
 			</layer>
-			<layer depth="1" blockname="stone" />
+			<layer depth="1" blockname="clay">
+				<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+				<resource blockname="SeaShell" cluster="1" prob="0.01" rwgGenerationType="all" />
+				<resource blockname="cntSecureTreasureChest" cluster="1" prob="0.001" rwgGenerationType="all" />
+				<resource blockname="shoppingCartEmpty" cluster="2" prob="0.001" rwgGenerationType="all" />
+				<resource blockname="SeaWeed01Prefab" cluster="2" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="SeaWeed02Prefab" cluster="0" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="SeaWeed03Prefab" cluster="1" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="SeaWeed04Prefab" cluster="0" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="SeaWeed05Prefab" cluster="2" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="SeaWeed06Prefab" cluster="1" prob="0.2" rwgGenerationType="all" />
+				<resource blockname="WaterPlant" cluster="1" prob="0.01" rwgGenerationType="all" />
+				<resource blockname="Halophila" cluster="0" prob="0.04" rwgGenerationType="all" />
+				<resource blockname="cntSecureTreasureChest" cluster="2" prob="0.01" rwgGenerationType="all" />
+				<resource blockname="RustyCar01" cluster="2" prob="0.001" rwgGenerationType="all" />
+				<resource blockname="shoppingCartEmpty" cluster="2" prob="0.01" rwgGenerationType="all" />
+			</layer>
 			<layer depth="5" blockname="stone" >
 				<resource blockname="clay" prob="0.15" rwgGenerationType="all" />
 				<resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" />

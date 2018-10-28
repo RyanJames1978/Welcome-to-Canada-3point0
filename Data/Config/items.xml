@@ -11575,8 +11575,7 @@
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
-	
-	<!-- MANUX - Bad Company Zombies -->
+		<!-- MANUX - Bad Company Zombies -->
 	<!-- ZOMBIE HANDS -->
 	<item id="2" name="handZombieTiny">
 		<property name="Extends" value="handMaster" />
@@ -11688,8 +11687,18 @@
 			<property name="Buff_chance" value="1" />
 		</property>
 	</item>
+	<!-- MANUX's MiniBike Plus: minibike with the features of custom bikes: weapons parts, camera controls,... -->
+	<item id="14" name="minibikePlusChassis">
+		<property name="Extends" value="minibikeChassis" />
+		<property name="CustomIcon" value="minibikeChassis" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property class="Action1">
+			<property name="Class" value="SpawnCustomVehicle, Mods" />
+			<property name="VehicleToSpawn" value="minibikePlus" />
+		</property>
+	</item>
 	<!-- MANUX Custom Vehicles -->
-	<item id="14" name="bigEngine">
+	<item id="16" name="bigEngine">
 		<property name="Extends" value="smallEngine" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="bigEngineDesc" />
@@ -11721,7 +11730,7 @@
 			<property name="VehicleTankSize" value="2000, 4000" />
 		</property>
 	</item>
-	<item id="16" name="robustBikeChassis">
+	<item id="20" name="robustBikeChassis">
 		<property name="Extends" value="minibikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="robustBikeChassisDesc" />
@@ -11730,8 +11739,8 @@
 		<!--<property name="EconomicValue" value="220"/>-->
 		<property name="EconomicValue" value="2000" />
 		<property class="Action1">
+			<!-- This does not work anymore because of the new custom parts system. The robustBikeChassis is currently just there for you to extend from for new vehicles chassis -->
 			<property name="Class" value="SpawnCustomVehicle, Mods" />
-			<!-- spawning HellGoat bike for now -->
 			<property name="VehicleToSpawn" value="hellGoatBike" />
 		</property>
 		<property class="Attributes">
@@ -11743,7 +11752,7 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
-	<item id="20" name="proBikeHandlebars">
+	<item id="23" name="proBikeHandlebars">
 		<property name="Extends" value="minibikeHandlebars" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="proBikeHandlebarsDesc" />
@@ -11762,7 +11771,7 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
-	<item id="23" name="proBikeWheels">
+	<item id="24" name="proBikeWheels">
 		<property name="Extends" value="minibikeWheels" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="proBikeWheelsDesc" />
@@ -11777,7 +11786,7 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
-	<item id="24" name="proBikeSeat">
+	<item id="25" name="proBikeSeat">
 		<property name="Extends" value="minibikeSeat" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="proBikeSeatDesc" />
@@ -11789,8 +11798,334 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
+	<item id="26" name="vehicle50calGun">
+		<property name="DescriptionKey" value="vehicle50calGunDesc" />
+		<property name="VehicleSlotType" value="vehicleGun" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property name="AmmoType" value="50calVehicleBullet" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="45" />
+		<property name="EconomicValue" value="4000" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="1200,6000" />
+		</property>
+		<property name="Group" value="Resources,Ammo/Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+	</item>
+	<item id="27" name="vehicleGrenadeLauncher">
+		<property name="DescriptionKey" value="vehicleGrenadeLauncherDesc" />
+		<property name="VehicleSlotType" value="vehicleExplosiveLauncher" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property name="AmmoType" value="vehicleGrenade" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="45" />
+		<property name="EconomicValue" value="6000" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="1200,6000" />
+		</property>
+		<property name="Group" value="Resources,Ammo/Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+	</item>
+	<item id="28" name="helicopterGun">
+		<property name="DescriptionKey" value="helicopterGunDesc" />
+		<property name="VehicleSlotType" value="vehicleGun" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property name="AmmoType" value="helicopterBullet" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="45" />
+		<property name="Weight" value="100" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="EconomicValue" value="6000" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="1200,6000" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Rifles" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+	</item>
+	<item id="29" name="helicopterMissileLauncher">
+		<property name="DescriptionKey" value="helicopterMissileLauncherDesc" />
+		<property name="VehicleSlotType" value="vehicleExplosiveLauncher" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property name="AmmoType" value="helicopterMissile" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="45" />
+		<property name="Weight" value="100" />
+		<property name="EconomicValue" value="8000" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="1200,6000" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Rifles" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+	</item>
+	<item id="30" name="tankCannon">
+		<property name="DescriptionKey" value="tankCannonDesc" />
+		<property name="VehicleSlotType" value="vehicleExplosiveLauncher" />
+		<property name="IsVehicleCustomPart" value="true" />
+		<property name="AmmoType" value="tankShell" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="45" />
+		<property name="EconomicValue" value="8000" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="1200,6000" />
+		</property>
+		<property name="Group" value="Resources,Ammo/Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+	</item>
+	<item id="31" name="50calVehicleBullet">
+		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="500" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="150,250" />
+			<property name="BlockDamage" value="200,350" />
+			<property name="ApplyBuff" value="0.7,0.9" param1="arrowCriticalBleedout" />
+			<property name="FalloffRange" value="350,500" />
+			<property name="DismembermentBaseChance" value="3,5" />
+			<property name="DismembermentBonus" value="3,5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Velocity" value="100" />
+			<property name="FlyTime" value="3" />
+			<property name="LifeTime" value="12" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<!--<property name="DamageBonus.head" value="10" />
+					<property name="DamageBonus.glass" value="25" />
+					<property name="DamageBonus.wood" value="10" />
+					<property name="DamageBonus.earth" value="0.5" />
+					<property name="DamageBonus.stone" value="2.5" />
+					<property name="DamageBonus.metal" value="2.5" />-->
+			<property name="Gravity" value="-1" />
+			<property name="Explosion.ParticleIndex" value="1" />
+			<property name="Explosion.RadiusBlocks" value="2" />
+			<!--<property name="Explosion.BlockDamage" value="200,350" />-->
+			<property name="Explosion.BlockDamage" value="30" />
+			<property name="Explosion.RadiusEntities" value="1" />
+			<!--<property name="Explosion.EntityDamage" value="150,250" />-->
+			<property name="Explosion.EntityDamage" value="30" />
+			<property name="Explosion.BlastPower" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="Explosion.DamageBonus.stone" value="2.5" />
+			<property name="Explosion.DamageBonus.metal" value="1" />
+			<property name="Explosion.DamageBonus.earth" value="1.5" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="4" />
+			<property name="Explosion.DamageBonus.glass" value="4" />
+			<!--<property name="Explosion.DamageBonus.stone" value="10" />
+					<property name="Explosion.DamageBonus.metal" value="10" />
+					<property name="Explosion.DamageBonus.earth" value="20" />
+					<property name="Explosion.DamageBonus.water" value="0" />
+					<property name="Explosion.DamageBonus.wood" value="20" />
+					<property name="Explosion.DamageBonus.glass" value="20" />-->
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+		<property name="EconomicValue" value="30" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<item id="32" name="vehicleGrenade">
+		<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="100" />
+		<!-- STK explosives -->
+		<property name="EconomicValue" value="1000" />
+		<property class="Attributes">
+			<property name="FalloffRange" value="50,100" />
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="150,300" />
+			<property name="BlockDamage" value="50,100" />
+			<!-- this is not working yet, it uses damage from Action1 -->
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="4" />
+			<!-- which Prefab/particle is used -->
+			<!--<property name="Explosion.RadiusBlocks" value="15" />-->
+			<property name="Explosion.RadiusBlocks" value="3" />
+			<!-- damage radius for blocks -->
+			<property name="Explosion.BlockDamage" value="500" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="Explosion.RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="Explosion.EntityDamage" value="100" />
+			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+			<property name="Velocity" value="50" />
+			<property name="FlyTime" value="0" />
+			<property name="LifeTime" value="12" />
+			<property name="Gravity" value="-4" />
+			<property name="Explosion.RadiusBuffs" value="5" />
+			<property name="Explosion.BlastPower" value="150" />
+			<property name="Explosion.DamageBonus.stone" value="5" />
+			<property name="Explosion.DamageBonus.metal" value="5" />
+			<property name="Explosion.DamageBonus.earth" value="5" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="5" />
+			<property name="Explosion.DamageBonus.glass" value="5" />
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<item id="33" name="helicopterBullet">
+		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="500" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="150,250" />
+			<property name="BlockDamage" value="200,350" />
+			<property name="ApplyBuff" value="0.7,0.9" param1="arrowCriticalBleedout" />
+			<property name="FalloffRange" value="350,500" />
+			<property name="DismembermentBaseChance" value="3,5" />
+			<property name="DismembermentBonus" value="3,5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Velocity" value="100" />
+			<property name="FlyTime" value="3" />
+			<property name="LifeTime" value="12" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<!--<property name="DamageBonus.head" value="10" />
+					<property name="DamageBonus.glass" value="25" />
+					<property name="DamageBonus.wood" value="10" />
+					<property name="DamageBonus.earth" value="0.5" />
+					<property name="DamageBonus.stone" value="2.5" />
+					<property name="DamageBonus.metal" value="2.5" />-->
+			<property name="Gravity" value="-1" />
+			<property name="Explosion.ParticleIndex" value="1" />
+			<property name="Explosion.RadiusBlocks" value="3" />
+			<!--<property name="Explosion.BlockDamage" value="200,350" />-->
+			<property name="Explosion.BlockDamage" value="100" />
+			<property name="Explosion.RadiusEntities" value="2" />
+			<!--<property name="Explosion.EntityDamage" value="150,250" />-->
+			<property name="Explosion.EntityDamage" value="100" />
+			<property name="Explosion.BlastPower" value="10" />
+			<property name="Explosion.DamageBonus.stone" value="6" />
+			<property name="Explosion.DamageBonus.metal" value="4" />
+			<property name="Explosion.DamageBonus.earth" value="2" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="10" />
+			<property name="Explosion.DamageBonus.glass" value="10" />
+			<!--<property name="Explosion.DamageBonus.stone" value="10" />
+					<property name="Explosion.DamageBonus.metal" value="10" />
+					<property name="Explosion.DamageBonus.earth" value="20" />
+					<property name="Explosion.DamageBonus.water" value="0" />
+					<property name="Explosion.DamageBonus.wood" value="20" />
+					<property name="Explosion.DamageBonus.glass" value="20" />-->
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillGuns" />
+		<property name="EconomicValue" value="30" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<item id="34" name="helicopterMissile">
+		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
+		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="100" />
+		<!-- STK explosives -->
+		<property name="EconomicValue" value="1000" />
+		<property class="Attributes">
+			<property name="FalloffRange" value="250,400" />
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="250,500" />
+			<property name="BlockDamage" value="100,200" />
+			<!-- this is not working yet, it uses damage from Action1 -->
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="6" />
+			<!-- which Prefab/particle is used -->
+			<!--<property name="Explosion.RadiusBlocks" value="15" />-->
+			<property name="Explosion.RadiusBlocks" value="10" />
+			<!-- damage radius for blocks -->
+			<property name="Explosion.BlockDamage" value="1000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="Explosion.RadiusEntities" value="10" />
+			<!-- damage radius for entities -->
+			<property name="Explosion.EntityDamage" value="1000" />
+			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+			<property name="Velocity" value="50" />
+			<property name="FlyTime" value="5" />
+			<property name="LifeTime" value="12" />
+			<property name="Explosion.RadiusBuffs" value="5" />
+			<property name="Explosion.BlastPower" value="200" />
+			<property name="Explosion.DamageBonus.stone" value="10" />
+			<property name="Explosion.DamageBonus.metal" value="10" />
+			<property name="Explosion.DamageBonus.earth" value="10" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="10" />
+			<property name="Explosion.DamageBonus.glass" value="10" />
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<item id="35" name="tankShell">
+		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
+		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="100" />
+		<!-- STK explosives -->
+		<property name="EconomicValue" value="1000" />
+		<property class="Attributes">
+			<property name="FalloffRange" value="250,400" />
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="250,500" />
+			<property name="BlockDamage" value="100,200" />
+			<!-- this is not working yet, it uses damage from Action1 -->
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="6" />
+			<!-- which Prefab/particle is used -->
+			<!--<property name="Explosion.RadiusBlocks" value="15" />-->
+			<property name="Explosion.RadiusBlocks" value="10" />
+			<!-- damage radius for blocks -->
+			<property name="Explosion.BlockDamage" value="1000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="Explosion.RadiusEntities" value="10" />
+			<!-- damage radius for entities -->
+			<property name="Explosion.EntityDamage" value="1000" />
+			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+			<property name="Velocity" value="75" />
+			<property name="FlyTime" value="3" />
+			<property name="LifeTime" value="12" />
+			<property name="Explosion.RadiusBuffs" value="5" />
+			<property name="Explosion.BlastPower" value="200" />
+			<property name="Explosion.DamageBonus.stone" value="10" />
+			<property name="Explosion.DamageBonus.metal" value="10" />
+			<property name="Explosion.DamageBonus.earth" value="10" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="10" />
+			<property name="Explosion.DamageBonus.glass" value="10" />
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
 	<!-- MANUX's HellGoat Bike -->
-	<item id="25" name="hellGoatBikeChassis">
+	<item id="36" name="hellGoatBikeChassis">
 		<property name="Extends" value="robustBikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="Meshfile" value="#HellGoatBike?HellGoatBikeChassisPrefab" />
@@ -11800,7 +12135,7 @@
 		</property>
 	</item>
 	<!-- Dust2Death's RoadHog -->
-	<item id="26" name="roadHogChassis">
+	<item id="37" name="roadHogChassis">
 		<property name="Extends" value="minibikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="Meshfile" value="#RoadHog?RoadHogChassisPrefab" />
@@ -11810,7 +12145,7 @@
 		</property>
 	</item>
 	<!-- MANUX's Cicada Car -->
-	<item id="27" name="cicadaCarChassis">
+	<item id="38" name="cicadaCarChassis">
 		<property name="Extends" value="minibikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="Meshfile" value="#CicadaCar?CicadaCarChassisPrefab" />
@@ -11820,7 +12155,7 @@
 		</property>
 	</item>
 	<!-- MANUX's Quad -->
-	<item id="28" name="quadChassis">
+	<item id="39" name="quadChassis">
 		<property name="Extends" value="minibikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="Meshfile" value="#Quad?QuadChassisPrefab" />
@@ -11830,7 +12165,7 @@
 		</property>
 	</item>
 	<!-- MANUX's The Beast (Loader) -->
-	<item id="29" name="loaderChassis">
+	<item id="43" name="loaderChassis">
 		<property name="Extends" value="minibikeChassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="Meshfile" value="#TheBeast?TheBeastChassisPrefab" />
@@ -11848,7 +12183,7 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
-	<item id="30" name="loaderHandlebars">
+	<item id="46" name="loaderHandlebars">
 		<property name="Extends" value="minibikeHandlebars" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="loaderHandlebarsDesc" />
@@ -11867,7 +12202,7 @@
 			<property name="DegradationMax" value="2400,12000" />
 		</property>
 	</item>
-	<item id="31" name="loaderEngine">
+	<item id="49" name="loaderEngine">
 		<property name="Extends" value="smallEngine" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="DescriptionKey" value="loaderEngineDesc" />
@@ -11900,7 +12235,7 @@
 		</property>
 	</item>
 	<!-- MANUX's Helicopter -->
-	<item id="32" name="helicopterChassis">
+	<item id="52" name="helicopterChassis">
 		<property name="VehicleSlotType" value="chassis" />
 		<property name="IsVehicleCustomPart" value="true" />
 		<property name="HoldingItemHidden" value="true" />
@@ -11921,91 +12256,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="33" name="helicopterBullet">
-		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="21" />
-		<property name="Stacknumber" value="500" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="150,250" />
-			<property name="BlockDamage" value="200,350" />
-			<property name="ApplyBuff" value="0.7,0.9" param1="arrowCriticalBleedout" />
-			<property name="FalloffRange" value="350,500" />
-			<property name="DismembermentBaseChance" value="3,5" />
-			<property name="DismembermentBonus" value="3,5" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Projectile" />
-			<property name="Velocity" value="100" />
-			<property name="FlyTime" value="12" />
-			<property name="LifeTime" value="12" />
-			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
-			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-			<property name="DamageBonus.head" value="10" />
-			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.earth" value="0.5" />
-			<property name="DamageBonus.stone" value="2.5" />
-			<property name="DamageBonus.metal" value="2.5" />
-			<property name="Gravity" value="-1" />
-			<property name="Explosion.ParticleIndex" value="1" />
-			<property name="Explosion.RadiusBlocks" value="1" />
-			<property name="Explosion.BlockDamage" value="200,350" />
-			<property name="Explosion.RadiusEntities" value="1" />
-			<property name="Explosion.EntityDamage" value="150,250" />
-			<property name="Explosion.DamageBonus.stone" value="2.5" />
-			<property name="Explosion.DamageBonus.metal" value="2.5" />
-			<property name="Explosion.DamageBonus.earth" value="0.5" />
-			<property name="Explosion.DamageBonus.water" value="0" />
-			<property name="Explosion.DamageBonus.wood" value="10" />
-		</property>
-		<property name="CraftingSkillGroup" value="craftSkillGuns" />
-		<property name="EconomicValue" value="30" />
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
-	<item id="34" name="helicopterMissile">
-		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
-		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="3" />
-		<property name="Stacknumber" value="100" />
-		<!-- STK explosives -->
-		<property name="EconomicValue" value="1000" />
-		<property class="Attributes">
-			<property name="FalloffRange" value="250,400" />
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="250,500" />
-			<property name="BlockDamage" value="100,200" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="6" />
-			<!-- which Prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="15" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.BlockDamage" value="1000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.RadiusEntities" value="10" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.EntityDamage" value="1000" />
-			<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-			<property name="Velocity" value="50" />
-			<property name="FlyTime" value="12" />
-			<property name="LifeTime" value="12" />
-			<property name="Explosion.RadiusBuffs" value="5" />
-			<property name="Explosion.BlastPower" value="200" />
-			<property name="Explosion.DamageBonus.stone" value="10" />
-			<property name="Explosion.DamageBonus.metal" value="10" />
-			<property name="Explosion.DamageBonus.earth" value="20" />
-			<property name="Explosion.DamageBonus.water" value="0" />
-			<property name="Explosion.DamageBonus.wood" value="20" />
-		</property>
-		<property name="CraftingSkillGroup" value="craftSkillScience" />
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
-	<item id="35" name="helicopterEngine">
+	<item id="53" name="helicopterEngine">
 		<!--<property name="PartType" value="Receiver" />-->
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -12033,50 +12284,9 @@
 		</property>
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="36" name="helicopterMissileLauncher">
-		<property name="DescriptionKey" value="helicopterMissileLauncherDesc" />
-		<property name="VehicleSlotType" value="basket" />
-		<property name="IsVehicleCustomPart" value="true" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="repairKit" />
-		<property name="HoldType" value="45" />
-		<property name="Weight" value="100" />
-		<property name="EconomicValue" value="3000" />
-		<property class="Attributes">
-			<property name="VehicleStorageWidth" value="3,8" />
-			<property name="VehicleStorageHeight" value="3,5" />
-			<property name="DegradationMax" value="1200,6000" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Rifles" />
-		<property name="CraftingSkillGroup" value="craftSkillGuns" />
-	</item>
-	<item id="37" name="helicopterGun">
-		<property name="DescriptionKey" value="helicopterGunDesc" />
-		<property name="VehicleSlotType" value="wheel" />
-		<property name="IsVehicleCustomPart" value="true" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="repairKit" />
-		<property name="HoldType" value="45" />
-		<property name="Weight" value="100" />
-		<property name="EconomicValue" value="2000" />
-		<property name="DegradationBreaksAfter" value="false" />
-		<property class="Attributes">
-			<property name="BatteryMaxLoadInVolts" value="24, 36" />
-			<property name="BatteryDischargeTimeInMinutes" value="30,90" />
-			<property name="DegradationMax" value="1200,6000" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Rifles" />
-		<property name="CraftingSkillGroup" value="craftSkillGuns" />
-	</item>
 	<!-- MANUX Survivors And Bandits -->
 	<!-- guns -->
-	<item id="38" name="gunBanditPistol">
+	<item id="56" name="gunBanditPistol">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunPistol" />
@@ -12124,7 +12334,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="39" name="gunBandit44Magnum">
+	<item id="57" name="gunBandit44Magnum">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gun44Magnum" />
@@ -12172,7 +12382,7 @@
 			<property name="BlockDamage" value="10,10" />
 		</property>
 	</item>
-	<item id="43" name="gunBanditSawedOffPumpShotgun">
+	<item id="58" name="gunBanditSawedOffPumpShotgun">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSawedOffPumpShotgun" />
@@ -12223,7 +12433,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="46" name="gunBanditPumpShotgun">
+	<item id="59" name="gunBanditPumpShotgun">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunPumpShotgun" />
@@ -12277,7 +12487,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="49" name="gunBanditMP5">
+	<item id="60" name="gunBanditMP5">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunMP5" />
@@ -12328,7 +12538,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="52" name="gunBanditAK47">
+	<item id="61" name="gunBanditAK47">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunAK47" />
@@ -12379,7 +12589,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="53" name="gunBanditHuntingRifle">
+	<item id="62" name="gunBanditHuntingRifle">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunHuntingRifle" />
@@ -12427,7 +12637,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="56" name="gunBanditSniperRifle">
+	<item id="63" name="gunBanditSniperRifle">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunSniperRifle" />
@@ -12475,7 +12685,7 @@
 			<property name="BlockDamage" value="5,5" />
 		</property>
 	</item>
-	<item id="57" name="gunBanditRocketLauncher">
+	<item id="64" name="gunBanditRocketLauncher">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="gunRocketLauncher" />
@@ -12515,7 +12725,7 @@
 		</property>
 	</item>
 	<!-- ammo -->
-	<item id="58" name="9mmBanditBullet">
+	<item id="65" name="9mmBanditBullet">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Tools/torchPrefab" />
@@ -12535,7 +12745,7 @@
 			<property name="LifeTime" value="3" />
 		</property>
 	</item>
-	<item id="59" name="44MagBanditBullet">
+	<item id="66" name="44MagBanditBullet">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Tools/torchPrefab" />
@@ -12555,7 +12765,7 @@
 			<property name="LifeTime" value="3" />
 		</property>
 	</item>
-	<item id="60" name="762mmBanditBullet">
+	<item id="67" name="762mmBanditBullet">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Tools/torchPrefab" />
@@ -12575,7 +12785,7 @@
 			<property name="LifeTime" value="3" />
 		</property>
 	</item>
-	<item id="61" name="shotgunBanditShell">
+	<item id="68" name="shotgunBanditShell">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Tools/torchPrefab" />
@@ -12596,7 +12806,7 @@
 			<property name="LifeTime" value="3" />
 		</property>
 	</item>
-	<item id="62" name="BanditRocket">
+	<item id="71" name="BanditRocket">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
@@ -12629,7 +12839,7 @@
 			<property name="LifeTime" value="8" />
 		</property>
 	</item>
-	<item id="63" name="BanditGasCan">
+	<item id="72" name="BanditGasCan">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -12639,7 +12849,7 @@
 		<property name="FuelValue" value="2" />
 	</item>
 	<!-- melee -->
-	<item id="64" name="meleeBanditSledgeHammer">
+	<item id="73" name="meleeBanditSledgeHammer">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="sledgehammer" />
@@ -12676,7 +12886,7 @@
 			<property name="DismembermentBonus" value="0.00036,0.00036" />
 		</property>
 	</item>
-	<item id="65" name="meleeBanditMachete">
+	<item id="74" name="meleeBanditMachete">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="machete" />
@@ -12711,7 +12921,7 @@
 			<property name="DismembermentBonus" value="0.00036,0.00036" />
 		</property>
 	</item>
-	<item id="66" name="meleeBanditFireaxe">
+	<item id="75" name="meleeBanditFireaxe">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="fireaxeIron" />
@@ -12749,7 +12959,7 @@
 			<property name="DismembermentBonus" value="0.005,0.005" />
 		</property>
 	</item>
-	<item id="67" name="meleeBanditSpikedClub">
+	<item id="109" name="meleeBanditSpikedClub">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="clubSpiked" />
@@ -12781,7 +12991,7 @@
 		</property>
 		<property name="CritChance" value=".4" />
 	</item>
-	<item id="68" name="meleeBanditHuntingKnife">
+	<item id="110" name="meleeBanditHuntingKnife">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="huntingKnife" />
@@ -12815,7 +13025,7 @@
 			<property name="DismembermentBonus" value="0.00036,0.00036" />
 		</property>
 	</item>
-	<item id="71" name="meleeBanditChainsaw">
+	<item id="111" name="meleeBanditChainsaw">
 		<property name="IsDeveloper" value="true" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="chainsaw" />
@@ -12866,7 +13076,7 @@
 		</property>
 	</item>
 	<!-- BRUTES WEAPONS -->
-	<item id="72" name="bruteSpikedClub">
+	<item id="112" name="bruteSpikedClub">
 		<property name="Extends" value="meleeBanditSpikedClub" />
 		<property name="Meshfile" value="#BruteWeapons?BruteMacePrefab" />
 		<property class="Action0">
@@ -12886,7 +13096,7 @@
 		</property>
 		<property name="CritChance" value=".6" />
 	</item>
-	<item id="73" name="bruteSledgeHammer">
+	<item id="115" name="bruteSledgeHammer">
 		<property name="Extends" value="meleeBanditSledgeHammer" />
 		<property name="Meshfile" value="#BruteWeapons?BruteHammerPrefab" />
 		<property class="Action0">
@@ -12908,7 +13118,7 @@
 			<property name="DismembermentBonus" value="0.0005,0.0005" />
 		</property>
 	</item>
-	<item id="74" name="bruteFireaxe">
+	<item id="116" name="bruteFireaxe">
 		<property name="Extends" value="meleeBanditFireaxe" />
 		<property name="Meshfile" value="#BruteWeapons?BruteAxePrefab" />
 		<property class="Action0">
@@ -12928,7 +13138,7 @@
 			<property name="DismembermentBonus" value="0.0065,0.0065" />
 		</property>
 	</item>
-	<item id="75" name="bruteChainsaw">
+	<item id="120" name="bruteChainsaw">
 		<property name="Extends" value="meleeBanditChainsaw" />
 		<property class="Action0">
 			<property name="Class" value="Ranged" />
@@ -12946,7 +13156,176 @@
 			<property name="DismembermentBonus" value="0.00048,0.00048" />
 		</property>
 	</item>
-	<item id="109" name="NoAmmo">
+	<!-- MANUX Admin Tools: some from Bad Company -->
+	<item id="121" name="blackPill">
+		<property name="Extends" value="painkillers" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="DescriptionKey" value="blackPillDesc" />
+		<property name="CustomIcon" value="painkillers" />
+		<property name="CustomIconTint" value="353535" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action1">
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_stamina" value="100" />
+			<property name="Gain_wellness" value="400" />
+			<property name="Buff" value="blackPillBuff" />
+		</property>
+	</item>
+	<item id="123" name="superDigger">
+		<property name="DescriptionKey" value="superDiggerDesc" />
+		<property name="CustomIcon" value="gunMP5" />
+		<property name="CustomIconTint" value="FF0000" />
+		<Property name="TintColor" value="255,160,160" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="6" />
+		<property name="Stacknumber" value="1" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="weapon_jam" />
+		<property name="CrosshairUpAfterShot" value="false" />
+		<property name="CrosshairOnAim" value="true" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Hitmask_override" value="Melee" />
+			<property name="Delay" value="0.150" />
+			<property name="Range" value="300" />
+			<property name="Auto_fire" value="true" />
+			<property name="Rays_per_shot" value="1" />
+			<property name="Rays_spread" value="0" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="8" />
+			<property name="DamageBlock" value="3000" />
+			<property name="DamageEntity" value="0.1" />
+			<property name="Single_magazine_usage" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="9mmBullet,NoAmmo" />
+			<property name="Reload_time" value="4.1" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="weapon_empty" />
+			<property name="Sound_reload" value="mp5_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_max_out" value="38" />
+			<property name="Zoom_max_in" value="10" />
+		</property>
+	</item>
+	<item id="124" name="grassBomb">
+		<property name="Class" value="ItemClassTimeBomb" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="DescriptionKey" value="grassBombDesc" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab" />
+		<property name="CustomIcon" value="treeForestGrassDiagonal" />
+		<property name="CustomIconTint" value="FF0000" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="25" />
+		<property name="Stacknumber" value="500" />
+		<property name="Explosion.ParticleIndex" value="7" />
+		<property name="Explosion.RadiusBlocks" value="20" />
+		<property name="Explosion.BlockDamage" value="10" />
+		<property name="Explosion.RadiusEntities" value="0" />
+		<property name="Explosion.EntityDamage" value="0" />
+		<property name="Explosion.DamageBonus.boulder" value="0" />
+		<property name="Explosion.DamageBonus.cloth" value="0" />
+		<property name="Explosion.DamageBonus.concrete" value="0" />
+		<property name="Explosion.DamageBonus.glass" value="0" />
+		<property name="Explosion.DamageBonus.metal" value="0" />
+		<property name="Explosion.DamageBonus.snow" value="0" />
+		<property name="Explosion.DamageBonus.stone" value="0" />
+		<property name="Explosion.DamageBonus.organic" value="0" />
+		<property name="Explosion.DamageBonus.plants" value="0" />
+		<property name="Explosion.DamageBonus.leaves" value="0" />
+		<!-- weirdly, seems like .earth takes care of grass -->
+		<property name="Explosion.DamageBonus.earth" value="0.1" />
+		<!-- and .wood takes care of plants -->
+		<property name="Explosion.DamageBonus.wood" value="0.1" />
+		<property name="Explosion.BlastPower" value="150" />
+		<property name="ExplodeOnHit" value="true" />
+		<property name="FuseTime" value="4" />
+		<property name="DropScale" value="2" />
+		<property class="Action0">
+			<property name="Class" value="ThrowAway" />
+			<property name="Delay" value="0" />
+			<property name="Throw_strength_default" value="30" />
+			<property name="Throw_strength_max" value="30" />
+			<property name="Max_strain_time" value="0.5" />
+			<property name="Sound_start" value="swoosh" />
+		</property>
+		<property name="ThrowableDecoy" value="true" />
+	</item>
+	<item id="125" name="terrainCleanerBomb">
+		<property name="Extends" value="grassBomb" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="DescriptionKey" value="terrainCleanerBombDesc" />
+		<property name="CustomIcon" value="treeMaple16m" />
+		<property name="CustomIconTint" value="FF0000" />
+		<property name="Explosion.DamageBonus.stone" value="25" />
+		<property name="Explosion.DamageBonus.wood" value="25" />
+	</item>
+	<item id="129" name="handWellWalker">
+		<property name="Extends" value="handZombie" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action0">
+			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="30" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg" />
+			<property name="Buff_chance" value="0.5,0.3,0.3" />
+		</property>
+	</item>
+	<!-- Crowbar model from "random person" https://7daystodie.com/forums/showthread.php?82416-crawbar-mod&p=801934#post801934 -->
+	<item id="132" name="CrowBar">
+		<property name="Meshfile" value="#CrawBar?CrawBar" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="forgedSteel" />
+		<property name="HoldType" value="29" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="EconomicValue" value="500" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="DamageBonus.head" value="2" />
+			<property name="Stamina_usage" value="12" />
+			<property name="ActionExp" value="4" />
+			<property name="ToolCategory.Disassemble" value="1" param1="2" />
+			<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+			<property name="Particle_harvesting" value="true" param1="metal" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="1,1.1" />
+			<property name="DegradationMax" value="500,1400" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="-0.1,0" />
+		</property>
+		<property name="ActionSkillGroup" value="Mining Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="PickupJournalEntry" value="miningTip" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<item id="135" name="NoAmmo">
 		<property name="CreativeMode" value="None" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="CustomIcon" value="Unload" />
