@@ -22,6 +22,7 @@
 		<entity name="zombieSpiderRyanStanding" />
 		<entity name="zombieSnow" prob="1" />
 		<entity name="zombieScreamerFeral" prob="0.03" />
+		<!-- Sphereii Birds -->
 		<entity name="RobinBird" />
 		<entity name="animalFalcon" />
 		<entity name="birdAlcatraz" />
@@ -134,10 +135,6 @@
 		<entity name="zombieFatHawaiian" />
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2NoBears">
-		<!--
-		Bears/Animals aren't controllable by the BloodMoon horde system  until Joe
-		refactors all the Animal code.
-		-->
 		<entity name="zombieSpider" />
 		<entity name="zombieBoe" prob="0.05" />
 		<entity name="zombieJoe" prob="0.05" />
@@ -178,10 +175,12 @@
 		<entity name="zombieScreamerFeral" />
 		<entity name="zombieAngryHockeyMomSpider" />
 	</entitygroup>
+	<!-- ###### Screamers ###### -->
 	<entitygroup name="ZombieScouts">
 		<entity name="zombieScreamer" />
 		<entity name="zombieScreamerFeral" />
 		<entity name="zombieAngryHockeyMomSpider" />
+		<entity name="animalZombieBear" />
 	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
