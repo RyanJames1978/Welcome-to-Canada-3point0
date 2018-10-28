@@ -246,8 +246,8 @@
 	
 	<wilderness_rules>
 		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
-			<path_material value="gravel" /> 
-			<path_radius value="2" />
+			<path_material value="snow" /> 
+			<path_radius value="3" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroup" prob="1"/>
 		</wilderness_rule>
@@ -473,6 +473,7 @@
 
 		
 		<prefab_rule name="residentialOldGroup">	
+			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab rule="abandoned_houses" max_count="2" />
 			<prefab name="bombshelter_lg_01" max_count="1" />
 			<prefab name="bombshelter_md_01" max_count="1" />
@@ -577,7 +578,8 @@
 		</prefab_rule>
 
 		
-		<prefab_rule name="residentialNewGroup">		
+		<prefab_rule name="residentialNewGroup">	
+			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab name="house_new_mansion_01" max_count="1"/>
 			<prefab name="house_new_mansion_02" max_count="1"/>
 			<prefab name="house_new_mansion_03" max_count="1"/>
@@ -650,6 +652,7 @@
 
 		
 		<prefab_rule name="commercialGroup">	
+			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab name="store_gun_sm_01" max_count="1" />
 			<prefab name="store_gun_lg_01" max_count="1" />
 			<prefab name="store_pharmacy_sm_01" max_count="1" />
@@ -710,6 +713,7 @@
 
 		
 		<prefab_rule name="downtownGroup">
+			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
 			<prefab name="apartment_brick_6_flr" max_count="1" />
 			<prefab name="hotel_roadside_01" max_count="1"/>
@@ -789,6 +793,7 @@
 
 
 		<prefab_rule name="industrialGroup">	
+			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab name="utility_waterworks_01" max_count="1" />
 			<prefab name="utility_electric_co_01" max_count="1" />
 			<prefab name="utility_refinery_01" max_count="1"/>
@@ -1312,45 +1317,56 @@
 			<output module="clampOutput"/>
 		</biome_intensity_generator>
 	</biome_intensity_generators>
-	
+	<!-- RJ Spawn rules -->
 	<biome_spawn_rules>
+		<!-- center city-->
+		<biome_spawn_rule name="city">
+			<distance_from_center range="0,200" />
+		</biome_spawn_rule>
+		<!-- pine forest -->
 		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.1"/>
-			<terrain_generator range="150,175"/>
+			<biome_generator range="0,0.1" />
+			<terrain_generator range="150,175" />
 		</biome_spawn_rule>
-		
+		<!-- Thick Forest 3 -->
 		<biome_spawn_rule name="desert">
-			<biome_generator range="0.1,0.3"/>
+			<biome_generator range="0.1,0.3" />
 		</biome_spawn_rule>
-		
+		<!-- Thick Forest -->
 		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4"/>
+			<biome_generator range="0.3,0.4" />
 		</biome_spawn_rule>
-		
+		<!-- praries -->
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.4,0.6"/>
+			<biome_generator range="0.4,0.6" />
 		</biome_spawn_rule>
-		
+		<!-- Snow Mountains -->
 		<biome_spawn_rule name="snow">
-			<biome_generator range="0.6,0.7"/>
-			<terrain_generator range="176,255"/>
+			<biome_generator range="0.6,0.7" />
+			<terrain_generator range="176,255" />
 		</biome_spawn_rule>
-		
+		<!-- Thick Forest 2 -->
 		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.7,0.8"/>
+			<biome_generator range="0.7,0.8" />
 		</biome_spawn_rule>
-		
+		<!-- Secondary snow -->
 		<biome_spawn_rule name="plains">
-			<biome_generator range="0.8,1"/>
+			<biome_generator range="0.8,1" />
 		</biome_spawn_rule>
-		
+		<!-- Wastland City Buffer -->
+		<biome_spawn_rule name="wasteland_hub">
+			<distance_from_center range="9001,9900" />
+		</biome_spawn_rule>
+		<!-- radiated Wastland -->
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,20000"/>
+			<distance_from_center range="9901,20000" />
 		</biome_spawn_rule>
-		
+		<!-- Water -->
 		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,-1"/>
+			<terrain_generator range="-31,-1" />
 		</biome_spawn_rule>
-		
 	</biome_spawn_rules>
+	<!-- ###############################################################################################################  -->
+	<!-- ############## Do not edit or change anything passed this point you freaking dumbass ##########################  -->
+	<!-- ###############################################################################################################  -->
 </rwgmixer>
