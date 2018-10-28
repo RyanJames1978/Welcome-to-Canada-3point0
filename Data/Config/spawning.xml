@@ -53,7 +53,7 @@
     <biome name="water">
 		<!-- RAD Animals -->
 		<spawn maxcount="10" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
-		<spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" />
+		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
     </biome>
     
 <!--  ############################### praries ###############################  -->
