@@ -38,21 +38,34 @@ Mod Features:
 SDX MOD LIST:
 - Hundreds of weapons, items, decorations by Ryan James
 - The Holy Hand Grenade of Antioch by Ryan James
-- Animation SDX by Sphereii
 - Guppycur's Blood moon Trickle fix by Guppycur
-- Custom Workstation Categories by Sphereii
-- Entity Player by Sphereii
+- Nanite Terrain by StompyNZ
+- No Ammo by HaidrGna
 - Hal's DLL Fixes by HAL9000
-- Bad Company Zombies by Bad Company and MANUX
-- Bigger Backpack, storage by MANUX
+- Simple UI by Stedman420
+- Bigger Backpack, storage by Stedman420
 - Custom Vehicles by MANUX
 - Miner Robot by MANUX
-- Simple UI by Stedman420
+- Admin Tools by MANUX
 - Survivors and Bandits by MANUX inspired by Bad Company
-- Nanite Terrain by StompyNZ
+- Bad Company Zombies by Bad Company and MANUX
+- Animation SDX by Sphereii
+- Custom Workstation Categories by Sphereii
+- Entity Player by Sphereii
 - Take and Replace by Sphereii
-- Winter Decorations by Sphereii
+- Winter and Summer Decorations by Sphereii
 - Zombie Transmogrifier by Sphereii
+- A Better Life by Sphereii
+- Auto Favourites by Sphereii
+- Console Commands by TormentedEmu
+- Recipe Manager by TormentedEmu
+- Enable Edit Mode by TormentedEmu
+- Item Action Launcher Fix by TormentedEmu
+- Eat Delay Remover by TormentedEmu
+- MiniBike Impact by TormentedEmu
+- Minibike Open UI by TormentedEmu
+- No Exception Hijack by TormentedEmu
+- Compo Pack by Various Modders
 
 
 
