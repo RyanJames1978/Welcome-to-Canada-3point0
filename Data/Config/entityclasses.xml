@@ -181,7 +181,7 @@
 		<property name="RandomSpeeds" value="true" />
 		<property name="RandomSize" value="true" />
 		<!-- Allows the zombies to go to sleep when idle. -->
-		<property name="IdleSleep" value="true" />
+		<property name="IdleSleep" value="false" />
 		<property name="SleeperPose" value="1" />
 		<!-- Harvest flesh and bone -->
 		<!-- <drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
