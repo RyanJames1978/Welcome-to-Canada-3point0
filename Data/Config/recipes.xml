@@ -1692,7 +1692,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<!-- RJ Deer Head -->
 	<recipe name="deerHead" count="1" craft_area="workbench">
-		<!-- <ingredient name="deerAntlers" count="1" /> Add later -->
+		<ingredient name="deerAntlers" count="1" />
 		<ingredient name="wood" count="30" />
 		<ingredient name="glue" count="5" />
 		<ingredient name="animalHide" count="5" />

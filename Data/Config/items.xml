@@ -10200,7 +10200,7 @@
 	<item id="1535" name="hockeyPuck">
 		<property name="CustomIcon" value="hockeyPuck" />
 		<property name="DescriptionKey" value="hockeyPuckDesc" />
-		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
+		<property name="Meshfile" value="#hockeyPuck?hockeyPuckPrefab" />
 		<property name="Material" value="stone" />
 		<property name="HoldType" value="40" />
 		<property name="Stacknumber" value="30000" />
@@ -11545,6 +11545,110 @@
 			<property name="Buff_chance" value="0.5" />
 		</property>
 	</item>
+	<!-- Deer Antlers -->
+	<item id="1604" name="deerAntlers">
+		<property name="CustomIcon" value="deerAntlersIcon" />
+		<property name="DescriptionKey" value="deerAntlersDesc" />
+		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
+		<property name="HoldType" value="21" />
+		<property name="Material" value="leather" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="5000" />
+		<!-- STK resource -->
+		<property name="FuelValue" value="5" />
+		<property name="EconomicValue" value="20" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="2" />
+		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
+	</item>
+	<!-- Hockey Equipment -->
+	
+	<!-- Hockey Sticks -->
+	<item id="1605" name="hockeyStick01"> <!-- hockey stick master -->
+		<property name="Meshfile" value="#hockeySticks?hockeyStick1Prefab" />
+		<property name="Extends" value="clubMaster" />
+		<property name="CustomIcon" value="hockeyStickIcon" />
+		<property name="DescriptionKey" value="hockeyStickGroupDesc" />
+		<property name="HoldType" value="33" />
+		<property name="RepairTools" value="hockeyTape" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="Stamina_usage" value="3.5" />
+		</property>
+		<property name="CritChance" value="0.10" />
+		<property name="Group" value="Ammo/Weapons,Basics" />
+	</item>
+	<item id="1606" name="hockeyStick01">
+		<property name="Meshfile" value="#hockeySticks?hockeyStick2Prefab" />
+		<property name="Extends" value="hockeyStick01" />
+	</item>
+	<item id="1607" name="hockeyStick01">
+		<property name="Meshfile" value="#hockeySticks?hockeyStick3Prefab" />
+		<property name="Extends" value="hockeyStick01" />
+	</item>
+	<!-- Goalie Sticks -->
+	<item id="1605" name="hockeyGoalieStick01"> <!-- Goalie stick master -->
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick1Prefab" />
+		<property name="Extends" value="hockeyStick01" />
+		<property name="CustomIcon" value="hockeyGoalieStickIcon" />
+		<property name="DescriptionKey" value="hockeyGoalieStickGroupDesc" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="DamageBonus.head" value="7" />
+			<property name="Stamina_usage" value="4.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,17" />
+			<property name="BlockDamage" value="5,15" />
+		</property>
+		<property name="CritChance" value="0.15" />
+		<property name="Group" value="Ammo/Weapons,Basics" />
+	</item>
+	<item id="1606" name="hockeyGoalieStick02">
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick2Prefab" />
+		<property name="Extends" value="hockeyGoalieStick01" />
+	</item>
+	<item id="1607" name="hockeyGoalieStick03">
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick3Prefab" />
+		<property name="Extends" value="hockeyGoalieStick01" />
+	</item>
+	
+	<!-- Skates -->
+	<item id="1608" name="hockeySkates">
+		<property name="Extends" value="leatherBoots" />
+		<property name="CustomIcon" value="hockeySkatesIcon" />
+		<property name="DescriptionKey" value="hockeySkatesDesc" />
+		<property name="FuelValue" value="20" />
+		<property name="EconomicValue" value="232" />
+		<property name="EquipSlot" value="Feet" />
+		<property name="Meshfile" value="#hockeySkates?hockeySkatePrefab" />
+		<property name="DropMeshfile" value="#hockeySkates?hockeySkatePrefab" />
+		<property class="UMA">
+			<property name="Mesh" value="#hockeySkates?hockeySkatePrefab" />
+		</property>
+	</item>
+	
+	<!-- Goalie Helmet -->
+	<item id="1609" name="hockeyGoalieHelmet">
+		<property name="CustomIcon" value="hockeyGoalieHelmetIcon" />
+		<property name="DescriptionKey" value="hockeyGoalieHelmetDesc" />
+		<property name="Meshfile" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
+		<property name="Extends" value="footballHelmet" />
+		<property name="RepairTools" value="scrapPlastics" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="450,900" />
+		</property>
+		<property class="UMA">
+			<property name="Mesh" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
+		</property>
+	</item>
+	
 	<!-- RJ Chips - old dutch ketchup, dill pickle, all dressed - Zesty Mordant -->
 	<!-- Peperoni -->
 	<!-- RJ Dixie Cup -->
@@ -13282,48 +13386,6 @@
 			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg" />
 			<property name="Buff_chance" value="0.5,0.3,0.3" />
 		</property>
-	</item>
-	<!-- Crowbar model from "random person" https://7daystodie.com/forums/showthread.php?82416-crawbar-mod&p=801934#post801934 -->
-	<item id="132" name="CrowBar">
-		<property name="Meshfile" value="#CrawBar?CrawBar" />
-		<property name="Material" value="metal" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property name="HoldType" value="29" />
-		<property name="DegradationBreaksAfter" value="false" />
-		<property name="SoundJammed" value="ItemNeedsRepair" />
-		<property name="SoundDestroy" value="metaldestroy1" />
-		<property name="FuelValue" value="30" />
-		<property name="EconomicValue" value="500" />
-		<property class="Action0">
-			<!-- AttackAction -->
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.1" />
-			<property name="Range" value="2" />
-			<property name="Block_range" value="4" />
-			<property name="Sphere" value="0.1" />
-			<property name="Sound_start" value="swoosh" />
-			<property name="Buff" value="criticalBlunt" />
-			<property name="Buff_chance" value="0.1" />
-			<property name="DamageBonus.head" value="2" />
-			<property name="Stamina_usage" value="12" />
-			<property name="ActionExp" value="4" />
-			<property name="ToolCategory.Disassemble" value="1" param1="2" />
-			<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
-			<property name="Particle_harvesting" value="true" param1="metal" />
-			<property name="ToolCategory.Butcher" value="0" param1="10" />
-		</property>
-		<property name="Group" value="Tools/Traps" />
-		<property class="Attributes">
-			<property name="EntityDamage" value="6,12" />
-			<property name="BlockDamage" value="1,1.1" />
-			<property name="DegradationMax" value="500,1400" />
-			<property name="DegradationRate" value="1,1" />
-			<property name="DismembermentBaseChance" value="-0.1,0" />
-		</property>
-		<property name="ActionSkillGroup" value="Mining Tools" />
-		<property name="CraftingSkillGroup" value="craftSkillTools" />
-		<property name="PickupJournalEntry" value="miningTip" />
-		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
 	<item id="135" name="NoAmmo">
 		<property name="CreativeMode" value="None" />
