@@ -30,6 +30,8 @@
 		<entity name="birdEagle2" />
 		<entity name="Seagull" />
 		<entity name="Goose" />
+		<!-- Polar Bear -->
+		<entity name="polarBear" />
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider" />
@@ -202,6 +204,21 @@
 		<entity name="aggressiveSeagull" />
 		<entity name="aggressiveGoose" />
 	</entitygroup>
+	<!-- All bears -->
+	<entitygroup name="bearsAll">
+		<entity name="polarBear" />
+		<entity name="blackBear" />
+		<entity name="giantBear" />
+		<entity name="babyBear" />
+		<entity name="animalScreamerBear" />
+		<entity name="animalZombieBear" />
+		<entity name="animalBear" />
+	</entitygroup>
+	<!-- Baby + mom bears -->
+	<entitygroup name="babyBearsGroup">
+		<entity name="giantBear" prob="1" />
+		<entity name="babyBear" prob="4" />
+	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
 	</entitygroup>
@@ -260,7 +277,7 @@
 		<entity name="invisibleAnimalEnemy" prob="6" />
 		<entity name="animalZombieVulture" prob="0.4" />
 		<entity name="animalDireWolf" prob="0.05" />
-		<entity name="animalBear" prob="0.1" />
+		<entity name="animalScreamerBear" />
 	</entitygroup>
 	<entitygroup name="FriendlyAnimalsSnow">
 		<entity name="invisibleAnimal" prob="3" />
