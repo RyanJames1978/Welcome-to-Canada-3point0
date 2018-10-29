@@ -11591,7 +11591,7 @@
 		<property name="Extends" value="hockeyStick01" />
 	</item>
 	<!-- Goalie Sticks -->
-	<item id="1605" name="hockeyGoalieStick01"> <!-- Goalie stick master -->
+	<item id="1608" name="hockeyGoalieStick01"> <!-- Goalie stick master -->
 		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick1Prefab" />
 		<property name="Extends" value="hockeyStick01" />
 		<property name="CustomIcon" value="hockeyGoalieStickIcon" />
@@ -11610,17 +11610,17 @@
 		<property name="CritChance" value="0.15" />
 		<property name="Group" value="Ammo/Weapons,Basics" />
 	</item>
-	<item id="1606" name="hockeyGoalieStick02">
+	<item id="1609" name="hockeyGoalieStick02">
 		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick2Prefab" />
 		<property name="Extends" value="hockeyGoalieStick01" />
 	</item>
-	<item id="1607" name="hockeyGoalieStick03">
+	<item id="1610" name="hockeyGoalieStick03">
 		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick3Prefab" />
 		<property name="Extends" value="hockeyGoalieStick01" />
 	</item>
 	
 	<!-- Skates -->
-	<item id="1608" name="hockeySkates">
+	<item id="1611" name="hockeySkates">
 		<property name="Extends" value="leatherBoots" />
 		<property name="CustomIcon" value="hockeySkatesIcon" />
 		<property name="DescriptionKey" value="hockeySkatesDesc" />
@@ -11629,23 +11629,17 @@
 		<property name="EquipSlot" value="Feet" />
 		<property name="Meshfile" value="#hockeySkates?hockeySkatePrefab" />
 		<property name="DropMeshfile" value="#hockeySkates?hockeySkatePrefab" />
-		<property class="UMA">
-			<property name="Mesh" value="#hockeySkates?hockeySkatePrefab" />
-		</property>
 	</item>
 	
 	<!-- Goalie Helmet -->
-	<item id="1609" name="hockeyGoalieHelmet">
-		<property name="CustomIcon" value="hockeyGoalieHelmetIcon" />
+	<item id="1612" name="hockeyGoalieHelmet">
+		<property name="CustomIcon" value="hockeyHelmetGoalieIcon" />
 		<property name="DescriptionKey" value="hockeyGoalieHelmetDesc" />
 		<property name="Meshfile" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
 		<property name="Extends" value="footballHelmet" />
 		<property name="RepairTools" value="scrapPlastics" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="450,900" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
 		</property>
 	</item>
 	
