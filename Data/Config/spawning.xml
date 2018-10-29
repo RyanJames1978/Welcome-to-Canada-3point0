@@ -78,6 +78,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Bears -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 	</biome>
 <!-- ######################################## RJ Snow 2 Biome ########################################### -->
     <biome name="plains">
@@ -95,6 +97,8 @@
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
 		<!-- Traders -->
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
     </biome>
 <!-- ######################################## RJ Prairies Biome ########################################### -->
     <biome name="forest">
@@ -116,6 +120,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
         <!-- Baby Bears -->
 		<spawn maxcount="5" respawndelay="30" time="Any" entitygroup="babyBearsGroup" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
     </biome>
 <!-- ######################################## RJ Pine Forest Biome ########################################### -->
     <biome name="pine_forest">
@@ -135,6 +141,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Bears -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
     </biome>
 <!-- ############################# FERAL FOREST - RJ Thick Forest 1 Biome ######################################## -->
     <biome name="burnt_forest">
@@ -169,6 +177,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
         <!-- Bears -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -190,6 +200,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
         <!-- Bears -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
     </biome>
 	
 <!-- ################################################################################################ -->

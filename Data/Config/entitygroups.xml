@@ -219,6 +219,11 @@
 		<entity name="giantBear" prob="1" />
 		<entity name="babyBear" prob="4" />
 	</entitygroup>
+	<!-- Moose and Beaver -->
+	<entitygroup name="beaverMooseGroup">
+		<entity name="beaver" />
+		<entity name="moose" />
+	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
 	</entitygroup>
