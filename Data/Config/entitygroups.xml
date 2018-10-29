@@ -192,6 +192,16 @@
 		<entity name="npcTraderBobWandering" prob="1" />
 		<entity name="npcTraderJimmyWandering" prob="1" />
 	</entitygroup>
+	<!-- Aggressive Birds -->
+	<entitygroup name="aggressiveBirdsGroup">
+		<entity name="aggressiveRobinBird" />
+		<entity name="aggressiveanimalFalcon" />
+		<entity name="aggressivebirdAlcatraz" />
+		<entity name="aggressiveMagpie" />
+		<entity name="aggressivebirdEagle2" />
+		<entity name="aggressiveSeagull" />
+		<entity name="aggressiveGoose" />
+	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
 	</entitygroup>

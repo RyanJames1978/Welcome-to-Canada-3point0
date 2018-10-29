@@ -35,7 +35,6 @@
 		<property name="MapIcon" value="ui_game_symbol_map_player_arrow" />
 		<property name="IsEnemyEntity" value="false" />
 		<property name="DropInventoryBlock" value="cntBackpackDropped" />
-		<!-- Dropped Backpack -->
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="keystoneBlock,workbench,rjstartercrate" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="keystoneBlock,workbench,rjstartercrate" />
 		<property name="ExperienceGain" value="173" />
@@ -68,6 +67,8 @@
 		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 	</entity_class>
+	
+	
 	<!-- #### ZOMBIES #### -->
 	<entity_class name="zombieTemplateMale">
 		<property name="ParticleOnSpawn" value="ParticleEffects/p_breath" param1="SetShapeToMesh0" />
@@ -183,11 +184,10 @@
 		<!-- Allows the zombies to go to sleep when idle. -->
 		<property name="IdleSleep" value="false" />
 		<property name="SleeperPose" value="1" />
-		<!-- Harvest flesh and bone -->
-		<!-- <drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
-	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/> -->
 		<drop event="Harvest" name="cloth" count="1,2" prob="1" tool_category="Butcher" />
 	</entity_class>
+	
+	
 	<!-- Feral Daryl -->
 	<entity_class name="zombieWightFeral" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll" />
@@ -214,6 +214,8 @@
 		<property name="UpperArmDismemberThreshold" value="0.063" />
 		<property name="RandomSize" value="false" />
 	</entity_class>
+	
+	
 	<!-- Spider Daryl -->
 	<entity_class name="zombieWightFeralSpider" extends="zombieWightFeral">
 		<property name="WalkType" value="8" />
@@ -263,6 +265,8 @@
 		<property name="HeadExplosionDamageMultiplier" value=".85" />
 		<property name="ChestExplosionDamageMultiplier" value=".85" />
 	</entity_class>
+	
+	
 	<!-- Zombie Joint Boy -->
 	<entity_class name="zombieBoe" extends="zombieTemplateMale">
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
@@ -313,6 +317,8 @@
 		<property name="ExperienceGain" value="1039" />
 		<property name="LootListOnDeath" value="78" />
 	</entity_class>
+	
+	
 	<!-- Big Momma -->
 	<entity_class name="zombieFemaleFat" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardFatLadyZRagdoll" />
@@ -348,6 +354,8 @@
 		<property name="LootListOnDeath" value="85" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Hard Core Logo -->
 	<entity_class name="zombieJoe" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll" />
@@ -366,6 +374,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Randy Bobandy -->
 	<entity_class name="zombieMoe" extends="zombieTemplateMale">
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
@@ -397,6 +407,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Trinity -->
 	<entity_class name="zombieArlene" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
@@ -426,6 +438,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Angry Hockey Mom -->
 	<entity_class name="zombieScreamer" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll" />
@@ -453,6 +467,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- RJ spider Hockey Mom -->
 	<entity_class name="zombieAngryHockeyMomSpider" extends="zombieScreamer">
 		<property name="HandItem" value="handZombieFeral" />
@@ -472,6 +488,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- R0C_7 -->
 	<entity_class name="zombieDarlene" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
@@ -500,6 +518,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Kathy -->
 	<entity_class name="zombieMarlene" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll" />
@@ -528,6 +548,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Dave Foley -->
 	<entity_class name="zombieYo" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardYoRagdoll" />
@@ -547,6 +569,8 @@
 		<property name="LootListOnDeath" value="38" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Jonesy -->
 	<entity_class name="zombieSteve" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
@@ -565,6 +589,8 @@
 		<property name="LootListOnDeath" value="38" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Crawlin Jonesy -->
 	<entity_class name="zombieSteveCrawler" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll" />
@@ -586,6 +612,8 @@
 		<property name="LootListOnDeath" value="38" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Politician -->
 	<entity_class name="zombieBusinessMan" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardSuitRagdoll" />
@@ -604,6 +632,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- LumberJax Teller -->
 	<entity_class name="zombieSnow" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
@@ -634,6 +664,8 @@
 		<property name="LootListOnDeath" value="66" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Zombie Ryan -->
 	<entity_class name="zombieSpider" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
@@ -689,6 +721,8 @@
 		<property name="Buffs" value="zombieRadiatedBuff40" />
 		<property name="RandomSpeeds" value="true" />
 	</entity_class>
+	
+	
 	<!-- Electric Zombie -->
 	<entity_class name="zombieBurnt" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll" />
@@ -707,6 +741,8 @@
 		<property name="ExperienceGain" value="798" />
 		<property name="Buffs" value="zombieburntBuffRJ" />
 	</entity_class>
+	
+	
 	<!-- Nurse Katy -->
 	<entity_class name="zombieNurse" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll" />
@@ -734,6 +770,8 @@
 		<property name="LootListOnDeath" value="38" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Philadephia Collins -->
 	<entity_class name="zombieFatHawaiian" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardHawaiianRagdoll" />
@@ -767,6 +805,8 @@
 		<property name="LootListOnDeath" value="38" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Zombie RCMP -->
 	<entity_class name="zombieFatCop" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
@@ -843,6 +883,8 @@
 		<property name="Explosion.BlockDamage" value="750" />
 		<property name="Explosion.EntityDamage" value="250" />
 	</entity_class>
+	
+	
 	<!-- Hazmat -->
 	<entity_class name="zombieMaleHazmat" extends="zombieBoe">
 		<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll" />
@@ -851,6 +893,8 @@
 		<property name="LootListOnDeath" value="65" />
 		<property name="WalkType" value="7" />
 	</entity_class>
+	
+	
 	<!-- Lost Village Person -->
 	<entity_class name="zombieUtilityWorker" extends="zombieTemplateMale">
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
@@ -879,6 +923,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Dam Str8 -->
 	<entity_class name="zombieSoldier" extends="zombieTemplateMale">
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
@@ -907,6 +953,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Jroc -->
 	<entity_class name="zombieSkateboarder" extends="zombieBoe">
 		<property name="MaxHealth" value="150" />
@@ -928,6 +976,8 @@
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Cheerleader Fetish Lucy -->
 	<entity_class name="zombieCheerleader" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardCheerleaderRagdoll" />
@@ -956,6 +1006,8 @@
 		<property name="ExperienceGain" value="1039" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- McMurray -->
 	<entity_class name="zombieOldTimer" extends="zombieBoe">
 		<property name="Mesh" value="Zombies/zombieStandardOldTimerRagdoll" />
@@ -972,6 +1024,8 @@
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 		<property name="LootListOnDeath" value="81" />
 	</entity_class>
+	
+	
 	<!-- Julian -->
 	<entity_class name="zombieBiker" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll" />
@@ -982,6 +1036,8 @@
 		<property name="WalkType" value="7" />
 		<property name="RandomSize" value="false" />
 	</entity_class>
+	
+	
 	<!-- Wayne -->
 	<entity_class name="zombieFarmer" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll" />
@@ -1004,6 +1060,8 @@
 		<property name="TintMaterial1" value="84,84,84" />
 		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye" />
 	</entity_class>
+	
+	
 	<!-- Puck Bunny -->
 	<entity_class name="zombieStripper" extends="zombieDarlene">
 		<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll" />
@@ -1021,7 +1079,11 @@
 		<property name="ApproachSpeed" value="1.35" />
 		<property name="NightApproachSpeed" value="1.35" />
 	</entity_class>
+	
 	<!-- END Zombies -->
+	
+	
+	
 	<!-- UMA Zombies -->
 	<entity_class name="zombieUMATemplateMale" extends="zombieTemplateMale">
 		<property name="EntityType" value="Zombie" />
@@ -1059,6 +1121,8 @@
 		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
 		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
 	</entity_class>
+	
+	
 	<!-- Zombie Miner? -->
 	<entity_class name="zombieMiner" extends="zombieUMATemplateMale">
 		<property name="Archetype" value="ZombieMiner" />
@@ -1066,6 +1130,9 @@
 		<property name="ExperienceGain" value="1556" />
 		<property name="LootListOnDeath" value="82" />
 	</entity_class>
+	
+	
+	
 	<!-- ####### ANIMALS ####### -->
 	<!-- TIMID ANIMALS -->
 	<entity_class name="animalTemplateTimid">
@@ -1173,6 +1240,8 @@
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="feather" tool_category="Butcher" count="30" />
 	</entity_class>
+	
+	
 	<!-- Timid Pig -->
 	<entity_class name="animalPig" extends="animalTemplateTimid">
 		<property name="Mesh" value="Animals/Pig/PIG" />
@@ -1197,6 +1266,9 @@
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6" />
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="2" />
 	</entity_class>
+	
+	
+	
 	<!-- HOSTILE ANIMALS -->
 	<entity_class name="animalTemplateHostile">
 		<property name="Mesh" value="Zombies/zombieDogPrefab" />
@@ -1613,7 +1685,12 @@
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6" />
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="2" />
 	</entity_class>
+	
+	
+	
 	<!-- ################### RAD ANIMALS ########################## -->
+	
+	
 	<!-- Rad Pig -->
 	<entity_class name="animalPigRAD" extends="animalTemplateHostile">
 		<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0" />
@@ -1682,7 +1759,11 @@
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7" />
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
+	
 	<!-- #################### END ANIMALS ############### -->
+	
+	
+	
 	<!-- VEHICLES -->
 	<entity_class name="supplyPlane">
 		<property name="Mesh" value="SupplyPlane/prefabC46" />
@@ -1715,26 +1796,8 @@
 		<property name="Faction" value="none" />
 		<property name="MapIcon" value="ui_game_symbol_minibike" />
 	</entity_class>
-	<!-- RJ Drive Tank -->
-	<!-- 
-<entity_class name="tankDrivable">
-	<property name="ModelType" value="Standard"/>
-	<property name="Class" value="EntityMinibike"/>
-	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="Minibike"/>
-	<property name="MaxHealth" value="1000000"/>
-	<property name="SurfaceCategory" value="metal"/>
-	<property name="IgnoreTrigger" value="true"/>
-	<property name="LootListAlive" value="62"/>
-	<property name="IsEnemyEntity" value="false"/>
-	<property name="Explosion.ParticleIndex" value="6"/>
-	<property name="Explosion.RadiusBlocks" value="6"/>
-	<property name="Explosion.RadiusEntities" value="6"/>
-	<property name="RotateToGround" value="true"/>
-	<property name="Faction" value="none"/>
-	<property name="MapIcon" value="ui_game_symbol_star"/>
-</entity_class>
--->
+	
+	
 	<!-- CONTAINER AND CRATE ENTITIES -->
 	<entity_class name="sc_General">
 		<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab" />
@@ -1755,6 +1818,8 @@
 		<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land" />
 		<property name="TimeStayAfterDeath" value="0" />
 	</entity_class>
+	
+	
 	<!-- RJ Drop New Backpack -->
 	<entity_class name="Backpack">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
@@ -1769,6 +1834,8 @@
 		<property name="LootListOnDeath" value="41" />
 		<property name="Faction" value="none" />
 	</entity_class>
+	
+	
 	<entity_class name="DroppedLootContainer">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
 		<property name="ModelType" value="Custom" />
@@ -1780,6 +1847,8 @@
 		<property name="LootListOnDeath" value="47" />
 		<property name="Faction" value="none" />
 	</entity_class>
+	
+	
 	<entity_class name="EvisceratedRemains">
 		<property name="Mesh" value="Gore/gore_block1_bonesPrefab" />
 		<property name="ModelType" value="Custom" />
@@ -1791,6 +1860,8 @@
 		<property name="LootListOnDeath" value="99" />
 		<property name="Faction" value="none" />
 	</entity_class>
+	
+	
 	<entity_class name="invisibleAnimal">
 		<property name="Mesh" value="Gore/gore_block1_bonesPrefab" />
 		<property name="ModelType" value="Custom" />
@@ -1813,6 +1884,8 @@
 		<property name="LootListOnDeath" value="47" />
 		<property name="Faction" value="none" />
 	</entity_class>
+	
+	
 	<!-- RJ Zombie drop loot sack -->
 	<entity_class name="DroppedLootSack">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
@@ -1825,6 +1898,8 @@
 		<property name="LootListOnDeath" value="47" />
 		<property name="Faction" value="none" />
 	</entity_class>
+	
+	
 	<!-- BANDITS AND NPC -->
 	<entity_class name="npcSurvivorTemplate">
 		<property name="EntityType" value="Player" />
@@ -2471,7 +2546,7 @@
 		<property name="Archetype" value="ZombieBaby" />
 		<property name="HandItem" value="handZombie02" />
 		<property name="MaxHealth" value="60" />
-		<property name="Class" value="EntityZombie" />
+		<property name="Class" value="EntityZombieSDX, Mods" />
 		<property name="WalkType" value="8" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -2488,7 +2563,7 @@
 	<!-- handZombie02 -->
 	<entity_class name="badZombieBabyCrawler" extends="badZombieBaby">
 		<property name="Archetype" value="ZombieBaby" />
-		<property name="Class" value="EntityZombieCrawl" />
+		<property name="Class" value="EntityZombieCrawlSDX, Mods" />
 		<property name="WalkType" value="4" />
 		<property name="RotateToGround" value="true" />
 		<property name="WanderSpeed" value="0.08" />
@@ -2603,7 +2678,7 @@
 	<!-- crawler -->
 	<entity_class name="gupZombieSunStrokedCrawler" extends="badZombieUMA">
 		<property name="Archetype" value="gupZombieSunStroked" />
-		<property name="Class" value="EntityZombieCrawl" />
+		<property name="Class" value="EntityZombieCrawlSDX, Mods" />
 		<property name="WalkType" value="4" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="RotateToGround" value="true" />
@@ -2684,7 +2759,7 @@
 	<entity_class name="sanZombieCripple" extends="badZombieUMA">
 		<property name="Archetype" value="sanZombieCripple" />
 		<property name="HandItem" value="handZombie02" />
-		<property name="Class" value="EntityZombieCrawl" />
+		<property name="Class" value="EntityZombieCrawlSDX, Mods" />
 		<property name="WalkType" value="4" />
 	</entity_class>
 	<!-- loot 38 -->
@@ -3027,7 +3102,7 @@
 	<!-- +HP 800, crawler -->
 	<entity_class name="gupZombieBouncerCrawler" extends="badZombieUMA">
 		<property name="Archetype" value="gupZombieBouncer" />
-		<property name="Class" value="EntityZombieCrawl" />
+		<property name="Class" value="EntityZombieCrawlSDX, Mods" />
 		<property name="WalkType" value="4" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="RotateToGround" value="true" />
@@ -3160,7 +3235,7 @@
 	<!-- explo 8/6 - 500/150, handBabyBoomer -->
 	<entity_class name="badZombieBabyBoomer" extends="badZombieBaby">
 		<property name="Archetype" value="ZombieBaby" />
-		<property name="Class" value="EntityZombieCop" />
+		<property name="Class" value="EntityZombieCopSDX, Mods" />
 		<property name="MaxHealth" value="100" />
 		<property name="HandItem" value="handBabyBoomer" />
 		<property name="WanderSpeed" value="0.08" />
@@ -3245,7 +3320,7 @@
 	<!-- +HP 1200, Cop Class, explo 3/3 - 400/70, handZombieCop -->
 	<entity_class name="badZombieWarlord" extends="badZombieUMA">
 		<property name="Archetype" value="ZombieWarlord" />
-		<property name="Class" value="EntityZombieCop" />
+		<property name="Class" value="EntityZombieCopSDX, Mods" />
 		<property name="WalkType" value="1" />
 		<property name="HandItem" value="handZombieCop" />
 		<property name="MaxHealth" value="1200" />
@@ -3263,7 +3338,7 @@
 		<property name="HandItem" value="handSuicideMole" />
 		<property name="LootListOnDeath" value="84" />
 		<property name="MaxHealth" value="500" />
-		<property name="Class" value="EntityZombieCop" />
+		<property name="Class" value="EntityZombieCopSDX, Mods" />
 		<property name="Explosion.ParticleIndex" value="8" />
 		<property name="Explosion.RadiusBlocks" value="5" />
 		<property name="Explosion.RadiusEntities" value="6" />
@@ -6305,7 +6380,101 @@
 <!-- BAD COMPANY REMIXES -->
 
 <!-- Sphereii Animals REMIXES -->
-
+<entity_class name="aggressiveFlight" extends="animalZombieVulture">
+		<property name="Class" value="EntityZombieFlyingSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
+		<property name="ModelType" value="Standard" />
+		<property name="HasRagdoll" value="false" />
+		<property name="PhysicsBody" value="vulture" />
+		<property name="RootMotion" value="false" />
+		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
+		<property name="EntityType" value="Animal" />
+		<property name="IsEnemyEntity" value="true" />
+		<property name="FlockSize" value="0" />
+		<property name="MaxHeight" value="90" />
+		<property name="IsAgressive" value="True" />
+		<property name="FollowPlayer" value="True" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundSense" value="" />
+		<property name="WanderSpeed" value="0.4" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.4" />
+		<property name="NightApproachSpeed" value="0.9" />
+		<property name="PanicSpeed" value="1.1" />
+		<property name="MaxTurnSpeed" value="180" />
+		<property name="SightRange" value="500" />
+		<property name="SightScale" value="-5,270" />
+		<property name="MaxViewAngle" value="180" />
+		<property name="MaxHealth" value="250" />
+		<property name="ExperienceGain" value="1" />
+		<property name="DeadBodyHitPoints" value="1" />
+		<drop event="Harvest" name="feather" tool_category="Butcher" count="2" />
+	</entity_class>
+	<entity_class name="aggressiveRobinBird" extends="aggressiveFlight">
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="Mesh" value="#Robin?Robin_X" />
+		<property name="MaxHealth" value="25" />
+		<property name="AnimationIdle" value="Idle" />
+		<property name="AnimationMainAttack" value="Attack" />
+		<property name="AnimationPain" value="Idle" />
+		<property name="AnimationDeath" value="Die" />
+		<property name="AnimationRun" value="Fly" />
+		<property name="AnimationWalk" value="Hop" />
+		<property name="SoundRandom" value="robinSounds" />
+	</entity_class>
+	<entity_class name="aggressiveanimalFalcon" extends="aggressiveFlight">
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="Mesh" value="#Falcon?Falcon_X" />
+		<property name="MaxHealth" value="75" />
+		<property name="AnimationIdle" value="Hover" />
+		<property name="AnimationMainAttack" value="Attack" />
+		<property name="AnimationPain" value="Hover" />
+		<property name="AnimationDeath" value="Die" />
+		<property name="AnimationRun" value="FlyFast" />
+		<property name="AnimationWalk" value="Fly" />
+		<property name="SoundRandom" value="falconSounds" />
+	</entity_class>
+	<entity_class name="aggressivebirdEagle2" extends="aggressiveFlight">
+		<property name="Mesh" value="#Eagle?EagleMec" />
+		<property name="SoundRandom" value="falconSounds" />
+		<property name="WalkIndexes" value="2" />
+	</entity_class>
+	<entity_class name="aggressiveGoose" extends="animalChicken">
+		<property name="Class" value="EntityAnimalRabbit" />
+		<property name="Mesh" value="#Goose?Goose_X" />
+		<property name="SoundRandom" value="falconSounds" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
+		<property name="SwimOffset" value="0.5" />
+		<property name="WanderSpeed" value="0.3" />
+		<property name="MaxViewAngle" value="360" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.4" />
+		<property name="NightApproachSpeed" value="0.9" />
+		<property name="PanicSpeed" value="1.7" />
+		<property name="MaxHealth" value="30" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="3" />
+		<drop event="Harvest" name="feather" tool_category="Butcher" count="30" />
+	</entity_class>
+	<entity_class name="aggressivebirdAlcatraz" extends="aggressiveFlight">
+		<property name="Mesh" value="#Alcatraz?Alcatraz_X" />
+		<property name="WalkIndexes" value="2" />
+		<property name="SoundRandom" value="AlcatrazSounds" />
+	</entity_class>
+	<entity_class name="aggressiveMagpie" extends="aggressiveFlight">
+		<property name="Mesh" value="#Magpie?Magpie_X" />
+		<property name="WalkIndexes" value="2" />
+		<property name="SoundRandom" value="MagpieSounds" />
+	</entity_class>
+	<entity_class name="aggressiveSeagull" extends="aggressiveFlight">
+		<property name="Mesh" value="#Seagull?Seagull_X" />
+		<property name="WalkIndexes" value="2" />
+		<property name="SoundRandom" value="SeagullSounds" />
+	</entity_class>
+	
 <!-- Survivor REMIXES -->
 
 <!-- Bandit REMIXES -->
