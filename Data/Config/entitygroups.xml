@@ -180,7 +180,17 @@
 		<entity name="zombieScreamer" />
 		<entity name="zombieScreamerFeral" />
 		<entity name="zombieAngryHockeyMomSpider" />
-		<entity name="animalZombieBear" />
+		<!-- Screamer Bear -->
+		<entity name="animalScreamerBear" />
+	</entitygroup>
+	<!-- RJ Wandering Traders -->
+	<entitygroup name="wanderingTraders">
+		<entity name="invisibleAnimalEnemy" prob="10" />
+		<entity name="npcTraderJoelWandering" prob="1" />
+		<entity name="npcTraderRektWandering" prob="1" />
+		<entity name="npcTraderHughWandering" prob="1" />
+		<entity name="npcTraderBobWandering" prob="1" />
+		<entity name="npcTraderJimmyWandering" prob="1" />
 	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
@@ -18741,15 +18751,6 @@
 		<entity name="SurvHuntRifFmTeenCold" prob="0.3" />
 		<entity name="SurvSniperFmTeenCold" prob="0.1" />
 		<entity name="SurvRocketFmTeenCold" prob="0.05" />
-	</entitygroup>
-	<!-- currently not used -->
-	<entitygroup name="wanderingTraders">
-		<entity name="invisibleAnimalEnemy" prob="10" />
-		<entity name="npcTraderJoel" prob="1" />
-		<entity name="npcTraderRekt" prob="1" />
-		<entity name="npcTraderHugh" prob="1" />
-		<entity name="npcTraderBob" prob="1" />
-		<entity name="npcTraderJimmy" prob="1" />
 	</entitygroup>
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
