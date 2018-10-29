@@ -2195,31 +2195,37 @@
 	
 	<!-- Polar Bear -->
 	<entity_class name="polarBear" extends="animalBear">
-		<property name="Mesh" value="#bears?bearPolar" />
+		<property name="Mesh" value="#bears?bearPolarPrefab" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
 	</entity_class>
 	
 	<!-- Black Bear -->
 	<entity_class name="blackBear" extends="animalBear">
+		<property name="Mesh" value="#bears?bearBlackPrefab" />
 		<property name="MaxHealth" value="1100" />
-		<property name="Mesh" value="#bears?bearBlack" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
 	</entity_class>
 	
 	<!-- Giant Bear -->
 	<entity_class name="giantBear" extends="animalBear">
-		<property name="Mesh" value="#bears?bearGiant" />
+		<property name="Mesh" value="#bears?bearGiantPrefab" />
 		<property name="MaxHealth" value="3000" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
 	</entity_class>
 	
 	<!-- Baby Bear -->
 	<entity_class name="babyBear" extends="animalTemplateHostile">
+		<property name="Mesh" value="#bears?bearBabyPrefab" />
 		<property name="MaxHealth" value="400" />
 		<property name="IsEnemyEntity" value="false" />
-		<property name="Mesh" value="#bears?bearBaby" />
-		<property name="AvatarController" value="AvatarAnimalController" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
 		<property name="ModelType" value="Standard" />
 		<property name="HasRagdoll" value="true" />
 		<property name="HasDeathAnim" value="true" />
-		<property name="RootMotion" value="true" />
 		<property name="RagdollOnDeathChance" value=".5" />
 		<property name="PhysicsBody" value="bear" />
 		<property class="MechanimAttackTriggers">
