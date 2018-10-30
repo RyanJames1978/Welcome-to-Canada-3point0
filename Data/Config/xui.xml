@@ -53,7 +53,6 @@
 			<window name="windowToolsAdvancedWorkbench" />
 			<window name="S420windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
 		</window_group>	
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
@@ -80,11 +79,12 @@
 			<window name="dragAndDropItemStack" />
 		</window_group>
 		<window_group name="compass" actionSet="false">
+<!-- S420 Start -->
+			<!--window name="windowCompass" /--> <!--Stock-->
 			<window name="S420windowCompass" />
-			<!-- buff timers - placed here so it disappears when compass does -->
-			<window name="S420ActiveBuffsWindow" anchor="LeftBottom" />
-			<!-- placed here so it disappears when compass does -->
-			<window name="S420windowQuestTracker" anchor="RightTop" />
+			<window name="S420ActiveBuffsWindow" anchor="LeftBottom" /> <!-- buff timers - placed here so it disappears when compass does -->
+			<window name="S420windowQuestTracker" anchor="RightTop" /> <!-- placed here so it disappears when compass does -->
+<!-- S420 End -->
 		</window_group>
 		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
@@ -100,12 +100,16 @@
 			<window name="windowTimer" />
 		</window_group>
 		<window_group name="toolbelt" actionSet="false">
-			<window name="HUDRightStatBars" anchor="RightBottom" />
+<!-- S420 Start -->
 			<window name="S420XpBar" anchor="CenterBottom" />
+			<!--window name="windowToolbelt" anchor="CenterBottom" /--> <!--Stock-->
 			<window name="S420windowToolbelt" anchor="CenterBottom" />
+			<!--window name="HUDLeftStatBars" anchor="LeftBottom" /--> <!--Stock-->
 			<window name="S420HUDLeftStatBars" anchor="LeftBottom" />
-			<!--window name="S420BuffPopoutList" anchor="LeftBottom" /-->
-			<!-- stock like buff list -->
+			<!--window name="S420BuffPopoutList" anchor="LeftBottom" /--> <!-- stock like buff list -->
+			<window name="HUDRightStatBars" anchor="RightBottom" />
+			<!--window name="windowQuestTracker" anchor="RightTop" /--> <!--Stock-->
+<!-- S420 End -->
 		</window_group>
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="S420windowVehicle" />

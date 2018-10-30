@@ -572,45 +572,6 @@
 			<item name="smallEngine" count="1,4" />
 			<item name="shoppingBasketItem" count="1,4" />
            	<item name="padlock" count="1,4" />
-			<!-- Custom Vehicle -->
-           	<item name="minibikePlusChassis" count="1"/>
-	        <item name="roadHogChassis" count="1"/>
-	        <!-- Vehicle Ammo -->
-         	<item name="50calVehicleBullet" count="100,150"/>
-         	<item name="vehicleGrenade" count="100,150"/>
-			<!-- Custom Vehicle Weapons -->
-        	<item name="vehicle50calGun" count="1,2"/>
-        	<item name="vehicleGrenadeLauncher" count="1,2"/>
-         	<!-- 
-         	<item name="quadChassis" count="1"/>
-         	<item name="robustBikeChassis" count="1"/>
-        	<item name="hellGoatBikeChassis" count="1"/>
-	        <item name="roadHogChassis" count="1"/>
-	        <item name="cicadaCarChassis" count="1"/>
-        	<item name="loaderChassis" count="1"/>
-          	<item name="helicopterChassis" count="1"/>
-           	<item name="minibikePlusChassis" count="1"/>
-        	<item name="proBikeHandlebars" count="1"/>
-            <item name="loaderHandlebars" count="1"/>
-            <item name="proBikeSeat" count="1"/>
-            <item name="proBikeWheels" count="1"/>
-	        <item name="smallEngine" count="1"/>
-        	<item name="bigEngine" count="1"/>
-        	<item name="loaderEngine" count="1"/>
-        	<item name="helicopterEngine" count="1"/>
-           	<item name="padlock" count="1"/>
-         	<item name="carBattery" count="1"/>
-        	<item name="helicopterMissileLauncher" count="1"/>
-         	<item name="helicopterGun" count="1"/>
-        	<item name="vehicle50calGun" count="1"/>
-        	<item name="vehicleGrenadeLauncher" count="1"/>
-        	<item name="tankCannon" count="1"/>
-        	<item name="helicopterBullet" count="100"/>
-         	<item name="helicopterMissile" count="100"/>
-         	<item name="50calVehicleBullet" count="100"/>
-         	<item name="vehicleGrenade" count="100"/>
-        	<item name="tankShell" count="100"/> 
-        	-->
 		</trader_item_group>
 		<trader_item_group name="workstations" count="1">
 			<item name="forge" />

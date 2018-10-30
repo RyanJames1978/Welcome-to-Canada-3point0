@@ -44,7 +44,6 @@ SDX MOD LIST:
 - Hal's DLL Fixes by HAL9000
 - Simple UI by Stedman420
 - Bigger Backpack, storage by Stedman420
-- Survivors and Bandits by Bad Company
 - Bad Company Zombies by Bad Company
 - Animation SDX by Sphereii
 - Custom Workstation Categories by Sphereii
