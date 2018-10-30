@@ -1118,6 +1118,7 @@
 		<property name="EconomicBundleSize" value="20" />
 	</block>
 	<block id="128" name="treeMaster">
+		<property name="Faction" value="trees" />
 		<property name="DescriptionKey" value="plantsBlockGroupDesc" />
 		<property name="Class" value="ModelTree" />
 		<property name="Shape" value="ModelTree" />

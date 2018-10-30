@@ -2159,6 +2159,7 @@
 		<property name="Mesh" value="#beaver?beaverPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
+		<property name="Faction" value="beavers" />
 		<!-- Beaver Animations -->
 		<property name="AnimationIdle" value="idle02" />
         <property name="AnimationSecondIdle" value="sit01" />
