@@ -1293,6 +1293,10 @@
 		<property name="HandItem" value="handAnimalBear" />
 		<property name="MaxHealth" value="1200" />
 		<property name="MaxViewAngle" value="180" />
+		<property name="SightRange" value="80" />
+		<property name="SightScale" value="-2,150" />
+		<property name="NoiseAlertThreshold" value="20" />
+		<property name="SmellAlertThreshold" value="20" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="2.0" />
 		<property name="ApproachSpeed" value="1.3" />
@@ -1300,10 +1304,6 @@
 		<property name="NightApproachSpeed" value="1.4" />
 		<property name="MaxTurnSpeed" value="360" />
 		<property name="IsEnemyEntity" value="true" />
-		<property name="SightRange" value="80" />
-		<property name="SightScale" value="-2,150" />
-		<property name="NoiseAlertThreshold" value="20" />
-		<property name="SmellAlertThreshold" value="20" />
 		<property name="SurfaceCategory" value="organic" />
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="TimeStayAfterDeath" value="900" />
@@ -2152,37 +2152,45 @@
 		<property name="RandomSize" value="false" />
 	</entity_class>
 	
-	<!-- Wandering Traders -->
-	<entity_class name="npcTraderWanderingTemplate" extends="npcTraderTemplate">
-		<property name="AvatarController" value="AnimationSDX, Mods" />
-		<property name="RootMotion" value="false" />
-	</entity_class>
-	<entity_class name="npcTraderJoelWandering" extends="npcTraderWanderingTemplate">
-		<property name="Archetype" value="TraderJoel" />
-		<property name="NPCID" value="traitorjoel" />
-	</entity_class>
-	<entity_class name="npcTraderRektWandering" extends="npcTraderWanderingTemplate">
-		<property name="Archetype" value="TraderRekt" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="npcTraderBobWandering" extends="npcTraderWanderingTemplate">
-		<property name="Archetype" value="TraderBob" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="npcTraderJimmyWandering" extends="npcTraderWanderingTemplate">
-		<property name="Archetype" value="TraderJimmy" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="npcTraderHughWandering" extends="npcTraderWanderingTemplate">
-		<property name="Archetype" value="TraderHugh" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
+
 	
 	<!-- Beaver -->
 	<entity_class name="beaver" extends="animalTemplateTimid">
 		<property name="Mesh" value="#beaver?beaverPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
+		<!-- Beaver Animations -->
+		<property name="AnimationIdle" value="idle02" />
+        <property name="AnimationSecondIdle" value="sit01" />
+		<property name="AnimationMainAttack" value="attack01" />
+        <!-- <property name="AnimationSecondAttack" value="butting_heads" /> -->
+        <!-- <property name="AnimationSpecialAttack" value="attack_02" /> -->
+        <!-- <property name="AnimationJump" value="Jump" /> -->
+		<property name="AnimationPain" value="run01" />
+		<property name="AnimationDeath" value="death01" />
+		<property name="AnimationRun" value="run01" />
+		<property name="AnimationWalk" value="walk01" />
+		<!-- Beaver Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+		<!-- Beaver Speeds -->
+		<property name="WanderSpeed" value="0.4" />
+		<property name="ApproachSpeed" value="0.4" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="0.3" />
+		<property name="PanicSpeed" value="1.0" />
+		<!-- Beaver Senses -->
+		<property name="MaxViewAngle" value="180" />
+		<property name="SightRange" value="30" />
+		<property name="SightScale" value="-2,150" />
+		<property name="NoiseAlertThreshold" value="10" />
+		<property name="SmellAlertThreshold" value="10" />
 	</entity_class>
 	
 	<!-- Moose -->
@@ -2191,12 +2199,44 @@
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="Class" value="EntityZombieSDX, Mods" />
 		<property name="RootMotion" value="false" />
+		<!-- Moose Animations -->
+		<property name="AnimationIdle" value="idle_03" />
+        <property name="AnimationSecondIdle" value="idle_eat" />
+		<property name="AnimationMainAttack" value="attack_01" />
+        <property name="AnimationSecondAttack" value="butting_heads" />
+        <property name="AnimationSpecialAttack" value="attack_02" />
+        <!-- <property name="AnimationJump" value="Jump" /> -->
+		<property name="AnimationPain" value="injured" />
+		<property name="AnimationDeath" value="death" />
+		<property name="AnimationRun" value="run_fast" />
+		<property name="AnimationWalk" value="walk" />
+		<!-- Moose Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+		<!-- Moose Speeds -->
+		<property name="WanderSpeed" value="0.4" />
+		<property name="ApproachSpeed" value="2.2" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="2.5" />
+		<property name="PanicSpeed" value="2.0" />
+		<!-- Moose Senses -->
+		<property name="MaxViewAngle" value="180" />
+		<property name="SightRange" value="30" />
+		<property name="SightScale" value="-2,150" />
+		<property name="NoiseAlertThreshold" value="40" />
+		<property name="SmellAlertThreshold" value="40" />
 	</entity_class>
 	
 	<!-- Polar Bear -->
 	<entity_class name="polarBear" extends="animalBear">
 		<property name="Mesh" value="#bears?bearPolarPrefab" />
-		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
 		<property name="RootMotion" value="false" />
 	</entity_class>
 	
@@ -2204,7 +2244,7 @@
 	<entity_class name="blackBear" extends="animalBear">
 		<property name="Mesh" value="#bears?bearBlackPrefab" />
 		<property name="MaxHealth" value="1100" />
-		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
 		<property name="RootMotion" value="false" />
 	</entity_class>
 	
@@ -2212,7 +2252,7 @@
 	<entity_class name="giantBear" extends="animalBear">
 		<property name="Mesh" value="#bears?bearGiantPrefab" />
 		<property name="MaxHealth" value="3000" />
-		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
 		<property name="RootMotion" value="false" />
 	</entity_class>
 	
@@ -2221,7 +2261,7 @@
 		<property name="Mesh" value="#bears?bearBabyPrefab" />
 		<property name="MaxHealth" value="400" />
 		<property name="IsEnemyEntity" value="false" />
-		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
 		<property name="RootMotion" value="false" />
 		<property name="ModelType" value="Standard" />
 		<property name="HasRagdoll" value="true" />
@@ -2256,7 +2296,7 @@
 		<property name="SoundGiveUp" value="Animals/Bear/beargiveup" />
 		<property name="ExperienceGain" value="2509" />
 		<property name="DeadBodyHitPoints" value="200" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
@@ -6568,6 +6608,81 @@
 	
 <!-- Survivor REMIXES -->
 
+	<!-- Wandering Traders -->
+	<entity_class name="npcTraderWanderingTemplate" extends="npcTraderTemplate">
+		<!-- <property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" /> -->
+		<!-- ITEMS -->
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubSpiked" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubSpiked" />
+		<!-- AI -->
+		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="5" />
+		<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityBandit" />
+		<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityZombie" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombieCop" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieDog" />
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieCrawl" />
+		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityVulture" />
+		<property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
+		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit" />
+		<property name="AITask-11" value="BreakDoor" />
+		<property name="AITask-12" value="BreakBlock" />
+		<property name="AITask-13" value="Swim" />
+		<property name="AITask-14" value="ApproachSpot" />
+		<property name="AITask-15" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityBandit" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop" />
+		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
+		<property name="AITarget-4" value="SetAsTargetIfHurt" param1="EntityZombie" />
+		<property name="AITarget-5" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
+		<property name="AITarget-6" value="SetAsTargetIfHurt" param1="EntityVulture" />
+		<property name="AITarget-7" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
+		<property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalStag" />
+		<property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalRabbit" />
+		<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityBandit" />
+		<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombieCop" />
+		<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieDog" />
+		<property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl" />
+		<property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityVulture" />
+		<property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
+		<property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit" />
+		<!-- Movement -->
+		<property name="WanderSpeed" value="0.5" />
+		<property name="ApproachSpeed" value="1" />
+		<property name="NightWanderSpeed" value="0.5" />
+		<property name="NightApproachSpeed" value="1" />
+		<property name="PanicSpeed" value="1.15" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="SwimOffset" value="1.0" />
+		<property name="CorpseBlock" value="GoreBlock1Prefab" />
+		<property name="CorpseBlockChance" value="1" />
+		<property name="TimeStayAfterDeath" value="50" />
+		<property name="DeadBodyHitPoints" value="350" />
+		<property name="HasDeathAnim" value="true" />
+	</entity_class>
+	<entity_class name="npcTraderJoelWandering" extends="npcTraderWanderingTemplate">
+		<property name="Archetype" value="TraderJoel" />
+		<property name="NPCID" value="traitorjoel" />
+	</entity_class>
+	<entity_class name="npcTraderRektWandering" extends="npcTraderWanderingTemplate">
+		<property name="Archetype" value="TraderRekt" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="npcTraderBobWandering" extends="npcTraderWanderingTemplate">
+		<property name="Archetype" value="TraderBob" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="npcTraderJimmyWandering" extends="npcTraderWanderingTemplate">
+		<property name="Archetype" value="TraderJimmy" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="npcTraderHughWandering" extends="npcTraderWanderingTemplate">
+		<property name="Archetype" value="TraderHugh" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
 <!-- Bandit REMIXES -->
 
 

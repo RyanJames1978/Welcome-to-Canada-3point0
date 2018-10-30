@@ -58,7 +58,7 @@
 		<!-- Sphereii Swimming Animals -->
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+		<spawn maxcount="10" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
     </biome>
 <!-- ######################################## RJ Snow Biome ########################################### -->
     <biome name="snow">

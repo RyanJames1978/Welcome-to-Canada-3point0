@@ -2291,7 +2291,7 @@
 			<property name="Crosshair_max_distance" value="30" />
 			<!-- 30 -->
 			<property name="Magazine_size" value="1" />
-			<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt,rebarCrossbowBolt,rebarCrossbowBoltHot" />
+			<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt,rebarCrossbowBolt,rebarCrossbowBoltHot,hockeyPuck" />
 			<property name="Rays_spread" value="0.012" />
 			<property name="Reload_time" value="2" />
 			<property name="Bullet_icon" value="uzi" />
@@ -11629,6 +11629,11 @@
 		<property name="EquipSlot" value="Feet" />
 		<property name="Meshfile" value="#hockeySkates?hockeySkatePrefab" />
 		<property name="DropMeshfile" value="#hockeySkates?hockeySkatePrefab" />
+		<property class="UMA">
+			<property name="Mesh" value="#hockeySkates?hockeySkatePrefab" />
+			<property name="Overlay0" value="" />
+			<property name="Layer" value="" />
+		</property>
 	</item>
 	
 	<!-- Goalie Helmet -->
@@ -11640,6 +11645,12 @@
 		<property name="RepairTools" value="scrapPlastics" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="450,900" />
+		</property>
+		<property class="UMA">
+			<property name="Mesh" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
+			<property name="Overlay0" value="" />
+			<property name="Layer" value="" />
+			<property name="Mask0" value="" param1="inner" />
 		</property>
 	</item>
 	
