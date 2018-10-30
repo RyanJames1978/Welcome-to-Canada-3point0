@@ -11631,8 +11631,7 @@
 		<property name="DropMeshfile" value="#hockeySkates?hockeySkatePrefab" />
 		<property class="UMA">
 			<property name="Mesh" value="#hockeySkates?hockeySkatePrefab" />
-			<property name="Overlay0" value="" />
-			<property name="Layer" value="" />
+			<property name="Overlay0" value="#hockeySkates?hockeySkatePrefab" />
 		</property>
 	</item>
 	
@@ -11648,9 +11647,7 @@
 		</property>
 		<property class="UMA">
 			<property name="Mesh" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
-			<property name="Overlay0" value="" />
-			<property name="Layer" value="" />
-			<property name="Mask0" value="" param1="inner" />
+			<property name="Overlay0" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
 		</property>
 	</item>
 	
@@ -11796,7 +11793,6 @@
 			<property name="Buff_chance" value="1" />
 		</property>
 	</item>
-	<!-- MANUX Admin Tools: some from Bad Company -->
 	<item id="121" name="blackPill">
 		<property name="Extends" value="painkillers" />
 		<property name="CreativeMode" value="Dev" />
@@ -11811,53 +11807,6 @@
 			<property name="Gain_stamina" value="100" />
 			<property name="Gain_wellness" value="400" />
 			<property name="Buff" value="blackPillBuff" />
-		</property>
-	</item>
-	<item id="123" name="superDigger">
-		<property name="DescriptionKey" value="superDiggerDesc" />
-		<property name="CustomIcon" value="gunMP5" />
-		<property name="CustomIconTint" value="FF0000" />
-		<Property name="TintColor" value="255,160,160" />
-		<property name="CreativeMode" value="Dev" />
-		<property name="SellableToTrader" value="false" />
-		<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="6" />
-		<property name="Stacknumber" value="1" />
-		<property name="DegradationBreaksAfter" value="true" />
-		<property name="Degradation" value="99999" param1="true" />
-		<property name="SoundJammed" value="weapon_jam" />
-		<property name="CrosshairUpAfterShot" value="false" />
-		<property name="CrosshairOnAim" value="true" />
-		<property class="Action0">
-			<property name="Class" value="Ranged" />
-			<property name="Hitmask_override" value="Melee" />
-			<property name="Delay" value="0.150" />
-			<property name="Range" value="300" />
-			<property name="Auto_fire" value="true" />
-			<property name="Rays_per_shot" value="1" />
-			<property name="Rays_spread" value="0" />
-			<property name="Crosshair_min_distance" value="5" />
-			<property name="Crosshair_max_distance" value="8" />
-			<property name="DamageBlock" value="3000" />
-			<property name="DamageEntity" value="0.1" />
-			<property name="Single_magazine_usage" value="true" />
-			<property name="Infinite_ammo" value="true" />
-			<property name="Magazine_items" value="9mmBullet,NoAmmo" />
-			<property name="Reload_time" value="4.1" />
-			<property name="Bullet_icon" value="uzi" />
-			<property name="Sound_start" value="" />
-			<property name="Sound_repeat" value="" />
-			<property name="Sound_end" value="" />
-			<property name="Sound_empty" value="weapon_empty" />
-			<property name="Sound_reload" value="mp5_reload" />
-			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
-			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom" />
-			<property name="Zoom_max_out" value="38" />
-			<property name="Zoom_max_in" value="10" />
 		</property>
 	</item>
 	<item id="124" name="grassBomb">
