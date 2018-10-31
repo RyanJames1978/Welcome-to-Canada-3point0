@@ -1,4 +1,208 @@
 <controls>
+	<quest_objective_tracker_entry>
+		<rect width="270" height="30" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
+			<texture name="ItemBG" depth="1" size="350,150" texture="[objective]" material="Materials/Transparent Colored" pos="-36,30" />
+			<sprite depth="2" name="iconTrack" style="icon22px" pos="280,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" visible="{objectiveshowicon}" />
+			<label depth="2" pos="0,4" text="{objectiveoptional}{objectivedescription} [{objectivecompletehexcolor}]{objectivestate}[-]" upper_case="true" font_size="24" visible="{hasobjective}" width="290" justify="right" />
+		</rect>
+	</quest_objective_tracker_entry>
+	<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
+	<slot1>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot1]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="-7,10" width="10" height="20" text="1" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot1>
+	<slot2>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot2]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="27,10" width="10" height="20" text="2" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot2>
+	<slot3>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot3]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="27,10" width="10" height="20" text="3" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot3>
+	<slot4>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot4]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="55,10" width="10" height="20" text="4" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot4>
+	<slot5>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot5]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="8,10" width="10" height="20" text="5" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot5>
+	<slot6>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot6]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="38,10" width="10" height="20" text="6" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot6>
+	<slot7>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot7]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="38,10" width="10" height="20" text="7" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot7>
+	<slot8>
+		<rect controller="ItemStack" style="toolbelt,hover" collider_scale="1.1">
+			<!-- <sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" /> -->
+			<sprite depth="3" name="background" sprite="menu_empty3px" width="71" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" pos="2,-2" />
+			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
+			<!-- <texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true"/> -->
+			<texture name="ItemBG" depth="1" size="105,105" texture="[slotbg]" material="Materials/Transparent Colored" pos="-15,15" />
+			<texture name="ItemForeground" depth="20" size="105,105" texture="[slot8]" material="Materials/Transparent Colored" pos="-15,15" />
+			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[transparent]" type="sliced" pos="1, -60" foregroundlayer="true" />
+			<sprite depth="3" name="valuebg" width="70" pos="1,-60" height="15" type="sliced" color="139,138,137,150" />
+			<sprite depth="4" name="durability" width="70" height="15" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1,-60" foregroundlayer="true" />
+			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+			<label depth="7" name="stackValue" pos="17,-57" width="35" height="25" text="{itemcount}" font_size="20" effect="outline" justify="center" color="[white]" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
+			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			<label depth="21" name="slotnumber" pos="69,10" width="10" height="20" text="8" font_size="20" color="[white]" justify="center" effect="outline" />
+		</rect>
+	</slot8>
+	<!-- NOTE: Stack fixes
+	<sprite depth="3" name="backgroundbg" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true"/>
+	RAIN END -->
+	<!--*#$-IGS END.-$#-->
 	<slider>
 		<rect depth="1" controller="Slider" height="24">
 			<label depth="1" pos="0, -6" width="128" height="24" text="{name}" />
@@ -30,7 +234,7 @@
 			<rect pos="2,-34">
 				<sprite name="bar" controller="SliderBar" depth="1" pos="4, -5" color="[mediumGrey]" width="${width-12|188}" height="20" type="sliced" style="press, scroll" />
 				<sprite depth="2" pos="4, -5" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" width="${width-12|188}" height="20" foregroundlayer="true" />
-				<sprite name="thumb" controller="SliderThumb" depth="2" pos="${width-8|192}, -15" color="[lightGrey]" width="16" height="30" style="press, hover, drag, scroll" pivot="center">
+				<sprite name="thumb" controller="SliderThumb" depth="2" pos="${width-8|192, -15}" color="[lightGrey]" width="16" height="30" style="press, hover, drag, scroll" pivot="center">
 					<sprite depth="2" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" width="16" height="30" pivot="center" />
 				</sprite>
 			</rect>
@@ -42,7 +246,7 @@
 			<sprite depth="1" name="border" sprite="menu_empty2px" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="2" name="tickbox" width="${height-6|26}" height="${height-6|26}" pos="7,-4" color="[darkGrey]" sprite="Highlight - Shadowed" type="sliced" />
 			<sprite depth="3" name="tickmark" width="${height-12|20}" height="${height-12|20}" pos="10,-7" color="[iconColor]" sprite="ui_game_symbol_check" visible="{value}" />
-			<label depth="2" name="btnLabel" width="${width-height-8|160}" height="${height-2|30}" pos="${6+height|38},${Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="left" font_size="${font_size|28}" />
+			<label depth="2" name="btnLabel" width="${width-height-8|160}" height="${height-2|30}" pos="${6+height|38,Round(-height/2,0)|-16}" justify="left" text="${caption|}" text_key="${caption_key|}" effect="outline" pivot="left" font_size="${font_size|28}" />
 		</rect>
 	</togglebutton>
 	<simplebutton>
@@ -98,7 +302,7 @@
 		</panel>
 	</skill_search>
 	<count_control_input>
-		<panel controller="TextInput" pos="12,-6" width="30" height="28" value="1" active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" character_limit="3" validation="integer" backgroundcolor="[black]" on_press="true" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
+		<panel controller="TextInput" pos="12,-6" width="40" height="28" value="1" active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" character_limit="4" validation="integer" backgroundcolor="[black]" on_press="true" snapCursor="true" virtual_keyboard_prompt="vkPromptCount">
 			<sprite depth="1" name="background" color="[black]" type="sliced" />
 			<label depth="2" name="text" pos="0,-2" font_size="26" justify="center" pivot="topleft" />
 		</panel>
@@ -129,9 +333,11 @@
 		<rect height="43" controller="ItemActionEntry" disabled_font_color="[disabledLabelColor]" default_font_color="[labelColor]" default_background_color="[mediumGrey]">
 			<sprite depth="3" name="background" color="[mediumGrey]" type="sliced" on_press="true" on_hover="true" width="147" />
 			<sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="{statuscolor}" pos="2,-10" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Adding gamepad callout. -$#-->
 			<label depth="4" name="Name" pos="32,-22" width="78" height="26" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" />
 			<gamepad_icon depth="4" name="gamepadIcon" pos="146,-22" pivot="Right" />
 			<label depth="4" name="keyboardButton" pos="145,-22" width="36" height="26" text="&lt;W&gt;" font_size="26" color="{statuscolor}" effect="shadow" pivot="right" justify="center" />
+			<!--*#$-IGS END.-$#-->
 		</rect>
 	</item_action_entry>
 	<skill_action_entry>
@@ -139,8 +345,10 @@
 			<sprite depth="3" name="background" color="[mediumGrey]" type="sliced" on_press="true" on_hover="true" />
 			<sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="{statuscolor}" pos="2,-10" foregroundlayer="true" />
 			<label depth="4" name="Name" pos="32,-22" width="78" height="26" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" />
+			<!--#$-IGS BEGIN: Adding gamepad callout . -$#-->
 			<gamepad_icon depth="4" name="gamepadIcon" pos="145,-22" pivot="Right" />
 			<label depth="4" name="keyboardButton" pos="145,-22" width="36" height="26" text="&lt;W&gt;" font_size="26" color="{statuscolor}" effect="shadow" pivot="right" justify="center" />
+			<!--*#$-IGS END.-$#-->
 		</rect>
 	</skill_action_entry>
 	<ingredient_header>
@@ -191,9 +399,11 @@
 			</rect>
 		</rect>
 	</ingredient_row>
+	<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
 	<item_stack>
 		<rect controller="ItemStack" style="itemStack, hover" collider_scale="1.1">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="3" name="backgroundbg" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" />
 			<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
 			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
 			<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="73,73" globalopacity="true" />
@@ -205,13 +415,17 @@
 			<label depth="7" name="stackValue" pos="-2,-45" width="70" height="28" text="{itemcount}" font_size="26" effect="outline" justify="center" />
 			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
 			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
 			<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
 			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
 	</item_stack>
+	<!--*#$-IGS END.-$#-->
 	<required_item_stack>
 		<rect controller="RequiredItemStack" style="itemStack, hover">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="3" name="backgroundbg" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" />
 			<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
 			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
 			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-30" pivot="center" foregroundlayer="true" color="{iconcolor}" />
@@ -226,18 +440,23 @@
 			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
 	</required_item_stack>
+	<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
 	<creative_stack>
 		<rect controller="CreativeStack" style="itemStack, hover, scroll" collider_scale="1.1">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="3" name="backgroundbg" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="true" />
 			<sprite depth="3" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
 			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
 			<sprite depth="4" name="itemIcon" width="70" height="50" atlas="ItemIconAtlas" sprite="campfire" pos="35,-30" pivot="center" foregroundlayer="true" />
 			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true" />
 			<sprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -60" foregroundlayer="true" />
 			<label depth="7" name="stackValue" pos="0,-48" width="70" height="28" text="Test" effect="outline" font_size="26" justify="center" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
 			<label depth="12" name="itemName" pos="36,-36" width="0" height="0" text="" font_size="26" justify="center" pivot="center" overflow="resizefreely" effect="outline" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
 		</rect>
 	</creative_stack>
+	<!--*#$-IGS END.-$#-->
 	<equipment_stack>
 		<rect depth="1" controller="EquipmentStack" style="itemStack, hover" tooltip="test">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="73" height="73" color="[black]" type="sliced" fillcenter="false" />
@@ -247,7 +466,9 @@
 			<sprite depth="3" name="durabilityBackground" height="10" width="64" color="[darkGrey]" type="sliced" pos="2, -56" foregroundlayer="true" />
 			<sprite depth="4" name="durability" height="10" width="64" color="[transparent]" type="filled" pos="2, -56" foregroundlayer="true" />
 			<label depth="7" name="stackValue" pos="0,-45" width="68" height="28" text="" font_size="26" justify="center" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
 			<label depth="12" name="itemName" pos="0,0" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
 		</rect>
 	</equipment_stack>
 	<drag_item_stack>
@@ -259,6 +480,7 @@
 			<label depth="5" name="stackValue" pos="6,-60" width="72" height="28" text="{itemcount}" effect="outline" justify="center" font_size="26" />
 		</rect>
 	</drag_item_stack>
+	<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
 	<recipe_stack>
 		<rect controller="RecipeStack" width="72" height="72" collider_scale="1.1">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
@@ -271,26 +493,31 @@
 			<sprite depth="3" name="cancel" sprite="ui_game_symbol_x" width="72" height="72" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
 		</rect>
 	</recipe_stack>
+	<!--*#$-IGS END.-$#-->
 	<material_stack>
 		<rect controller="MaterialStack" style="itemStack, hover, scroll" collider_scale="1.1" sound="[recipe_click]">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="5" name="background" sprite="menu_empty3px" width="73" height="73" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
 			<sprite depth="2" name="highlightOverlay" width="72" height="72" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" />
 			<texture depth="4" name="textMaterial" width="70" height="70" pos="36,-36" pivot="center" material="Materials/Transparent Colored" size="70,70" globalopacity="false" />
+			<!--#$-IGS BEGIN: Setting itemName above the soft cursor. -$#-->
 			<label depth="12" name="itemName" pos="36,-36" width="0" height="0" text="" font_size="26" justify="center" pivot="center" overflow="resizefreely" effect="outline" above_soft_cursor="true" />
+			<!--*#$-IGS END.-$#-->
 			<sprite depth="13" name="lockIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{islocked}" pos="14,-14" foregroundlayer="true" />
 		</rect>
 	</material_stack>
 	<category_icon>
 		<rect depth="1" size="43,43" controller="CategoryEntry" sound="[paging_click]">
+			<!--#$-IGS BEGIN: Increasing collider scale to improve snap responsiveness -$#-->
 			<button name="categoryIcon" depth="1" size="28,28" pos="21, -14" sprite="{categoryicon|once}" tooltip="{categorydisplayname|once}" pivot="center" collider_scale="1.5" />
+			<!--*#$-IGS END.-$#-->
 		</rect>
 	</category_icon>
 	<active_buff_entry>
 		<panel height="43" controller="ActiveBuffEntry" width="314" style="press" sound="[recipe_click]" on_hover="true" disableautobackground="true" on_scroll="true">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-1,1" />
-			<sprite depth="2" name="Icon" sprite="{bufficon|once}" style="icon32px" pos="5,-5" />
+			<sprite depth="2" name="Icon" atlas="ItemIconAtlas" sprite="{bufficon|once}" style="icon32px" pos="5,-5" />
 			<label depth="2" pos="45,-8" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" font_size="28" pivot="topleft" />
 		</panel>
 	</active_buff_entry>
@@ -449,7 +676,7 @@
 		<panel disableautobackground="true" depth="2" width="645" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="647" height="48" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="1" color="{rowstatecolor}" sprite="{rowstatesprite}" width="644" height="45" type="sliced" />
-			<sprite depth="2" sprite="{groupicon}" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true" />
+			<sprite depth="2" sprite="{groupicon}" atlas="ItemIconAtlas" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true" />
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[lightGrey]" foregroundlayer="true" visible="{skillpercentshouldshow}" type="sliced" />
 			<sprite depth="3" pos="0,-39" height="3" width="640" color="[red]" foregroundlayer="true" type="filled" fill="{skillpercentthislevel}" visible="{skillpercentshouldshow}" />
 			<label width="386" pos="44,-7" depth="2" text="{groupname}" color="{statuscolor}" />
@@ -461,7 +688,7 @@
 	</skill_entry>
 	<skill_requirement>
 		<rect controller="SkillRequirementEntry">
-			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" sprite="{skillicon}" visible="{hasrequirement}" />
+			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" atlas="ItemIconAtlas" sprite="{skillicon}" visible="{hasrequirement}" />
 			<label depth="1" pos="0,-4" text="{requirementtext}" upper_case="true" font_size="26" visible="{hasrequirement}" height="43" width="300" color="{requirementcolor}" justify="center" />
 		</rect>
 	</skill_requirement>
@@ -483,15 +710,10 @@
 	<quest_objective_entry>
 		<rect width="300" height="43" controller="QuestObjectiveEntry" complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_x" complete_color="[green]" incomplete_color="[red]" visible="{hasobjective}">
 			<sprite depth="2" name="iconTrack" style="icon22px" pos="4,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" />
+			<!-- <sprite depth="0" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true" visible="false"/> -->
 			<label depth="4" name="Description" pos="30,2" width="250" height="28" text="{objectiveoptional}{objectivedescription} [DECEA3]{objectivestate}[-]" upper_case="true" font_size="26" />
 		</rect>
 	</quest_objective_entry>
-	<quest_objective_tracker_entry>
-		<rect width="300" height="26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
-			<sprite depth="2" name="iconTrack" style="icon22px" pos="280,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" visible="{objectiveshowicon}" />
-			<label depth="1" pos="0,4" text="{objectiveoptional}{objectivedescription} [{objectivecompletehexcolor}]{objectivestate}[-]" upper_case="true" font_size="26" justify="right" visible="{hasobjective}" width="{objectivetextwidth}" />
-		</rect>
-	</quest_objective_tracker_entry>
 	<quest_reward_entry>
 		<rect width="625" height="43" controller="QuestRewardEntry" visible="{hasreward}">
 			<sprite depth="0" name="Icon" sprite="{rewardicon}" style="icon22px" pos="4,0" foregroundlayer="true" UIAtlas="{rewardiconatlas}" />
@@ -504,12 +726,14 @@
 			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false" />
 		</panel>
 	</quest_search>
+	<!--#$-IGS BEGIN: Adding callout control. -$#-->
 	<gamepad_callout>
 		<rect width="100" height="60" controller="XUiC_GamepadCallout">
 			<sprite depth="1" name="icon" size="35,35" pos="0,0" pivot="TopLeft" sprite="" />
 			<label depth="1" name="action" size="125,48" pos="40,0" pivot="TopLeft" justify="center" text="calloutText" font_face="AGENCYB" font_size="32" color="255,255,255" overflow="resizefreely" />
 		</rect>
 	</gamepad_callout>
+	<!--*#$-IGS END.-$#-->
 	<journal_entry>
 		<rect width="450" height="43" controller="JournalEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" failed_color="255,0,0,255" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]" failed_icon="ui_game_symbol_x">
 			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="450" height="49" color="[black]" type="sliced" fillcenter="false" />
