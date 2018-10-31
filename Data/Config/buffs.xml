@@ -380,13 +380,11 @@
       <buff id="Unencumbered" actions="debuff(Encumbered);debuff(HeavyEncumbered);debuff(MaxEncumbered)" icon="ui_game_symbol_run" name_key="Unencumbered" description_key="UnencumberedDesc" tooltip_key="UnencumberedTooltip" >
         <modify id="0" stat="speedmodifier" setValue="1.0" />
 </buff>
-<!-- MANUX Admin Tools: Bad Company black pill -->
 	<buff id="blackPillBuff" duration="5" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);debuff(infection);debuff(infection1);debuff(infection2);debuff(infection3);debuff(brokenLeg);debuff(sprainedLeg)">
 		<modify id="0" stat="food" amount="25" rate="1" />
 		<modify id="1" stat="water" amount="25" rate="1" />
 		<modify id="2" stat="health" amount="50" rate="1" />
 	</buff>
-	<!-- MANUX - Bad Company Zombies -->
 	<!-- Bad Company -->
 	<!-- bombers -->
 	<buff id="SuicideBomberInit" duration="16" ffcheck="true" castsound="malehateattack" actions="attach(ParticleEffects/p_onFire, @impact)" onexpired="SuicideBomberTrigger">

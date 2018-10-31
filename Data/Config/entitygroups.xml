@@ -31,7 +31,14 @@
 		<entity name="Seagull" />
 		<entity name="Goose" />
 		<!-- Polar Bear -->
-		<entity name="polarBear" />
+		<!-- <entity name="polarBear" /> -->
+		<!-- Winter mod -->
+		<entity name="ZombiePsycho" prob="0.1" />
+		<entity name="ZombieFrozen" prob="0.1" />
+		<entity name="ZombieSeryphSnow" prob="0.1" />
+		<entity name="zombieWalker" prob="0.1" />
+		<entity name="snowGoddess" prob="0.01" />
+		<entity name="Snowman" prob="0.01" />
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider" />
@@ -213,6 +220,7 @@
 		<entity name="animalScreamerBear" />
 		<entity name="animalZombieBear" />
 		<entity name="animalBear" />
+		<entity name="PolarBear" prob="0.1" />
 	</entitygroup>
 	<!-- Baby + mom bears -->
 	<entitygroup name="babyBearsGroup">
@@ -223,6 +231,53 @@
 	<entitygroup name="beaverMooseGroup">
 		<entity name="beaver" />
 		<entity name="moose" />
+	</entitygroup>
+	<!-- Nightmares -->
+	<entitygroup name="Nightmares">
+		<entity name="Beast" prob="0.05" />
+		<entity name="Vendigo" prob="0.05" />
+		<entity name="Insectoid" prob="0.05" />
+		<entity name="Nightmare_c1" prob="0.05" />
+		<entity name="Nightmare_c2" prob="0.05" />
+		<entity name="Nightmare_c3" prob="0.05" />
+		<entity name="Nightmare_c4" prob="0.05" />
+		<entity name="Nightmare_c5" prob="0.05" />
+		<entity name="Ripper" prob="0.05" />
+		<entity name="Tornaq" prob="0.05" />
+		<entity name="Maw" prob="0.05" />
+	</entitygroup>
+	<!-- RJ RAD Zombies -->
+	<!--
+    <entitygroup name="RADZombiesGroup">
+	</entitygroup>
+	-->
+	<!-- RJ RAD Animals -->
+	<entitygroup name="RADAnimalGroup">
+		<entity name="animalPigRAD" />
+	</entitygroup>
+	<!-- RJ timid animals all -->
+	<entitygroup name="timdAnimalsAll">
+		<entity name="animalRabbit" />
+		<entity name="animalChicken" />
+		<entity name="animalStag" />
+		<entity name="animalBoar" />
+		<entity name="animalPig" />
+		<entity name="animalSeal" prob="0.1" />
+	</entitygroup>
+	<!-- RJ enemy Animals -->
+	<entitygroup name="enemyAnimalsAll">
+		<entity name="animalSnake" />
+		<entity name="animalZombieVulture" prob="0.75" />
+		<entity name="animalWolf" />
+		<entity name="animalDireWolf" prob="0.5" />
+		<entity name="animalBear" prob="0.25" />
+		<entity name="animalZombieDog" />
+		<entity name="animalZombieBear" prob="0.05" />
+		<entity name="PolarBear" prob="0.1" />
+		<entity name="ArcticFox" prob="0.1" />
+	</entitygroup>
+	<entitygroup name="Protector">
+		<entity name="Maw" prob="0.05" />
 	</entitygroup>
 	<entitygroup name="ZombiesCrawlers">
 		<entity name="zombieSteveCrawler" prob="1" />
@@ -339,6 +394,7 @@
 		<entity name="animalWolf" />
 		<entity name="animalDireWolf" prob="0.15" />
 		<entity name="animalBear" prob="0.15" />
+		<entity name="animalSeal" prob="0.1" />
 	</entitygroup>
 	<entitygroup name="EnemyAnimalsWasteland">
 		<entity name="animalSnake" />
@@ -358,33 +414,6 @@
 	</entitygroup>
 	<entitygroup name="VultureGroup">
 		<entity name="animalZombieVulture" />
-	</entitygroup>
-	<!-- RJ RAD Zombies -->
-	<!--
-    <entitygroup name="RADZombiesGroup">
-	</entitygroup>
-	-->
-	<!-- RJ RAD Animals -->
-	<entitygroup name="RADAnimalGroup">
-		<entity name="animalPigRAD" />
-	</entitygroup>
-	<!-- RJ enemie animals all -->
-	<entitygroup name="timdAnimalsAll">
-		<entity name="animalRabbit" />
-		<entity name="animalChicken" />
-		<entity name="animalStag" />
-		<entity name="animalBoar" />
-		<entity name="animalPig" />
-	</entitygroup>
-	<!-- RJ RAD Animals -->
-	<entitygroup name="enemyAnimalsAll">
-		<entity name="animalSnake" />
-		<entity name="animalZombieVulture" prob="0.75" />
-		<entity name="animalWolf" />
-		<entity name="animalDireWolf" prob="0.5" />
-		<entity name="animalBear" prob="0.25" />
-		<entity name="animalZombieDog" />
-		<entity name="animalZombieBear" prob="0.05" />
 	</entitygroup>
 	<entitygroup name="ZombieBusinessManGroup">
 		<entity name="zombieBusinessMan" />

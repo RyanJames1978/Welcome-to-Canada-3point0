@@ -19,6 +19,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Hostile Birds -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ##################################### RJ City Wasteland ######################################## -->
     <biome name="city_wasteland">
@@ -35,6 +37,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Hostile Birds -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ##################################### RJ Wasteland Hub ######################################### -->
     <biome name="wasteland_hub">
@@ -50,6 +54,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Hostile Birds -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Ice Biome ########################################### -->
     <biome name="water">
@@ -59,6 +65,8 @@
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Hostile Birds -->
 		<spawn maxcount="10" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Snow Biome ########################################### -->
     <biome name="snow">
@@ -80,6 +88,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 	</biome>
 <!-- ######################################## RJ Snow 2 Biome ########################################### -->
     <biome name="plains">
@@ -99,6 +109,8 @@
 		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Prairies Biome ########################################### -->
     <biome name="forest">
@@ -122,6 +134,8 @@
 		<spawn maxcount="5" respawndelay="30" time="Any" entitygroup="babyBearsGroup" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Pine Forest Biome ########################################### -->
     <biome name="pine_forest">
@@ -143,6 +157,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ############################# FERAL FOREST - RJ Thick Forest 1 Biome ######################################## -->
     <biome name="burnt_forest">
@@ -156,6 +172,8 @@
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
 		<!-- RAD Animals -->
 		<spawn maxcount="8" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		</biome>
 <!-- ######################################## RJ Thick Forest 2 Biome ########################################### -->
     <biome name="wasteland">
@@ -179,6 +197,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -202,6 +222,8 @@
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- Nightmares -->
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 	
 <!-- ################################################################################################ -->

@@ -11650,6 +11650,11 @@
 			<property name="Overlay0" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
 		</property>
 	</item>
+	<!-- **************** -->
+	<!-- 1613 - 1620 USED -->
+	<!-- **************** -->
+	
+	
 	
 	<!-- RJ Chips - old dutch ketchup, dill pickle, all dressed - Zesty Mordant -->
 	<!-- Peperoni -->
@@ -11681,119 +11686,17 @@
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
-		<!-- Bad Company Zombies -->
-	<!-- ZOMBIE HANDS -->
-	<item id="2" name="handZombieTiny">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property name="HoldType" value="24" />
+	<item id="2" name="handWellWalker">
+		<property name="Extends" value="handZombie" />
+		<property name="CreativeMode" value="None" />
 		<property class="Action0">
-			<property name="Delay" value="0.4" />
-			<property name="DamageEntity" value="2" />
-			<property name="DamageBlock" value="1" />
-			<property name="Buff" value="sprainedLeg,infection" />
-			<property name="Buff_chance" value="0.05,0.005" />
+			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="30" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg" />
+			<property name="Buff_chance" value="0.5,0.3,0.3" />
 		</property>
 	</item>
-	<item id="3" name="handZombieCur">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property name="HoldType" value="24" />
-		<property class="Action0">
-			<property name="Delay" value="0.5" />
-			<property name="DamageEntity" value="6" />
-			<property name="DamageBlock" value="25" />
-			<property name="Buff" value="bleeding,infection,stunned" />
-			<property name="Buff_chance" value="0.02,0.2,0.1" />
-		</property>
-	</item>
-	<item id="4" name="handBurningRusher">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Sphere" value="0.4" />
-			<property name="DamageEntity" value="8" />
-			<property name="DamageBlock" value="2" />
-			<property name="Buff" value="burningSmall,infection,stunned" />
-			<property name="Buff_chance" value="0.2,0.07,0.3" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1" />
-			<property name="Use_time" value="..." />
-			<property name="Buff" value="Rusher" />
-			<property name="Buff_chance" value="1" />
-		</property>
-	</item>
-	<item id="5" name="handGupHulk">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property class="Action0">
-			<property name="Delay" value="0.2" />
-			<property name="DamageEntity" value="35" />
-			<property name="DamageBlock" value="800" />
-			<property name="Buff" value="stunned" />
-			<property name="Buff_chance" value="0.5" />
-		</property>
-	</item>
-	<item id="10" name="handRegenerator">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property class="Action0">
-			<property name="DamageEntity" value="10" />
-			<property name="DamageBlock" value="20" />
-			<property name="Buff" value="bleeding,infection,stunned" />
-			<property name="Buff_chance" value="0.04,0.2,0.4" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1" />
-			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="50" />
-			<property name="Buff" value="BossRegen" />
-			<property name="Buff_chance" value="1" />
-		</property>
-	</item>
-	<item id="11" name="handSuicideMole">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Sphere" value="0.4" />
-			<property name="DamageEntity" value="20" />
-			<property name="DamageBlock" value="200" />
-			<property name="Buff" value="burningSmall,infection,stunned" />
-			<property name="Buff_chance" value="0.2,0.07,0.3" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1" />
-			<property name="Use_time" value="..." />
-			<property name="Buff" value="SuicideBomberInit" />
-			<property name="Buff_chance" value="1" />
-		</property>
-	</item>
-	<item id="13" name="handBabyBoomer">
-		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="0.4" />
-			<property name="DamageEntity" value="5" />
-			<property name="DamageBlock" value="20" />
-			<property name="Buff" value="infection,stunned" />
-			<property name="Buff_chance" value="0.07,0.5" />
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1" />
-			<property name="Use_time" value="..." />
-			<property name="Buff" value="BabyBoomerInit" />
-			<property name="Buff_chance" value="1" />
-		</property>
-	</item>
-	<item id="121" name="blackPill">
+	<item id="3" name="blackPill">
 		<property name="Extends" value="painkillers" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="DescriptionKey" value="blackPillDesc" />
@@ -11809,7 +11712,7 @@
 			<property name="Buff" value="blackPillBuff" />
 		</property>
 	</item>
-	<item id="124" name="grassBomb">
+	<item id="5" name="grassBomb">
 		<property name="Class" value="ItemClassTimeBomb" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="DescriptionKey" value="grassBombDesc" />
@@ -11853,7 +11756,7 @@
 		</property>
 		<property name="ThrowableDecoy" value="true" />
 	</item>
-	<item id="125" name="terrainCleanerBomb">
+	<item id="10" name="terrainCleanerBomb">
 		<property name="Extends" value="grassBomb" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="DescriptionKey" value="terrainCleanerBombDesc" />
@@ -11862,17 +11765,119 @@
 		<property name="Explosion.DamageBonus.stone" value="25" />
 		<property name="Explosion.DamageBonus.wood" value="25" />
 	</item>
-	<item id="129" name="handWellWalker">
-		<property name="Extends" value="handZombie" />
-		<property name="CreativeMode" value="None" />
+	<!-- MANUX - Bad Company Zombies -->
+	<!-- ZOMBIE HANDS -->
+	<item id="11" name="handZombieTiny">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property name="HoldType" value="24" />
 		<property class="Action0">
-			<property name="DamageEntity" value="50" />
-			<property name="DamageBlock" value="30" />
-			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg" />
-			<property name="Buff_chance" value="0.5,0.3,0.3" />
+			<property name="Delay" value="0.4" />
+			<property name="DamageEntity" value="2" />
+			<property name="DamageBlock" value="1" />
+			<property name="Buff" value="sprainedLeg,infection" />
+			<property name="Buff_chance" value="0.05,0.005" />
 		</property>
 	</item>
-	<item id="135" name="NoAmmo">
+	<item id="13" name="handZombieCur">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property name="HoldType" value="24" />
+		<property class="Action0">
+			<property name="Delay" value="0.5" />
+			<property name="DamageEntity" value="6" />
+			<property name="DamageBlock" value="25" />
+			<property name="Buff" value="bleeding,infection,stunned" />
+			<property name="Buff_chance" value="0.02,0.2,0.1" />
+		</property>
+	</item>
+	<item id="14" name="handBurningRusher">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Sphere" value="0.4" />
+			<property name="DamageEntity" value="8" />
+			<property name="DamageBlock" value="2" />
+			<property name="Buff" value="burningSmall,infection,stunned" />
+			<property name="Buff_chance" value="0.2,0.07,0.3" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Buff" value="Rusher" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="16" name="handGupHulk">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property class="Action0">
+			<property name="Delay" value="0.2" />
+			<property name="DamageEntity" value="35" />
+			<property name="DamageBlock" value="800" />
+			<property name="Buff" value="stunned" />
+			<property name="Buff_chance" value="0.5" />
+		</property>
+	</item>
+	<item id="20" name="handRegenerator">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property class="Action0">
+			<property name="DamageEntity" value="10" />
+			<property name="DamageBlock" value="20" />
+			<property name="Buff" value="bleeding,infection,stunned" />
+			<property name="Buff_chance" value="0.04,0.2,0.4" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="50" />
+			<property name="Buff" value="BossRegen" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="23" name="handSuicideMole">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Sphere" value="0.4" />
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="200" />
+			<property name="Buff" value="burningSmall,infection,stunned" />
+			<property name="Buff_chance" value="0.2,0.07,0.3" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Buff" value="SuicideBomberInit" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="24" name="handBabyBoomer">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.4" />
+			<property name="DamageEntity" value="5" />
+			<property name="DamageBlock" value="20" />
+			<property name="Buff" value="infection,stunned" />
+			<property name="Buff_chance" value="0.07,0.5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Buff" value="BabyBoomerInit" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="25" name="NoAmmo">
 		<property name="CreativeMode" value="None" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="CustomIcon" value="Unload" />
@@ -11886,6 +11891,128 @@
 			<property name="BlockDamage" value="0" />
 		</property>
 	</item>
+	
+	
+<!-- Winter project items -->
+	<item id="1613" name="Kitten">
+		<property name="DescriptionKey" value="kitty" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock" />
+			<property name="Delay" value="0.1" />
+			<property name="Blockname" value="KittenBlock" />
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+
+	
+	</item>
+	<item id="1614" name="Cookies">
+		<property name="DescriptionKey" value="Cookies" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="31" />
+		<property name="Material" value="organic" />
+		<property name="Stacknumber" value="50" />
+		<property name="EconomicValue" value="52" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="2.1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_9_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0.675" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Smell" value="smallSmell" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="1615" name="deadKitten">
+		<property name="DescriptionKey" value="SadKitty" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="1616" name="Babyseal">
+		<property name="DescriptionKey" value="deadSeal" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="1617" name="rabbitItem">
+		<property name="DescriptionKey" value="toysDesc" />
+		<property name="Meshfile" value="#Rabbit?RabbitItemPrefab" />
+		<!-- Rabbit Christmas by Chaitanya Krishnan is licensed under CC Attribution -->
+		<property name="DropMeshfile" value="#Rabbit?RabbitItemPrefab" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="1" />
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock" />
+			<property name="Delay" value="0.1" />
+			<property name="Blockname" value="rabbitBlock" />
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="1618" name="snowShovel">
+		<property name="Extends" value="shovelIron" />
+		<property name="DescriptionKey" value="snowShovelDesc" />
+		<property name="Meshfile" value="#SnowShovel?SnowShovelPrefab" />
+		<property name="DropMeshfile" value="#SnowShovel?SnowShovelPrefab" />
+	</item>
+	<item id="1619" name="candyCane">
+		<property name="Extends" value="clubIron" />
+		<property name="Material" value="wood" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="Meshfile" value="#CandyCane?CandyCanePrefab" />
+		<property name="CustomIcon" value="CandyCane" />
+	</item>
+	<item id="1620" name="handZombieSnowman">
+		<property name="Extends" value="handZombieCop" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action0">
+			<property name="DamageEntity" value="40" />
+			<property name="DamageBlock" value="400" />
+			<property name="Buff" value="bleeding,stunned" />
+			<property name="Buff_chance" value="0.1,0.1" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.metal" value="10" />
+		</property>
+		<property class="Action1">
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="200" />
+			<property name="Buff" value="bleeding,stunned" />
+			<property name="Buff_chance" value="0.3,0.3" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.metal" value="10" />
+		</property>
+	</item>
+
+
+
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ############## Do not edit or change anything passed this point you freaking dumbass ##########################  -->

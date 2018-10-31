@@ -2316,6 +2316,92 @@
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
 
+<!-- Winter mod - nightmares - sphereii -->
+
+	<entity_class name="SDXTemplate" extends="zombieTemplateMale">
+		<!-- For fun, let's use the zombie transmogrifier class -->
+		<!--property name="Class" value="EntityZombieSDX, Mods" /-->
+		<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<!-- With RootMotion true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
+		<property name="RootMotion" value="false" />
+		<!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
+		<property name="WanderSpeed" value="0.8" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.8" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="HasRagdoll" value="false" />
+	</entity_class>
+	<entity_class name="zombieMechanic" extends="SDXTemplate">
+
+		<property name="Mesh" value="#Nightmares?thc5" />
+		<property name="MaxHealth" value="1000" />
+		<!-- These are the animation map names. The value comes from the animation from Unity -->
+		<property name="AnimationIdle" value="thc5_armature_O|idle" />
+		<property name="AnimationMainAttack" value="thc5_armature_O|attack1" />
+		<property name="AnimationSecondAttack" value="thc5_armature_O|attack2" />
+		<property name="AnimationPain" value="thc5_armature_O|laugh" />
+		<property name="AnimationDeath" value="thc5_armature_O|death1" />
+		<property name="AnimationRun" value="thc5_armature_O|run" />
+		<property name="AnimationWalk" value="thc5_armature_O|walk" />
+		<property name="AnimationSpecialAttack" value="thc5_armature_O|attack3" />
+		<property name="SoundRandom" value="afroShamanSounds" />
+		<property name="SoundAlert" value="afroShamanSounds" />
+		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
+		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
+		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
+		<property name="SoundSense" value="afroShamanSounds" />
+		<property name="LootListOnDeath" value="225" />
+	</entity_class>
+	<entity_class name="Mutant" extends="SDXTemplate">
+		<property name="Mesh" value="#Mutant?Model" />
+		<!-- These are the animation map names. The value comes from the animation from Unity -->
+		<property name="AnimationIdle" value="idle" />
+		<property name="AnimationMainAttack" value="attack(2)" />
+		<property name="AnimationPain" value="Get_hit" />
+		<property name="AnimationJump" value="jump" />
+		<property name="AnimationDeath" value="dead" />
+		<property name="AnimationRun" value="run" />
+		<property name="AnimationWalk" value="walk" />
+		<!-- property name="AnimationSpecialAttack" value="false" /-->
+		<property name="SoundRandom" value="afroShamanSounds" />
+		<property name="SoundAlert" value="afroShamanSounds" />
+		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
+		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
+		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
+		<property name="SoundSense" value="afroShamanSounds" />
+		<property name="LootListOnDeath" value="225" />
+	</entity_class>
+
+	<entity_class name="Dino" extends="SDXTemplate">
+		<property name="Mesh" value="#Dinosaurs?Raptor" />
+		<!-- These are the animation map names. The value comes from the animation from Unity -->
+		<property name="AnimationIdle" value="Idle" />
+		<property name="AnimationMainAttack" value="Attack" />
+		<property name="AnimationSecondAttack" value="JumpAttack Legs/Head" />
+		<property name="AnimationPain" value="Hit Front" />
+		<property name="AnimationJump" value="Jumping" />
+		<property name="AnimationDeath" value="Death" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk Look Round" />
+		<!-- property name="AnimationSpecialAttack" value="false" /-->
+		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
+		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
+		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="6" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="9" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="animalHide" tool_category="Skinner" count="3" />
+		<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="2" />
+	</entity_class>
+
+
+<!-- A New life -->
+
 	<!-- Not everything in the water is friendly, let's add a threat-->
 	<entity_class name="WellWalker" extends="zombieTemplateMale">
 		<property name="Mesh" value="#WellWalker?WellWalker_X" />
@@ -2560,20 +2646,14 @@
 		<property name="WalkIndexes" value="2" />
 		<property name="SoundRandom" value="SeagullSounds" />
 	</entity_class>
-	<entity_class name="SDXTemplate" extends="zombieTemplateMale">
-		<!-- For fun, let's use the zombie transmogrifier class -->
-		<!--property name="Class" value="EntityZombieSDX, Mods" /-->
-		<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
-		<property name="AvatarController" value="AnimationSDX, Mods" />
-		<!-- With true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
-		<property name="RootMotion" value="false" />
-		<!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
-		<property name="WanderSpeed" value="0.8" />
-		<property name="ApproachSpeed" value="0.8" />
-		<property name="NightWanderSpeed" value="0.8" />
-		<property name="NightApproachSpeed" value="1.1" />
-		<property name="HasRagdoll" value="false" />
-	</entity_class>
+
+	
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ######################################### Bad Company Zombies - Do not Erase #################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->	
+	
 	<!-- Bad Company UMA -->
 	<!-- Templates -->
 	<entity_class name="badZombieUMA" extends="zombieTemplateMale">
