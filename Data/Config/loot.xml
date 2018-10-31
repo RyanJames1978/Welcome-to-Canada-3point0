@@ -2471,7 +2471,7 @@
 	</lootcontainer>
 	<!-- RJ downed chopper -->
 	<lootcontainer id="174" count="1" size="3,4" destroy_on_close="true" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
-		<item name="helicopterChassis" count="1" prob="1" />
+		<item group="junk" prob="2" />
 	</lootcontainer>	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
