@@ -27,7 +27,6 @@
 		</faction>
 	<!-- Beaver Faction -->
 	<faction name="beavers">
-		<relationship name="trees" value="hate" />
 			<relationship name="*" value="dislike" />
 	</faction>
 <!-- ###############################################################################################################  -->
