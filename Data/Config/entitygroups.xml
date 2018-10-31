@@ -15855,7 +15855,6 @@
 		<entity name="aBarracuda" />
 		<entity name="Clownfish" />
 	</entitygroup>
-	<!-- MANUX - Bad Company Zombies -->
 	<!--BAD COMPANY-->
 	<entitygroup name="ZombiesBCTier01">
 		<!--Vanilla-->

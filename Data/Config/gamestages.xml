@@ -3276,7 +3276,7 @@
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
-	<!-- MANUX - Bad Company Zombies -->
+	<!-- Bad Company Zombies -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Bad Company Sleeper Spawns XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<spawner name="SleeperGSList">
 		<gamestage stage="1">

@@ -11765,7 +11765,7 @@
 		<property name="Explosion.DamageBonus.stone" value="25" />
 		<property name="Explosion.DamageBonus.wood" value="25" />
 	</item>
-	<!-- MANUX - Bad Company Zombies -->
+	<!-- Bad Company Zombies -->
 	<!-- ZOMBIE HANDS -->
 	<item id="11" name="handZombieTiny">
 		<property name="Extends" value="handMaster" />

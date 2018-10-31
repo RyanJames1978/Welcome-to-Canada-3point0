@@ -691,14 +691,6 @@
 				<multiply skill_level="8,9" value="0.0108,0.0086" />
 				<multiply skill_level="9,10" value="0.0086,0.0068" />
 			</effect>
-			<!-- MANUX Miner -->
-			<recipe name="minerGeneric" unlock_level="6" />
-			<recipe name="minerRegularOres" unlock_level="4" />
-			<recipe name="minerRareOres" unlock_level="7" />
-			<!-- MANUX Miner -->
-			<recipe name="minerGeneric" unlock_level="6" />
-			<recipe name="minerRegularOres" unlock_level="4" />
-			<recipe name="minerRareOres" unlock_level="7" />
 		</perk>
 		<perk name="craftSkillGuns" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000" icon="gunsmithing" description_key="craftSkillGunsDesc" title_key="craftSkillGuns" group="firearms" exp_gain_multiplier="0">
 			<requirement perk_level="2" required_player_level="5" />
@@ -905,14 +897,6 @@
 				<multiply skill_level="8,9" value="0.0084,0.0067" />
 				<multiply skill_level="9,10" value="0.0067,0.0053" />
 			</effect>
-			<!-- MANUX Miner -->
-			<recipe name="minerGeneric" unlock_level="6" />
-			<recipe name="minerRegularOres" unlock_level="3" />
-			<recipe name="minerRareOres" unlock_level="7" />
-			<!-- MANUX Miner -->
-			<recipe name="minerGeneric" unlock_level="6" />
-			<recipe name="minerRegularOres" unlock_level="3" />
-			<recipe name="minerRareOres" unlock_level="7" />
 		</perk>
 		<perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
 			<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1" />

@@ -4197,7 +4197,7 @@
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
-	<!-- MANUX - Bad Company Zombies -->
+	<!-- Bad Company Zombies -->
 	<archetype name="ZombieAiden" male="true" hair_color="249,130,2" eye_color="101,111,145" skin_color="64,64,64" type="Player" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
