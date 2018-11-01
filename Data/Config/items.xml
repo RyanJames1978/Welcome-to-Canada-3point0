@@ -9481,7 +9481,7 @@
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
-		<item id="2" name="handWellWalker">
+	<item id="2" name="handWellWalker">
 		<property name="Extends" value="handZombie" />
 		<property name="CreativeMode" value="None" />
 		<property class="Action0">

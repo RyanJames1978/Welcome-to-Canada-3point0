@@ -196,27 +196,74 @@
 			<block name="cntCar03SedanDamage1" prob="0.01" />
 			<block name="cntCar03SedanDamage0" prob="0.05" />
 			<block name="cntRCMP" prob="0.25" />
+			<block name="cntTaxi" prob="0.15" />
 			<block name="cntSedan01" prob="0.25" />
 			<block name="cntSedan02" prob="0.25" />
+			<block name="cntSedan02Red" prob="0.25" />
+			<block name="cntSedan02LightBlue" prob="0.25" />
+			<block name="cntSedan02Green" prob="0.25" />
+			<block name="cntSedan02Blue" prob="0.25" />
+			<block name="cntSedan02Black" prob="0.25" />
 			<block name="cntSedan03" prob="0.25" />
-			<block name="cntSedanExtra01" prob="0.25" />
+			<block name="cntSedan03Red" prob="0.25" />
+			<block name="cntSedan03LightBlue" prob="0.25" />
+			<block name="cntSedan03Green" prob="0.25" />
+			<block name="cntSedan03Blue" prob="0.25" />
+			<block name="cntSedan03Black" prob="0.25" />
 			<block name="cntSedanWrecked03" prob="0.25" />
+			<block name="cntSedanWrecked03Tan" prob="0.25" />
+			<block name="cntSedanWrecked03Red" prob="0.25" />
+			<block name="cntSedanWrecked03Black" prob="0.25" />
 			<block name="cntHatchBack" prob="0.25" />
-			<block name="cntHatchbackExtra" prob="0.25" />
+			<block name="cntHatchBackRed" prob="0.25" />
+			<block name="cntHatchBackLightBlue" prob="0.25" />
+			<block name="cntHatchBackGreen" prob="0.25" />
+			<block name="cntHatchBackBlue" prob="0.25" />
 			<block name="cntHatchBackWrecked01" prob="0.25" />
+			<block name="cntHatchBackWrecked01tan" prob="0.25" />
+			<block name="cntHatchBackWrecked01red" prob="0.25" />
+			<block name="cntHatchBackWrecked01blue" prob="0.25" />
+			<block name="cntHatchBackWrecked01black" prob="0.25" />
 			<block name="cntHatchBackWrecked02" prob="0.25" />
 			<block name="cntHatchBackWrecked03" prob="0.25" />
-			<block name="cntTaxi" prob="0.15" />
 			<block name="cntPickUp" prob="0.25" />
+			<block name="cntPickUpRed" prob="0.25" />
+			<block name="cntPickUpBlue" prob="0.25" />
+			<block name="cntPickUpGreen" prob="0.25" />
+			<block name="cntPickUpBlack" prob="0.25" />
+			<block name="cntPickUpAqua" prob="0.25" />
 			<block name="cntExtendedCab" prob="0.25" />
+			<block name="cntExtendedCabRed" prob="0.25" />
+			<block name="cntExtendedCabBlue" prob="0.25" />
+			<block name="cntExtendedCabBlack" prob="0.25" />
 			<block name="cntSemiShort" prob="0.25" />
+			<block name="cntSemiShortRed" prob="0.25" />
+			<block name="cntSemiShortLightBlue" prob="0.25" />
+			<block name="cntSemiShortGreen" prob="0.25" />
+			<block name="cntSemiShortDarkBlue" prob="0.25" />
+			<block name="cntSemiShortBlack" prob="0.25" />
 			<block name="cntSemiLong" prob="0.25" />
-			<block name="cntTrailer" prob="0.025" />
-			<block name="cntTrailerWrecked" prob="0.025" />
+			<block name="cntSemiLongRed" prob="0.25" />
+			<block name="cntSemiLongLightBlue" prob="0.25" />
+			<block name="cntSemiLongGreen" prob="0.25" />
+			<block name="cntSemiLongBlue" prob="0.25" />
+			<block name="cntSemiLongBlack" prob="0.25" />
 			<block name="cntBronco" prob="0.25" />
+			<block name="cntBroncoRed" prob="0.25" />
+			<block name="cntBroncoLightGreen" prob="0.25" />
+			<block name="cntBroncoDarkGreen" prob="0.25" />
+			<block name="cntBroncoBlue" prob="0.25" />
+			<block name="cntBroncoBlack" prob="0.25" />
+			<block name="cntBroncoAqua" prob="0.25" />
 			<block name="cntUtilityTruck" prob="0.25" />
 			<block name="cntVan" prob="0.25" />
 			<block name="cntSemiFlatWrecked" prob="0.25" />
+			<block name="cntSemiFlatWreckedRed" prob="0.25" />
+			<block name="cntSemiFlatWreckedBlack" prob="0.25" />
+			<block name="cntTrailer" prob="0.025" />
+			<block name="cntTrailerWrecked" prob="0.025" />
+			<block name="semiFullShort" prob="0.025" />
+			<block name="semiFullLong" prob="0.025" />
 			<block name="cntTruckFuel" prob="0.0025" />
 			<block name="cntSchoolBus" prob="0.25" />
 			<block name="cntCityBus" prob="0.25" />
@@ -230,10 +277,7 @@
 			<block name="cntTransport" prob="0.05" />
 			<block name="cntHummer" prob="0.25" />
 			<block name="cntPlane" prob="0.00055" />
-			<!-- <block name="cntWreckedChopper" prob="0.25"/> -->
 			<block name="cntBlackHawk" prob="0.0007" />
-			<block name="semiFullShort" prob="0.025" />
-			<block name="semiFullLong" prob="0.025" />
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootGarageHelper">
