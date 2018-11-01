@@ -1633,7 +1633,38 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="glue" count="5" />
 		<ingredient name="animalHide" count="5" />
 	</recipe>
+	
+	
+	
+	
 	<!-- ################################ END RJ edits ####################################### -->
+	
+	
+	<!-- Winter Project items -->
+	
+	<recipe name="GoodSanta" count="1" craft_area="workbench">
+		<ingredient name="Kitten" count="10" />
+		<ingredient name="Cookies" count="100" />
+	</recipe>
+	<recipe name="RealSanta" count="1" craft_area="workbench">
+		<ingredient name="deadKitten" count="10" />
+		<ingredient name="Babyseal" count="10" />
+	</recipe>
+	<recipe name="xmasGift" count="1" craft_area="workbench">
+		<ingredient name="paper" count="2" />
+		<ingredient name="glue" count="1" />
+	</recipe>
+	<recipe name="xmasGifts" count="1" craft_area="workbench">
+		<ingredient name="paper" count="10" />
+		<ingredient name="glue" count="2" />
+	</recipe>
+	<recipe name="snowShovel" count="1" craft_area="workbench">
+		<ingredient name="forgedIron" count="15" />
+		<ingredient name="wood" count="10" />
+	</recipe>
+	
+	
+	
 	<recipe name="44MagBullet" count="1" craft_area="AdvancedWorkbench" craft_tool="bulletPress">
 		<ingredient name="bulletTip" count="1" />
 		<ingredient name="gunPowder" count="3" />

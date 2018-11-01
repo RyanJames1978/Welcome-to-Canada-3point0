@@ -400,6 +400,16 @@
 		</lootqualitytemplate>
 	</lootqualitytemplates>
 	<lootqualitytemplates>
+		<lootqualitytemplate name="starterCrateTemplate">
+			<qualitytemplate level="0,0.16" default_quality="1,300">
+				<loot quality="501,600" prob="0.01" />
+				<loot quality="401,500" prob="0.05" />
+				<loot quality="301,400" prob="0.15" />
+				<loot quality="1,300" prob="1" />
+			</qualitytemplate>
+		</lootqualitytemplate>
+	</lootqualitytemplates>
+	<lootqualitytemplates>
 		<lootqualitytemplate name="treasureTemplate">
 			<qualitytemplate level="0,0.16" default_quality="1,100">
 				<loot quality="301,600" prob="0.015" />
@@ -2287,8 +2297,9 @@
 	<lootcontainer id="99" count="0" size="5,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="baseTemplate"></lootcontainer>
 	<!-- RJ Edits -->
 	<!-- RJ Starter loot -->
-	<lootgroup name="rjstarterloot" count="all">
+	<lootgroup name="rjstarterloot" count="all" loot_quality_template="starterCrateTemplate">
 		<item name="padlock" />
+		<item name="snowShovel" />
 		<item name="aloeCream" count="10" />
 		<item name="gunHuntingRifle" />
 		<item name="762mmBullet" count="5" />
@@ -2472,6 +2483,11 @@
 	<!-- RJ downed chopper -->
 	<lootcontainer id="174" count="1" size="3,4" destroy_on_close="true" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
 		<item group="junk" prob="2" />
+	</lootcontainer>	
+	
+	<!-- RJ OJ's Bronco -->
+	<lootcontainer id="175" count="1" size="3,4" destroy_on_close="true" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
+		<item group="leatherGlovesOJ" prob="2" />
 	</lootcontainer>	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
