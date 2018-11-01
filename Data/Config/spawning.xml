@@ -65,6 +65,8 @@
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Hostile Birds -->
 		<spawn maxcount="10" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
+        <!-- Ice Animals -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -160,23 +162,8 @@
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
-<!-- ############################# FERAL FOREST - RJ Thick Forest 1 Biome ######################################## -->
+<!-- #############################  RJ Thick Forest 1 Biome ######################################## -->
     <biome name="burnt_forest">
-        <!-- RAD Zoms Day -->
-		<spawn maxcount="6" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
-        <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-        <spawn maxcount="2" respawndelay="4" time="Day"   entitygroup="ZombieSoldierGroup" />
-        <!-- RAD Night Zoms -->
-        <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
-        <spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieSoldierGroup" />
-        <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
-		<!-- RAD Animals -->
-		<spawn maxcount="8" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
-		</biome>
-<!-- ######################################## RJ Thick Forest 2 Biome ########################################### -->
-    <biome name="wasteland">
         <!-- Standard Zoms -->
 		<spawn maxcount="6" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
         <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
@@ -199,6 +186,23 @@
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		</biome>
+<!-- ############################################################################################################## -->
+<!-- FERALFERALFERALFERALFERALFERALFERAL FERAL FOREST - RJ Thick Forest 2 Biome FERALFERALFERALFERALFERALFERALFERAL -->
+<!-- ############################################################################################################## -->
+    <biome name="wasteland">
+        <!-- bad company -->
+		<spawn maxcount="6" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
+        <!-- RAD Zoms Day -->
+        <spawn maxcount="5" respawndelay="1" time="Day" entitygroup="RADZombiesGroup" />
+        <spawn maxcount="2" respawndelay="4" time="Day"   entitygroup="ZombieSoldierGroup" />
+        <!-- RAD Night Zoms -->
+        <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="RADZombiesGroup" />
+        <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
+		<!-- RAD Animals -->
+		<spawn maxcount="8" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
+		<!-- Nightmares -->
+		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -1355,26 +1359,3 @@
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
 </spawning>
-
-			<!-- Survivors ANY -->
-			<!-- <spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Any" entitygroup="SurvivorsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeAdv"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeHilb"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeRasta"/>
-			<spawn maxcount="4" respawndelay="5" time="Any" entitygroup="SurvivorsMeleeTeen"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsAdv"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsHilb"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsRasta"/>
-			<spawn maxcount="2" respawndelay="5" time="Any" entitygroup="SurvivorsGunsTeen"/> -->
-			<!-- Bandits NIGHT -->
-			<!-- <spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsLeaders"/>
-			<spawn maxcount="1" respawndelay="5" time="Night" entitygroup="BanditsBrutes"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleePunk"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeBarb"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeNazi"/>
-			<spawn maxcount="4" respawndelay="5" time="Night" entitygroup="BanditsMeleeClown"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsPunk"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsBarb"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsNazi"/>
-			<spawn maxcount="2" respawndelay="5" time="Night" entitygroup="BanditsGunsClown"/> -->
