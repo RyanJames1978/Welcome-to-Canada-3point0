@@ -3050,6 +3050,7 @@
 		<property name="AITask-24" value="ApproachSpot" />
 		<property name="AITask-25" value="Wander" />
 	</entity_class>
+	<!-- No Santa 
 	<entity_class name="blackSanta" extends="SDXTemplate">
 		<property name="Mesh" value="#BlackSanta?BlackSanta" />
 		<property name="WalkType" value="1" />
@@ -3062,7 +3063,6 @@
 		<property name="LootListOnDeath" value="17" />
 		<property name="HeadDismemberBonusChance" value="0.08" />
 		<property name="HeadDismemberThreshold" value="0" />
-
 		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.2" />
@@ -3079,7 +3079,6 @@
 		<property name="AnimationDeath" value="Death" />
 		<property name="AnimationRun" value="Run" />
 		<property name="AnimationWalk" value="Walk" />
-		<!--				<property name="AnimationSpecialAttack" value="Walk" /> -->
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
 		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
 		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
@@ -3108,7 +3107,6 @@
 		<property name="AITask-16" value="BreakDoor" param2="5" />
 		<property name="AITask-17" value="BreakBlock" param2="5" />
 		<property name="AITask-18" value="BlockingTargetTask" />
-		<!--				<property name="AITask-19" value="RangedAttackTarget" param1="1" param2="5"/> -->
 		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
@@ -3130,7 +3128,6 @@
 		<property name="LootListOnDeath" value="17" />
 		<property name="HeadDismemberBonusChance" value="0.08" />
 		<property name="HeadDismemberThreshold" value="0" />
-
 		<property name="MaxTurnSpeed" value="230" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="WanderSpeed" value="0.2" />
@@ -3146,7 +3143,6 @@
                 <property name="AnimationDeath" value="Die" />
                 <property name="AnimationRun" value="Run" />
                 <property name="AnimationWalk" value="Walk" />
-		<!--				<property name="AnimationSpecialAttack" value="Walk" /> -->
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
 		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
 		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
@@ -3175,7 +3171,6 @@
 		<property name="AITask-16" value="BreakDoor" param2="5" />
 		<property name="AITask-17" value="BreakBlock" param2="5" />
 		<property name="AITask-18" value="BlockingTargetTask" />
-		<!--				<property name="AITask-19" value="RangedAttackTarget" param1="1" param2="5"/> -->
 		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
@@ -3183,7 +3178,7 @@
 		<property name="AITask-23" value="SetAsTargetIfHurt" param1="EntityPlayer" param2="60" />
 		<property name="AITask-24" value="ApproachSpot" />
 		<property name="AITask-25" value="Wander" />
-	</entity_class>
+	</entity_class> -->
 	<entity_class name="snowGoddess" extends="SDXTemplate">
 		<property name="Mesh" value="#SnowGoddess?SnowGoddess" />
 		<property name="MaxHealth" value="500" />

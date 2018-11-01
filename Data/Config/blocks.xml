@@ -19256,7 +19256,7 @@
 		<property name="MaxDamage" value="600" />
 		<property name="LPHardnessScale" value="8" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#rowboatDestroyed?rowboatDestroyedPrefab" />
+		<property name="Model" value="#boats?rowboatDestroyedPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="2,1,4" />
 		<property name="Place" value="TowardsPlacerInverted" />
