@@ -2525,13 +2525,13 @@
 		<item name="cntTrailerBox1337" prob="0.0003" />
 	</lootcontainer>
 	<!-- RJ downed chopper -->
-	<lootcontainer id="174" count="1" size="3,4" destroy_on_close="true" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
+	<lootcontainer id="174" count="1" size="3,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
 		<item group="junk" prob="2" />
 	</lootcontainer>	
 	
 	<!-- RJ OJ's Bronco -->
-	<lootcontainer id="175" count="1" size="3,4" destroy_on_close="true" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
-		<item group="leatherGlovesOJ" prob="2" />
+	<lootcontainer id="175" count="1" size="3,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
+		<item name="leatherGlovesOJ" prob="2" />
 	</lootcontainer>	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
