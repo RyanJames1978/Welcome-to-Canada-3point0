@@ -30,7 +30,7 @@
 	<!-- Basic Survival 4 - Craft tools in the workbench/> -->
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_hammer" category_key="quest" difficulty="veryeasy">
 		<!-- <objective type="FetchKeep" id="rjstoneaxe" value="1" /> -->
-		<objective type="FetchKeep" id="rjstoneshovel" value="1" />
+		<!-- <objective type="FetchKeep" id="rjstoneshovel" value="1" /> -->
 		<objective type="FetchKeep" id="rjstonepickaxe" value="1" />
 		<objective type="FetchKeep" id="rjstonehammer" value="1" />
 		<reward type="Quest" id="quest_BasicSurvival5" />
