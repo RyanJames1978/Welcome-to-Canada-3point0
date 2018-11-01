@@ -224,7 +224,6 @@ bed01,blocks,Block,KgNone,An Old Bed,Un vieux lit,Altes Bett,,Una cama vieja
 bed01Frame,blocks,Block,KgNone,Iron Bed Frame,Cadre de lit en fer,Eisenbettgestell,,Bastidor de cama de hierro
 bed02,blocks,Block,KgNone,King Size Bed,Grand lit,Doppelbett,,Cama king size
 bedGroupDesc,blocks,Block,KgNone,Placing it on the ground will let you spawn there when you die and then show the spot on your map.,"En le plaçant à terre, vous pourrez réapparaître à cet endroit lorsque vous mourrez et il sera indiqué sur votre carte.","Wenn du dies platzierst, kannst du dort wiedererscheinen, falls du stirbst. Außerdem wird der Standort auf deiner Karte angezeigt.",,"Si la colocas en el suelo, revives allí cada vez que mueras. Además, se mostrará el lugar en el mapa."
-bedroll,blocks,Block,KgNone,Blue Sleeping Bag,,,,
 boardedWindowsSheet4,blocks,Block,KgNone,Window Boards,Rebords de fenêtre,Fensterbretter,,Tapias
 brickBlock,blocks,Block,KgNone,Bricks,Briques,Ziegel,,Ladrillos
 brickCNRFull,blocks,Block,KgNone,Brick Full Corner,Angle complet en brique,Ziegel – Komplette Ecke,,Esquina de ladrillo
@@ -5197,7 +5196,9 @@ cntRations,blocks,Container,KgNone,Old Military Rations,,,,
 cntCardboardBox01,blocks,Container,KgNone,Cardboard Box,,,,
 cntCardboardBox02,blocks,Container,KgNone,Cardboard Box,,,,
 cntTrashTools,blocks,Container,KgNone,Tool Pile,,,,
+bedroll,blocks,Block,KgNone,Blue Sleeping Bag,,,,
 bedroll02,blocks,Block,KgNone,Green Sleeping Bag,,,,
+bedroll03,blocks,Block,KgNone,Red Sleeping Bag,,,,
 lawnGnome,blocks,Block,KgNone,Lawn Gnome,,,,
 lawnGnomeDesc,blocks,Block,KgNone,A cute lawn gnome to do with what you please,,,,
 militaryRationsBar,items,Item,KgNone,Military Rations,,,,

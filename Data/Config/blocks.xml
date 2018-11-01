@@ -133,7 +133,7 @@
 	</block>
 	<block id="5" name="radiated">
 		<property name="Extends" value="dirt" />
-		<property name="Texture" value="200" />
+		<property name="Texture" value="181" />
 		<property name="Map.Color" value="150,10,10" />
 		<property name="CanMobsSpawnOn" value="true" />
 		<property name="CanPlayersSpawnOn" value="false" />
@@ -1117,6 +1117,7 @@
 		<property name="EconomicValue" value="10" />
 		<property name="EconomicBundleSize" value="20" />
 	</block>
+	<!-- RJ Beaver trees -->
 	<block id="128" name="treeMaster">
 		<property name="Faction" value="trees" />
 		<property name="DescriptionKey" value="plantsBlockGroupDesc" />
@@ -1138,6 +1139,7 @@
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="129" name="treeMasterGrowing">
+		<property name="Faction" value="trees" />
 		<property name="Extends" value="treeMaster" />
 		<property name="DescriptionKey" value="devOnlyGroupDesc" />
 		<property name="MultiBlockDim" value="1,2,1" />
@@ -15804,7 +15806,6 @@
 		<property name="TakeDelay" value="5" />
 		<property name="EconomicValue" value="50" />
 	</block>
-	<!-- 1 Free -->
 	<block id="2004" name="solarbank">
 		<property name="Class" value="SolarPanel" />
 		<property name="Material" value="Mmetal_weak" />
@@ -17506,1276 +17507,44 @@
 	<!-- ###############################################################################################################  -->
 	<!-- ###############################################################################################################  -->
 	
-	<!-- Holy Handgrenade of Antioch chest -->
-	<block id="583" name="treasureChestAntioch">
-		<property name="Class" value="Loot" />
-		<property name="CustomIcon" value="cntChest01" />
-		<property name="Material" value="wood+wood" />
-		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
-		<property name="Shape" value="Ext3dModel" />
-		<property name="Texture" value="293" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
-		<property name="HandleFace" value="Bottom" />
-		<property name="ImposterExchange" value="imposterQuarter" param1="154" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="104" />
-		<drop event="Destroy" name="wood" count="1,3" />
-		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-	</block>
-	<!-- RJ Chest 03 Dome top -->
-	<block id="584" name="cntChest03">
-		<property name="CreativeMode" value="Player" />
-		<property name="Class" value="SecureLoot" />
-		<property name="CustomIcon" value="cntChest03" />
-		<property name="Material" value="wood+wood" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#rollTopChest?rollTopChestPrefab" />
-		<property name="LootList" value="105" />
-		<property class="RepairItems">
-			<property name="wood" value="10" />
-		</property>
-		<drop event="Destroy" name="wood" count="1,3" />
-		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Group" value="Basics,Building" />
-		<property name="DescriptionKey" value="cntChest03Desc" />
-		<property name="EconomicValue" value="10" />
-		<property name="EconomicBundleSize" value="10" />
-	</block>
-	<!-- RJ Gems -->
-	<block id="585" name="oreGemstone">
-		<property name="Material" value="mCrystal" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#gemsGlowing?gemsBluePrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property class="RepairItems">
-			<property name="gemStone" value="80" />
-		</property>
-		<drop event="Harvest" name="gemStone" count="1" prob="0.001" tool_category="harvestingTools" />
-		<drop event="Destroy" name="gemStone" count="1" />
-		<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1" />
-		<property name="DowngradeBlock" value="oreGemstone" />
-	</block>
-		<!-- #################### Vehicles #################### -->
-	<!-- #################### RJ Military Vehicles #################### -->
-	<!-- Tiger Tank -->
-	<block id="950" name="cntTankTiger">
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="mMilitarySteel" />
-		<property name="LightOpacity" value="0" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="106" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="4,4,8" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#militaryTiger?vehicleTigerTankSnowPrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="scrapIron" count="10,20" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="titaniumPlates" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Harvest" name="titanium" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Harvest" name="steelPlates" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="951" name="cntTankSherman">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="Model" value="#militarySherman?vehicleShermanTankSnowPrefab" />
-	</block>
-	<block id="952" name="cntAPC">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="MultiBlockDim" value="5,3,10" />
-		<property name="Model" value="#militaryAPC?vehicleAPCPrefab" />
-		<property name="MaxDamage" value="17500" />
-		<!-- Health Modifier -->
-	</block>
-	<block id="1344" name="cntJeep">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="MultiBlockDim" value="3,3,10" />
-		<property name="Model" value="#militaryJeep?vehicleJeepSnowPrefab" />
-		<property name="MaxDamage" value="2500" />
-		<!-- Health Modifier -->
-	</block>
-	<block id="953" name="cntKubel">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="MultiBlockDim" value="3,2,5" />
-		<property name="Model" value="#militaryKubelWagon?vehicleKubelWagonSnowPrefab" />
-		<property name="MaxDamage" value="2500" />
-		<!-- Health Modifier -->
-	</block>
-	<block id="954" name="cntHalfTrack">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="MultiBlockDim" value="3,4,8" />
-		<property name="Model" value="#militaryHalfTrack?vehicleHalftrackSnowPrefab" />
-	</block>
-	<block id="955" name="cntTransport">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="MultiBlockDim" value="3,3,7" />
-		<property name="LootList" value="173" />
-		<property name="Model" value="#militaryTransport?vehicleTransportTruckPrefab" />
-	</block>
-	<!-- End military vehicles -->
-	<!-- #################### Cars #################### -->
-	<!-- RCMP -->
-	<block id="956" name="cntRCMP">
-		<property name="CreativeMode" value="Player" />
+	<!-- Advanced Workbench -->
+	<block id="2046" name="AdvancedWorkbench">
+		<property name="CustomIcon" value="advancedWorkbenchIcon" />
+		<property name="Class" value="Workstation" />
 		<property name="Material" value="metal" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="107" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,2,6" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#carRCMP?vehicleRCMPPrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="cloth" count="3,7" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20,120" />
-		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="12" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<!-- Sedans -->
-	<block id="957" name="cntSedan01">
-		<!-- Danger - black -->
-		<property name="Extends" value="cntRCMP" />
-		<property name="LootList" value="19" />
-		<property name="MultiBlockDim" value="3,2,6" />
-		<property name="Model" value="#carDanger?vehicleCarSedan01Prefab" />
-	</block>
-	<block id="958" name="cntSedan02">
-		<!-- Red sedan -->
-		<property name="Extends" value="cntSedan01" />
-		<property name="Model" value="#carSedan01?vehicleCarSedan02redPrefab" />
-	</block>
-	<block id="959" name="cntSedan03">
-		<!-- Sedan blue -->
-		<property name="Extends" value="cntSedan01" />
-		<property name="Model" value="#carSedan02?vehicleCarSedan03lightbluePrefab" />
-	</block>
-	<block id="960" name="cntSedanWrecked03">
-		<!-- Sedan wrecked tan -->
-		<property name="Extends" value="cntSedan01" />
-		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03tanPrefab" />
-	</block>
-	<!-- HatchBacks -->
-	<block id="961" name="cntHatchBack">
-		<!-- hatchback green -->
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="metal" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="19" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,2,5" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#carHatchback?vehicleCarHatchback01greenPrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="cloth" count="3,7" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20,120" />
-		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="12" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="962" name="cntHatchBackWrecked01">
-		<!-- hatchback wrecked white -->
-		<property name="Extends" value="cntHatchBack" />
-		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01whitePrefab" />
-	</block>
-	<block id="963" name="cntHatchBackWrecked02">
-		<property name="Extends" value="cntHatchBack" />
-		<property name="Model" value="#carHatchbackWreckedHLRed?vehiclesCarHatchbackRedWreckedPrefab" />
-	</block>
-	<block id="964" name="cntHatchBackWrecked03">
-		<property name="Extends" value="cntHatchBack" />
-		<property name="Model" value="#carHatchbackWreckedHLBlue?vehiclesCarHatchbackBlueWreckedPrefab" />
-	</block>
-	<!-- Taxi -->
-	<block id="965" name="cntTaxi">
-		<property name="Extends" value="cntSedan01" />
-		<property name="LootList" value="110" />
-		<property name="Model" value="#carTaxi?vehicleCarTaxiPrefab" />
-	</block>
-	<!-- #################### Trucks #################### -->
-	<block id="966" name="cntPickUp">
-		<!-- blue -->
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="metal" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="108" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="3,3,8" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#truckPickup?vehicleTruckPickup01bluePrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="cloth" count="3,7" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20,120" />
-		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="12" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="967" name="cntExtendedCab">
-		<!-- Black -->
-		<property name="Extends" value="cntPickUp" />
-		<property name="MultiBlockDim" value="3,3,9" />
-		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02BlackPrefab" />
-	</block>
-	<block id="968" name="cntSemiShort">
-		<!-- Dark blue -->
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="metal" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="112" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,3,8" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseDarkBluePrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="cloth" count="3,7" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20,120" />
-		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="12" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="969" name="cntSemiLong">
-		<!-- Red -->
-		<property name="Extends" value="cntSemiShort" />
-		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseRedPrefab" />
-	</block>
-	<block id="970" name="cntTrailer">
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="metal" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="111" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="3,4,13" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#truckSemiTrailers?vehicleSemiTrailer02Prefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="cloth" count="3,7" />
-		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
-		<drop event="Harvest" name="gasCan" count="20,120" />
-		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="12" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="971" name="cntTrailerWrecked">
-		<property name="Extends" value="cntTrailer" />
-		<property name="Model" value="#truckSemiTrailers?vehicleSemiTrailer03Prefab" />
-	</block>
-	<block id="973" name="cntBronco">
-		<!-- light green -->
-		<property name="Extends" value="cntPickUp" />
-		<property name="MultiBlockDim" value="2,2,6" />
-		<property name="Model" value="#truckBronco?vehicleTruckBroncolightgreenPrefab" />
-	</block>
-	<block id="974" name="cntUtilityTruck">
-		<property name="Extends" value="cntPickUp" />
-		<property name="LootList" value="117" />
-		<property name="MultiBlockDim" value="2,2,6" />
-		<property name="Model" value="#truckUtility?vehicleTruckUtilityPrefab" />
-	</block>
-	<block id="975" name="cntVan">
-		<property name="Extends" value="cntPickUp" />
-		<property name="MultiBlockDim" value="2,2,6" />
-		<property name="Model" value="#truckVan?vehicleTruckVanPrefab" />
-	</block>
-	<block id="976" name="cntSemiFlatWrecked">
-		<!-- Black -->
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="112" />
-		<property name="MultiBlockDim" value="4,3,9" />
-		<property name="Model" value="#truckSemiFlatWrecked?vehicleTruckFlatnoseWreckedBlackPrefab" />
-	</block>
-	<block id="977" name="cntSedanExtra01">
-		<!-- blue -->
-		<property name="Extends" value="cntSedan01" />
-		<property name="LootList" value="19" />
-		<property name="MultiBlockDim" value="3,2,6" />
-		<property name="Model" value="#carSedan01?vehicleCarSedan02bluePrefab" />
-	</block>
-	<block id="978" name="cntTruckFuel">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="109" />
-		<property name="MultiBlockDim" value="3,3,11" />
-		<property name="Model" value="#truckFuel?vehicleTruckFuelPrefab" />
-	</block>
-	<block id="979" name="cntTractor01">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="113" />
-		<property name="MultiBlockDim" value="2,2,5" />
-		<property name="Model" value="#tractor?vehicleTractorPrefab" />
-	</block>
-	<block id="980" name="cntCombine">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="113" />
-		<property name="Model" value="#combine?vehicleTractor2Prefab" />
-	</block>
-	<!-- #################### Aircraft #################### -->
-	<block id="981" name="cntBlackHawk">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="LootList" value="114" />
-		<property name="MultiBlockDim" value="5,4,13" />
-		<property name="Model" value="#chopperBlackHawk?vehicleChopperBlackMilitaryPrefab" />
-	</block>
-	<block id="982" name="cntWreckedChopper">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="174" />
-		<property name="MultiBlockDim" value="7,5,16" />
-		<property name="Model" value="#chopperNewsWrecked?vehicleHelicopterNewsWreckedPrefab" />
-	</block>
-	<block id="983" name="cntHatchbackExtra">
-		<!-- hatchback light blue -->
-		<property name="Extends" value="cntHatchBack" />
-		<property name="Model" value="#carHatchback?vehicleCarHatchback01lightbluePrefab" />
-	</block>
-	<block id="984" name="cntPlane">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="LootList" value="116" />
-		<property name="MultiBlockDim" value="14,3,10" />
-		<property name="Model" value="#plane?vehiclePlanePrefab" />
-	</block>
-	<!-- RJ School bus -->
-	<block id="987" name="cntSchoolBus">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="118" />
-		<property name="MultiBlockDim" value="3,3,12" />
-		<property name="Model" value="#schoolBus?vehicleSchoolBusPrefab" />
-	</block>
-	<!-- RJ City bus -->
-	<block id="1930" name="cntCityBus">
-		<property name="Extends" value="cntSemiShort" />
-		<property name="LootList" value="118" />
-		<property name="MultiBlockDim" value="3,3,12" />
-		<property name="Model" value="#cityBus?vehicleBusCityPrefab" />
-	</block>
-	<!-- RJ Hummer -->
-	<block id="1772" name="cntHummer">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="Model" value="#militaryHummer?vehicleHummer01Prefab" />
-		<property name="LootList" value="106" />
-		<property name="MultiBlockDim" value="3,3,6" />
-	</block>
-	<block id="1456" name="cnt222">
-		<property name="Extends" value="cntTankTiger" />
-		<property name="LootList" value="106" />
-		<property name="MultiBlockDim" value="3,3,6" />
-		<property name="Model" value="#military222?vehicle222snowPrefab" />
-	</block>
-	<block id="1457" name="semiFullShort">
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="mMilitarySteel" />
-		<property name="LightOpacity" value="0" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="111" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="3,4,18" />
-		<property name="Class" value="CarExplodeLoot" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Model" value="#truckSemiFull?vehicleSemiFull2Prefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="ShowModelOnFall" value="false" />
-		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="scrapIron" count="10,20" />
-		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="titaniumPlates" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Harvest" name="titanium" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Harvest" name="steelPlates" count="1" prob="0.02" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
-		<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
-		<property name="BigDecorationRadius" value="5" />
-		<property name="CanDecorateOnSlopes" value="false" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="BlockDamage" value="5000" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="EntityDamage" value="70" />
-			<!-- damage for entities in the center of the explosion -->
-		</property>
-		<property name="ActivationDistance" value="6" />
-	</block>
-	<block id="1458" name="semiFullLong">
-		<property name="Extends" value="semiFullShort" />
-		<property name="MultiBlockDim" value="3,4,19" />
-		<property name="Model" value="#truckSemiFull?vehicleSemiFullPrefab" />
-	</block>
-	
-		<!-- #################### Decorations #################### -->
-	<!-- RJ Stumps - not containers -->
-	<block id="1010" name="cntStump02">
-		<property name="Material" value="treeWoodSmall" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#stump1?treeStump01Prefab" />
-		<property name="ModelOffset" value="0,-0.01,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="BigDecorationRadius" value="2" />
-		<property name="IsPlant" value="true" />
-		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<block id="1011" name="cntStump03">
-		<property name="Material" value="treeWoodSmall" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#stump2?treeStump02Prefab" />
-		<property name="ModelOffset" value="0,-0.01,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="BigDecorationRadius" value="2" />
-		<property name="IsPlant" value="true" />
-		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<!-- Iron Poll -->
-	<block id="1012" name="ironPollSnow">
-		<property name="Material" value="metal" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#pollIron?ironPoleSnowPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="BigDecorationRadius" value="2" />
-		<property name="IsPlant" value="true" />
-		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<!-- RJ trash -->
-	<block id="1013" name="cntRations">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#rations?itemMilitaryRationsPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="124" />
-		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
-		<property name="EconomicValue" value="40" />
-	</block>
-	<block id="1014" name="cntCardboardBox01">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#trashCardboardBoxes?cardboardBox01Prefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="126" />
-		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
-		<property name="EconomicValue" value="40" />
-	</block>
-	<block id="1015" name="cntCardboardBox02">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#trashCardboardBoxes?cardboardBox02Prefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="126" />
-		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
-		<property name="EconomicValue" value="40" />
-	</block>
-	<block id="1016" name="cntTrashTools">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="Mmetal_thin" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#trashTools?trashToolsPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="125" />
-		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
-		<property name="EconomicValue" value="40" />
-	</block>
-	<!-- Bedroll02 -->
-	<block id="1017" name="bedroll02">
-		<property name="CustomIcon" value="bedroll02Icon" />
-		<property name="DescriptionKey" value="bedGroupDesc" />
-		<property name="Class" value="SleepingBag" />
-		<property name="Material" value="mBedRoll" />
-		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="100" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#bedroll?bedrollGreenPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,2,2" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="FuelValue" value="6" />
-		<property name="CanPickup" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Group" value="Basics,Building" />
-		<property class="RepairItems">
-			<property name="yuccaFibers" value="10" />
-		</property>
-		<drop event="Destroy" name="yuccaFibers" count="1,3" />
-		<drop event="Fall" name="yuccaFibers" count="5" prob="1" stick_chance="0" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="EconomicValue" value="10" />
-		<property name="EconomicBundleSize" value="10" />
-	</block>
-	<!-- RJ lawn Gnome -->
-	<block id="1018" name="lawnGnome">
-		<property name="CustomIcon" value="lawnGnomeIcon" />
-		<property name="DescriptionKey" value="lawnGnomeDesc" />
-		<property name="Material" value="Mmetal_thin" />
-		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="100" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#lawnGnome?lawnGnomePrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="FuelValue" value="1" />
-		<property name="CanPickup" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Group" value="Basics,Building" />
-		<property class="RepairItems">
-			<property name="yuccaFibers" value="10" />
-		</property>
-		<drop event="Destroy" name="yuccaFibers" count="1,3" />
-		<drop event="Fall" name="yuccaFibers" count="5" prob="1" stick_chance="0" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="EconomicValue" value="10" />
-		<property name="EconomicBundleSize" value="10" />
-	</block>
-	<!-- water tank -->
-	<block id="1045" name="cntWaterTank">
-		<property name="CreativeMode" value="Player" />
-		<property name="Class" value="Loot" />
-		<property name="LootList" value="119" />
-		<property name="Material" value="Mmetal_hard" />
-		<property name="MaxDamage" value="15000" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#waterTank?waterTankPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="8,9,8" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="ImposterExchange" value="imposterSheet" param1="123" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="6" />
-		</property>
-		<drop event="Harvest" name="scrapIron" count="32" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="EconomicValue" value="128" />
-		<property name="Group" value="Building" />
-	</block>
-	<!-- wells -->
-	<block id="1046" name="cntWell01">
-		<property name="CreativeMode" value="Player" />
-		<property name="Class" value="Loot" />
-		<property name="LootList" value="120" />
-		<property name="Material" value="stone" />
-		<property name="MaxDamage" value="2000" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#wells?well01Prefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,3,2" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<drop event="Harvest" name="rockSmall" count="32" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="EconomicValue" value="128" />
-		<property name="Group" value="Building" />
-	</block>
-	<block id="1047" name="cntWell02">
-		<property name="CreativeMode" value="Player" />
-		<property name="Class" value="Loot" />
-		<property name="LootList" value="120" />
-		<property name="Material" value="stone" />
-		<property name="MaxDamage" value="2000" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#wells?well02Prefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,3,2" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<drop event="Harvest" name="rockSmall" count="32" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="EconomicValue" value="128" />
-		<property name="Group" value="Building" />
-	</block>
-	<block id="1048" name="boatDestroyed">
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="wood" />
-		<property name="MaxDamage" value="2000" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#rowboatDestroyed?rowboatDestroyedPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="2,1,4" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<drop event="Harvest" name="wood" count="32" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="EconomicValue" value="128" />
-		<property name="Group" value="Building" />
-	</block>
-	<block id="1049" name="vikingBoat">
-		<property name="CreativeMode" value="Player" />
-		<property name="Material" value="wood" />
-		<property name="MaxDamage" value="2000" />
-		<property name="LPHardnessScale" value="8" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#vikingBoat?vikingBoatPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="3,3,11" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<drop event="Harvest" name="wood" count="32" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="EconomicValue" value="128" />
-		<property name="Group" value="Building" />
-	</block>
-	<!-- RJ Trailer Boxes -->
-	<block id="1050" name="cntTrailerBoxJeans">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Stacknumber" value="1" />
-		<property name="DescriptionKey" value="cntTrailerBoxJeansDesc" />
-		<property name="Material" value="wood_regular" />
 		<property name="MaxDamage" value="200" />
-		<property name="Texture" value="423" />
-		<drop event="Destroy" count="0" />
-		<property name="DowngradeBlock" value="cntTrailerBoxJeansOpen" />
-	</block>
-	<block id="1051" name="cntTrailerBoxJeansOpen">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Class" value="Loot" />
-		<property name="MaxDamage" value="250" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="Texture" value="276,276,270,270,270,270" />
-		<property name="LootList" value="121" />
-		<property class="RepairItems">
-			<property name="wood" value="10" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#AdvancedWorkbench?AdvancedWorkbenchPrefab" />
+		<property name="MultiBlockDim" value="2,2,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="HeatMapStrength" value="0.5" />
+		<property name="HeatMapTime" value="1200" />
+		<property name="HeatMapFrequency" value="25" />
+		<property name="Stacknumber" value="10" />
+		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
+		<property class="Workstation">
+			<property name="Modules" value="tools,output" />
+			<property name="CraftingAreaRecipes" value="player,workbench,AdvancedWorkbench" />
 		</property>
+		<property class="RepairItems">
+			<property name="forgedIron" value="25" />
+			<property name="mechanicalParts" value="20" />
+			<property name="wood" value="50" />
+		</property>
+		<drop event="Destroy" name="AdvancedWorkbench" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<block id="1052" name="cntTrailerBoxSpam">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Stacknumber" value="1" />
-		<property name="DescriptionKey" value="cntTrailerBoxSpamDesc" />
-		<property name="Material" value="wood_regular" />
-		<property name="MaxDamage" value="200" />
-		<property name="Texture" value="423" />
-		<drop event="Destroy" count="0" />
-		<property name="DowngradeBlock" value="cntTrailerBoxSpamOpen" />
-	</block>
-	<block id="1053" name="cntTrailerBoxSpamOpen">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Class" value="Loot" />
-		<property name="MaxDamage" value="250" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="Texture" value="276,276,270,270,270,270" />
-		<property name="LootList" value="122" />
-		<property class="RepairItems">
-			<property name="wood" value="10" />
-		</property>
-		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<block id="1054" name="cntTrailerBox1337">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Stacknumber" value="1" />
-		<property name="DescriptionKey" value="cntTrailerBox1337Desc" />
-		<property name="Material" value="wood_regular" />
-		<property name="MaxDamage" value="200" />
-		<property name="Texture" value="423" />
-		<drop event="Destroy" count="0" />
-		<property name="DowngradeBlock" value="cntTrailerBox1337Open" />
-	</block>
-	<block id="1078" name="cntTrailerBox1337Open">
-		<property name="CustomIcon" value="cntShippingCrateShamway" />
-		<property name="CustomIconTint" value="38a838" />
-		<property name="Class" value="Loot" />
-		<property name="MaxDamage" value="250" />
-		<property name="Material" value="MCardboardLoot" />
-		<property name="Texture" value="276,276,270,270,270,270" />
-		<property name="LootList" value="123" />
-		<property class="RepairItems">
-			<property name="wood" value="10" />
-		</property>
-		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<drop event="Destroy" count="0" />
+		<property name="TakeDelay" value="15" />
+		<property name="Categories" value="Basics,Building,Ammo/Weapons,Tools/Traps,Science,Resources,Clothing,Decor/Miscellaneous" />
+		<property name="Categories_UI" value="ui_game_symbol_workbench,ui_game_symbol_hammer,ui_game_symbol_weapon_smithing,ui_game_symbol_tool_smithing,ui_game_symbol_science,ui_game_symbol_resource,ui_game_symbol_shirt,ui_game_symbol_chair" />
+		<property name="DescriptionKey" value="AdvancedWorkbenchDesc" />
+		<property name="EconomicValue" value="776" />
+		<property name="Group" value="Building" />
 	</block>
 	
-	<!-- #################### RJ BEDS #################### -->
-	<block id="1079" name="rjBed01">
-		<property name="DescriptionKey" value="bedGroupDesc" />
-		<property name="CustomIcon" value="rjBed01Icon" />
-		<property name="Class" value="SleepingBag" />
-		<property name="Material" value="furniture" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#beds?Bed04Prefab" />
-		<property name="MultiBlockDim" value="2,1,3" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FallDamage" value="false" />
-		<!-- A15
-	<property name="BuffsWhenWalkedOn" value="sleepingBigBedTrigger"/>
-	-->
-		<property class="RepairItems">
-			<property name="cloth" value="40" />
-			<property name="cottonPlant" value="40" />
-			<property name="spring" value="20" />
-			<property name="wood" value="20" />
-			<property name="shortMetalPipe" value="10" />
-		</property>
-		<drop event="Harvest" name="cloth" count="16" />
-		<drop event="Harvest" name="cottonPlant" count="16" tool_category="Disassemble" />
-		<drop event="Harvest" name="spring" count="6" tool_category="Disassemble" />
-		<drop event="Harvest" name="wood" count="8" />
-		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="10" />
-		<property name="Group" value="Building,Decor/Miscellaneous" />
-		<property name="EconomicValue" value="2600" />
-	</block>
-	<block id="1080" name="rjBed02">
-		<property name="DescriptionKey" value="bedGroupDesc" />
-		<property name="CustomIcon" value="rjBed02Icon" />
-		<property name="Class" value="SleepingBag" />
-		<property name="Material" value="furniture" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#beds?bed03Prefab" />
-		<property name="MultiBlockDim" value="2,1,2" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FallDamage" value="false" />
-		<!-- A15
-	<property name="BuffsWhenWalkedOn" value="sleepingBigBedTrigger"/>
-	-->
-		<property class="RepairItems">
-			<property name="cloth" value="40" />
-			<property name="cottonPlant" value="40" />
-			<property name="spring" value="20" />
-			<property name="wood" value="20" />
-			<property name="shortMetalPipe" value="10" />
-		</property>
-		<drop event="Harvest" name="cloth" count="16" />
-		<drop event="Harvest" name="cottonPlant" count="16" tool_category="Disassemble" />
-		<drop event="Harvest" name="spring" count="6" tool_category="Disassemble" />
-		<drop event="Harvest" name="wood" count="8" />
-		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="10" />
-		<property name="Group" value="Building,Decor/Miscellaneous" />
-		<property name="EconomicValue" value="2600" />
-	</block>
-	<block id="1081" name="rjBed03">
-		<property name="DescriptionKey" value="bedGroupDesc" />
-		<property name="CustomIcon" value="rjBed03Icon" />
-		<property name="Class" value="SleepingBag" />
-		<property name="Material" value="furniture" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#beds?bed02Prefab" />
-		<property name="MultiBlockDim" value="2,1,3" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FallDamage" value="false" />
-		<!-- A15
-	<property name="BuffsWhenWalkedOn" value="sleepingBigBedTrigger"/>
-	-->
-		<property class="RepairItems">
-			<property name="cloth" value="40" />
-			<property name="cottonPlant" value="40" />
-			<property name="spring" value="20" />
-			<property name="wood" value="20" />
-			<property name="shortMetalPipe" value="10" />
-		</property>
-		<drop event="Harvest" name="cloth" count="16" />
-		<drop event="Harvest" name="cottonPlant" count="16" tool_category="Disassemble" />
-		<drop event="Harvest" name="spring" count="6" tool_category="Disassemble" />
-		<drop event="Harvest" name="wood" count="8" />
-		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="10" />
-		<property name="Group" value="Building,Decor/Miscellaneous" />
-		<property name="EconomicValue" value="2600" />
-	</block>
-	
-	<!-- RJ Cash register -->
-	<block id="1340" name="cntCashRegister">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="250" />
-		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
-		<!-- <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
-	<property name="Mesh" value="models"/>
-	<property name="Model" value="LootContainers/cash_register" param1="main_mesh"/> -->
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#cashRegister1?cashRegisterPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="LootList" value="55" />
-		<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="0,3" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="1,15" />
-		<property name="EconomicValue" value="250" />
-		<!-- disassemble value -->
-	</block>
-	
-		<!-- RJ Chairs -->
-	<!-- Lobby -->
-	<block id="1492" name="chairLobby">
-		<property name="CustomIcon" value="chairLobbyIcon" />
-		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#chairs?chairLobbyPrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FuelValue" value="120" />
-		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property class="RepairItems">
-			<property name="wood" value="4" />
-			<property name="cloth" value="4" />
-			<property name="cottonPlant" value="4" />
-		</property>
-		<drop event="Destroy" name="wood" count="1,3" prob="0.5" />
-		<drop event="Destroy" name="cloth" count="1,3" prob="0.5" />
-		<drop event="Destroy" name="cottonPlant" count="1,3" prob="0.1" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="CanPickup" value="true" />
-		<property name="EconomicValue" value="11" />
-		<property name="EconomicBundleSize" value="2" />
-		<property name="Group" value="Decor/Miscellaneous" />
-	</block>
-	<!-- Computer -->
-	<block id="1493" name="chairComputer">
-		<property name="CustomIcon" value="chairComputerIcon" />
-		<property name="Material" value="furniture" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#chairs?chairOfficePrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FuelValue" value="90" />
-		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property class="RepairItems">
-			<property name="cloth" value="5" />
-			<property name="cottonPlant" value="10" />
-			<property name="mechanicalParts" value="2" />
-			<property name="scrapPlastics" value="3" />
-		</property>
-		<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble" />
-		<drop event="Destroy" name="cloth" count="2,4" />
-		<drop event="Destroy" name="scrapPlastics" count="5,15" />
-		<property name="CanPickup" value="true" />
-		<property name="EconomicValue" value="11" />
-		<property name="EconomicBundleSize" value="2" />
-		<property name="Group" value="Decor/Miscellaneous" />
-	</block>
-	<!-- Wood Nice -->
-	<block id="1494" name="chairWoodNice">
-		<property name="CustomIcon" value="chairWoodNiceIcon" />
-		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#chairs?chairWoodPrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FuelValue" value="120" />
-		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property class="RepairItems">
-			<property name="wood" value="4" />
-		</property>
-		<drop event="Destroy" name="wood" count="1,3" prob="1" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="CanPickup" value="true" />
-		<property name="EconomicValue" value="11" />
-		<property name="EconomicBundleSize" value="2" />
-		<property name="Group" value="Decor/Miscellaneous" />
-	</block>
-	<!-- Wood Plain -->
-	<block id="1495" name="chairWoodPlain">
-		<property name="CustomIcon" value="chairWoodPlainIcon" />
-		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#chairs?chairWoodPlainPrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FuelValue" value="120" />
-		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property class="RepairItems">
-			<property name="wood" value="4" />
-		</property>
-		<drop event="Destroy" name="wood" count="1,3" prob="1" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="CanPickup" value="true" />
-		<property name="EconomicValue" value="11" />
-		<property name="EconomicBundleSize" value="2" />
-		<property name="Group" value="Decor/Miscellaneous" />
-	</block>
-	<!-- Plastic -->
-	<block id="1496" name="chairPlastic">
-		<property name="CustomIcon" value="chairPlasticIcon" />
-		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#chairs?chairPlasticPrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FuelValue" value="120" />
-		<property name="DescriptionKey" value="furnitureGroupDesc" />
-		<property class="RepairItems">
-			<property name="scrapPlastics" value="4" />
-			<property name="forgedIron" value="1" />
-		</property>
-		<drop event="Destroy" name="scrapPlastics" count="1,3" prob="0.5" />
-		<drop event="Destroy" name="scrapIron" count="1,3" prob="0.5" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="CanPickup" value="true" />
-		<property name="EconomicValue" value="11" />
-		<property name="EconomicBundleSize" value="2" />
-		<property name="Group" value="Decor/Miscellaneous" />
-	</block>
-	<!-- End Chairs -->
-	<!-- Rj Deer Head -->
-	<block id="1497" name="deerHead">
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="deerHeadIcon" />
-		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
-		<property name="Material" value="cloth" />
-		<property name="LightOpacity" value="0" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#deerHead?deerHeadPrefab" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="DescriptionKey" value="deerHeadDesc" />
-		<property name="CanPickup" value="true" />
-		<property name="Group" value="Decor/Miscellaneous" />
-		<drop event="Destroy" name="deerHead" count="1" />
-	</block>
-	<!-- RJ Mirror -->
-	<block id="1498" name="mirrorWall">
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="mirrorWallIcon" />
-		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
-		<property name="Material" value="glass" />
-		<property name="LightOpacity" value="0" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#mirror?mirrorPrefab" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,2,1" />
-		<property name="DescriptionKey" value="mirrorWallDesc" />
-		<property name="CanPickup" value="true" />
-		<property name="Group" value="Decor/Miscellaneous" />
-		<drop event="Destroy" name="deerHead" count="1" />
-	</block>
-	<!-- RJ teddy bear -->
-	<block id="1499" name="teddyBear">
-		<property name="CustomIcon" value="teddyBearIcon" />
-		<property name="DescriptionKey" value="teddyBearDesc" />
-		<property name="Material" value="cloth" />
-		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="25" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#teddyBear?teddyBearPrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="FuelValue" value="1" />
-		<property name="CanPickup" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property class="RepairItems">
-			<property name="cloth" value="10" />
-		</property>
-		<drop event="Destroy" name="cloth" count="1,3" />
-		<drop event="Fall" name="cloth" count="5" prob="1" stick_chance="0" />
-		<property name="EconomicValue" value="10" />
-		<property name="Group" value="Decor/Miscellaneous" />
-		<property name="EconomicBundleSize" value="10" />
-	</block>
-	
-	<!-- RJ Bedroll -->
-	<block id="1562" name="bedroll">
-		<property name="CustomIcon" value="bedrollIcon" />
-		<property name="DescriptionKey" value="bedGroupDesc" />
-		<property name="Class" value="SleepingBag" />
-		<property name="Material" value="mBedRoll" />
-		<property name="StabilitySupport" value="false" />
-		<property name="MaxDamage" value="100" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#bedroll?bedrollBluePrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,2,2" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="FuelValue" value="6" />
-		<property name="CanPickup" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Group" value="Basics,Building" />
-		<property class="RepairItems">
-			<property name="yuccaFibers" value="10" />
-		</property>
-		<drop event="Destroy" name="yuccaFibers" count="1,3" />
-		<drop event="Fall" name="yuccaFibers" count="5" prob="1" stick_chance="0" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="EconomicValue" value="10" />
-		<property name="EconomicBundleSize" value="10" />
-	</block>
-	
-	<!-- RJ creepy doll -->
-	<block id="1623" name="creepyDoll">
-		<property name="CustomIcon" value="creepyDollIcon" />
-		<property name="Class" value="Gore" />
-		<property name="CreativeMode" value="Dev" />
-		<property name="Material" value="stone" />
-		<property name="MaxDamage" value="50" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#dollCreepy?dollCreepyDeadPrefab" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="Tag" value="Gore" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="FallDamage" value="false" />
-		<property name="CanPickup" value="true" />
-		<property name="LootList" value="1" />
-		<property name="DroppedEntityClass" value="DroppedLootSack" />
-	</block>
-	
-	<!-- RJ Anvil anvil ANVIL -->
-	<block id="1633" name="anvil">
-		<property name="CustomIcon" value="anvil" />
-		<property name="DescriptionKey" value="anvilDesc" />
-		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="250" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#anvil?anvilPrefab" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="StabilitySupport" value="false" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="CanPickup" value="true" />
-		<drop event="Destroy" name="scrapIron" count="10,150" />
-		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
-		<property name="Group" value="Resources" />
-		<property name="EconomicValue" value="40" />
-	</block>
 	
 	<!-- RJ NEW BLOCKS -->
 	<!-- blocks -->
@@ -19617,62 +18386,7 @@
 	</block>
 	<!-- END RJ NEW BLOCKS -->
 	
-		<!-- RJ Death Marker -->
-	<block id="1770" name="cntDeathMarker">
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="DeathMarkerIcon" />
-		<property name="Class" value="Backpack" />
-		<property name="Material" value="wood_regular" />
-		<property name="LightOpacity" value="0" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#DeathMarker?DeathMarkerPrefab" />
-		<!-- <property name="ImposterDontBlock" value="true" /> -->
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<!-- <property name="LootList" value="101" /> -->
-		<property name="LootList" value="102" />
-		<property name="ModelOffset" value="0,0.5,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<property name="DescriptionKey" value="cntDeathMarkerDesc" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<!-- RJ Canada flag wall -->
-	<block id="1771" name="flagCanadaWall">
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="CanadaFlagWallIcon" />
-		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
-		<property name="Material" value="cloth" />
-		<property name="LightOpacity" value="0" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#CanadaFlagWall?CanadaFlagPrefab" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="ModelOffset" value="0,1,0" />
-		<property name="MultiBlockDim" value="3,2,1" />
-		<property name="DescriptionKey" value="flagCanadaWallDesc" />
-		<property name="CanPickup" value="true" />
-		<drop event="Destroy" name="flagCanadaWall" count="1" />
-	</block>
-	<!-- RJ Enable Vanilla Motorcycle FREE -->
-	<block id="1773" name="cntMotorcycle">
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="MotorcycleIcon" />
-		<property name="Class" value="Loot" />
-		<property name="Material" value="metal" />
-		<property name="LightOpacity" value="0" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="Entities/Vehicles/Motorcycle/motorcycle" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="LootList" value="103" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,3" />
-		<drop event="Destroy" count="0" />
-	</block>
-	<!-- RJ Coloured Doors -->
+		<!-- RJ Coloured Doors -->
 	<!-- Red -->
 	<block id="1779" name="secureDoorWoodenRed">
 		<property name="Extends" value="secureDoorWooden" />
@@ -19797,6 +18511,828 @@
 		<property name="CustomIconTint" value="ff40ff" />
 		<property name="RandomTintColor1" value="ff40ff" />
 	</block>
+	
+		<!-- RJ Chairs -->
+	<!-- Lobby -->
+	<block id="1492" name="chairLobby">
+		<property name="CustomIcon" value="chairLobbyIcon" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#chairs?chairLobbyPrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="120" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+		<property class="RepairItems">
+			<property name="wood" value="4" />
+			<property name="cloth" value="4" />
+			<property name="cottonPlant" value="4" />
+		</property>
+		<drop event="Destroy" name="wood" count="1,3" prob="0.5" />
+		<drop event="Destroy" name="cloth" count="1,3" prob="0.5" />
+		<drop event="Destroy" name="cottonPlant" count="1,3" prob="0.1" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="CanPickup" value="true" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="2" />
+		<property name="Group" value="Decor/Miscellaneous" />
+	</block>
+	<!-- Computer -->
+	<block id="1493" name="chairComputer">
+		<property name="CustomIcon" value="chairComputerIcon" />
+		<property name="Material" value="furniture" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#chairs?chairOfficePrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="90" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+		<property class="RepairItems">
+			<property name="cloth" value="5" />
+			<property name="cottonPlant" value="10" />
+			<property name="mechanicalParts" value="2" />
+			<property name="scrapPlastics" value="3" />
+		</property>
+		<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble" />
+		<drop event="Destroy" name="cloth" count="2,4" />
+		<drop event="Destroy" name="scrapPlastics" count="5,15" />
+		<property name="CanPickup" value="true" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="2" />
+		<property name="Group" value="Decor/Miscellaneous" />
+	</block>
+	<!-- Wood Nice -->
+	<block id="1494" name="chairWoodNice">
+		<property name="CustomIcon" value="chairWoodNiceIcon" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#chairs?chairWoodPrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="120" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+		<property class="RepairItems">
+			<property name="wood" value="4" />
+		</property>
+		<drop event="Destroy" name="wood" count="1,3" prob="1" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="CanPickup" value="true" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="2" />
+		<property name="Group" value="Decor/Miscellaneous" />
+	</block>
+	<!-- Wood Plain -->
+	<block id="1495" name="chairWoodPlain">
+		<property name="CustomIcon" value="chairWoodPlainIcon" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#chairs?chairWoodPlainPrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="120" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+		<property class="RepairItems">
+			<property name="wood" value="4" />
+		</property>
+		<drop event="Destroy" name="wood" count="1,3" prob="1" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="CanPickup" value="true" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="2" />
+		<property name="Group" value="Decor/Miscellaneous" />
+	</block>
+	<!-- Plastic -->
+	<block id="1496" name="chairPlastic">
+		<property name="CustomIcon" value="chairPlasticIcon" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#chairs?chairPlasticPrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FuelValue" value="120" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+		<property class="RepairItems">
+			<property name="scrapPlastics" value="4" />
+			<property name="forgedIron" value="1" />
+		</property>
+		<drop event="Destroy" name="scrapPlastics" count="1,3" prob="0.5" />
+		<drop event="Destroy" name="scrapIron" count="1,3" prob="0.5" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="CanPickup" value="true" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="2" />
+		<property name="Group" value="Decor/Miscellaneous" />
+	</block>
+	<!-- End Chairs -->
+	
+	<!-- #################### Vehicles #################### -->
+	<!-- #################### RJ Military Vehicles #################### -->
+
+	<!-- Tiger Tank -->
+	<block id="950" name="cntTankTiger">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="mMilitarySteel" />
+		<property name="LightOpacity" value="0" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="106" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="4,4,8" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#militaryTiger?vehicleTigerTankSnowPrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="scrapIron" count="10,20" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="titaniumPlates" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Harvest" name="titanium" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Harvest" name="steelPlates" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="951" name="cntTankSherman">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="Model" value="#militarySherman?vehicleShermanTankSnowPrefab" />
+	</block>
+	<block id="952" name="cntAPC">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="MultiBlockDim" value="5,3,10" />
+		<property name="Model" value="#militaryAPC?vehicleAPCPrefab" />
+		<property name="MaxDamage" value="17500" />
+		<!-- Health Modifier -->
+	</block>
+	<block id="1344" name="cntJeep">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="MultiBlockDim" value="3,3,10" />
+		<property name="Model" value="#militaryJeep?vehicleJeepSnowPrefab" />
+		<property name="MaxDamage" value="2500" />
+		<!-- Health Modifier -->
+	</block>
+	<block id="953" name="cntKubel">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="MultiBlockDim" value="3,2,5" />
+		<property name="Model" value="#militaryKubelWagon?vehicleKubelWagonSnowPrefab" />
+		<property name="MaxDamage" value="2500" />
+		<!-- Health Modifier -->
+	</block>
+	<block id="954" name="cntHalfTrack">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="MultiBlockDim" value="3,4,8" />
+		<property name="Model" value="#militaryHalfTrack?vehicleHalftrackSnowPrefab" />
+	</block>
+	<block id="955" name="cntTransport">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="MultiBlockDim" value="3,3,7" />
+		<property name="LootList" value="173" />
+		<property name="Model" value="#militaryTransport?vehicleTransportTruckPrefab" />
+	</block>
+	<!-- End military vehicles -->
+	<!-- #################### Cars #################### -->
+	<!-- RCMP -->
+	<block id="956" name="cntRCMP">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="metal" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="107" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,2,6" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#carRCMP?vehicleRCMPPrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="cloth" count="3,7" />
+		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="20,120" />
+		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="12" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<!-- Sedans -->
+	<block id="957" name="cntSedan01">
+		<!-- Danger - black -->
+		<property name="Extends" value="cntRCMP" />
+		<property name="LootList" value="19" />
+		<property name="MultiBlockDim" value="3,2,6" />
+		<property name="Model" value="#carDanger?vehicleCarSedan01Prefab" />
+	</block>
+	<block id="958" name="cntSedan02">
+		<!-- Red sedan -->
+		<property name="Extends" value="cntSedan01" />
+		<property name="Model" value="#carSedan01?vehicleCarSedan02redPrefab" />
+	</block>
+	<block id="959" name="cntSedan03">
+		<!-- Sedan blue -->
+		<property name="Extends" value="cntSedan01" />
+		<property name="Model" value="#carSedan02?vehicleCarSedan03lightbluePrefab" />
+	</block>
+	<block id="960" name="cntSedanWrecked03">
+		<!-- Sedan wrecked tan -->
+		<property name="Extends" value="cntSedan01" />
+		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03tanPrefab" />
+	</block>
+	<!-- HatchBacks -->
+	<block id="961" name="cntHatchBack">
+		<!-- hatchback green -->
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="metal" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="19" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,2,5" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#carHatchback?vehicleCarHatchback01greenPrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="cloth" count="3,7" />
+		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="20,120" />
+		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="12" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="962" name="cntHatchBackWrecked01">
+		<!-- hatchback wrecked white -->
+		<property name="Extends" value="cntHatchBack" />
+		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01whitePrefab" />
+	</block>
+	<block id="963" name="cntHatchBackWrecked02">
+		<property name="Extends" value="cntHatchBack" />
+		<property name="Model" value="#carHatchbackWreckedHLRed?vehiclesCarHatchbackRedWreckedPrefab" />
+	</block>
+	<block id="964" name="cntHatchBackWrecked03">
+		<property name="Extends" value="cntHatchBack" />
+		<property name="Model" value="#carHatchbackWreckedHLBlue?vehiclesCarHatchbackBlueWreckedPrefab" />
+	</block>
+	<!-- Taxi -->
+	<block id="965" name="cntTaxi">
+		<property name="Extends" value="cntSedan01" />
+		<property name="LootList" value="110" />
+		<property name="Model" value="#carTaxi?vehicleCarTaxiPrefab" />
+	</block>
+	<!-- #################### Trucks #################### -->
+	<block id="966" name="cntPickUp">
+		<!-- blue -->
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="metal" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="108" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="3,3,8" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#truckPickup?vehicleTruckPickup01bluePrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="cloth" count="3,7" />
+		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="20,120" />
+		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="12" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="967" name="cntExtendedCab">
+		<!-- Black -->
+		<property name="Extends" value="cntPickUp" />
+		<property name="MultiBlockDim" value="3,3,9" />
+		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02BlackPrefab" />
+	</block>
+	<block id="968" name="cntSemiShort">
+		<!-- Dark blue -->
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="metal" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="112" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,3,8" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseDarkBluePrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="cloth" count="3,7" />
+		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="20,120" />
+		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="12" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="969" name="cntSemiLong">
+		<!-- Red -->
+		<property name="Extends" value="cntSemiShort" />
+		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseRedPrefab" />
+	</block>
+	<block id="970" name="cntTrailer">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="metal" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="111" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="3,4,13" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#truckSemiTrailers?vehicleSemiTrailer02Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="leather" count="2,7" prob="0.5" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="cloth" count="3,7" />
+		<drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble" />
+		<drop event="Harvest" name="gasCan" count="20,120" />
+		<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="12" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="971" name="cntTrailerWrecked">
+		<property name="Extends" value="cntTrailer" />
+		<property name="Model" value="#truckSemiTrailers?vehicleSemiTrailer03Prefab" />
+	</block>
+	<block id="973" name="cntBronco">
+		<!-- light green -->
+		<property name="Extends" value="cntPickUp" />
+		<property name="MultiBlockDim" value="2,2,6" />
+		<property name="Model" value="#truckBronco?vehicleTruckBroncolightgreenPrefab" />
+	</block>
+	<block id="974" name="cntUtilityTruck">
+		<property name="Extends" value="cntPickUp" />
+		<property name="LootList" value="117" />
+		<property name="MultiBlockDim" value="2,2,6" />
+		<property name="Model" value="#truckUtility?vehicleTruckUtilityPrefab" />
+	</block>
+	<block id="975" name="cntVan">
+		<property name="Extends" value="cntPickUp" />
+		<property name="MultiBlockDim" value="2,2,6" />
+		<property name="Model" value="#truckVan?vehicleTruckVanPrefab" />
+	</block>
+	<block id="976" name="cntSemiFlatWrecked">
+		<!-- Black -->
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="112" />
+		<property name="MultiBlockDim" value="4,3,9" />
+		<property name="Model" value="#truckSemiFlatWrecked?vehicleTruckFlatnoseWreckedBlackPrefab" />
+	</block>
+	<block id="977" name="cntSedanExtra01">
+		<!-- blue -->
+		<property name="Extends" value="cntSedan01" />
+		<property name="LootList" value="19" />
+		<property name="MultiBlockDim" value="3,2,6" />
+		<property name="Model" value="#carSedan01?vehicleCarSedan02bluePrefab" />
+	</block>
+	<block id="978" name="cntTruckFuel">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="109" />
+		<property name="MultiBlockDim" value="3,3,11" />
+		<property name="Model" value="#truckFuel?vehicleTruckFuelPrefab" />
+	</block>
+	<block id="979" name="cntTractor01">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="113" />
+		<property name="MultiBlockDim" value="2,2,5" />
+		<property name="Model" value="#tractor?vehicleTractorPrefab" />
+	</block>
+	<block id="980" name="cntCombine">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="113" />
+		<property name="Model" value="#combine?vehicleTractor2Prefab" />
+	</block>
+	<!-- #################### Aircraft #################### -->
+	<block id="981" name="cntBlackHawk">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="LootList" value="114" />
+		<property name="MultiBlockDim" value="5,4,13" />
+		<property name="Model" value="#chopperBlackHawk?vehicleChopperBlackMilitaryPrefab" />
+	</block>
+	<block id="982" name="cntWreckedChopper">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="174" />
+		<property name="MultiBlockDim" value="7,5,16" />
+		<property name="Model" value="#chopperNewsWrecked?vehicleHelicopterNewsWreckedPrefab" />
+	</block>
+	<block id="983" name="cntHatchbackExtra">
+		<!-- hatchback light blue -->
+		<property name="Extends" value="cntHatchBack" />
+		<property name="Model" value="#carHatchback?vehicleCarHatchback01lightbluePrefab" />
+	</block>
+	<block id="984" name="cntPlane">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="LootList" value="116" />
+		<property name="MultiBlockDim" value="14,3,10" />
+		<property name="Model" value="#plane?vehiclePlanePrefab" />
+	</block>
+	<!-- RJ School bus -->
+	<block id="987" name="cntSchoolBus">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="118" />
+		<property name="MultiBlockDim" value="3,3,12" />
+		<property name="Model" value="#schoolBus?vehicleSchoolBusPrefab" />
+	</block>
+	<!-- RJ City bus -->
+	<block id="1930" name="cntCityBus">
+		<property name="Extends" value="cntSemiShort" />
+		<property name="LootList" value="118" />
+		<property name="MultiBlockDim" value="3,3,12" />
+		<property name="Model" value="#cityBus?vehicleBusCityPrefab" />
+	</block>
+	<!-- RJ Hummer -->
+	<block id="1772" name="cntHummer">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="Model" value="#militaryHummer?vehicleHummer01Prefab" />
+		<property name="LootList" value="106" />
+		<property name="MultiBlockDim" value="3,3,6" />
+	</block>
+	<block id="1456" name="cnt222">
+		<property name="Extends" value="cntTankTiger" />
+		<property name="LootList" value="106" />
+		<property name="MultiBlockDim" value="3,3,6" />
+		<property name="Model" value="#military222?vehicle222snowPrefab" />
+	</block>
+	<block id="1457" name="semiFullShort">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="mMilitarySteel" />
+		<property name="LightOpacity" value="0" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="111" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="3,4,18" />
+		<property name="Class" value="CarExplodeLoot" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="Model" value="#truckSemiFull?vehicleSemiFull2Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ShowModelOnFall" value="false" />
+		<property name="PassThroughDamage" value="true" />
+		<drop event="Harvest" name="scrapIron" count="10,20" />
+		<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="titaniumPlates" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Harvest" name="titanium" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Harvest" name="steelPlates" count="1" prob="0.02" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble" />
+		<property name="BigDecorationRadius" value="5" />
+		<property name="CanDecorateOnSlopes" value="false" />
+		<property class="Explosion">
+			<property name="ParticleIndex" value="4" />
+			<!-- which prefab/particle is used -->
+			<property name="RadiusBlocks" value="5" />
+			<!-- damage radius for blocks -->
+			<property name="BlockDamage" value="5000" />
+			<!-- damage for blocks in the center of the explosion -->
+			<property name="RadiusEntities" value="5" />
+			<!-- damage radius for entities -->
+			<property name="EntityDamage" value="70" />
+			<!-- damage for entities in the center of the explosion -->
+		</property>
+		<property name="ActivationDistance" value="6" />
+	</block>
+	<block id="1458" name="semiFullLong">
+		<property name="Extends" value="semiFullShort" />
+		<property name="MultiBlockDim" value="3,4,19" />
+		<property name="Model" value="#truckSemiFull?vehicleSemiFullPrefab" />
+	</block>
+
+	<!-- #################### RJ BEDS #################### -->
+	<!-- RJ Bedroll -->
+	<block id="1562" name="bedroll">
+		<property name="CustomIcon" value="bedrollIcon" />
+		<property name="DescriptionKey" value="bedGroupDesc" />
+		<property name="Class" value="SleepingBag" />
+		<property name="Material" value="mBedRoll" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="100" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#bedroll?bedrollBluePrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,2,2" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="FuelValue" value="6" />
+		<property name="CanPickup" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Group" value="Basics,Building" />
+		<property class="RepairItems">
+			<property name="yuccaFibers" value="10" />
+		</property>
+		<drop event="Destroy" name="yuccaFibers" count="1,3" />
+		<drop event="Fall" name="yuccaFibers" count="5" prob="1" stick_chance="0" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+	</block>
+	
+	<!-- RJ Bedroll02 -->
+	<block id="1017" name="bedroll02">
+		<property name="Extends" value="bedroll" />
+		<property name="CustomIcon" value="bedroll02Icon" />
+		<property name="Model" value="#bedroll?bedrollGreenPrefab" />
+	</block>
+	<!-- RJ Bedroll default -->
+	<block id="2003" name="bedroll03">
+		<property name="Extends" value="bedroll" />
+		<property name="CustomIcon" value="bedroll" />
+	    <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+    	<property name="Mesh" value="models"/>
+     	<property name="Model" value="CampingGear/bedroll_02" param1="main_mesh"/>
+	</block>
+	<block id="1079" name="rjBed01">
+		<property name="DescriptionKey" value="bedGroupDesc" />
+		<property name="CustomIcon" value="rjBed01Icon" />
+		<property name="Class" value="SleepingBag" />
+		<property name="Material" value="furniture" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#beds?Bed04Prefab" />
+		<property name="MultiBlockDim" value="2,1,3" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property class="RepairItems">
+			<property name="cloth" value="40" />
+			<property name="cottonPlant" value="40" />
+			<property name="spring" value="20" />
+			<property name="wood" value="20" />
+			<property name="shortMetalPipe" value="10" />
+		</property>
+		<drop event="Harvest" name="cloth" count="16" />
+		<drop event="Harvest" name="cottonPlant" count="16" tool_category="Disassemble" />
+		<drop event="Harvest" name="spring" count="6" tool_category="Disassemble" />
+		<drop event="Harvest" name="wood" count="8" />
+		<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="10" />
+		<property name="Group" value="Building,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="2600" />
+	</block>
+	<block id="1080" name="rjBed02">
+		<property name="CustomIcon" value="rjBed02Icon" />
+		<property name="Model" value="#beds?bed03Prefab" />
+		<property name="MultiBlockDim" value="2,1,2" />
+		<property name="Extends" value="rjBed01" />
+	</block>
+	<block id="1081" name="rjBed03">
+		<property name="CustomIcon" value="rjBed03Icon" />
+		<property name="Model" value="#beds?bed02Prefab" />
+		<property name="MultiBlockDim" value="2,1,3" />
+		<property name="Extends" value="rjBed01" />
+	</block>	
+	
+	<!-- #################### Trailer Boxes #################### -->
+	<!-- RJ Trailer Boxes -->
+	<block id="1050" name="cntTrailerBoxJeans">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Stacknumber" value="1" />
+		<property name="DescriptionKey" value="cntTrailerBoxJeansDesc" />
+		<property name="Material" value="wood_regular" />
+		<property name="MaxDamage" value="200" />
+		<property name="Texture" value="423" />
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="cntTrailerBoxJeansOpen" />
+		<property name="Class" value="TakeAndReplace, Mods" />
+		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
+		<property name="TakeDelay" value="5" />
+	</block>
+	<block id="1051" name="cntTrailerBoxJeansOpen">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Class" value="Loot" />
+		<property name="MaxDamage" value="250" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="Texture" value="276,276,270,270,270,270" />
+		<property name="LootList" value="121" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<block id="1052" name="cntTrailerBoxSpam">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Stacknumber" value="1" />
+		<property name="DescriptionKey" value="cntTrailerBoxSpamDesc" />
+		<property name="Material" value="wood_regular" />
+		<property name="MaxDamage" value="200" />
+		<property name="Texture" value="423" />
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="cntTrailerBoxSpamOpen" />
+		<property name="Class" value="TakeAndReplace, Mods" />
+		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
+		<property name="TakeDelay" value="5" />
+	</block>
+	<block id="1053" name="cntTrailerBoxSpamOpen">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Class" value="Loot" />
+		<property name="MaxDamage" value="250" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="Texture" value="276,276,270,270,270,270" />
+		<property name="LootList" value="122" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<block id="1054" name="cntTrailerBox1337">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Stacknumber" value="1" />
+		<property name="DescriptionKey" value="cntTrailerBox1337Desc" />
+		<property name="Material" value="wood_regular" />
+		<property name="MaxDamage" value="200" />
+		<property name="Texture" value="423" />
+		<drop event="Destroy" count="0" />
+		<property name="DowngradeBlock" value="cntTrailerBox1337Open" />
+		<property name="Class" value="TakeAndReplace, Mods" />
+		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
+		<property name="TakeDelay" value="7" />
+	</block>
+	<block id="1078" name="cntTrailerBox1337Open">
+		<property name="CustomIcon" value="cntShippingCrateShamway" />
+		<property name="CustomIconTint" value="38a838" />
+		<property name="Class" value="Loot" />
+		<property name="MaxDamage" value="250" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="Texture" value="276,276,270,270,270,270" />
+		<property name="LootList" value="123" />
+		<property class="RepairItems">
+			<property name="wood" value="10" />
+		</property>
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<drop event="Destroy" count="0" />
+	</block>
+	
+	
+
 	<!-- RJ Starter Crate -->
 	<block id="2042" name="rjstartercrate">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
@@ -19826,6 +19362,368 @@
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 		<drop event="Destroy" count="0" />
 	</block>
+	
+	<!-- #################### Decorations #################### -->
+	<!-- RJ Stumps - not containers -->
+	<block id="1010" name="cntStump02">
+		<property name="Material" value="treeWoodSmall" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#stump1?treeStump01Prefab" />
+		<property name="ModelOffset" value="0,-0.01,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="BigDecorationRadius" value="2" />
+		<property name="IsPlant" value="true" />
+		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<block id="1011" name="cntStump03">
+		<property name="Material" value="treeWoodSmall" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#stump2?treeStump02Prefab" />
+		<property name="ModelOffset" value="0,-0.01,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="BigDecorationRadius" value="2" />
+		<property name="IsPlant" value="true" />
+		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<!-- Iron Poll -->
+	<block id="1012" name="ironPollSnow">
+		<property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#pollIron?ironPoleSnowPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="BigDecorationRadius" value="2" />
+		<property name="IsPlant" value="true" />
+		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<!-- RJ trash -->
+	<block id="1013" name="cntRations">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#rations?itemMilitaryRationsPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="LootList" value="124" />
+		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
+		<property name="EconomicValue" value="40" />
+	</block>
+	<block id="1014" name="cntCardboardBox01">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#trashCardboardBoxes?cardboardBox01Prefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="LootList" value="126" />
+		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
+		<property name="EconomicValue" value="40" />
+	</block>
+	<block id="1015" name="cntCardboardBox02">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="MCardboardLoot" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#trashCardboardBoxes?cardboardBox02Prefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="LootList" value="126" />
+		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
+		<property name="EconomicValue" value="40" />
+	</block>
+	<block id="1016" name="cntTrashTools">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="Mmetal_thin" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#trashTools?trashToolsPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="LootList" value="125" />
+		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
+		<property name="EconomicValue" value="40" />
+	</block>
+	
+	
+	<!-- RJ lawn Gnome -->
+	<block id="1018" name="lawnGnome">
+		<property name="CustomIcon" value="lawnGnomeIcon" />
+		<property name="DescriptionKey" value="lawnGnomeDesc" />
+		<property name="Material" value="Mmetal_thin" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="100" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#lawnGnome?lawnGnomePrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="FuelValue" value="1" />
+		<property name="CanPickup" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Group" value="Basics,Building" />
+		<property class="RepairItems">
+			<property name="yuccaFibers" value="10" />
+		</property>
+		<drop event="Destroy" name="yuccaFibers" count="1,3" />
+		<drop event="Fall" name="yuccaFibers" count="5" prob="1" stick_chance="0" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+	</block>
+	<!-- water tank -->
+	<block id="1045" name="cntWaterTank">
+		<property name="CreativeMode" value="Player" />
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="119" />
+		<property name="Material" value="Mmetal_hard" />
+		<property name="MaxDamage" value="15000" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#waterTank?waterTankPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="8,9,8" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ImposterExchange" value="imposterSheet" param1="123" />
+		<property class="RepairItems">
+			<property name="forgedIron" value="6" />
+		</property>
+		<drop event="Harvest" name="scrapIron" count="32" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="128" />
+		<property name="Group" value="Building" />
+	</block>
+	<!-- wells -->
+	<block id="1046" name="cntWell01">
+		<property name="CreativeMode" value="Player" />
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="120" />
+		<property name="Material" value="stone" />
+		<property name="MaxDamage" value="2000" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#wells?well01Prefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,3,2" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<drop event="Harvest" name="rockSmall" count="32" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="128" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1047" name="cntWell02">
+		<property name="CreativeMode" value="Player" />
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="120" />
+		<property name="Material" value="stone" />
+		<property name="MaxDamage" value="2000" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#wells?well02Prefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,3,2" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<drop event="Harvest" name="rockSmall" count="32" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="128" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1048" name="boatDestroyed">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="wood" />
+		<property name="MaxDamage" value="2000" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#rowboatDestroyed?rowboatDestroyedPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="2,1,4" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<drop event="Harvest" name="wood" count="32" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="128" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1049" name="vikingBoat">
+		<property name="CreativeMode" value="Player" />
+		<property name="Material" value="wood" />
+		<property name="MaxDamage" value="2000" />
+		<property name="LPHardnessScale" value="8" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#vikingBoat?vikingBoatPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="3,3,11" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<drop event="Harvest" name="wood" count="32" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="128" />
+		<property name="Group" value="Building" />
+	</block>
+	
+	<!-- RJ Cash register -->
+	<block id="1340" name="cntCashRegister">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="MmetalNoGlue" />
+		<property name="MaxDamage" value="250" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#cashRegister1?cashRegisterPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="LootList" value="55" />
+		<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,3" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="1,15" />
+		<property name="EconomicValue" value="250" />
+	</block>
+	
+	<!-- Rj Deer Head -->
+	<block id="1497" name="deerHead">
+		<property name="CreativeMode" value="Player" />
+		<property name="CustomIcon" value="deerHeadIcon" />
+		<property name="StabilitySupport" value="false" />
+		<!-- build restriction -->
+		<property name="Material" value="cloth" />
+		<property name="LightOpacity" value="0" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#deerHead?deerHeadPrefab" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="DescriptionKey" value="deerHeadDesc" />
+		<property name="CanPickup" value="true" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<drop event="Destroy" name="deerHead" count="1" />
+	</block>
+	<!-- RJ Mirror -->
+	<block id="1498" name="mirrorWall">
+		<property name="CreativeMode" value="Player" />
+		<property name="CustomIcon" value="mirrorIcon" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Material" value="glass" />
+		<property name="LightOpacity" value="0" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#mirror?mirrorPrefab" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="DescriptionKey" value="mirrorWallDesc" />
+		<property name="CanPickup" value="true" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<drop event="Destroy" name="deerHead" count="1" />
+	</block>
+	<!-- RJ teddy bear -->
+	<block id="1499" name="teddyBear">
+		<property name="CustomIcon" value="teddyBearIcon" />
+		<property name="DescriptionKey" value="teddyBearDesc" />
+		<property name="Material" value="cloth" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="25" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#teddyBear?teddyBearPrefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="FuelValue" value="1" />
+		<property name="CanPickup" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property class="RepairItems">
+			<property name="cloth" value="10" />
+		</property>
+		<drop event="Destroy" name="cloth" count="1,3" />
+		<drop event="Fall" name="cloth" count="5" prob="1" stick_chance="0" />
+		<property name="EconomicValue" value="10" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<property name="EconomicBundleSize" value="10" />
+	</block>
+	
+	<!-- RJ Anvil anvil ANVIL -->
+	<block id="1633" name="anvil">
+		<property name="CustomIcon" value="anvilIcon" />
+		<property name="DescriptionKey" value="anvilDesc" />
+		<property name="Material" value="MmetalNoGlue" />
+		<property name="MaxDamage" value="250" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#anvil?anvilPrefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="StabilitySupport" value="false" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="CanPickup" value="true" />
+		<drop event="Destroy" name="scrapIron" count="10,150" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="Group" value="Resources" />
+		<property name="EconomicValue" value="40" />
+	</block>
+	
+	
+		<!-- RJ Death Marker -->
+	<block id="1770" name="cntDeathMarker">
+		<property name="CreativeMode" value="Player" />
+		<property name="CustomIcon" value="DeathMarkerIcon" />
+		<property name="Class" value="Backpack" />
+		<property name="Material" value="wood_regular" />
+		<property name="LightOpacity" value="0" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#DeathMarker?DeathMarkerPrefab" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="102" />
+		<property name="ModelOffset" value="0,0.5,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="DescriptionKey" value="cntDeathMarkerDesc" />
+		<drop event="Destroy" count="0" />
+	</block>
+	<!-- RJ Canada flag wall -->
+	<block id="1771" name="flagCanadaWall">
+		<property name="CreativeMode" value="Player" />
+		<property name="CustomIcon" value="CanadaFlagWallIcon" />
+		<property name="StabilitySupport" value="false" />
+		<!-- build restriction -->
+		<property name="Material" value="cloth" />
+		<property name="LightOpacity" value="0" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#CanadaFlagWall?CanadaFlagPrefab" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="ModelOffset" value="0,1,0" />
+		<property name="MultiBlockDim" value="3,2,1" />
+		<property name="DescriptionKey" value="flagCanadaWallDesc" />
+		<property name="CanPickup" value="true" />
+		<drop event="Destroy" name="flagCanadaWall" count="1" />
+	</block>
+	
 	<!-- RJ drown out the noise -->
 	<block id="2044" name="SmallStereo">
 		<property name="CustomIcon" value="stereoIcon" />
@@ -19886,43 +19784,26 @@
 		<property name="EconomicValue" value="172" />
 		<property name="DescriptionKey" value="speakerSummoningDesc" />
 	</block>
-	<block id="2046" name="AdvancedWorkbench">
-		<property name="CustomIcon" value="advancedWorkbenchIcon" />
-		<property name="Class" value="Workstation" />
-		<property name="Material" value="metal" />
-		<property name="MaxDamage" value="200" />
-		<property name="StabilitySupport" value="false" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#AdvancedWorkbench?AdvancedWorkbenchPrefab" />
-		<property name="MultiBlockDim" value="2,2,1" />
-		<property name="ImposterDontBlock" value="true" />
-		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="OnlySimpleRotations" value="true" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="HeatMapStrength" value="0.5" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="25" />
-		<property name="Stacknumber" value="10" />
-		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
-		<property class="Workstation">
-			<property name="Modules" value="tools,output" />
-			<property name="CraftingAreaRecipes" value="player,workbench,AdvancedWorkbench" />
-		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="25" />
-			<property name="mechanicalParts" value="20" />
-			<property name="wood" value="50" />
-		</property>
-		<drop event="Destroy" name="AdvancedWorkbench" count="1" />
-		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<property name="TakeDelay" value="15" />
-		<property name="Categories" value="Basics,Building,Ammo/Weapons,Tools/Traps,Science,Resources,Clothing,Decor/Miscellaneous" />
-		<property name="Categories_UI" value="ui_game_symbol_workbench,ui_game_symbol_hammer,ui_game_symbol_weapon_smithing,ui_game_symbol_tool_smithing,ui_game_symbol_science,ui_game_symbol_resource,ui_game_symbol_shirt,ui_game_symbol_chair" />
-		<property name="DescriptionKey" value="AdvancedWorkbenchDesc" />
-		<property name="EconomicValue" value="776" />
-		<property name="Group" value="Building" />
-	</block>
 	
+	<!-- RJ creepy doll -->
+	<block id="1623" name="creepyDoll">
+		<property name="CustomIcon" value="creepyDollIcon" />
+		<property name="Class" value="Gore" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="stone" />
+		<property name="MaxDamage" value="50" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#dollCreepy?dollCreepyDeadPrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Tag" value="Gore" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="FallDamage" value="false" />
+		<property name="CanPickup" value="true" />
+		<property name="LootList" value="1" />
+		<property name="DroppedEntityClass" value="DroppedLootSack" />
+	</block>
 	
 	<!-- Bunnie Lily -->
 	<!-- RJ ShitBucket -->

@@ -1806,6 +1806,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="5" />
 		<ingredient name="cottonPlant" count="5" />
 	</recipe>
+	<recipe name="bedroll03" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="5" />
+		<ingredient name="cottonPlant" count="5" />
+	</recipe>
 	<recipe name="bellows" count="1" craft_area="workbench">
 		<ingredient name="wood" count="4" />
 		<ingredient name="leather" count="4" />
