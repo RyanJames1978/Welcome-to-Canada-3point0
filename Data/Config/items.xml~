@@ -8001,7 +8001,13 @@
 			<property name="QuestGiven" value="treasure_raphael" />
 		</property>
 	</item>
-	
+	<!-- new quests -->
+	<item id="1227" name="qt_john">
+		<property name="Extends" value="treasureQuestMaster" />
+		<property class="Action1">
+			<property name="QuestGiven" value="treasure_john" />
+		</property>
+	</item>
 	<!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
 	<item id="1300" name="yuccaFibers">
 		<!-- scrap material -->
