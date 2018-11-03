@@ -15,8 +15,6 @@
         <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Animals -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Hostile Birds -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
 		<!-- Nightmares -->
@@ -33,8 +31,6 @@
         <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Animals -->
         <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Hostile Birds -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
 		<!-- Nightmares -->
@@ -50,10 +46,6 @@
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Animals -->
 	  <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -63,10 +55,8 @@
 		<spawn maxcount="10" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
 		<!-- Sphereii Swimming Animals -->
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
-        <!-- Hostile Birds -->
-		<spawn maxcount="10" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
         <!-- Ice Animals -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
+		<spawn maxcount="3" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -84,10 +74,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Bears -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
@@ -107,8 +93,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
@@ -128,12 +112,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
-        <!-- Baby Bears -->
-		<spawn maxcount="5" respawndelay="30" time="Any" entitygroup="babyBearsGroup" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
@@ -153,10 +131,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Bears -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
@@ -176,12 +150,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
-        <!-- Bears -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
@@ -191,18 +159,22 @@
 <!-- FERALFERALFERALFERALFERALFERALFERAL FERAL FOREST - RJ Thick Forest 2 Biome FERALFERALFERALFERALFERALFERALFERAL -->
 <!-- ############################################################################################################## -->
     <biome name="wasteland">
-        <!-- bad company -->
+        <!-- Standard Zoms -->
 		<spawn maxcount="6" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
-        <!-- RAD Zoms Day -->
-        <spawn maxcount="5" respawndelay="1" time="Day" entitygroup="RADZombiesGroup" />
+        <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="4" time="Day"   entitygroup="ZombieSoldierGroup" />
-        <!-- RAD Night Zoms -->
-        <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="RADZombiesGroup" />
-        <spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
-		<!-- RAD Animals -->
-		<spawn maxcount="8" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
+        <!-- Night Zoms -->
+        <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieSoldierGroup" />
+        <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
+        <!-- Enemy Animals -->
+        <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
+        <!-- Friendly Animals -->
+		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beaver and Moose -->
+		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
-		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -218,12 +190,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Traders -->
-		<spawn maxcount="1" respawndelay="20" time="Any" entitygroup="wanderingTraders" spawnDeadChance="0" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
-        <!-- Bears -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="bearsAll" />
         <!-- Beaver and Moose -->
 		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
