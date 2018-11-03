@@ -11528,9 +11528,31 @@
 		<property name="Extends" value="katana" />
 		<property name="Meshfile" value="#michonnekatana?katana" />
 	</item>
+	<!-- Lady FireHeart Sword -->
+	<item id="174" name="fireheartSword">
+		<property name="CustomIcon" value="fireheartSwordIcon" />
+		<property name="DescriptionKey" value="fireheartSwordDesc" />
+		<property name="Extends" value="swordLong" />
+		<property name="Meshfile" value="#w_longSwords?swordLongPrefab" />
+		<property name="Class" value="ItemClassTorch" />
+		<property name="SoundIdle" value="torch_lp" />
+		<property class="Action0">
+			<property name="Sound_start" value="torch_swoosh" />
+			<property name="Buff" value="burningMolotovZombie" />
+			<property name="Buff_chance" value="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="20" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="LightValue" value="0.35" />
+		<property name="LightSource" value="lightSource" />
+		<property name="ActivateObject" value="lightSource" />
+		<property name="AlwaysActive" value="true" />
+	</item>
 	<!-- ############################# AMMO ############################# -->
 	<!-- RJ Hockey Puck -->
-	<item id="174" name="hockeyPuck">
+	<item id="175" name="hockeyPuck">
 		<property name="CustomIcon" value="hockeyPuck" />
 		<property name="DescriptionKey" value="hockeyPuckDesc" />
 		<property name="Meshfile" value="#hockeyPuck?hockeyPuckPrefab" />
@@ -11568,7 +11590,7 @@
 		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	<!-- Beer Rocket -->
-	<item id="175" name="beerRocket">
+	<item id="176" name="beerRocket">
 		<property name="CustomIcon" value="rocket" />
 		<property name="DescriptionKey" value="beerRocketDesc" />
 		<property name="CustomIconTint" value="683600" />
@@ -11600,7 +11622,7 @@
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<!-- Rebar Crossbow Bolts -->
-	<item id="176" name="rebarCrossbowBolt">
+	<item id="177" name="rebarCrossbowBolt">
 		<property name="Extends" value="ironCrossbowBolt" />
 		<property name="CustomIcon" value="rebarCrossbowBoltIcon" />
 		<property name="DescriptionKey" value="rebarCrossbowBoltDesc" />
@@ -11620,7 +11642,7 @@
 			<property name="ApplyBuff" value="0.5,0.5" param1="arrowCriticalBleedout" />
 		</property>
 	</item>
-	<item id="177" name="rebarCrossbowBoltHot">
+	<item id="178" name="rebarCrossbowBoltHot">
 		<property name="Extends" value="rebarCrossbowBolt" />
 		<property name="CustomIcon" value="rebarCrossbowBoltHotIcon" />
 		<property name="DescriptionKey" value="rebarCrossbowBoltHotDesc" />
@@ -11634,7 +11656,7 @@
 	</item>
 	<!-- ############################# Grenades ############################# -->
 	<!-- RJ holy handgrenade -->
-	<item id="178" name="theHolyHandgrenadeOfAntioch">
+	<item id="179" name="theHolyHandgrenadeOfAntioch">
 		<property name="CustomIcon" value="theHolyHandgrenadeOfAntiochIcon" />
 		<property name="DescriptionKey" value="theHolyHandgrenadeOfAntiochDesc" />
 		<property name="Meshfile" value="#holyHandgrenade?holyHandgrenadePrefab" />
@@ -11674,7 +11696,7 @@
 	</item>
 	<!-- ############################# Books and Quests ############################# -->
 	<!--  RJ workbenchbook -->
-	<item id="179" name="workbenchBook">
+	<item id="182" name="workbenchBook">
 		<property name="Extends" value="schematicMaster" />
 		<property name="CustomIcon" value="workbenchBookIcon" />
 		<property name="DescriptionKey" value="workbenchBookDesc" />
@@ -11683,7 +11705,7 @@
 		</property>
 	</item>
 	<!--  RJ titanium book -->
-	<item id="182" name="titaniumPanelsBook">
+	<item id="184" name="titaniumPanelsBook">
 		<property name="Extends" value="schematicMaster" />
 		<property name="CustomIcon" value="titaniumBookIcon" />
 		<property name="DescriptionKey" value="titaniumPanelsBookDesc" />
@@ -11692,7 +11714,7 @@
 		</property>
 	</item>
 	<!-- Sword and Weapon Smithing Book -->
-	<item id="184" name="bladeSmithingBook">
+	<item id="185" name="bladeSmithingBook">
 		<property name="Extends" value="schematicMaster" />
 		<property name="CustomIcon" value="bladeSmithingBookIcon" />
 		<property name="DescriptionKey" value="bladeSmithingBookDesc" />
@@ -11700,9 +11722,16 @@
 			<property name="Recipes_to_learn" value="damascusSteel" />
 		</property>
 	</item>
+	<!-- new quests -->
+	<item id="187" name="qt_john">
+		<property name="Extends" value="treasureQuestMaster" />
+		<property class="Action1">
+			<property name="QuestGiven" value="treasure_john" />
+		</property>
+	</item>
 	<!-- ############################# MISC RESOURCES ############################# -->
 	<!-- RJ Hockey Tape -->
-	<item id="185" name="hockeyTape">
+	<item id="188" name="hockeyTape">
 		<property name="CustomIcon" value="hockeyTape" />
 		<property name="DescriptionKey" value="hockeyTapeDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11716,7 +11745,7 @@
 		<property name="Group" value="Resources" />
 	</item>
 	<!-- RJ Canadian Currency -->
-	<item id="187" name="2dollars">
+	<item id="189" name="2dollars">
 		<property name="CustomIcon" value="2dollars" />
 		<property name="DescriptionKey" value="2dollarsDesc" />
 		<property name="HoldType" value="21" />
@@ -11730,7 +11759,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="188" name="5dollars">
+	<item id="193" name="5dollars">
 		<property name="CustomIcon" value="fiveDollarSpock" />
 		<property name="DescriptionKey" value="5dollarsDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11745,7 +11774,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="189" name="10dollars">
+	<item id="194" name="10dollars">
 		<property name="CustomIcon" value="10dollars" />
 		<property name="DescriptionKey" value="10dollarsDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11760,7 +11789,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="193" name="20dollars">
+	<item id="195" name="20dollars">
 		<property name="CustomIcon" value="20dollars" />
 		<property name="DescriptionKey" value="20dollarsDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11775,7 +11804,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="194" name="50dollars">
+	<item id="196" name="50dollars">
 		<property name="CustomIcon" value="50dollars" />
 		<property name="DescriptionKey" value="50dollarsDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11790,7 +11819,7 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
-	<item id="195" name="100dollars">
+	<item id="197" name="100dollars">
 		<property name="CustomIcon" value="100dollars" />
 		<property name="DescriptionKey" value="100dollarsDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11806,7 +11835,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
 	<!-- Scrap Foam -->
-	<item id="196" name="scrapFoam">
+	<item id="198" name="scrapFoam">
 		<property name="CustomIcon" value="scrapFoam" />
 		<property name="DescriptionKey" value="scrapFoamDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11820,7 +11849,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
 	<!-- Rubber Mulch -->
-	<item id="197" name="rubberMulch">
+	<item id="199" name="rubberMulch">
 		<property name="CustomIcon" value="rubberMulch" />
 		<property name="DescriptionKey" value="rubberMulchDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11834,7 +11863,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
 	<!-- Ice Shard -->
-	<item id="198" name="iceShard">
+	<item id="201" name="iceShard">
 		<property name="CustomIcon" value="ice" />
 		<property name="DescriptionKey" value="iceShardDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11848,7 +11877,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
 	</item>
 	<!-- Damascas Steel -->
-	<item id="199" name="damascusSteel">
+	<item id="202" name="damascusSteel">
 		<property name="CustomIcon" value="damascusSteelIcon" />
 		<property name="DescriptionKey" value="damascusSteelDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11862,7 +11891,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
 	</item>
 	<!-- Gemstone -->
-	<item id="201" name="gemStone">
+	<item id="203" name="gemStone">
 		<property name="CustomIcon" value="gemStoneIcon" />
 		<property name="DescriptionKey" value="gemStoneDesc" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11875,7 +11904,7 @@
 		<property name="SellableToTrader" value="false" />
 	</item>
 	<!-- Aluminum -->
-	<item id="202" name="aluminumCan">
+	<item id="204" name="aluminumCan">
 		<property name="CustomIcon" value="aluminumCanIcon" />
 		<property name="DescriptionKey" value="aluminumCanDesc" />
 		<property name="Meshfile" value="Items/Food/can_empty" />
@@ -11888,7 +11917,7 @@
 		<property name="CraftingIngredientTime" value="9" />
 		<property name="Group" value="Resources" />
 	</item>
-	<item id="203" name="scrapAluminum">
+	<item id="205" name="scrapAluminum">
 		<property name="CustomIcon" value="potassiumNitratePowder" />
 		<property name="CustomIconTint" value="192,192,192" />
 		<property name="DescriptionKey" value="scrapAluminumDesc" />
@@ -11905,7 +11934,7 @@
 	</item>
 	<!-- ########################## Zeds & Animals ############### -->
 	<!-- Creepy Doll Hand -->
-	<item id="204" name="handCreepyDoll">
+	<item id="206" name="handCreepyDoll">
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="None" />
 		<property name="Degradation" value="99999" param1="true" />
@@ -11918,7 +11947,7 @@
 		</property>
 	</item>
 	<!-- Deer Antlers -->
-	<item id="205" name="deerAntlers">
+	<item id="207" name="deerAntlers">
 		<property name="CustomIcon" value="deerAntlersIcon" />
 		<property name="DescriptionKey" value="deerAntlersDesc" />
 		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
@@ -11932,6 +11961,7 @@
 		<property name="CraftingIngredientTime" value="2" />
 		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
 	</item>
+	<!-- ############################# CROPS ############################# -->
 	<!-- RJ Chips - old dutch ketchup, dill pickle, all dressed - Zesty Mordant -->
 	<!-- Peperoni -->
 	<!-- RJ Dixie Cup -->

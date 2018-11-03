@@ -2530,8 +2530,12 @@
 	</lootcontainer>	
 	
 	<!-- RJ OJ's Bronco -->
-	<lootcontainer id="175" count="1" size="3,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="150" loot_quality_template="treasureTemplate">
+	<lootcontainer id="175" count="1" size="3,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" loot_quality_template="treasureTemplate">
 		<item name="leatherGlovesOJ" prob="2" />
+	</lootcontainer>	
+	<!-- Lady Fire Hearts Grave -->
+	<lootcontainer id="176" count="1" size="3,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30" loot_quality_template="treasureTemplate">
+		<item name="fireheartSword" prob="2" />
 	</lootcontainer>	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->

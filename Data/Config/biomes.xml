@@ -1060,7 +1060,7 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".000004" rotatemax="7" />
+			<decoration type="block" blockname="oreGemstone" prob =".00004" rotatemax="7" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWell01" prob ="0.000001" />
 			<decoration type="block" blockname="cntWell02" prob ="0.000001" />
