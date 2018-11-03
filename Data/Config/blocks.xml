@@ -19573,7 +19573,7 @@
 	</block>
 	<block id="1752" name="cntTrailerBoxSpam">
 		<property name="DowngradeBlock" value="cntTrailerBoxSpamOpen" />
-		<property name="Extends" value="cntTrailerBoxJean" />
+		<property name="Extends" value="cntTrailerBoxJeans" />
 	</block>
 	<block id="1753" name="cntTrailerBoxSpamOpen">
 		<property name="Extends" value="cntTrailerBoxJeansOpen" />
@@ -19581,7 +19581,7 @@
 	</block>
 	<block id="1754" name="cntTrailerBox1337">
 		<property name="DowngradeBlock" value="cntTrailerBox1337Open" />
-		<property name="Extends" value="cntTrailerBoxJean" />
+		<property name="Extends" value="cntTrailerBoxJeans" />
 	</block>
 	<block id="1755" name="cntTrailerBox1337Open">
 		<property name="Extends" value="cntTrailerBoxJeansOpen" />
