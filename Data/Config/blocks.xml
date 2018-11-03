@@ -19944,28 +19944,44 @@
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
+	<!-- RJ Gems -->
+	<block id="1791" name="oreGemstone">
+		<property name="Material" value="mCrystal" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#gemsGlowing?gemsBluePrefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property class="RepairItems">
+			<property name="gemStone" value="80" />
+		</property>
+		<drop event="Harvest" name="gemStone" count="1" prob="0.001" tool_category="harvestingTools" />
+		<drop event="Destroy" name="gemStone" count="1" />
+		<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1" />
+		<property name="DowngradeBlock" value="oreGemstone" />
+	</block>
 	<!-- ########### Containers ############ -->
 	<!-- RJ trash -->
-	<block id="1791" name="cntRations">
+	<block id="1792" name="cntRations">
 		<property name="Extends" value="containersMaster" />
 		<property name="LootList" value="124" />
 	</block>
-	<block id="1792" name="cntCardboardBox01">
+	<block id="1793" name="cntCardboardBox01">
 		<property name="Extends" value="containersMaster" />
 		<property name="Model" value="#trashCardboardBoxes?cardboardBox01Prefab" />
 	</block>
-	<block id="1793" name="cntCardboardBox02">
+	<block id="1794" name="cntCardboardBox02">
 		<property name="Extends" value="containersMaster" />
 		<property name="Model" value="#trashCardboardBoxes?cardboardBox02Prefab" />
 	</block>
-	<block id="1794" name="cntTrashTools">
+	<block id="1795" name="cntTrashTools">
 		<property name="Extends" value="containersMaster" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Model" value="#trashTools?trashToolsPrefab" />
 		<property name="LootList" value="125" />
 	</block>
 	<!-- RJ ShitBucket -->
-	<block id="1795" name="shitBucket">
+	<block id="1796" name="shitBucket">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="shitBucketIcon" />
 		<property name="DescriptionKey" value="shitBucketDesc" />
@@ -19974,7 +19990,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Old Campfire -->
-	<block id="1796" name="campfireOld">
+	<block id="1797" name="campfireOld">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="campfireOldIcon" />
 		<property name="DescriptionKey" value="campfireOldDesc" />
@@ -19984,7 +20000,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- deisel canister -->
-	<block id="1797" name="dieselCanister">
+	<block id="1798" name="dieselCanister">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="dieselCanisterIcon" />
 		<property name="DescriptionKey" value="dieselCanisterDesc" />
@@ -19994,7 +20010,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- water tank -->
-	<block id="1798" name="cntWaterTank">
+	<block id="1799" name="cntWaterTank">
 		<property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="LootList" value="119" />
@@ -20013,7 +20029,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<!-- wells -->
-	<block id="1799" name="cntWell01">
+	<block id="1826" name="cntWell01">
 		<property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="LootList" value="120" />
@@ -20028,12 +20044,12 @@
 		<property name="EconomicValue" value="128" />
 		<property name="Group" value="Building" />
 	</block>
-	<block id="1826" name="cntWell02">
+	<block id="1827" name="cntWell02">
 		<property name="Extends" value="cntWell01" />
 		<property name="Model" value="#wells?well02Prefab" />
 	</block>
 	<!-- RJ Death Marker -->
-	<block id="1827" name="cntDeathMarker">
+	<block id="1828" name="cntDeathMarker">
 		<property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="DeathMarkerIcon" />
@@ -20048,7 +20064,7 @@
 		<drop event="Destroy" count="0" />
 	</block>
 	<!-- RJ antique cash register -->
-	<block id="1828" name="cashRegisterAntique">
+	<block id="1829" name="cashRegisterAntique">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="cashRegisterAntiqueIcon" />
 		<property name="DescriptionKey" value="cashRegisterAntiqueDesc" />
@@ -20058,7 +20074,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ grave epic loot -->
-	<block id="1829" name="graveEpic">
+	<block id="1830" name="graveEpic">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="graveEpicIcon" />
 		<property name="DescriptionKey" value="graveEpicDesc" />
@@ -20068,7 +20084,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Washer -->
-	<block id="1830" name="clothesWasher">
+	<block id="1831" name="clothesWasher">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="clothesWasherIcon" />
 		<property name="DescriptionKey" value="clothesWasherDesc" />
@@ -20078,7 +20094,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Drier -->
-	<block id="1831" name="clothesDrier">
+	<block id="1832" name="clothesDrier">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="clothesDrierIcon" />
 		<property name="DescriptionKey" value="clothesDrierDesc" />
@@ -20088,7 +20104,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Ammo pile -->
-	<block id="1832" name="ammoPile">
+	<block id="1833" name="ammoPile">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="ammoPileIcon" />
 		<property name="DescriptionKey" value="ammoPileDesc" />
@@ -20098,7 +20114,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Hutch -->
-	<block id="1833" name="furnitureHutch">
+	<block id="1834" name="furnitureHutch">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="furnitureHutchIcon" />
 		<property name="DescriptionKey" value="furnitureHutchDesc" />
@@ -20108,7 +20124,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Back pack storage -->
-	<block id="1834" name="backpackStorageInsecure">
+	<block id="1835" name="backpackStorageInsecure">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="backpackStorageInsecureIcon" />
 		<property name="DescriptionKey" value="backpackStorageInsecureDesc" />
@@ -20118,7 +20134,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- Mini Fridge -->
-	<block id="1835" name="fridgeMini">
+	<block id="1836" name="fridgeMini">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="fridgeMiniIcon" />
 		<property name="DescriptionKey" value="fridgeMiniDesc" />
@@ -20128,7 +20144,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Fridge -->
-	<block id="1836" name="kitchenFridgeHome">
+	<block id="1837" name="kitchenFridgeHome">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="kitchenFridgeHomeIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeHomeDesc" />
@@ -20138,7 +20154,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 	</block>
 	<!-- RJ Fridge Industrial -->
-	<block id="1837" name="kitchenFridgeIndustrial">
+	<block id="1838" name="kitchenFridgeIndustrial">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="kitchenFridgeIndustrialIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeIndustrialDesc" />
@@ -20149,7 +20165,7 @@
 	</block>
 	<!-- ############# Electricity ############### -->
 	<!-- RJ drown out the noise -->
-	<block id="1838" name="SmallStereo">
+	<block id="1839" name="SmallStereo">
 		<property name="CustomIcon" value="stereoIcon" />
 		<property name="CreativeMode" value="Player" />
 		<property name="Class" value="Speaker" />
@@ -20178,7 +20194,7 @@
 		<property name="DescriptionKey" value="SmallStereoDesc" />
 	</block>
 	<!-- RJ Summon the Angry Hockey Mom with Stompin Tom song -->
-	<block id="1839" name="speakerSummoning">
+	<block id="1840" name="speakerSummoning">
 		<property name="CustomIcon" value="speaker" />
 		<property name="CustomIconTint" value="c000c0" />
 		<property name="RandomTintColor1" value="c000c0" />
@@ -20210,7 +20226,7 @@
 	</block>
 	<!-- #################### Corpses #################### -->
 	<!-- RJ creepy doll -->
-	<block id="1840" name="creepyDoll">
+	<block id="1841" name="creepyDoll">
 		<property name="CustomIcon" value="creepyDollIcon" />
 		<property name="Class" value="Gore" />
 		<property name="CreativeMode" value="Dev" />
@@ -20230,7 +20246,7 @@
 	</block>
 	<!-- #################### Chests #################### -->
 	<!-- Holy Handgrenade of Antioch chest -->
-	<block id="1841" name="treasureChestAntioch">
+	<block id="1842" name="treasureChestAntioch">
 		<property name="Class" value="Loot" />
 		<property name="CustomIcon" value="cntChest01" />
 		<property name="Material" value="wood+wood" />
@@ -20248,7 +20264,7 @@
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<!-- RJ Chest 03 -->
-	<block id="1842" name="cntChest03">
+	<block id="1843" name="cntChest03">
 		<property name="CreativeMode" value="Player" />
 		<property name="Class" value="SecureLoot" />
 		<property name="CustomIcon" value="cntChest03" />
@@ -20270,7 +20286,7 @@
 	</block>
 	<!-- #################### House Plants #################### -->
 	<!-- Bunnie Lily -->
-	<block id="1843" name="hpLily">
+	<block id="1844" name="hpLily">
 		<property name="Extends" value="treePlant02" />
 		<property name="CustomIcon" value="hpLilyIcon" />
 		<property name="DescriptionKey" value="hpLilyDesc" />
@@ -20281,7 +20297,7 @@
 	</block>
 	<!-- #################### CROPS ########################### -->
 	<!-- RJ Wheat -->
-	<block id="1844" name="cropWheat">
+	<block id="1845" name="cropWheat">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="CustomIcon" value="cropWheatIcon" />
 		<property name="DescriptionKey" value="cropWheatDesc" />
@@ -20292,21 +20308,21 @@
 		<drop event="Harvest" name="wheatPlant" count="1" />
 	</block>
 	<!-- RJ Weed -->
-	<block id="1845" name="cropMarijuana">
+	<block id="1846" name="cropMarijuana">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropMarijuanaIcon" />
 		<property name="DescriptionKey" value="cropMarijuanaDesc" />
 		<property name="Model" value="#crops?potPlantPrefab" />
 	</block>
 	<!-- RJ Lavender -->
-	<block id="1846" name="cropLavender">
+	<block id="1847" name="cropLavender">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropLavenderIcon" />
 		<property name="DescriptionKey" value="cropLavenderDesc" />
 		<property name="Model" value="#crops?cropsLavender04Prefab" />
 	</block>
 	<!-- RJ Oats -->
-	<block id="1847" name="cropOats">
+	<block id="1848" name="cropOats">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropOatsIcon" />
 		<property name="DescriptionKey" value="cropOatsDesc" />
@@ -20314,21 +20330,21 @@
 		<property name="Model" value="#crops?cropsOats09Prefab" />
 	</block>
 	<!-- RJ Rye Grass -->
-	<block id="1848" name="cropRye">
+	<block id="1849" name="cropRye">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropRyeIcon" />
 		<property name="DescriptionKey" value="cropRyeDesc" />
 		<property name="Model" value="#crops?cropsRyegrass09Prefab" />
 	</block>
 	<!-- RJ Tabacco -->
-	<block id="1849" name="cropTobacco">
+	<block id="1850" name="cropTobacco">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropTobaccoIcon" />
 		<property name="DescriptionKey" value="cropTobaccoDesc" />
 		<property name="Model" value="#crops?cropsTobacco09Prefab" />
 	</block>
 	<!-- RJ barley -->
-	<block id="1850" name="cropBarley">
+	<block id="1851" name="cropBarley">
 		<property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropBarleyIcon" />
 		<property name="DescriptionKey" value="cropBarleyDesc" />
