@@ -10970,6 +10970,9 @@
 		<property name="RepairTools" value="hockeyTape" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property class="Action0">
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="2.4" />
+			<property name="Sphere" value="0.2" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value="0.1" />
 			<property name="DamageBonus.head" value="5" />
@@ -10994,6 +10997,9 @@
 		<property name="CustomIcon" value="hockeyGoalieStickIcon" />
 		<property name="DescriptionKey" value="hockeyGoalieStickGroupDesc" />
 		<property class="Action0">
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="2.4" />
+			<property name="Sphere" value="0.2" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value="0.1" />
 			<property name="DamageBonus.head" value="7" />
@@ -11533,7 +11539,7 @@
 		<property name="CustomIcon" value="fireheartSwordIcon" />
 		<property name="DescriptionKey" value="fireheartSwordDesc" />
 		<property name="Extends" value="swordLong" />
-		<property name="Meshfile" value="#w_longSwords?swordLongPrefab" />
+		<property name="Meshfile" value="#ladyFireHeartSword?fireHeartSwordPrefab" />
 		<property name="Class" value="ItemClassTorch" />
 		<property name="SoundIdle" value="torch_lp" />
 		<property class="Action0">
