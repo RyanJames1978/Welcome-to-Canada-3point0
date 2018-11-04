@@ -11542,8 +11542,16 @@
 		<property name="SoundIdle" value="torch_lp" />
 		<property class="Action0">
 			<property name="Sound_start" value="torch_swoosh" />
-			<property name="ApplyBuff" value="1,1" param1="burningMolotov" />
+			<property name="Buff" value="burning" />
+			<property name="Buff_chance" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="20" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="30,50" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons" />
