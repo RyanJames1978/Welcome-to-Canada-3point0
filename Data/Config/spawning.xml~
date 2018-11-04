@@ -49,8 +49,6 @@
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Ice Animals -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -68,8 +66,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 	</biome>
@@ -87,8 +83,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -106,8 +100,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -125,8 +117,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -144,8 +134,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		</biome>
@@ -165,8 +153,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-        <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -185,7 +171,7 @@
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
         <!-- Beaver and Moose -->
-		<spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" />
+		<!-- <spawn maxcount="2" respawndelay="30" time="Any" entitygroup="beaverMooseGroup" /> -->
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
