@@ -11536,7 +11536,7 @@
 	<item id="174" name="fireheartSword">
 		<property name="CustomIcon" value="fireheartSwordIcon" />
 		<property name="DescriptionKey" value="fireheartSwordDesc" />
-		<property name="Extends" value="swordLong" />
+		<property name="Extends" value="clubMaster" />
 		<property name="Meshfile" value="#ladyFireHeartSword?fireHeartSwordPrefab" />
 		<property name="Class" value="ItemClassTorch" />
 		<property name="SoundIdle" value="torch_lp" />
