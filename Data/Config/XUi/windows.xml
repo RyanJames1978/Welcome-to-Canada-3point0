@@ -51,7 +51,7 @@
 			<label depth="20" name="windLabel" pos="198,-150" width="60" height="30" text="{mapwind} MPH[-]" font_size="20" effect="outline" upper_case="true" color="[white]" justify="center" controller="MapStats" />
 		</rect>
 	</window>
-	<window name="windowQuestTracker" pos="-255,-48" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
+	<window name="windowQuestTracker" pos="-259, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
 		<texture name="ItemBackground" depth="2" size="400,150" texture="[activequest]" material="Materials/Transparent Colored" pos="-75,25" />
 		<label depth="3" width="255" text="{questtitle}" font_size="26" justify="center" upper_case="true" pos="-50, -3" height="30" />
 		<sprite depth="3" pos="210,0" name="windowIcon" style="icon32px" sprite="{questicon}" justify="right" />
@@ -71,6 +71,75 @@
 			</rect>
 		</rect>
 	</window>
+	<window name="HUDLeftStatBars">
+		<rect name="maincontainer" pos="-5,0">
+			<sprite depth="1" width="75" pos="145,15" height="10" type="sliced" color="139,138,137,150" />
+			<sprite depth="10" width="75" pos="145,15" height="10" type="filled" color="[white]" fill="{playerlevelfill}" controller="PlayerStatsWindow" />
+			<label depth="10" name="levelNumber" pos="230,25" width="30" height="20" text="{playerlevel}" font_size="20" effect="outline" upper_case="true" justify="center" color="[white]" controller="PlayerStatsWindow" />
+			<texture name="ItemBG" depth="1" size="300,200" texture="[left]" material="Materials/Transparent Colored" pos="5,200" />
+			<rect pos="43,180" width="80" height="43" controller="HUDStatBar" stat_type="ActiveItem" visible="{statvisible}">
+				<texture name="ItemBG" depth="1" size="150,100" texture="[active]" material="Materials/Transparent Colored" pos="20,70" />
+				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon}" size="36,32" pos="35,20" color="{staticoncolor}" foregroundlayer="true" />
+				<label depth="6" name="TextContent" pos="95,14" font_size="20" color="[white]" text="{statcurrentwithmax}" height="30" />
+			</rect>
+			<rect name="hud" pos="63,285">
+				<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleBattery" visible="{statvisible}">
+					<texture name="ItemBG" depth="1" size="200,133" texture="[vehicle]" material="Materials/Transparent Colored" pos="0,0" />
+					<label depth="6" name="TextContent" pos="75,-100" font_size="20" color="[white]" text="{statcurrentwithmax}" height="30" width="30" justify="center" />
+				</rect>
+				<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
+					<label depth="6" name="TextContent" pos="130,-100" font_size="20" color="[white]" text="{statcurrentwithmax}" height="30" width="30" justify="center" />
+				</rect>
+				<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
+					<label depth="6" name="TextContent" pos="20,-100" font_size="20" color="[white]" text="{statcurrentwithmax}" height="30" width="30" justify="center" />
+				</rect>
+			</rect>
+			<rect name="hud" pos="15,10" width="208">
+				<rect name="position" pos="10,35">
+					<rect depth="10" width="208" height="25" pos="0,91" controller="PlayerStatsWindow">
+						<sprite depth="3" pos="54,-6" name="BarContent" color="52,137,167" type="filled" height="10" width="82" fill="{playerwaterfill}" globalopacitymod="2" />
+						<sprite depth="2" width="82" pos="54,-6" height="10" type="sliced" color="139,138,137,150" />
+						<texture name="ItemForeground" depth="10" size="89,18" texture="[statbar]" material="Materials/Transparent Colored" pos="50,-2" />
+						<label depth="6" name="TextContent" pos="139,0" font_size="20" color="[white]" text="{playerwater}" height="22" />
+						<label depth="6" name="TextContent" pos="55,10" font_size="20" color="[white]" text="THIRST" height="20" width="70" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,91" controller="PlayerStatsWindow">
+						<sprite depth="1" pos="54,-6" name="BarContent" type="filled" height="10" width="82" fill="{playerwaterfill}" color="[black]" globalopacitymod="2" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,64" controller="PlayerStatsWindow">
+						<sprite depth="3" pos="54,-6" name="BarContent" color="52,174,86" type="filled" height="10" width="82" fill="{playerfoodfill}" globalopacitymod="2" />
+						<sprite depth="2" width="82" pos="54,-6" height="10" type="sliced" color="139,138,137,150" />
+						<texture name="ItemForeground" depth="10" size="89,18" texture="[statbar]" material="Materials/Transparent Colored" pos="50,-2" />
+						<label depth="6" name="TextContent" pos="139,0" font_size="20" color="[white]" text="{playerfood}" height="22" />
+						<label depth="6" name="TextContent" pos="55,10" font_size="20" color="[white]" text="HUNGER" height="20" width="70" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,64" controller="PlayerStatsWindow">
+						<sprite depth="1" pos="54,-6" name="BarContent" type="filled" height="10" width="82" fill="{playerfoodfill}" color="[black]" globalopacitymod="2" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,37" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+						<sprite depth="3" pos="54,-6" name="BarContent" color="[blue]" type="filled" height="10" width="82" fill="0" globalopacitymod="2" />
+						<sprite depth="2" width="82" pos="54,-6" height="10" type="sliced" color="139,138,137,150" />
+						<texture name="ItemForeground" depth="10" size="89,18" texture="[statbar]" material="Materials/Transparent Colored" pos="50,-2" />
+						<label depth="6" name="TextContent" pos="139,0" font_size="20" color="[white]" text="{statcurrent}" height="22" />
+						<label depth="6" name="TextContent" pos="55,10" font_size="20" color="[white]" text="STAMINA" height="20" width="70" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,37" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+						<sprite depth="1" pos="54,-6" name="BarContent" type="filled" height="10" width="82" fill="0" color="[black]" globalopacitymod="2" />
+					</rect>
+					<rect depth="10" width="208" height="25" pos="0,10" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+						<sprite depth="3" pos="54,-6" name="BarContent" color="[red]" type="filled" height="10" width="82" fill="0" globalopacitymod="2" />
+						<sprite depth="2" width="82" pos="54,-6" height="10" type="sliced" color="139,138,137,150" />
+						<texture name="ItemForeground" depth="10" size="89,18" texture="[statbar]" material="Materials/Transparent Colored" pos="50,-2" />
+						<label depth="6" name="TextContent" pos="139,0" font_size="20" color="[white]" text="{statcurrent}" height="22" />
+						<label depth="6" name="TextContent" pos="55,10" font_size="20" color="[white]" text="HEALTH" height="20" width="70" />
+					</rect>
+					<rect depth="1" width="208" height="25" pos="0,10" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+						<sprite depth="1" pos="54,-6" name="BarContent" type="filled" height="10" width="82" fill="0" color="[black]" globalopacitymod="2" />
+					</rect>
+				</rect>
+			</rect>
+		</rect>
+	</window>
 	<window name="HUDRightStatBars">
 		<rect name="hud" pos="-80,50" side="right" controller="CollectedItemList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
@@ -79,31 +148,6 @@
 				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="50,0" pivot="center" foregroundlayer="true" />
 				<label depth="6" name="TextContent" font_size="28" color="[white]" justify="right" height="30" pivot="center" pos="-70,0" />
 				<sprite depth="6" pos="0,16" width="32" height="32" name="Negative" sprite="ui_game_symbol_x" color="[red]" />
-			</panel>
-		</rect>
-	</window>
-	<window name="HUDLeftStatBars">
-		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left">
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
-			</rect>
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
-				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
-			</rect>
-		</grid>
-		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
-				<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
 			</panel>
 		</rect>
 	</window>
