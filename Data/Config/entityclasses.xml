@@ -2159,14 +2159,13 @@
 		<property name="Mesh" value="#beaver?beaverPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
-		<property name="Faction" value="beavers" />
 		<!-- Beaver Animations -->
 		<property name="AnimationIdle" value="idle02" />
         <property name="AnimationSecondIdle" value="sit01" />
 		<property name="AnimationMainAttack" value="attack01" />
         <!-- <property name="AnimationSecondAttack" value="butting_heads" /> -->
         <!-- <property name="AnimationSpecialAttack" value="attack_02" /> -->
-        <!-- <property name="AnimationJump" value="Jump" /> -->
+        <property name="AnimationJump" value="idle02" />
 		<property name="AnimationPain" value="run01" />
 		<property name="AnimationDeath" value="death01" />
 		<property name="AnimationRun" value="run01" />
@@ -2195,7 +2194,7 @@
 	</entity_class>
 	
 	<!-- Moose -->
-	<entity_class name="moose" extends="animalBear">
+	<entity_class name="moose" extends="animalTemplateHostile">
 		<property name="Mesh" value="#moose?moosePrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="Class" value="EntityEnemyAnimal" />
@@ -2206,7 +2205,7 @@
 		<property name="AnimationMainAttack" value="attack_01" />
         <property name="AnimationSecondAttack" value="butting_heads" />
         <property name="AnimationSpecialAttack" value="attack_02" />
-        <!-- <property name="AnimationJump" value="Jump" /> -->
+        <property name="AnimationJump" value="idle_03" />
 		<property name="AnimationPain" value="injured" />
 		<property name="AnimationDeath" value="death" />
 		<property name="AnimationRun" value="run_fast" />

@@ -308,7 +308,7 @@
 	<!-- Moose and Beaver -->
 	<entitygroup name="beaverMooseGroup">
 		<entity name="beaver" />
-		<!-- <entity name="moose" /> -->
+		<entity name="moose" />
 	</entitygroup>
 	<!-- Nightmares -->
 	<entitygroup name="Nightmares">
