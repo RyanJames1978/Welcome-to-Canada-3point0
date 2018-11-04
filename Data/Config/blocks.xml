@@ -1077,7 +1077,6 @@
 	</block>
 	<!-- RJ Beaver trees -->
 	<block id="128" name="treeMaster">
-		<property name="Faction" value="trees" />
 		<property name="DescriptionKey" value="plantsBlockGroupDesc" />
 		<property name="Class" value="ModelTree" />
 		<property name="Shape" value="ModelTree" />

@@ -2198,7 +2198,7 @@
 	<entity_class name="moose" extends="animalBear">
 		<property name="Mesh" value="#moose?moosePrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
-		<property name="Class" value="EntityZombieSDX, Mods" />
+		<property name="Class" value="EntityEnemyAnimal" />
 		<property name="RootMotion" value="false" />
 		<!-- Moose Animations -->
 		<property name="AnimationIdle" value="idle_03" />

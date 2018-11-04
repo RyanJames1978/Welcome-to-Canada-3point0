@@ -15,8 +15,6 @@
         <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Animals -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -29,10 +27,6 @@
         <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <!-- Night -->
         <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
-        <!-- Animals -->
-        <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
-        <!-- Hostile Birds -->
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="aggressiveBirdsGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
@@ -44,8 +38,6 @@
       <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
         <!-- Night -->
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
-        <!-- Animals -->
-	  <spawn maxcount="2" respawndelay="1" time="Any" entitygroup="EnemyAnimalsWasteland" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
