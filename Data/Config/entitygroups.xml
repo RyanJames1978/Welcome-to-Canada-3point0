@@ -338,7 +338,6 @@
 	<!-- Ice Animals -->
 	<entitygroup name="iceAnimalsAll">
 		<entity name="animalSeal" />
-		<entity name="beaver" />
 		<entity name="PolarBear" />
 	</entitygroup>
 	<!-- RJ timid animals all -->
@@ -348,7 +347,6 @@
 		<entity name="animalStag" />
 		<entity name="animalBoar" />
 		<entity name="animalPig" />
-		<entity name="beaver" />
 		<!-- Sphereii Birds -->
 		<entity name="RobinBird" />
 		<entity name="animalFalcon" />
@@ -369,7 +367,6 @@
 		<entity name="animalZombieBear" prob="0.05" />
 		<entity name="PolarBear" prob="0.1" />
 		<entity name="ArcticFox" prob="0.1" />
-		<entity name="moose" />
 	</entitygroup>
 	<!-- Winter Mod Protector -->
 	<entitygroup name="Protector">
