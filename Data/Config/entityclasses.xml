@@ -2231,6 +2231,58 @@
 		<property name="SightScale" value="-2,150" />
 		<property name="NoiseAlertThreshold" value="40" />
 		<property name="SmellAlertThreshold" value="40" />
+		
+		<property name="IsEntityAnimal" value="true" />
+		<property name="HandItem" value="handAnimalZombieBear" />
+		<property name="WalkType" value="1" />
+		<property name="ModelType" value="Standard" />
+		<property name="ApproachSpeed" value="1.1" />
+		<property name="CanClimbLadders" value="false" />
+		<property name="PhysicsBody" value="bear" />
+		<property name="HasDeathAnim" value="true" />
+		<property name="MaxHealth" value="1200" />
+		<property name="ExperienceGain" value="2916" />
+		<property name="Weight" value="70" />
+		<property name="PushFactor" value="20" />
+		<property name="MaxTurnSpeed" value="180" />
+		<property name="MaxViewAngle" value="270" />
+		<property name="ExperienceGain" value="2509" />
+		<property name="DeadBodyHitPoints" value="600" />
+		<!-- general AI task from xyth -->
+		<property name="AITarget-1" value="SetNearestEntityAsTarget" param1="EntityEnemyAnimal" />
+		<property name="AITask-1" value="BreakDoor" param2="5" />
+		<property name="AITask-2" value="BreakBlock" param2="5" />
+		<property name="AITask-3" value="BlockingTargetTask" />
+		<property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityEnemyAnimal" />
+		<property name="AITarget-2" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITask-6" value="BreakDoor" param2="5" />
+		<property name="AITask-7" value="BreakBlock" param2="5" />
+		<property name="AITask-8" value="BlockingTargetTask" />
+		<property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+		<property name="AITask-11" value="BreakDoor" param2="5" />
+		<property name="AITask-12" value="BreakBlock" param2="5" />
+		<property name="AITask-13" value="BlockingTargetTask" />
+		<property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-15" value="ApproachAndAttackTarget" param1="EntityNPC" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITask-16" value="BreakDoor" param2="5" />
+		<property name="AITask-17" value="BreakBlock" param2="5" />
+		<property name="AITask-18" value="BlockingTargetTask" />
+		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
+		<property name="AITask-22" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITask-23" value="SetAsTargetIfHurt" param1="EntityPlayer" param2="60" />
+		<property name="AITask-24" value="ApproachSpot" />
+		<property name="AITask-25" value="Wander" />
+		<!-- animalBear -->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="15" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
 	
 	<!-- Polar Bear -->
