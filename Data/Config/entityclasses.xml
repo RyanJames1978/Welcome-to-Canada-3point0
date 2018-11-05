@@ -2160,13 +2160,13 @@
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
 		<!-- Beaver Animations -->
-		<property name="AnimationIdle" value="idle02" />
-        <property name="AnimationSecondIdle" value="sit01" />
+		<property name="AnimationIdle" value="sit01" />
+        <property name="AnimationSecondIdle" value="idle01" />
 		<property name="AnimationMainAttack" value="attack01" />
         <!-- <property name="AnimationSecondAttack" value="butting_heads" /> -->
         <!-- <property name="AnimationSpecialAttack" value="attack_02" /> -->
-        <property name="AnimationJump" value="idle02" />
-		<property name="AnimationPain" value="run01" />
+        <property name="AnimationJump" value="idle01" />
+		<property name="AnimationPain" value="pain01" />
 		<property name="AnimationDeath" value="death01" />
 		<property name="AnimationRun" value="run01" />
 		<property name="AnimationWalk" value="walk01" />
