@@ -4747,6 +4747,67 @@
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/Spinup"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+	
+	
+	<!-- Moose Sounds -->
+	
+
+<SoundDataNode name="moosefootstep"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Animals/Bear/bear_footstep1"/>
+	<AudioClip ClipName="Sounds/Animals/Bear/bear_footstep2"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="moosealert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#mooseSounds?mooseattack"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="mooseattack"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#mooseSounds?mooseattack"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="moosedeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#mooseSounds?moosegiveup"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="moosegiveup"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#mooseSounds?moosegiveup"/>
+	<Channel name="Mouth"/>
+	<Priority name="5"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="moosepain"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#mooseSounds?moosepain01"/>
+	<Channel name="Mouth"/>
+	<Priority name="1"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="mooseroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#mooseSounds?mooserandom01"/>
+	<AudioClip ClipName="#mooseSounds?mooserandom02"/>
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="moosesense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#mooseSounds?mooserandom03"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
+
 		
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->

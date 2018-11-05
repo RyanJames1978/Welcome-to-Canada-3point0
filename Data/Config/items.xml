@@ -11972,6 +11972,26 @@
 		<property name="CraftingIngredientTime" value="2" />
 		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
 	</item>
+	<item id="208" name="mooseAntlersWeapon">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="100" />
+			<property name="Buff" value="bleeding,stunned,infection" />
+			<property name="Buff_chance" value="0.3,0.4,0.4" />
+		</property>
+		<property class="Action1">
+			<property name="Range" value="3.25" />
+			<property name="DamageEntity" value="75" />
+			<property name="DamageBlock" value="150" />
+			<property name="Buff" value="bleeding,stunned,infection" />
+			<property name="Buff_chance" value="0.3,0.4,0.4" />
+		</property>
+	</item>
 	<!-- ############################# CROPS ############################# -->
 	<!-- RJ Chips - old dutch ketchup, dill pickle, all dressed - Zesty Mordant -->
 	<!-- Peperoni -->

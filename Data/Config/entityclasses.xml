@@ -2200,25 +2200,25 @@
 		<property name="Class" value="EntityEnemyAnimal" />
 		<property name="RootMotion" value="false" />
 		<!-- Moose Animations -->
-		<property name="AnimationIdle" value="idle_03" />
-        <property name="AnimationSecondIdle" value="idle_eat" />
+		<property name="AnimationIdle" value="idle_eat" />
+        <property name="AnimationSecondIdle" value="idle_03" />
 		<property name="AnimationMainAttack" value="attack_01" />
         <property name="AnimationSecondAttack" value="butting_heads" />
         <property name="AnimationSpecialAttack" value="attack_02" />
-        <property name="AnimationJump" value="idle_03" />
+        <property name="AnimationJump" value="walk" />
 		<property name="AnimationPain" value="injured" />
 		<property name="AnimationDeath" value="death" />
 		<property name="AnimationRun" value="run_fast" />
 		<property name="AnimationWalk" value="walk" />
 		<!-- Moose Sounds -->
-		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundFootstepModifier" value="" />
-		<property name="SoundGiveUp" value="" />
+		<property name="SoundHurt" value="moosepain" />
+		<property name="SoundDeath" value="moosedeath" />
+		<property name="SoundRandom" value="mooseroam" />
+		<property name="SoundSense" value="moosesense" />
+		<property name="SoundAlert" value="moosealert" />
+		<property name="SoundAttack" value="mooseattack" />
+		<property name="SoundFootstepModifier" value="moosefootstep" />
+		<property name="SoundGiveUp" value="moosegiveup" />
 		<!-- Moose Speeds -->
 		<property name="WanderSpeed" value="0.4" />
 		<property name="ApproachSpeed" value="2.2" />
@@ -2226,17 +2226,16 @@
 		<property name="NightApproachSpeed" value="2.5" />
 		<property name="PanicSpeed" value="2.0" />
 		<!-- Moose Senses -->
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="270" />
 		<property name="SightRange" value="30" />
 		<property name="SightScale" value="-2,150" />
 		<property name="NoiseAlertThreshold" value="40" />
 		<property name="SmellAlertThreshold" value="40" />
 		
 		<property name="IsEntityAnimal" value="true" />
-		<property name="HandItem" value="handAnimalZombieBear" />
+		<property name="HandItem" value="mooseAntlersWeapon" />
 		<property name="WalkType" value="1" />
 		<property name="ModelType" value="Standard" />
-		<property name="ApproachSpeed" value="1.1" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="PhysicsBody" value="bear" />
 		<property name="HasDeathAnim" value="true" />
@@ -2245,7 +2244,6 @@
 		<property name="Weight" value="70" />
 		<property name="PushFactor" value="20" />
 		<property name="MaxTurnSpeed" value="180" />
-		<property name="MaxViewAngle" value="270" />
 		<property name="ExperienceGain" value="2509" />
 		<property name="DeadBodyHitPoints" value="600" />
 		<!-- general AI task from xyth -->
@@ -2278,7 +2276,7 @@
 		<property name="AITask-23" value="SetAsTargetIfHurt" param1="EntityPlayer" param2="60" />
 		<property name="AITask-24" value="ApproachSpot" />
 		<property name="AITask-25" value="Wander" />
-		<!-- animalBear -->
+		<!-- moose harvest -->
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="15" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15" />
 		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7" />
