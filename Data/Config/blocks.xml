@@ -19444,17 +19444,19 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#boats?boatFishing1Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="10,20,30" />
+		<property name="MaxDamage" value="100000" />
+		<drop event="Harvest" name="scrapIron" count="333" />
 	</block>
 	<!-- RJ fishing boat 2 -->
 	<block id="1741" name="boatFishing02">
-		<property name="Extends" value="boatDestroyed" />
+		<property name="Extends" value="boatFishing01" />
 		<property name="CustomIcon" value="boatFishing02Icon" />
 		<property name="DescriptionKey" value="boatFishing02Desc" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#boats?boatFishing2Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="10,12,28" />
 	</block>
 	<!-- RJ Row boat 1 -->
 	<block id="1742" name="boatRow01">
@@ -19464,7 +19466,8 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#boats?boatRow1Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="2,1,4" />
+		<property name="MaxDamage" value="900" />
 	</block>
 	<!-- RJ Row boat 2 -->
 	<block id="1743" name="boatRow02">
@@ -19474,7 +19477,8 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#boats?boatRow2Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="2,1,6" />
+		<property name="MaxDamage" value="900" />
 	</block>
 	<!-- RJ Row boat 3 -->
 	<block id="1744" name="boatRow03">
@@ -19484,7 +19488,8 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#boats?boatRow3Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="2,1,6" />
+		<property name="MaxDamage" value="900" />
 	</block>
 	<!-- #################### RJ BEDS #################### -->
 	<!-- RJ Bedroll02 -->
