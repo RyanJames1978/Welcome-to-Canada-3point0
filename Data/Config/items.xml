@@ -9951,6 +9951,22 @@
 		<property name="CraftingSkillGroup" value="craftSkillTools" />
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
+	<!-- Ice Pick by RRFREELANCE -->
+	<item id="209" name="iceAxe">
+		<property name="CustomIcon" value="iceAxeIcon" />
+		<property name="DescriptionKey" value="iceAxeDesc" />
+		<property name="Extends" value="pickaxeIron" />
+		<property class="Action0">
+			<property name="Delay" value="0.9" />
+			<property name="Stamina_usage" value="4" />
+			<property name="DamageBonus.glass" value="20" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,25" />
+			<property name="BlockDamage" value="60,220" />
+			<property name="DismembermentBaseChance" value="-0.1,0" />
+		</property>
+	</item>
 	<!-- ############################# STONE TOOLS ############################# -->
 	<item id="36" name="rjstoneaxe">
 		<property name="CustomIcon" value="stoneAxe" />
