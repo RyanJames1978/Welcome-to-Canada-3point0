@@ -2231,9 +2231,8 @@
 		<property name="SightScale" value="-2,150" />
 		<property name="NoiseAlertThreshold" value="40" />
 		<property name="SmellAlertThreshold" value="40" />
-		
 		<property name="IsEntityAnimal" value="true" />
-		<property name="HandItem" value="mooseAntlersWeapon" />
+		<property name="HandItem" value="handAnimalZombieBear" />
 		<property name="WalkType" value="1" />
 		<property name="ModelType" value="Standard" />
 		<property name="CanClimbLadders" value="false" />
