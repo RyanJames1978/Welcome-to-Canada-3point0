@@ -20,7 +20,7 @@
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		<!-- Kitties -->
-		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
+		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ##################################### RJ City Wasteland ######################################## -->
     <biome name="city_wasteland">
@@ -36,7 +36,7 @@
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		<!-- Kitties -->
-		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
+		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ##################################### RJ Wasteland Hub ######################################### -->
     <biome name="wasteland_hub">
@@ -51,7 +51,7 @@
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		<!-- Kitties -->
-		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
+		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ######################################## RJ Ice Biome ########################################### -->
     <biome name="water">

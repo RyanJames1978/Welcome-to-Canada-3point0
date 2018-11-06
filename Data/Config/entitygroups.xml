@@ -384,7 +384,7 @@
 	</entitygroup>
 	<!-- RJ Kitty -->
 	<entitygroup name="kittyGroup">
-		<!-- <entity name="kitty" /> -->
+		<entity name="kitty" />
 	</entitygroup>
 	<!-- Winter Mod Protector -->
 	<entitygroup name="Protector">
