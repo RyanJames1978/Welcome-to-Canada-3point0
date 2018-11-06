@@ -348,13 +348,13 @@
 		<entity name="Seagull" />
 		<entity name="Goose" />
 		<!-- RJ Birds -->
-		<entity name="birdBlueJay" />
+		<!-- <entity name="birdBlueJay" />
 		<entity name="birdCardinal" />
 		<entity name="birdChickadee" />
 		<entity name="birdCrow" />
 		<entity name="birdFinch" />
 		<entity name="birdRobin" />
-		<entity name="birdSparrow" />
+		<entity name="birdSparrow" /> -->
 		<!-- Sphereii -->
 		<entity name="ArcticFox" prob="0.3" />
 		<!-- RJ Animals -->
@@ -371,7 +371,7 @@
 		<entity name="animalZombieBear" prob="0.05" />
 		<entity name="PolarBear" prob="0.1" />
 		<!-- RJ Animals -->
-		<entity name="moose" prob="0.1" />
+		<entity name="moose" prob="0.2" />
 		<entity name="spider" />
 	</entitygroup>
 	<!-- RJ spider -->
@@ -384,7 +384,7 @@
 	</entitygroup>
 	<!-- RJ Kitty -->
 	<entitygroup name="kittyGroup">
-		<entity name="kitty" />
+		<!-- <entity name="kitty" /> -->
 	</entitygroup>
 	<!-- Winter Mod Protector -->
 	<entitygroup name="Protector">
