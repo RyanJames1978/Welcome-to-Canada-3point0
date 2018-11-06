@@ -2537,7 +2537,7 @@
 	</entity_class>
 	
 	<!-- Cardinal -->
-	<entity_class name="birdCardinal" extends="blueJay">
+	<entity_class name="birdCardinal" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?cardianl" />
 		<!-- Cardinal Sounds -->
 		<property name="SoundHurt" value="" />
@@ -2550,7 +2550,7 @@
 		<property name="SoundGiveUp" value="" />
 	</entity_class>
 	<!-- Chickadee -->
-	<entity_class name="birdChickadee" extends="blueJay">
+	<entity_class name="birdChickadee" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?chickadee" />
 		<!-- Chickadee Sounds -->
 		<property name="SoundHurt" value="" />
@@ -2563,7 +2563,7 @@
 		<property name="SoundGiveUp" value="" />
 	</entity_class>
 	<!-- Crow -->
-	<entity_class name="birdCrow" extends="blueJay">
+	<entity_class name="birdCrow" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?crow" />
 		<!-- Crow Sounds -->
 		<property name="SoundHurt" value="" />
@@ -2576,7 +2576,7 @@
 		<property name="SoundGiveUp" value="" />
 	</entity_class>
 	<!-- Gold Finch -->
-	<entity_class name="birdFinch" extends="blueJay">
+	<entity_class name="birdFinch" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?goldfinch" />
 		<!-- Gold Finch Sounds -->
 		<property name="SoundHurt" value="" />
@@ -2589,7 +2589,7 @@
 		<property name="SoundGiveUp" value="" />
 	</entity_class>
 	<!-- Robin -->
-	<entity_class name="birdRobin" extends="blueJay">
+	<entity_class name="birdRobin" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?robin" />
 		<!-- Robin Sounds -->
 		<property name="SoundHurt" value="" />
@@ -2602,7 +2602,7 @@
 		<property name="SoundGiveUp" value="" />
 	</entity_class>
 	<!-- Sparrow -->
-	<entity_class name="birdSparrow" extends="blueJay">
+	<entity_class name="birdSparrow" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?sparrow" />
 		<!-- Sparrow Sounds -->
 		<property name="SoundHurt" value="" />
