@@ -370,7 +370,8 @@
 		<entity name="PolarBear" prob="0.1" />
 		<entity name="ArcticFox" prob="0.1" />
 		<!-- RJ Animals -->
-		<entity name="moose" />
+		<entity name="moose" prob="0.1" />
+		<entity name="spider" />
 	</entitygroup>
 	<!-- Winter Mod Protector -->
 	<entitygroup name="Protector">

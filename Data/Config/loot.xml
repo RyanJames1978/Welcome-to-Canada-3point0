@@ -2344,6 +2344,8 @@
 	<lootgroup name="rjstarterloot" count="all" loot_quality_template="starterCrateTemplate">
 		<item name="padlock" />
 		<item name="snowShovel" />
+		<item name="iceAxe" />
+		<item name="rjstonehammer" />
 		<item name="aloeCream" count="10" />
 		<item name="gunHuntingRifle" />
 		<item name="762mmBullet" count="5" />

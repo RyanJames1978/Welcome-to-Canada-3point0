@@ -22,17 +22,14 @@
 	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
 		<objective type="FetchKeep" id="campfire" value="1" />
 		<objective type="BlockPlace" id="campfire" value="1" />
-		<reward type="Item" id="wood" value="30" />
-		<reward type="Item" id="rockSmall" value="40" />
-		<reward type="Item" id="yuccaFibers" value="25" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
 	</quest>
-	<!-- Basic Survival 4 - Craft tools in the workbench/> -->
+	<!-- Basic Survival 4 - Needs new quest here /> -->
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_hammer" category_key="quest" difficulty="veryeasy">
 		<!-- <objective type="FetchKeep" id="rjstoneaxe" value="1" /> -->
 		<!-- <objective type="FetchKeep" id="rjstoneshovel" value="1" /> -->
-		<objective type="FetchKeep" id="rjstonepickaxe" value="1" />
-		<objective type="FetchKeep" id="rjstonehammer" value="1" />
+		<!-- <objective type="FetchKeep" id="rjstonepickaxe" value="1" /> -->
+		<!-- <objective type="FetchKeep" id="rjstonehammer" value="1" /> -->
 		<reward type="Quest" id="quest_BasicSurvival5" />
 	</quest>
 	<!-- Basic Survival 5 - Gather Wood /> -->
