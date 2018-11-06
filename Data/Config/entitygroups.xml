@@ -291,10 +291,6 @@
 	</entitygroup>
 	<!-- All bears -->
 	<entitygroup name="bearsAll">
-		<entity name="polarBear" />
-		<entity name="blackBear" />
-		<entity name="giantBear" />
-		<entity name="babyBear" />
 		<entity name="animalScreamerBear" />
 		<entity name="animalZombieBear" />
 		<entity name="animalBear" />

@@ -49,8 +49,6 @@
 		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Ice Animals -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Snow Biome ########################################### -->
     <biome name="snow">
