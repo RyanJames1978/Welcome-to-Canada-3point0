@@ -9952,7 +9952,7 @@
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
 	<!-- Ice Pick by RRFREELANCE -->
-	<item id="209" name="iceAxe">
+	<item id="215" name="iceAxe">
 		<property name="CustomIcon" value="iceAxeIcon" />
 		<property name="DescriptionKey" value="iceAxeDesc" />
 		<property name="Extends" value="pickaxeIron" />
@@ -11959,22 +11959,8 @@
 		<property name="Group" value="Resources" />
 		<property name="CraftingIngredientTime" value="2" />
 	</item>
-	<!-- ########################## Zeds & Animals ############### -->
-	<!-- Creepy Doll Hand -->
-	<item id="206" name="handCreepyDoll">
-		<property name="Extends" value="handMaster" />
-		<property name="CreativeMode" value="None" />
-		<property name="Degradation" value="99999" param1="true" />
-		<property class="Action0">
-			<property name="Range" value="1.75" />
-			<property name="DamageEntity" value="60" />
-			<property name="DamageBlock" value="250" />
-			<property name="Buff" value="evilBuff" />
-			<property name="Buff_chance" value="0.5" />
-		</property>
-	</item>
 	<!-- Deer Antlers -->
-	<item id="207" name="deerAntlers">
+	<item id="206" name="deerAntlers">
 		<property name="CustomIcon" value="deerAntlersIcon" />
 		<property name="DescriptionKey" value="deerAntlersDesc" />
 		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
@@ -11988,10 +11974,24 @@
 		<property name="CraftingIngredientTime" value="2" />
 		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
 	</item>
-	<item id="208" name="mooseAntlersWeapon">
+	<!-- ########################## Zeds & Animals hands ############### -->
+	<!-- Creepy Doll Hand -->
+	<item id="207" name="handCreepyDoll">
 		<property name="Extends" value="handMaster" />
 		<property name="CreativeMode" value="None" />
 		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Range" value="1.75" />
+			<property name="DamageEntity" value="60" />
+			<property name="DamageBlock" value="250" />
+			<property name="Buff" value="evilBuff" />
+			<property name="Buff_chance" value="0.5" />
+		</property>
+	</item>
+	<!-- Moose Antlers -->
+	<item id="208" name="handMooseAntlers">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
 			<property name="Range" value="2.75" />
@@ -11999,6 +11999,25 @@
 			<property name="DamageBlock" value="100" />
 			<property name="Buff" value="bleeding,stunned,infection" />
 			<property name="Buff_chance" value="0.3,0.4,0.4" />
+		</property>
+	</item>
+	<!-- Spiper Fangs -->
+	<item id="209" name="handSpiderFangs">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="5" />
+			<property name="DamageBlock" value="1" />
+			<property name="Buff" value="spiderBite" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="214" name="handSpiderKingFangs">
+		<property name="Extends" value="handSpiderFangs" />
+		<property class="Action0">
+			<property name="DamageEntity" value="50" />
 		</property>
 	</item>
 	<!-- ############################# CROPS ############################# -->

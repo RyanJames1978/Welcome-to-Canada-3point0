@@ -355,6 +355,12 @@
 		<modify id="1" stat="health" amount="-15" rate="1" />
 	</buff>
 	
+	<!-- RJ Spider Bite -->
+	<buff id="spiderBite" duration="10" stack="reset" actions="damage(0,1,0,1);damage(0,3,0,0)" type="bleeding" icon="ui_game_symbol_death" name_key="spiderBite" description_key="spiderBiteDesc" tooltip_key="spiderBiteTooltip">
+		<modify id="0" stat="stamina" amount="-15" rate="1" />
+		<modify id="1" stat="health" amount="-15" rate="1" />
+	</buff>
+	
 	<!-- RJ The Herpe -->
 	<buff id="theHerp" duration="0" icon="ui_game_symbol_zombie" name_key="theHerp" description_key="theHerpDesc" tooltip_key="theHerpTooltip"></buff>
 	

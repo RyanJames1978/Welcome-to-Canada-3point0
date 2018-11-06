@@ -15,8 +15,12 @@
         <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Animals -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+        <!-- Spiders -->
+		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<!-- Kitties -->
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
     </biome>
 <!-- ##################################### RJ City Wasteland ######################################## -->
     <biome name="city_wasteland">
@@ -27,8 +31,12 @@
         <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <!-- Night -->
         <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <!-- Spiders -->
+		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<!-- Kitties -->
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
     </biome>
 <!-- ##################################### RJ Wasteland Hub ######################################### -->
     <biome name="wasteland_hub">
@@ -38,15 +46,17 @@
       <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
         <!-- Night -->
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <!-- Spiders -->
+		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<!-- Kitties -->
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" />
     </biome>
 <!-- ######################################## RJ Ice Biome ########################################### -->
     <biome name="water">
 		<!-- RAD Animals -->
 		<spawn maxcount="10" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
-		<!-- Sphereii Swimming Animals -->
-		<!-- <spawn maxcount="20" time="Any" entitygroup="AnimalSwiming" /> -->
         <!-- Ice Animals -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
     </biome>
@@ -149,8 +159,8 @@
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
         <!-- Enemy Animals -->
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
-        <!-- Friendly Animals -->
-		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Spider King -->
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>

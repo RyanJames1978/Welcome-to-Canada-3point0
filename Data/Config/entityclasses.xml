@@ -2154,11 +2154,12 @@
 	
 
 	
-	<!-- Beaver -->
+	<!-- Beaver by BennyG -->
 	<entity_class name="beaver" extends="animalTemplateTimid">
 		<property name="Mesh" value="#beaver?beaverPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
+		<property name="MaxHealth" value="200" />
 		<!-- Beaver Animations -->
 		<property name="AnimationIdle" value="sit01" />
         <property name="AnimationSecondIdle" value="idle01" />
@@ -2193,12 +2194,14 @@
 		<property name="SmellAlertThreshold" value="10" />
 	</entity_class>
 	
-	<!-- Moose -->
+	<!-- Moose by 3DRT -->
 	<entity_class name="moose" extends="animalTemplateHostile">
 		<property name="Mesh" value="#moose?moosePrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="Class" value="EntityEnemyAnimal" />
 		<property name="RootMotion" value="false" />
+		<property name="MaxHealth" value="1800" />
+		<property name="HandItem" value="handMooseAntlers" />
 		<!-- Moose Animations -->
 		<property name="AnimationIdle" value="idle_eat" />
         <property name="AnimationSecondIdle" value="idle_03" />
@@ -2232,7 +2235,6 @@
 		<property name="NoiseAlertThreshold" value="40" />
 		<property name="SmellAlertThreshold" value="40" />
 		<property name="IsEntityAnimal" value="true" />
-		<property name="HandItem" value="handAnimalZombieBear" />
 		<property name="WalkType" value="1" />
 		<property name="ModelType" value="Standard" />
 		<property name="CanClimbLadders" value="false" />
@@ -2282,12 +2284,14 @@
 		<drop event="Harvest" name="femur" tool_category="Butcher" count="4" />
 	</entity_class>
 	
-	<!-- Spider -->
+	<!-- Spider by [Prism Bucket] -->
 	<entity_class name="spider" extends="animalTemplateTimid">
 		<property name="Mesh" value="#spider?spiderPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
-		<property name="HandItem" value="handAnimalWolf" />
+		<property name="HandItem" value="handSpiderFangs" />
+		<property name="MaxHealth" value="8" />
+		<property name="CanClimbVertical" value="true" />
 		<!-- Spider Animations -->
 		<property name="AnimationIdle" value="idle" />
         <property name="AnimationSecondIdle" value="idle" />
@@ -2307,11 +2311,11 @@
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
 		<!-- Spider Speeds -->
-		<property name="WanderSpeed" value="0.4" />
-		<property name="ApproachSpeed" value="0.4" />
-		<property name="NightWanderSpeed" value="0.3" />
-		<property name="NightApproachSpeed" value="0.3" />
-		<property name="PanicSpeed" value="1.0" />
+		<property name="WanderSpeed" value="0.1" />
+		<property name="ApproachSpeed" value="0.1" />
+		<property name="NightWanderSpeed" value="0.1" />
+		<property name="NightApproachSpeed" value="0.1" />
+		<property name="PanicSpeed" value="0.1" />
 		<!-- Spider Senses -->
 		<property name="MaxViewAngle" value="180" />
 		<property name="SightRange" value="30" />
@@ -2337,7 +2341,279 @@
 		</property>
 	</entity_class>
 	
+	<!-- Spider King -->
+	<entity_class name="spiderKing" extends="spider">
+		<property name="Mesh" value="#spider?spiderKingPrefab" />
+		<property name="HandItem" value="handSpiderKingFangs" />
+		<property name="MaxHealth" value="800" />
+		<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0" />
+		<!-- Spider Speeds -->
+		<property name="WanderSpeed" value="0.4" />
+		<property name="ApproachSpeed" value="0.6" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="0.8" />
+		<property name="PanicSpeed" value="1.5" />
+		<!-- general AI task from xyth -->
+		<property name="AITask-1" value="BreakDoor" param2="5" />
+		<property name="AITask-2" value="BreakBlock" param2="5" />
+		<property name="AITask-3" value="BlockingTargetTask" />
+		<property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-6" value="BreakDoor" param2="5" />
+		<property name="AITask-7" value="BreakBlock" param2="5" />
+		<property name="AITask-8" value="BlockingTargetTask" />
+		<property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-11" value="BreakDoor" param2="5" />
+		<property name="AITask-12" value="BreakBlock" param2="5" />
+		<property name="AITask-13" value="BlockingTargetTask" />
+		<property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITask-16" value="BreakDoor" param2="5" />
+		<property name="AITask-17" value="BreakBlock" param2="5" />
+		<property name="AITask-18" value="BlockingTargetTask" />
+		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
+		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
+		<property name="AITask-22" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITask-23" value="SetAsTargetIfHurt" param1="EntityPlayer" param2="60" />
+		<property name="AITask-24" value="ApproachSpot" />
+		<property name="AITask-25" value="Wander" />
+	</entity_class>
 	
+	<!-- Kitty by POLYDACTYL -->
+	<entity_class name="kitty" extends="animalTemplateTimid">
+		<property name="Mesh" value="#kitty?kittyPrefab" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
+		<property name="MaxHealth" value="3500" />
+		<!-- Kitty Animations -->
+		<property name="AnimationIdle" value="Idle_A" />
+        <property name="AnimationSecondIdle" value="Idle_B" />
+		<property name="AnimationMainAttack" value="Idle_A" />
+        <property name="AnimationJump" value="Run" />
+		<property name="AnimationPain" value="Idle_A" />
+		<property name="AnimationDeath" value="Idle_A" />
+		<property name="AnimationRun" value="Run" />
+		<property name="AnimationWalk" value="Walk" />
+		<!-- Kitty Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+		<!-- Kitty Speeds -->
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.1" />
+		<property name="NightApproachSpeed" value="0.1" />
+		<property name="PanicSpeed" value="1.0" />
+		<!-- Kitty Senses -->
+		<property name="MaxViewAngle" value="180" />
+		<property name="SightRange" value="30" />
+		<property name="SightScale" value="-2,150" />
+		<property name="NoiseAlertThreshold" value="10" />
+		<property name="SmellAlertThreshold" value="10" />
+	</entity_class>
+	
+	<!-- Penguin by FELIS CHAUS -->
+	<entity_class name="penguin" extends="animalTemplateTimid">
+		<property name="Mesh" value="#penguin?Penguin" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
+		<property name="MaxHealth" value="150" />
+		<!-- Penguin Animations -->
+		<property name="AnimationIdle" value="idle" />
+        <property name="AnimationSecondIdle" value="idle" />
+		<property name="AnimationMainAttack" value="idle" />
+        <property name="AnimationJump" value="walk" />
+		<property name="AnimationPain" value="idle" />
+		<property name="AnimationDeath" value="idle" />
+		<property name="AnimationRun" value="run" />
+		<property name="AnimationWalk" value="walk" />
+		<!-- Penguin Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+		<!-- Penguin Speeds -->
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.1" />
+		<property name="NightApproachSpeed" value="0.1" />
+		<property name="PanicSpeed" value="1.0" />
+		<!-- Penguin Senses -->
+		<property name="MaxViewAngle" value="180" />
+		<property name="SightRange" value="30" />
+		<property name="SightScale" value="-2,150" />
+		<property name="NoiseAlertThreshold" value="10" />
+		<property name="SmellAlertThreshold" value="10" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="feather" tool_category="Butcher" count="30" />
+	</entity_class>
+	
+	
+	<!-- ################### RJ Birds ################### -->
+	
+	
+	<!-- Shereii passive flight moved here -->
+	
+	<entity_class name="PassiveFlight" extends="animalChicken">
+		<!-- Default class and animation class -->
+		<!--property name="Class" value="EntityFlyingBaseSDX, Mods" /-->
+		<property name="Class" value="EntityZombieFlyingSDX, Mods" />
+		<property name="AvatarController" value="MecanimSDX, Mods" />
+		<!-- Flying creatures will inheirit what the vultures body does, since it can fly -->
+		<property name="ModelType" value="Standard" />
+		<property name="HasRagdoll" value="false" />
+		<property name="PhysicsBody" value="vulture" />
+		<property name="RootMotion" value="false" />
+		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
+		<property name="EntityType" value="Animal" />
+		<!-- Harmless birds will just fly around and not attack you -->
+		<property name="IsEnemyEntity" value="false" />
+		<!-- Controls how big the flock size is, how high they can fly, etc -->
+		<property name="FlockSize" value="0" />
+		<property name="MaxHeight" value="90" />
+		<property name="IsAgressive" value="False" />
+		<property name="FollowPlayer" value="False" />
+		<!-- Disables default sounds, so undefined sounds in inherited birds don't sound like chickens -->
+		<property name="SoundRandom" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundSense" value="" />
+		<!-- Default speeds for the birds -->
+		<property name="WanderSpeed" value="0.4" />
+		<property name="ApproachSpeed" value="0.8" />
+		<property name="NightWanderSpeed" value="0.4" />
+		<property name="NightApproachSpeed" value="0.9" />
+		<property name="PanicSpeed" value="1.1" />
+		<property name="MaxTurnSpeed" value="180" />
+		<property name="SightRange" value="500" />
+		<property name="SightScale" value="-5,270" />
+		<property name="MaxViewAngle" value="180" />
+		<property name="MaxHealth" value="25" />
+		<property name="ExperienceGain" value="1" />
+		<property name="DeadBodyHitPoints" value="1" />
+		<drop event="Harvest" name="feather" tool_category="Butcher" count="2" />
+		<property name="AITask-1" value="Swim" />
+		<property name="AITask-2" value="RunawayWhenHurt" />
+		<property name="AITask-3" value="RunawayFromEntity" param1="EntityPlayer" />
+		<property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie" />
+		<property name="AITask-5" value="Wander" />
+	</entity_class>
+	 
+	<!-- All birds in this next section are part of a bird pack by DINOPUNCH -->
+	<!-- BlueJay -->
+	<entity_class name="birdBlueJay" extends="PassiveFlight">
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="Mesh" value="#birds?bluejay" />
+		<property name="MaxHealth" value="25" />
+		<property name="AnimationIdle" value="preen" />
+        <property name="AnimationSecondIdle" value="peck" />
+		<property name="AnimationMainAttack" value="attack_01" />
+        <property name="AnimationJump" value="forwardHop" />
+		<property name="AnimationPain" value="worried" />
+		<property name="AnimationDeath" value="die" />
+		<property name="AnimationRun" value="flyStraight" />
+		<property name="AnimationWalk" value="forwardHop" />
+		<property name="SoundRandom" value="robinSounds" />
+		<!-- Bluejay Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	
+	<!-- Cardinal -->
+	<entity_class name="birdCardinal" extends="blueJay">
+		<property name="Mesh" value="#birds?cardianl" />
+		<!-- Cardinal Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	<!-- Chickadee -->
+	<entity_class name="birdChickadee" extends="blueJay">
+		<property name="Mesh" value="#birds?chickadee" />
+		<!-- Chickadee Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	<!-- Crow -->
+	<entity_class name="birdCrow" extends="blueJay">
+		<property name="Mesh" value="#birds?crow" />
+		<!-- Crow Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	<!-- Gold Finch -->
+	<entity_class name="birdFinch" extends="blueJay">
+		<property name="Mesh" value="#birds?goldfinch" />
+		<!-- Gold Finch Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	<!-- Robin -->
+	<entity_class name="birdRobin" extends="blueJay">
+		<property name="Mesh" value="#birds?robin" />
+		<!-- Robin Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
+	<!-- Sparrow -->
+	<entity_class name="birdSparrow" extends="blueJay">
+		<property name="Mesh" value="#birds?sparrow" />
+		<!-- Sparrow Sounds -->
+		<property name="SoundHurt" value="" />
+		<property name="SoundDeath" value="" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundFootstepModifier" value="" />
+		<property name="SoundGiveUp" value="" />
+	</entity_class>
 	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
@@ -3371,52 +3647,6 @@
 		<property name="Class" value="EntitySwimingSDX, Mods" />
 		<property name="Mesh" value="#Clownfish?Clownfish_X" />
 		<property name="FlockSize" value="3" />
-	</entity_class>
-	<entity_class name="PassiveFlight" extends="animalChicken">
-		<!-- Default class and animation class -->
-		<!--property name="Class" value="EntityFlyingBaseSDX, Mods" /-->
-		<property name="Class" value="EntityZombieFlyingSDX, Mods" />
-		<property name="AvatarController" value="MecanimSDX, Mods" />
-		<!-- Flying creatures will inheirit what the vultures body does, since it can fly -->
-		<property name="ModelType" value="Standard" />
-		<property name="HasRagdoll" value="false" />
-		<property name="PhysicsBody" value="vulture" />
-		<property name="RootMotion" value="false" />
-		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
-		<property name="EntityType" value="Animal" />
-		<!-- Harmless birds will just fly around and not attack you -->
-		<property name="IsEnemyEntity" value="false" />
-		<!-- Controls how big the flock size is, how high they can fly, etc -->
-		<property name="FlockSize" value="0" />
-		<property name="MaxHeight" value="90" />
-		<property name="IsAgressive" value="False" />
-		<property name="FollowPlayer" value="False" />
-		<!-- Disables default sounds, so undefined sounds in inherited birds don't sound like chickens -->
-		<property name="SoundRandom" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundSense" value="" />
-		<!-- Default speeds for the birds -->
-		<property name="WanderSpeed" value="0.4" />
-		<property name="ApproachSpeed" value="0.8" />
-		<property name="NightWanderSpeed" value="0.4" />
-		<property name="NightApproachSpeed" value="0.9" />
-		<property name="PanicSpeed" value="1.1" />
-		<property name="MaxTurnSpeed" value="180" />
-		<property name="SightRange" value="500" />
-		<property name="SightScale" value="-5,270" />
-		<property name="MaxViewAngle" value="180" />
-		<property name="MaxHealth" value="25" />
-		<property name="ExperienceGain" value="1" />
-		<property name="DeadBodyHitPoints" value="1" />
-		<drop event="Harvest" name="feather" tool_category="Butcher" count="2" />
-		<property name="AITask-1" value="Swim" />
-		<property name="AITask-2" value="RunawayWhenHurt" />
-		<property name="AITask-3" value="RunawayFromEntity" param1="EntityPlayer" />
-		<property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie" />
-		<property name="AITask-5" value="Wander" />
 	</entity_class>
 	<!-- Robins - Legacy Animation -->
 	<entity_class name="RobinBird" extends="PassiveFlight">
