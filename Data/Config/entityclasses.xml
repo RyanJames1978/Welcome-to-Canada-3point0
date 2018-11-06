@@ -2538,7 +2538,7 @@
 	
 	<!-- Cardinal -->
 	<entity_class name="birdCardinal" extends="birdBlueJay">
-		<property name="Mesh" value="#birds?cardianl" />
+		<property name="Mesh" value="#birds?cardinal" />
 		<!-- Cardinal Sounds -->
 		<property name="SoundHurt" value="" />
 		<property name="SoundDeath" value="" />
