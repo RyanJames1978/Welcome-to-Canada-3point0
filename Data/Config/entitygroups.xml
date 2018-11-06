@@ -296,11 +296,6 @@
 		<entity name="animalBear" />
 		<entity name="PolarBear" prob="0.1" />
 	</entitygroup>
-	<!-- Baby + mom bears -->
-	<entitygroup name="babyBearsGroup">
-		<entity name="giantBear" prob="1" />
-		<entity name="babyBear" prob="4" />
-	</entitygroup>
 	<!-- Moose and Beaver -->
 	<entitygroup name="beaverMooseGroup">
 		<entity name="beaver" />
