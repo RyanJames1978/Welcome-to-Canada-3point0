@@ -348,13 +348,13 @@
 		<entity name="Seagull" />
 		<entity name="Goose" />
 		<!-- RJ Birds -->
-		<!-- <entity name="birdBlueJay" />
+		<entity name="birdBlueJay" />
 		<entity name="birdCardinal" />
 		<entity name="birdChickadee" />
 		<entity name="birdCrow" />
 		<entity name="birdFinch" />
 		<entity name="birdRobin" />
-		<entity name="birdSparrow" /> -->
+		<entity name="birdSparrow" />
 		<!-- Sphereii -->
 		<entity name="ArcticFox" prob="0.3" />
 		<!-- RJ Animals -->

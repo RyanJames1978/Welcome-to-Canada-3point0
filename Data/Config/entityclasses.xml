@@ -2446,7 +2446,7 @@
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.1" />
 		<property name="NightApproachSpeed" value="0.1" />
-		<property name="PanicSpeed" value="1.0" />
+		<property name="PanicSpeed" value="2.0" />
 		<!-- Penguin Senses -->
 		<property name="MaxViewAngle" value="180" />
 		<property name="SightRange" value="30" />
@@ -2526,11 +2526,11 @@
 		<property name="AnimationWalk" value="forwardHop" />
 		<property name="SoundRandom" value="robinSounds" />
 		<!-- Bluejay Sounds -->
+		<property name="SoundDeath" value="bluejaydeath" />
+		<property name="SoundRandom" value="bluejayroam" />
+		<property name="SoundSense" value="bluejaysense" />
+		<property name="SoundAlert" value="bluejayalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2540,11 +2540,11 @@
 	<entity_class name="birdCardinal" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?cardinal" />
 		<!-- Cardinal Sounds -->
+		<property name="SoundDeath" value="cardinaldeath" />
+		<property name="SoundRandom" value="cardinalroam" />
+		<property name="SoundSense" value="cardinalsense" />
+		<property name="SoundAlert" value="cardinalalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2553,11 +2553,11 @@
 	<entity_class name="birdChickadee" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?chickadee" />
 		<!-- Chickadee Sounds -->
+		<property name="SoundDeath" value="chickadeedeath" />
+		<property name="SoundRandom" value="chickadeeroam" />
+		<property name="SoundSense" value="chickadeesense" />
+		<property name="SoundAlert" value="chickadeealert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2566,11 +2566,11 @@
 	<entity_class name="birdCrow" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?crow" />
 		<!-- Crow Sounds -->
+		<property name="SoundDeath" value="crowdeath" />
+		<property name="SoundRandom" value="crowroam" />
+		<property name="SoundSense" value="crowsense" />
+		<property name="SoundAlert" value="crowalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2579,11 +2579,11 @@
 	<entity_class name="birdFinch" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?goldfinch" />
 		<!-- Gold Finch Sounds -->
+		<property name="SoundDeath" value="finchdeath" />
+		<property name="SoundRandom" value="finchroam" />
+		<property name="SoundSense" value="finchsense" />
+		<property name="SoundAlert" value="finchalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2592,11 +2592,11 @@
 	<entity_class name="birdRobin" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?robin" />
 		<!-- Robin Sounds -->
+		<property name="SoundDeath" value="robindeath" />
+		<property name="SoundRandom" value="robinroam" />
+		<property name="SoundSense" value="robinsense" />
+		<property name="SoundAlert" value="robinalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
@@ -2605,11 +2605,11 @@
 	<entity_class name="birdSparrow" extends="birdBlueJay">
 		<property name="Mesh" value="#birds?sparrow" />
 		<!-- Sparrow Sounds -->
+		<property name="SoundDeath" value="sparrowdeath" />
+		<property name="SoundRandom" value="sparrowroam" />
+		<property name="SoundSense" value="sparrowsense" />
+		<property name="SoundAlert" value="sparrowalert" />
 		<property name="SoundHurt" value="" />
-		<property name="SoundDeath" value="" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAlert" value="" />
 		<property name="SoundAttack" value="" />
 		<property name="SoundFootstepModifier" value="" />
 		<property name="SoundGiveUp" value="" />
