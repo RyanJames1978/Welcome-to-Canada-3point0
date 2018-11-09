@@ -2423,7 +2423,7 @@
 		<property name="RootMotion" value="false" />
 		<property name="MaxHealth" value="150" />
 		<!-- Penguin Animations -->
-		<property name="AnimationIdle" value="idle" />
+		<property name="AnimationIdle" value="walk" />
         <property name="AnimationSecondIdle" value="idle" />
 		<property name="AnimationMainAttack" value="idle" />
         <property name="AnimationJump" value="walk" />
