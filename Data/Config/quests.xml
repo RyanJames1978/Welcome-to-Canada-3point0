@@ -20,7 +20,7 @@
 	</quest>
 	<!-- Basic Survival 3 - Craft campfire /> -->
 	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="campfire" value="1" />
+		<objective type="Craft" id="campfire" value="1" />
 		<objective type="BlockPlace" id="campfire" value="1" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
 	</quest>
@@ -40,7 +40,7 @@
 	<!-- Basic Survival 6 - Start an igloo /> -->
 	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_map_house" category_key="quest" difficulty="veryeasy">
 		<objective type="FetchKeep" id="snowBall" value="120" />
-		<objective type="FetchKeep" id="snowBlock" value="6" />
+		<objective type="Craft" id="snowBlock" value="6" />
 		<objective type="BlockPlace" id="snowBlock" value="6" />
 		<reward type="Quest" id="quest_BasicSurvival7" />
 	</quest>
