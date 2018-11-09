@@ -1036,7 +1036,7 @@
 			<Wind min="20" max="100" prob="0.1"/>
 			<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
 		</weather>
-		<subbiome prob="0.8"> <!-- Wasteland Sub Biome: Plainsground -->
+		<subbiome prob="0.25"> <!-- Wasteland Sub Biome: Plainsground -->
 			<layers>
 				<layer depth="1" blockname="grass" > <resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" /> </layer>
 				<layer depth="5" blockname="dirt" > <resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" /> <resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
@@ -1066,16 +1066,26 @@
 				<decoration type="block" blockname="rock04" prob =".01" />
 				<decoration type="block" blockname="rockResource" prob =".025" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob =".025" rotatemax="3"/>
-				<decoration type="block" blockname="Grass1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="Grass2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="Grass3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="Grass4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="Grass5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush" prob="0.001" rotatemax="7" />
+			    <decoration type="block" blockname="treeAzalea" prob="0.015"/>
+			    <decoration type="block" blockname="treeBirch10m" prob="0.0016" rotatemax="7"/>
+			    <decoration type="block" blockname="treeBirch12m" prob="0.0018" rotatemax="7"/>
+			    <decoration type="block" blockname="treeBirch15m" prob="0.0020" rotatemax="7"/>
+			    <decoration type="block" blockname="treeMaple6m" prob="0.0010" rotatemax="7"/>
+			    <decoration type="block" blockname="treeMaple13m" prob="0.0022" rotatemax="7"/>
+			    <decoration type="block" blockname="treeMaple15m" prob="0.0024" rotatemax="7"/>
+		    	<decoration type="block" blockname="treeMaple16m" prob="0.0028" rotatemax="7"/>
+	    		<decoration type="block" blockname="treeMaple17m" prob="0.003" rotatemax="7"/>
+	     		<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7"/>
+		    	<decoration type="block" blockname="treeJuniper6m" prob="0.005" rotatemax="7"/>
+	    		<decoration type="block" blockname="treeMountainPine8m" prob="0.0005" rotatemax="7"/>
+	    		<decoration type="block" blockname="treeMountainPine13m" prob="0.0002" rotatemax="7"/>
+	    		<decoration type="block" blockname="treeMountainPine16m" prob="0.0002" rotatemax="7"/>
+		    	<decoration type="block" blockname="treeMountainPine19m" prob="0.0002" rotatemax="7"/>
+		    	<decoration type="block" blockname="treeMountainPineDry" prob="0.0002" rotatemax="7"/>
+		    	<decoration type="block" blockname="treeMountainPine20m" prob="0.0002" rotatemax="7"/>
+		    	<decoration type="block" blockname="snowberry3Harvest" prob =".001" />
+		    	<decoration type="block" blockname="forestFlower" prob =".004" />
+		    	<decoration type="block" blockname="treeForestGrassDiagonal" prob =".5" />
 				<decoration type="block" blockname="SummerConifer1" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer3" prob="0.001" rotatemax="7" />
@@ -1084,28 +1094,6 @@
 				<decoration type="block" blockname="SummerConifer6" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer7" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer8" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower10" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower11" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower12" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower13" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower14" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower15" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower17" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower18" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower19" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower20" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower21" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower22" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower23" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower6" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower7" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower8" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower9" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree10" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree11" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree12" prob="0.001" rotatemax="7" />
