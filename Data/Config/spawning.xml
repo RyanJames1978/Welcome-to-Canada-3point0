@@ -17,8 +17,6 @@
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
         <!-- Spiders -->
 		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ##################################### RJ City Wasteland ######################################## -->
     <biome name="city_wasteland">
@@ -31,8 +29,6 @@
         <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Spiders -->
 		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ##################################### RJ Wasteland Hub ######################################### -->
     <biome name="wasteland_hub">
@@ -44,13 +40,9 @@
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Spiders -->
 		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Ice Biome ########################################### -->
     <biome name="water">
-		<!-- RAD Animals -->
-		<spawn maxcount="10" respawndelay="3" time="Night" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
         <!-- Ice Animals -->
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="iceAnimalsAll" />
     </biome>
@@ -68,8 +60,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 	</biome>
 <!-- ######################################## RJ Snow 2 Biome ########################################### -->
     <biome name="plains">
@@ -85,8 +75,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Prairies Biome ########################################### -->
     <biome name="forest">
@@ -102,8 +90,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Pine Forest Biome ########################################### -->
     <biome name="pine_forest">
@@ -119,8 +105,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- #############################  RJ Thick Forest 1 Biome ######################################## -->
     <biome name="burnt_forest">
@@ -136,8 +120,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
 		</biome>
 <!-- ############################################################################################################## -->
 <!-- FERALFERALFERALFERALFERALFERALFERAL FERAL FOREST - RJ Thick Forest 2 Biome FERALFERALFERALFERALFERALFERALFERAL -->
@@ -151,12 +133,13 @@
         <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieSoldierGroup" />
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
-        <!-- Enemy Animals -->
-        <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
+		<!-- RAD Animals -->
+		<spawn maxcount="10" respawndelay="3" time="Any" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
         <!-- Spider King -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" />
 		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="Nightmares" />
+		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -172,8 +155,6 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
-		<!-- Nightmares -->
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
     </biome>
 	
 <!-- ################################################################################################ -->
