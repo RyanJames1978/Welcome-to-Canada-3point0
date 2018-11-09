@@ -81,7 +81,10 @@
 			<window name="dragAndDropItemStack" />
 		</window_group>
 		<window_group name="compass" actionSet="false">
+			<!-- Vanilla 
 			<window name="windowCompass" />
+			-->
+			<window name="S420windowCompass" />
 			<window name="windowPlayer" />
 			<window name="windowTime" />
 			<window name="HUDLeftStatBars" anchor="LeftBottom" />
