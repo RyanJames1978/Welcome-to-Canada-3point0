@@ -328,9 +328,9 @@
 	</entitygroup>
 	<!-- Ice Animals -->
 	<entitygroup name="iceAnimalsAll">
+		<entity name="invisibleAnimal" prob="6" />
 		<entity name="animalSeal" prob="0.35" />
-		<entity name="PolarBear" prob="0.15" />
-		<entity name="penguin" prob="0.75" />
+		<entity name="penguin" prob="0.15" />
 	</entitygroup>
 	<!-- RJ timid animals all -->
 	<entitygroup name="timdAnimalsAll">
@@ -359,9 +359,11 @@
 		<entity name="ArcticFox" prob="0.3" />
 		<!-- RJ Animals -->
 		<entity name="beaver" />
+		<entity name="moose" prob="0.075" />
 	</entitygroup>
 	<!-- RJ enemy Animals -->
 	<entitygroup name="enemyAnimalsAll">
+		<entity name="invisibleAnimal" prob="6" />
 		<entity name="animalSnake" />
 		<entity name="animalZombieVulture" prob="0.75" />
 		<entity name="animalWolf" />
@@ -369,7 +371,7 @@
 		<entity name="animalBear" prob="0.25" />
 		<entity name="animalZombieDog" />
 		<entity name="animalZombieBear" prob="0.05" />
-		<entity name="PolarBear" prob="0.1" />
+		<entity name="PolarBear" />
 		<!-- RJ Animals -->
 		<entity name="moose" prob="0.2" />
 		<entity name="spider" />

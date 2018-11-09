@@ -16,11 +16,9 @@
         <!-- Animals -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
         <!-- Spiders -->
-		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
+		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
-		<!-- Kitties -->
-		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ##################################### RJ City Wasteland ######################################## -->
     <biome name="city_wasteland">
@@ -32,11 +30,9 @@
         <!-- Night -->
         <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Spiders -->
-		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
+		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
-		<!-- Kitties -->
-		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ##################################### RJ Wasteland Hub ######################################### -->
     <biome name="wasteland_hub">
@@ -47,11 +43,9 @@
         <!-- Night -->
       <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- Spiders -->
-		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="spiderCity" />
+		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="Nightmares" />
-		<!-- Kitties -->
-		<!-- <spawn maxcount="1" respawndelay="1" time="Day" entitygroup="kittyGroup" /> -->
     </biome>
 <!-- ######################################## RJ Ice Biome ########################################### -->
     <biome name="water">
