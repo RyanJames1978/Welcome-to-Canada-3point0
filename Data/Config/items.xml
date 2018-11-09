@@ -9957,6 +9957,7 @@
 		<property name="DescriptionKey" value="iceAxeDesc" />
 		<property name="Extends" value="pickaxeIron" />
 		<property name="Meshfile" value="#iceAxe?iceAxePrefab" />
+		<property name="HoldType" value="2" />
 		<property class="Action0">
 			<property name="Delay" value="0.9" />
 			<property name="Stamina_usage" value="4" />
