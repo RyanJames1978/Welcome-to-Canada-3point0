@@ -18627,6 +18627,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#chairs?chairLobbyPrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -18653,6 +18654,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#chairs?chairOfficePrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="FuelValue" value="90" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
@@ -18677,6 +18679,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#chairs?chairWoodPrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -18699,6 +18702,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#chairs?chairWoodPlainPrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -18721,6 +18725,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#chairs?chairPlasticPrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -19728,6 +19733,7 @@
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="OnlySimpleRotations" value="true" />
 		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="ModelOffset" value="0,0.5,0" />
 		<property name="DescriptionKey" value="mirrorWallDesc" />
 		<property name="CanPickup" value="true" />
 		<property name="Group" value="Decor/Miscellaneous" />
@@ -19762,6 +19768,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#anvil?anvilPrefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="StabilitySupport" value="false" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="IsTerrainDecoration" value="true" />

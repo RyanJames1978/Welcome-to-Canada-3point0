@@ -217,7 +217,6 @@
 			<item name="clubSpiked" prob="0.5" />
 			<item name="huntingKnife" prob="0.5" />
 			<item name="machete" prob="0.2" />
-		    <item group="hockeyEquipment" />
 		</trader_item_group>
 		<trader_item_group name="weaponsCrossbow+ammo" count="all">
 			<item name="crossbow" count="1" />
@@ -564,7 +563,6 @@
 			<item name="fertilizer" count="1,3" prob="0.5" />
 			<item name="paintTool" prob="0.5" />
 			<item name="wireTool" />
-		    <item group="hockeyEquipment" />
 		</trader_item_group>
 		<trader_item_group name="minibikeParts" count="1">
 			<item name="minibikeWheels" count="1,4" />
@@ -667,7 +665,6 @@
 			<item group="rareMedicine" count="1" prob="0.2" />
 			<item group="medicine" count="1,2" prob="1" />
 			<item name="chainsaw" />
-		    <item group="hockeyEquipment" />
 		</trader_item_group>
 		<trader_item_group name="traderElectrical" count="1">
 			<item name="electricParts" count="20,50" prob="1" />
