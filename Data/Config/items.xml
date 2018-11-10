@@ -7392,7 +7392,7 @@
 		<property name="Weight" value="10" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK drink -->
-		<property name="EconomicValue" value="500" />
+		<property name="EconomicValue" value="5" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="2" />

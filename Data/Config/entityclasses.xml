@@ -2158,7 +2158,7 @@
 		<property name="Mesh" value="#beaver?beaverPrefab" />
 		<property name="AvatarController" value="AnimationSDX, Mods" />
 		<property name="RootMotion" value="false" />
-		<property name="MaxHealth" value="200" />
+		<property name="MaxHealth" value="60" />
 		<!-- Beaver Animations -->
 		<property name="AnimationIdle" value="sit01" />
         <property name="AnimationSecondIdle" value="idle01" />
@@ -2321,29 +2321,16 @@
 		<property name="SightScale" value="-2,150" />
 		<property name="NoiseAlertThreshold" value="10" />
 		<property name="SmellAlertThreshold" value="10" />
-		<!-- Spider hostle if attacked -->
-		<property class="MechanimAttackStates">
-			<property name="state0" value="Attack" />
-			<property name="state1" value="AttackStandingStill" />
-		</property>
-		<property class="MechanimPainTriggers">
-			<property name="state0" value="PainTrigger" />
-		</property>
-		<property class="MechanimPainStates">
-			<property name="state0" value="Pain" />
-		</property>
-		<property class="MechanimDeathTriggers">
-			<property name="state0" value="DeathTrigger" />
-		</property>
-		<property class="MechanimDeathStates">
-			<property name="state0" value="Death" />
-		</property>
 	</entity_class>
 	
 	<!-- Spider King -->
-	<entity_class name="spiderKing" extends="spider">
+	<entity_class name="spiderKing" extends="animalTemplateHostile">
 		<property name="Mesh" value="#spider?spiderKingPrefab" />
 		<property name="HandItem" value="handSpiderKingFangs" />
+		<property name="AvatarController" value="AnimationSDX, Mods" />
+		<property name="RootMotion" value="false" />
+		<property name="HandItem" value="handSpiderFangs" />
+		<property name="CanClimbVertical" value="true" />
 		<property name="MaxHealth" value="800" />
 		<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0" />
 		<!-- Spider Speeds -->
@@ -2376,6 +2363,24 @@
 		<property name="AITask-23" value="SetAsTargetIfHurt" param1="EntityPlayer" param2="60" />
 		<property name="AITask-24" value="ApproachSpot" />
 		<property name="AITask-25" value="Wander" />
+		<property class="MechanimAttackTriggers">
+			<property name="state0" value="AttackTrigger" />
+		</property>
+		<property class="MechanimAttackStates">
+			<property name="state0" value="Base Layer.Attack" />
+		</property>
+		<property class="MechanimPainTriggers">
+			<property name="state0" value="PainTrigger" />
+		</property>
+		<property class="MechanimPainStates">
+			<property name="state0" value="Base Layer.Pain" />
+		</property>
+		<property class="MechanimDeathTriggers">
+			<property name="state0" value="DeathTrigger" />
+		</property>
+		<property class="MechanimDeathStates">
+			<property name="state0" value="Base Layer.Death" />
+		</property>
 	</entity_class>
 	
 	<!-- Kitty by POLYDACTYL -->
@@ -2637,7 +2642,6 @@
 		<property name="HasRagdoll" value="false" />
 	</entity_class>
 	<entity_class name="zombieMechanic" extends="SDXTemplate">
-
 		<property name="Mesh" value="#Nightmares?thc5" />
 		<property name="MaxHealth" value="1000" />
 		<!-- These are the animation map names. The value comes from the animation from Unity -->
@@ -2655,7 +2659,7 @@
 		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
 		<property name="SoundSense" value="afroShamanSounds" />
-		<property name="LootListOnDeath" value="225" />
+		<property name="LootListOnDeath" value="200" />
 	</entity_class>
 	<entity_class name="Mutant" extends="SDXTemplate">
 		<property name="Mesh" value="#Mutant?Model" />
@@ -2674,7 +2678,7 @@
 		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
 		<property name="SoundSense" value="afroShamanSounds" />
-		<property name="LootListOnDeath" value="225" />
+		<property name="LootListOnDeath" value="200" />
 	</entity_class>
 
 	<entity_class name="Dino" extends="SDXTemplate">
@@ -2923,13 +2927,13 @@
 		<property name="AnimationRun" value="Chase" />
 		<property name="AnimationWalk" value="Walk" />
 		<property name="AnimationSpecialAttack" value="Attack4" />
-		<property name="SoundRandom" value="afroShamanSounds" />
-		<property name="SoundAlert" value="afroShamanSounds" />
-		<property name="SoundAttack" value="afroShamanSounds" />
+		<property name="SoundRandom" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundAttack" value="" />
 		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
-		<property name="SoundSense" value="afroShamanSounds" />
-		<property name="LootListOnDeath" value="200" />
+		<property name="SoundSense" value="" />
+		<property name="LootListOnDeath" value="177" />
 	</entity_class>
 	<entity_class name="Nightmare_c1" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?Nightmare_c1" />

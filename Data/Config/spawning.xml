@@ -60,6 +60,8 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beast -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="beastGroup" spawnDeadChance="0" />
 	</biome>
 <!-- ######################################## RJ Snow 2 Biome ########################################### -->
     <biome name="plains">
@@ -75,6 +77,8 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beast -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="beastGroup" spawnDeadChance="0" />
     </biome>
 <!-- ######################################## RJ Prairies Biome ########################################### -->
     <biome name="forest">
@@ -105,6 +109,8 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beast -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="beastGroup" spawnDeadChance="0" />
     </biome>
 <!-- #############################  RJ Thick Forest 1 Biome ######################################## -->
     <biome name="burnt_forest">
@@ -120,26 +126,31 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beast -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="beastGroup" spawnDeadChance="0" />
 		</biome>
 <!-- ############################################################################################################## -->
 <!-- FERALFERALFERALFERALFERALFERALFERAL FERAL FOREST - RJ Thick Forest 2 Biome FERALFERALFERALFERALFERALFERALFERAL -->
 <!-- ############################################################################################################## -->
     <biome name="wasteland">
-        <!-- Standard Zoms -->
+        <!-- RAD Zeds day -->
 		<spawn maxcount="6" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
         <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <spawn maxcount="2" respawndelay="4" time="Day"   entitygroup="ZombieSoldierGroup" />
-        <!-- Night Zoms -->
-        <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- RAD Zeds night -->
+        <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <spawn maxcount="1" respawndelay="4" time="Night"   entitygroup="ZombieSoldierGroup" />
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombieBadassGroup" />
-        <!-- Enemy Animals -->
-        <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
+        <!-- RAD Animals -->
+        <spawn maxcount="5" respawndelay="3" time="Any" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Spider King -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" />
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="Nightmares" />
 		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="Nightmares" />
+		<!-- Weirdos -->
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="weirdosGroup" />
+		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="weirdosGroup" />
     </biome>
 <!-- ######################################## RJ Deep Forest 3 Biome ########################################### -->
     <biome name="desert">
@@ -155,6 +166,8 @@
         <spawn maxcount="5" respawndelay="3" time="Night" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
         <!-- Friendly Animals -->
 		<spawn maxcount="5" respawndelay="3" time="Any" entitygroup="timdAnimalsAll" spawnDeadChance="0" />
+        <!-- Beast -->
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="beastGroup" spawnDeadChance="0" />
     </biome>
 	
 <!-- ################################################################################################ -->

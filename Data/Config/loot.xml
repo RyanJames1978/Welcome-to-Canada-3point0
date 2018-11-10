@@ -1531,6 +1531,19 @@
 		<item name="firstAidKitSchematic" prob="0.15" />
 		<!-- <item name="beaker" prob="0.15"/> -->
 	</lootgroup>
+	<!-- Hockey Equipment -->
+	<lootgroup name="hockeyEquipment">
+		<item name="hockeyStick01" />
+		<item name="hockeyStick02" />
+		<item name="hockeyStick03" />
+		<item name="hockeyGoalieStick01" />
+		<item name="hockeyGoalieStick02" />
+		<item name="hockeyGoalieStick03" />
+		<item name="hockeySkates" />
+		<item name="hockeyGoalieHelmet" />
+		<item name="hockeyTape" />
+		<item name="hockeyPuck" count="5,10" />
+	</lootgroup>
 	<!-- misc storage, cardboard boxes-->
 	<lootcontainer id="1" count="0,3" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 		<item group="junk" />
@@ -1629,7 +1642,7 @@
 		<item group="questChallenge" count="1" prob="0.191" />
 		<item group="treasureMaps" count="1" prob="0.161" />
 		<!-- total 2% for a quest thing -->
-		<item name="facialPiercings" prob="0.08" />
+		<item name="facialPiercings" prob="0.8" />
 	</lootcontainer>
 	<!-- metal garbage can-->
 	<lootcontainer id="16" count="0,4" size="4,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="baseTemplate">
@@ -1655,6 +1668,7 @@
 	<!-- cars-->
 	<lootcontainer id="19" count="1,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
 		<item group="automotive+tools+junk" />
+		<item group="hockeyEquipment" />
 		<item name="miningHelmet" prob="0.035" />
 		<item name="monsterEnergy" />
 		<item name="canCoke" />
@@ -1799,6 +1813,7 @@
 		<item name="gunPowder" count="1,5" />
 		<item name="padlock" prob="0.8" />
 		<item group="rjwintergearloot" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!-- file cabinet -->
 	<lootcontainer id="44" count="0,2" size="4,3" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="baseTemplate">
@@ -1877,6 +1892,7 @@
 		<item name="electronicsToolKit" count="1" prob="0.9" />
 		<item name="grinder" count="1" prob="0.25" />
 		<item name="armorForm" count="1" prob="0.77" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!-- shopping cart-->
 	<lootcontainer id="54" count="0,2" size="5,4" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" loot_quality_template="baseTemplate">
@@ -2418,6 +2434,7 @@
 		<item group="weaponsMP5+ammo" prob="0.02" />
 		<item group="weaponsHuntingRifle+ammo" prob="0.5" />
 		<item name="CrowBar" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!-- Fuel Truck -->
 	<lootcontainer id="109" count="1,2" size="4,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
@@ -2474,6 +2491,7 @@
 		<item group="tools" prob="1" />
 		<item name="paint" count="20,150" />
 		<item group="junk" prob="2" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!--Water tank -->
 	<lootcontainer id="119" count="0,2" size="4,3" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
@@ -2499,6 +2517,7 @@
 		<item group="electricalDevices" />
 		<item group="automotive" />
 		<item group="tools" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!-- Rations -->
 	<lootcontainer id="124" count="0,2" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="4" loot_quality_template="baseTemplate">
@@ -2507,6 +2526,7 @@
 	<!-- Tools Loot -->
 	<lootcontainer id="125" count="0,2" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="4" loot_quality_template="baseTemplate">
 		<item group="tools" />
+		<item group="hockeyEquipment" />
 	</lootcontainer>
 	<!-- Trash Cardboard -->
 	<lootcontainer id="126" count="0,2" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="4" loot_quality_template="baseTemplate">
@@ -2538,6 +2558,21 @@
 	<!-- Lady Fire Hearts Grave -->
 	<lootcontainer id="176" count="1" size="3,4" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30" loot_quality_template="treasureTemplate">
 		<item name="fireheartSword" prob="2" />
+	</lootcontainer>	
+	<!-- Beast loot -->
+	<lootcontainer id="177" count="1" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="30" loot_quality_template="treasureTemplate">
+		<item group="junk" prob="10" />
+		<item group="rareOres" prob="1" />
+		<item group="treasureMaps" count="1" prob="1" />
+	</lootcontainer>	
+	<!-- Nightmare loot -->
+	<lootcontainer id="200" count="1,4" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="30" loot_quality_template="treasureTemplate">
+		<item group="junk" prob="10" />
+		<item group="weaponsMilitaryGuns+ammo" prob="0.8" />
+		<item group="rareBooks" count="1,2" prob="0.5" />
+		<item group="banditArmor" count="1,2" prob="0.5" />
+		<item group="heavyArmor" count="1,2" prob="0.5" />
+		<item group="militaryArmor" count="1,2" prob="0.5" />
 	</lootcontainer>	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->

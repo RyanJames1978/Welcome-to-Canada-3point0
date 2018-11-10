@@ -29,8 +29,6 @@
 		<entity name="ZombieFrozen" prob="0.1" />
 		<entity name="ZombieSeryphSnow" prob="0.1" />
 		<entity name="zombieWalker" prob="0.1" />
-		<entity name="snowGoddess" prob="0.01" />
-		<entity name="Snowman" prob="0.01" />
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider" />
@@ -301,9 +299,22 @@
 		<entity name="beaver" />
 		<entity name="moose" />
 	</entitygroup>
+	<!-- Beast -->
+	<entitygroup name="beastGroup">
+		<entity name="invisibleAnimal" prob="6" />
+		<entity name="Beast" />
+	</entitygroup>
+	<!-- Weird Zeds -->
+	<entitygroup name="weirdosGroup">
+		<entity name="WellWalker" prob="0.05" />
+		<entity name="zombieMechanic" prob="0.05" />
+		<entity name="Mutant" prob="0.05" />
+		<entity name="Dino" prob="0.051" />
+		<entity name="snowGoddess" prob="0.05" />
+		<entity name="Snowman" prob="0.05" />
+	</entitygroup>
 	<!-- Nightmares -->
 	<entitygroup name="Nightmares">
-		<entity name="Beast" prob="0.05" />
 		<entity name="Vendigo" prob="0.05" />
 		<entity name="Insectoid" prob="0.05" />
 		<entity name="Nightmare_c1" prob="0.05" />
@@ -334,6 +345,7 @@
 	</entitygroup>
 	<!-- RJ timid animals all -->
 	<entitygroup name="timdAnimalsAll">
+		<entity name="invisibleAnimal" />
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="animalStag" />
