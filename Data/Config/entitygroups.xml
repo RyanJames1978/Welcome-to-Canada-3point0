@@ -332,10 +332,41 @@
 		<entity name="zombieSpiderFeralRadiated" />
 		<entity name="zombieWightFeralRadiated" />
 		<entity name="zombieFatCopFeralRadiated" />
+		<!-- RJ -->
+		<entity name="RADJointBoy" />
+		<entity name="RADJaques" />
+		<entity name="RADBigMamma" />
+		<entity name="RADHardcoreLogo" />
+		<entity name="RADRandy" />
+		<entity name="RADTrinity" />
+		<entity name="RADHockeyMom" />
+		<entity name="RADR0C" />
+		<entity name="RADKathy" />
+		<entity name="RADDave" />
+		<entity name="RADJonesy" />
+		<entity name="RADPolitician" />
+		<entity name="RADLumberJax" />
+		<entity name="RADKaty" />
+		<entity name="RADPhil" />
+		<entity name="RADVillagePerson" />
+		<entity name="RADDamStr8" />
+		<entity name="RADJroc" />
+		<entity name="RADCheerleader" />
+		<entity name="RADMcmurray" />
+		<entity name="RADJulian" />
+		<entity name="RADWayne" />
+		<entity name="RADPuckBunny" />
 	</entitygroup>
 	<!-- RJ RAD Animals -->
 	<entitygroup name="RADAnimalGroup">
-		<entity name="animalPigRAD" />
+		<entity name="RADDog" />
+		<entity name="RADBear" />
+		<entity name="RADWolf" />
+		<entity name="RADDireWolf" />
+		<entity name="RADVulture" />
+		<entity name="RADSnake" />
+		<entity name="RADMoose" />
+		<entity name="RADPolarBear" />
 	</entitygroup>
 	<!-- Ice Animals -->
 	<entitygroup name="iceAnimalsAll">
