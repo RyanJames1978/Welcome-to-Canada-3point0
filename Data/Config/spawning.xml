@@ -138,7 +138,7 @@
         <!-- RAD Zeds night -->
         <spawn maxcount="13" respawndelay="1" time="Night" entitygroup="RADZombiesGroup" />
         <!-- RAD Animals -->
-        <spawn maxcount="5" respawndelay="3" time="Any" entitygroup="enemyAnimalsAll" spawnDeadChance="0" />
+        <spawn maxcount="5" respawndelay="3" time="Any" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
         <!-- Spider King -->
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" />
 		<!-- Nightmares -->
