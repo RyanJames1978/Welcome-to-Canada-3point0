@@ -94,12 +94,12 @@
 		<modify id="1" stat="coretemp" modifyValue="10" />
 		<modify id="2" stat="speedmodifier" mulValue="1.05" />
 	</buff>
-	<buff id="megaCrushBuff" duration="400" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="monsterEnergyBuffName" description_key="monsterEnergyBuffDesc" tooltip_key="monsterEnergyBuffTooltip" causes="megaCrush">
+	<!-- RJ monster buff -->
+	<buff id="monsterEnergyBuff" duration="400" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="monsterEnergyBuffName" description_key="monsterEnergyBuffDesc" tooltip_key="monsterEnergyBuffTooltip" causes="megaCrush">
 		<modify id="0" stat="stamina" amount="10" rate="1" />
 		<modify id="1" stat="speedmodifier" mulValue="1.3" />
 	</buff>
-	<!-- RJ monster buff -->
-	<buff id="monsterEnergyBuff" duration="600" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="monsterEnergy">
+	<buff id="megaCrushBuff" duration="600" stack="extend" type="staminaup" icon="ui_game_symbol_run" name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="monsterEnergy">
 		<modify id="0" stat="stamina" amount="10" rate="1" />
 		<modify id="1" stat="speedmodifier" mulValue="1.3" />
 	</buff>

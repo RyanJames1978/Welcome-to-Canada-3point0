@@ -1633,7 +1633,31 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="glue" count="5" />
 		<ingredient name="animalHide" count="5" />
 	</recipe>
-	
+	<!-- RJ Hocket Sticks -->
+	<recipe name="hockeyStick01" count="1" craft_area="workbench">
+		<ingredient name="wood" count="30" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
+	<recipe name="hockeyStick02" count="1" craft_area="workbench">
+		<ingredient name="wood" count="30" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
+	<recipe name="hockeyStick03" count="1" craft_area="workbench">
+		<ingredient name="wood" count="30" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
+	<recipe name="hockeyGoalieStick01" count="1" craft_area="workbench">
+		<ingredient name="wood" count="40" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
+	<recipe name="hockeyGoalieStick02" count="1" craft_area="workbench">
+		<ingredient name="wood" count="40" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
+	<recipe name="hockeyGoalieStick03" count="1" craft_area="workbench">
+		<ingredient name="wood" count="40" />
+		<ingredient name="hockeyTape" count="1" />
+	</recipe>
 	
 	
 	
