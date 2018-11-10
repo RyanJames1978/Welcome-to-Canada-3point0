@@ -11014,23 +11014,42 @@
 	<item id="138" name="hockeyStick01">
 		<!-- hockey stick master -->
 		<property name="Meshfile" value="#hockeySticks?hockeyStick1Prefab" />
-		<property name="Extends" value="clubMaster" />
 		<property name="CustomIcon" value="hockeyStickIcon" />
 		<property name="DescriptionKey" value="hockeyStickGroupDesc" />
 		<property name="HoldType" value="33" />
 		<property name="RepairTools" value="hockeyTape" />
 		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Material" value="wood" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
 		<property class="Action0">
+			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.8" />
 			<property name="Range" value="2.4" />
 			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value="0.1" />
-			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.glass" value="1" />
 			<property name="Stamina_usage" value="3.5" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="3,12" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
 		</property>
 		<property name="CritChance" value="0.10" />
-		<property name="Group" value="Ammo/Weapons,Basics" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blunt Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillWeapons" />
 	</item>
 	<item id="139" name="hockeyStick02">
 		<property name="Meshfile" value="#hockeySticks?hockeyStick2Prefab" />
@@ -11045,25 +11064,10 @@
 	<!-- Goalie Sticks -->
 	<item id="141" name="hockeyGoalieStick01">
 		<!-- Goalie stick master -->
-		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick1Prefab" />
 		<property name="Extends" value="hockeyStick01" />
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick1Prefab" />
 		<property name="CustomIcon" value="hockeyGoalieStickIcon" />
 		<property name="DescriptionKey" value="hockeyGoalieStickGroupDesc" />
-		<property class="Action0">
-			<property name="Delay" value="1.8" />
-			<property name="Range" value="2.4" />
-			<property name="Sphere" value="0.2" />
-			<property name="Buff" value="criticalBlunt" />
-			<property name="Buff_chance" value="0.1" />
-			<property name="DamageBonus.head" value="7" />
-			<property name="Stamina_usage" value="4.5" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="10,17" />
-			<property name="BlockDamage" value="5,15" />
-		</property>
-		<property name="CritChance" value="0.15" />
-		<property name="Group" value="Ammo/Weapons,Basics" />
 	</item>
 	<item id="142" name="hockeyGoalieStick02">
 		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick2Prefab" />
