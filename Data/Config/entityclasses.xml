@@ -1068,6 +1068,12 @@
 		<property name="MaxHealth" value="250" />
 		<property name="ExperienceGain" value="1039" />
 		<property name="LootListOnDeath" value="84" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Wander" />
 	</entity_class>
 	<entity_class name="zombieStripperFeral" extends="zombieStripper">
 		<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll" />
