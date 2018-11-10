@@ -207,10 +207,11 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".0000004" rotatemax="7" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.00003" />
 			<decoration type="block" blockname="lawnGnome" prob ="0.00005" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<!-- Sphereii schmettoleg -->
 			<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -386,11 +387,12 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".0000004" rotatemax="7" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWell01" prob ="0.00003" />
 			<decoration type="block" blockname="cntWell02" prob ="0.00003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<!-- Sphereii schmettoleg -->
 			<decoration type="block" blockname="Butterflies_01" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -565,8 +567,11 @@
 			<decoration type="block" blockname="treeSnowyDeadBush" prob =".07" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".5" />
 			<decoration type="block" blockname="snowberry3Harvest" prob =".001" />
-			<decoration type="block" blockname="oreGemstone" prob =".0000004" rotatemax="7" />
+			<!-- RJ Decor -->
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.0000001" />
+			<decoration type="block" blockname="dieselCanister" prob ="0.00003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -798,6 +803,8 @@
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWaterTank" prob ="0.00003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000018" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<!-- Sphereii summer decor -->
 				<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -978,10 +985,11 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".0000004" rotatemax="7" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
 			<decoration type="block" blockname="lawnGnome" prob ="0.00001" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -1024,7 +1032,7 @@
 <!-- ####################################################################################### -->
 	<biome name="wasteland" biomemapcolor="#81b27c" >
 		<weather>
-			<Temperature min="-130" max="-119" prob="1"/>
+			<Temperature min="-50" max="50" prob="1"/>
 			<Fog min="0" max="0" prob=".8"/>
 			<Fog min="100" max="100" prob=".2"/>
 			<CloudThickness min="0" max="0" prob=".2"/>
@@ -1211,47 +1219,44 @@
 			<decoration type="block" blockname="treeBurntPine02" prob="0.0012" rotatemax="7"/>
 			<decoration type="block" blockname="treeBurntPine03" prob="0.00012" rotatemax="7"/>
 			<decoration type="block" blockname="treeMountainPineDry" prob="0.006" rotatemax="7"/>
-
 			<!-- stumps -->
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
-			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".000004" rotatemax="7" />
-			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
-			<decoration type="block" blockname="cntWell01" prob ="0.000001" />
-			<decoration type="block" blockname="cntWell02" prob ="0.000001" />
-			<decoration type="block" blockname="cntWreckedChopper" prob ="0.0000001" />
+			<!-- Gems Stones -->
+			<decoration type="block" blockname="oreGemstone" prob =".00005" rotatemax="7" />
+			<!-- Lady fire hearts Grave -->
+			<decoration type="block" blockname="graveEpic" prob =".000005" rotatemax="7" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBirch" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBranch2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBranch3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBranch4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBranch5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBranch" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBrokenTree1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBrokenTree2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBrokenTree3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBrokenTree4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBush1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBush2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBush3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterBush4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterConifer1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterConifer2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterConifer3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterPineTree1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterPineTree2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTree1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTree2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTree3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTree4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTree5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTreeScene2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTreeScene3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="WinterTreeScene" prob="0.001" rotatemax="7" />
-			<!-- Sphereii schmettoleg -->
+			<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBirch" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBranch2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBranch3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBranch4" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBranch5" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBranch" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBrokenTree1" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBrokenTree2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBrokenTree3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBrokenTree4" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBush1" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBush2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBush3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterBush4" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterConifer1" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterConifer2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterConifer3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterPineTree1" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterPineTree2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTree1" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTree2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTree3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTree4" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTree5" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTreeScene2" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTreeScene3" prob="0.001" rotatemax="7" />
+			<decoration type="block" blockname="WinterTreeScene" prob="0.001" rotatemax="7" />
+			<!-- Sphereii schmetterling -->
 			<decoration type="block" blockname="Butterflies_02" prob="0.001" rotatemax="4" />
 		</decorations>
 		<terrain class="Wasteland" />
@@ -1383,11 +1388,12 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".000000004" rotatemax="7" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWell01" prob ="0.000001" />
 			<decoration type="block" blockname="cntWell02" prob ="0.000001" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -1491,8 +1497,8 @@
 			<!-- boats -->
 			<decoration type="block" blockname="boatDestroyed" prob=".000001" rotatemax="7"/>
 			<decoration type="block" blockname="vikingBoat" prob=".000001" rotatemax="7"/>
-			<decoration type="block" blockname="boatFishing01" prob=".000001" rotatemax="7"/>
-			<decoration type="block" blockname="boatFishing02" prob=".000001" rotatemax="7"/>
+			<decoration type="block" blockname="boatFishing01" prob=".000007" rotatemax="7"/>
+			<decoration type="block" blockname="boatFishing02" prob=".000007" rotatemax="7"/>
 			<decoration type="block" blockname="boatRow01" prob=".000001" rotatemax="7"/>
 			<decoration type="block" blockname="boatRow02" prob=".000001" rotatemax="7"/>
 			<decoration type="block" blockname="boatRow03" prob=".000001" rotatemax="7"/>
@@ -1823,11 +1829,13 @@
 			<decoration type="block" blockname="cntStump02" prob="0.00025" rotatemax="7"/>
 			<decoration type="block" blockname="cntStump03" prob="0.00025" rotatemax="7"/>			
 			<!-- random decor -->
-			<decoration type="block" blockname="oreGemstone" prob =".000004" rotatemax="7" />
+			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
+			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<decoration type="block" blockname="cntDeathMarker" prob ="0.0001" />
 			<decoration type="block" blockname="cntWell01" prob ="0.0003" />
 			<decoration type="block" blockname="cntWell02" prob ="0.0003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
+			<decoration type="block" blockname="dieselCanister" prob ="0.0003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -1988,6 +1996,7 @@
 		<decal texture="13" face="0" prob="0.005" />
 		<decal texture="14" face="0" prob="0.005" />
 		<decal texture="15" face="0" prob="0.005" />
+		<blockontop blockname="campfireOld" prob="0.000015" rotatemax="3"/>
 	</poi>
 	<poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
 	<poi name="WaterDesert" poimapcolor="#002868" blockname="water" blockbelow="sand" yposfill="44"/>

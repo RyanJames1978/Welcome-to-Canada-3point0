@@ -8806,17 +8806,6 @@
 		<property name="CraftingIngredientTime" value="15" />
 		<property name="Group" value="Chemicals" />
 	</item>
-	<!--<item id="1365" name="bioFuel">
-	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
-	<property name="Material" value="glass"/>
-	<property name="Weight" value="10"/>
-	<property name="HoldType" value="3"/>
-	<property name="FuelValue" value="20"/>
-	<property name="Stacknumber" value="250"/>
-	<property name="EconomicValue" value="30"/>
-	<property name="Group" value="Chemicals"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-</item>-->
 	<item id="1367" name="canEmpty">
 		<property name="Meshfile" value="Items/Food/can_empty" />
 		<property name="Material" value="metal" />
@@ -8826,16 +8815,6 @@
 		<property name="EconomicValue" value="5" />
 		<property name="SellableToTrader" value="false" />
 		<property name="CraftingIngredientTime" value="9" />
-		<!-- DTD-610TL Animation for throwing does not work properly.
-	<property class="Action0">
-		<property name="Class" value="ThrowAway"/>
-		<property name="Delay" value="0.8"/>
-		<property name="Throw_strength_default" value="0.8"/>
-		<property name="Throw_strength_max" value="2.5"/>
-		<property name="Max_strain_time" value="2.1"/>
-		<property name="Sound_start" value="swoosh"/>
-	</property>
-	-->
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="ExchangeItem" />

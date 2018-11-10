@@ -26,7 +26,7 @@
         <!-- Day -->
         <spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <!-- Night -->
-        <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Spiders -->
 		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
     </biome>
@@ -35,9 +35,9 @@
         <!-- Any -->
 		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="ZombiesTierGroup03" />
         <!-- Day -->
-      <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
+      <spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <!-- Night -->
-      <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+      <spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Spiders -->
 		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="spiderCity" />
     </biome>

@@ -19642,6 +19642,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
 		<drop event="Destroy" count="0" />
+		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- Containers Master -->
 	<block id="1759" name="containersMaster">
@@ -19658,6 +19659,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 		<property name="EconomicValue" value="40" />
+		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- ########### Decorations ############ -->
 	<block id="1760" name="cntStump02">
@@ -19834,6 +19836,7 @@
 		<property name="Model" value="#potsPans?cookingPotPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- RJ Pot 2 -->
 	<block id="1779" name="kitchenPot02">
@@ -19844,6 +19847,7 @@
 		<property name="Model" value="#potsPans?cookingPot2Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- RJ Frying Pan -->
 	<block id="1780" name="kitchenFryingPan">
@@ -19854,6 +19858,7 @@
 		<property name="Model" value="#potsPans?fryingPanPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- RJ Kettle -->
 	<block id="1781" name="kitchenKettle">
@@ -19864,6 +19869,7 @@
 		<property name="Model" value="#potsPans?kettlePrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- RJ Alarm clock -->
 	<block id="1782" name="alarmClock">
@@ -19975,6 +19981,7 @@
 	<!-- RJ trash -->
 	<block id="1792" name="cntRations">
 		<property name="Extends" value="containersMaster" />
+		<property name="Model" value="#rations?itemMilitaryRationsPrefab" />
 		<property name="LootList" value="124" />
 	</block>
 	<block id="1793" name="cntCardboardBox01">
@@ -19999,6 +20006,8 @@
 		<property name="Model" value="#shitBucket?shitBucketPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="LootList" value="178" />
+		<property name="Material" value="Mplastics" />
 	</block>
 	<!-- RJ Old Campfire -->
 	<block id="1797" name="campfireOld">
@@ -20009,6 +20018,8 @@
 		<property name="Model" value="#campfireOld?oldCampfirePrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Material" value="stone" />
+		<property name="LootList" value="179" />
 	</block>
 	<!-- deisel canister -->
 	<block id="1798" name="dieselCanister">
@@ -20018,7 +20029,9 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#deisilCanister?gasDeisilContainerPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="3,3,2" />
+		<property name="Material" value="Mmetal_hard" />
+		<property name="LootList" value="180" />
 	</block>
 	<!-- water tank -->
 	<block id="1799" name="cntWaterTank">
@@ -20083,36 +20096,44 @@
 		<property name="Model" value="#cashRegisterAntique?antiqueCashRegisterPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Material" value="brass" />
+		<property name="LootList" value="181" />
 	</block>
-	<!-- RJ grave epic loot -->
+	<!-- RJ Lady Fire Heart's grave -->
 	<block id="1830" name="graveEpic">
 		<property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="graveEpicIcon" />
 		<property name="DescriptionKey" value="graveEpicDesc" />
+		<property name="Material" value="stone" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#graveEpic?graveTombCrossPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="1,1,2" />
+		<property name="LootList" value="176" />
 	</block>
 	<!-- RJ Washer -->
 	<block id="1831" name="clothesWasher">
 		<property name="Extends" value="containersMaster" />
-		<property name="CustomIcon" value="clothesWasherIcon" />
+		<property name="CustomIcon" value="washerIcon" />
 		<property name="DescriptionKey" value="clothesWasherDesc" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#washerDrier?washerPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="LootList" value="182" />
+		<property name="Material" value="MmetalNoGlue" />
 	</block>
 	<!-- RJ Drier -->
 	<block id="1832" name="clothesDrier">
 		<property name="Extends" value="containersMaster" />
-		<property name="CustomIcon" value="clothesDrierIcon" />
+		<property name="CustomIcon" value="drierIcon" />
 		<property name="DescriptionKey" value="clothesDrierDesc" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#washerDrier?drierPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="LootList" value="182" />
+		<property name="Material" value="MmetalNoGlue" />
 	</block>
 	<!-- RJ Ammo pile -->
 	<block id="1833" name="ammoPile">

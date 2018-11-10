@@ -1658,6 +1658,30 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="wood" count="40" />
 		<ingredient name="hockeyTape" count="1" />
 	</recipe>
+	<!-- Aluminum -->
+	<recipe name="scrapAluminum" count="1" craft_area="AdvancedWorkbench" craft_tool="grinder">
+		<ingredient name="aluminumCan" count="1" />
+	</recipe>
+	<!-- cashRegisterAntique -->
+	<recipe name="cashRegisterAntique" count="1" craft_area="forge" craft_tool="anvil" material_based="true" craft_time="120">
+		<ingredient name="unit_brass" count="250" />
+		<ingredient name="unit_clay" count="20" />
+		<ingredient name="unit_glass" count="10" />
+	</recipe>
+	<!-- Washer and drier -->
+	<recipe name="clothesWasher" count="1" craft_area="AdvancedWorkbench" craft_tool="powerHammer">
+		<ingredient name="rjbolts" count="40" />
+		<ingredient name="forgedIron" count="50" />
+		<ingredient name="electricParts" count="20" />
+		<ingredient name="electronicParts" count="35" />
+	</recipe>
+	<recipe name="clothesDrier" count="1" craft_area="AdvancedWorkbench" craft_tool="powerHammer">
+		<ingredient name="rjbolts" count="40" />
+		<ingredient name="forgedIron" count="50" />
+		<ingredient name="electricParts" count="20" />
+		<ingredient name="electronicParts" count="35" />
+	</recipe>
+	
 	
 	
 	
