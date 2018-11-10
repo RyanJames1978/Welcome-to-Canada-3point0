@@ -66,9 +66,20 @@
 					<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="1" width="1" pivot="center" flip="Horizontally" color="[transparent]" />
 					<texture name="ItemBG" depth="1" size="70,70" texture="[buffitem]" material="Materials/Transparent Colored" pos="-92,20" />
 					<sprite depth="4" name="Icon" size="36,32" pos="-58,-3" pivot="center" color="[transparent]" />
-					<label depth="6" name="TextContent" pos="9999,9999" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
+					<!-- <label depth="6" name="TextContent" pos="9999,9999" font_size="28" color="[white]" justify="center" height="30" pivot="center" /> -->
+					<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center" />
 				</panel>
 			</rect>
+		</rect>
+	</window>
+<!-- Stock like buffs display -->
+	<window name="S420BuffPopoutList" >
+		<rect name="hud" pos="102,209" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+			<panel width="188" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
+				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="188" pivot="center" flip="Horizontally" color="[transparent]" />
+				<sprite depth="4" name="Icon" size="32,32" pos="-58,0" pivot="center" color="[transparent]"/>
+				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center"/>
+			</panel>
 		</rect>
 	</window>
 	<window name="HUDLeftStatBars">
