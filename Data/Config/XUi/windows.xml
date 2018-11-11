@@ -781,11 +781,11 @@
 		</panel>
 	</window>
 	<window name="buffInfoPanel" width="603" height="427" controller="BuffInfoWindow" anchor="CenterTop" panel="Center">
-		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+		<panel name="header" pos="0,80" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="2" name="windowIcon" atlas="ItemIconAtlas" style="icon32px" pos="4,-5" sprite="{bufficon|once}" />
 			<label style="header.name" text="{buffname|once}" />
 		</panel>
-		<rect name="contentBuffInfo" height="381" depth="1" pos="0,-46">
+		<rect name="contentBuffInfo" height="381" depth="1" pos="0,34">
 			<rect>
 				<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" width="603" height="381" color="[black]" type="sliced" fillcenter="false" />
 				<sprite depth="1" name="background" color="[black]" type="sliced" visible="false" sprite="menu_empty3px" fillcenter="false" />
@@ -2583,6 +2583,5 @@
 				<required_item_stack name="0"/>
 			</grid>
 		</rect>
-
 	</window>
 </windows>

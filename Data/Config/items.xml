@@ -11581,6 +11581,9 @@
 		<property name="Class" value="ItemClassTorch" />
 		<property name="SoundIdle" value="torch_lp" />
 		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.5" />
+			<property name="Range" value="3.2" />
 			<property name="Sound_start" value="torch_swoosh" />
 			<property name="Buff" value="burning" />
 			<property name="Buff_chance" value="1" />
