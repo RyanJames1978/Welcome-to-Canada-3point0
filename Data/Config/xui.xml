@@ -106,8 +106,8 @@
 			<window name="windowToolbelt" anchor="CenterBottom" />
 			<window name="HUDRightStatBars" anchor="RightBottom" />
 			<window name="windowQuestTracker" anchor="RightTop" />
-			<!-- <window name="HUDBuffs" anchor="LeftBottom" /> -->
-			<window name="RJHUDBuffs" anchor="LeftBottom" />
+			<window name="HUDBuffs" anchor="LeftBottom" />
+			<!-- <window name="RJHUDBuffs" anchor="LeftBottom" /> -->
 		</window_group>
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="S420windowVehicle" />
