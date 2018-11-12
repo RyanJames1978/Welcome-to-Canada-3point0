@@ -1087,11 +1087,11 @@
 
 		
 		<prefab_rule name="traderGroup">
-			<!-- <prefab name="settlement_trader_01" />
+			<prefab name="settlement_trader_01" />
 			<prefab name="settlement_trader_02" />
 			<prefab name="settlement_trader_03" />
 			<prefab name="settlement_trader_04" />
-			<prefab name="settlement_trader_05" /> -->
+			<prefab name="settlement_trader_05" />
 			<prefab name="xcostum_Multi_Trader_01(by_War3zuk)" />			
 		</prefab_rule>
 		
