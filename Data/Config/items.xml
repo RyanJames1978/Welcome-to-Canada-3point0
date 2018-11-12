@@ -9872,8 +9872,7 @@
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.metal" value="10" />
 		</property> -->
-		<property class="Action1">
-			<!-- Puke -->
+		<!-- <property class="Action1">
 			<property name="Class" value="Vomit" />
 			<property name="Delay" value="0.35" />
 			<property name="Range" value="200" />
@@ -9891,7 +9890,7 @@
 			<property name="Sound_reload" value="" />
 			<property name="Buff" value="infection" />
 			<property name="Buff_chance" value="0.2" />
-		</property>
+		</property> -->
 	</item>
 	<item id="35" name="snowmanVomit">
 		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
@@ -12045,10 +12044,13 @@
 	<item id="215" name="handSpiderKingFangs">
 		<property name="Extends" value="handSpiderFangs" />
 		<property class="Action0">
+			<property name="Range" value="2.75" />
 			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="1" />
+			<property name="Buff" value="spiderBite" />
+			<property name="Buff_chance" value="1" />
 		</property>
-		<property class="Action1">
-			<!-- Puke -->
+		<!-- <property class="Action1">
 			<property name="Class" value="Vomit" />
 			<property name="Delay" value="0.35" />
 			<property name="Range" value="200" />
@@ -12066,7 +12068,7 @@
 			<property name="Sound_reload" value="" />
 			<property name="Buff" value="spiderBite" />
 			<property name="Buff_chance" value="0.2" />
-		</property>
+		</property> -->
 	</item>
 	<item id="220" name="projectileSpiderVenom">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />

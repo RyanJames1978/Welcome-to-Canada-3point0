@@ -212,6 +212,7 @@
 			<decoration type="block" blockname="lawnGnome" prob ="0.00005" />
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
 			<!-- Sphereii schmettoleg -->
 			<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -393,6 +394,7 @@
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
 			<!-- Sphereii schmettoleg -->
 			<decoration type="block" blockname="Butterflies_01" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -570,6 +572,7 @@
 			<!-- RJ Decor -->
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.0000001" />
 			<decoration type="block" blockname="dieselCanister" prob ="0.00003" />
 			<!-- Sphereii trees -->
@@ -626,7 +629,7 @@
 			<Wind min="20" max="100" prob="0.1"/>
 			<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
 		</weather>
-		<subbiome prob="0.15"> <!-- Forest Sub Biome: Goldenrod, cotton, rocks -->
+		<subbiome prob="0.15"> <!-- Prairies Sub Biome: Lavender, trees, rocks -->
 			<layers>
 				<layer depth="5" blockname="plainsGround" > <resource blockname="gravelPlusIron" cluster="1" prob="0.271" rwgGenerationType="all" /> </layer>
 				<layer depth="2" blockname="dirt" > <resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
@@ -649,25 +652,16 @@
 				<layer depth="3" blockname="bedrock" />
 			</layers>
 			<decorations>
-				<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008"/>
-				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07"/>
 				<decoration type="block" blockname="rock01" prob =".01" />
 				<decoration type="block" blockname="rock02" prob =".01" />
 				<decoration type="block" blockname="rock04" prob =".01" />
-				<decoration type="block" blockname="forestFlower" prob =".2" />
-			    <decoration type="block" blockname="treePlainsGrassDiagonal" prob =".4" />
+				<decoration type="block" blockname="forestFlower" prob =".15" />
 			    <decoration type="block" blockname="treeAzalea" prob="0.015"/>
+			    <!-- Plants -->
+				<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008"/>
+				<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07"/>
+			    <decoration type="block" blockname="cropLavender" prob ="0.35" />
 				<!--  Sphereii trees -->
-				<decoration type="block" blockname="Grass1" prob="0.1" rotatemax="7" />
-				<decoration type="block" blockname="Grass2" prob="0.1" rotatemax="7" />
-				<decoration type="block" blockname="Grass3" prob="0.1" rotatemax="7" />
-				<decoration type="block" blockname="Grass4" prob="0.1" rotatemax="7" />
-				<decoration type="block" blockname="Grass5" prob="0.1" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerBush" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer1" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer3" prob="0.001" rotatemax="7" />
@@ -676,28 +670,6 @@
 				<decoration type="block" blockname="SummerConifer6" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer7" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerConifer8" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower10" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower11" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower12" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower13" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower14" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower15" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower17" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower18" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower19" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower1" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower20" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower21" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower22" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower23" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower2" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower3" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower4" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower5" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower6" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower7" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower8" prob="0.001" rotatemax="7" />
-				<decoration type="block" blockname="SummerFlower9" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree10" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree11" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="SummerTree12" prob="0.001" rotatemax="7" />
@@ -717,13 +689,20 @@
 			</decorations>
 		</subbiome>
 
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre -->
+		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre, clay, wheat -->
 			<layers>
 				<layer depth="3" blockname="clay" > <resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" /> </layer>
 				<layer depth="4" blockname="dirt" > <resource blockname="gravelPlusLead" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
 				<layer depth="1" blockname="stone" > <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
 				<layer depth="*" blockname="stone" > <resource blockname="leadOre" cluster="1" prob="0.1030" rwgGenerationType="all" /> <resource blockname="gravelPlusLead" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="3" blockname="bedrock" />
 			</layers>
+			<decorations>
+				<decoration type="block" blockname="rock01" prob =".01" />
+				<decoration type="block" blockname="rock02" prob =".01" />
+				<decoration type="block" blockname="rock04" prob =".01" />
+				<decoration type="block" blockname="forestFlower" prob =".2" />
+			    <decoration type="block" blockname="cropWheat" prob="0.35"/>
+			</decorations>
 		</subbiome>
 		<subbiome prob="0.1551"> <!-- Ore Sub Biome: coalOre -->
 			<layers>
@@ -733,7 +712,7 @@
 				<layer depth="*" blockname="stone" > <resource blockname="coalOre" cluster="1" prob="0.1030" rwgGenerationType="all" /> <resource blockname="gravelPlusCoal" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="1" blockname="stone" > <resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer> <layer depth="3" blockname="bedrock" />
 			</layers>
 		</subbiome>
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: potassiumNitrate -->
+		<subbiome prob="0.1551"> <!-- Ore Sub Biome: potassiumNitrate, barley, oats, rye -->
 			<layers>
 				<layer depth="1" blockname="grass" > <resource blockname="gravelPlusPotassium" cluster="1" prob="0.071" rwgGenerationType="all" /> </layer>
 				<layer depth="6" blockname="dirt" > <resource blockname="gravelPlusPotassium" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
@@ -745,8 +724,9 @@
 				<decoration type="block" blockname="rock02" prob =".01" />
 				<decoration type="block" blockname="rock04" prob =".01" />
 				<decoration type="block" blockname="forestFlower" prob =".2" />
-			    <decoration type="block" blockname="treeForestGrassDiagonal" prob =".5" />
-			    <decoration type="block" blockname="treeAzalea" prob="0.15"/>
+			    <decoration type="block" blockname="cropBarley" prob="0.25"/>
+			    <decoration type="block" blockname="cropRye" prob="0.25"/>
+			    <decoration type="block" blockname="cropOats" prob="0.25"/>
 			</decorations>
 		</subbiome>
 
@@ -805,6 +785,8 @@
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000018" />
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
+			<decoration type="block" blockname="cropTobacco" prob="0.002"/>
 			<!-- Sphereii summer decor -->
 				<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
 		</decorations>
@@ -825,7 +807,7 @@
 			<ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
     </weather>
 
-		<subbiome prob="0.02"> <!-- Burnt Forest Sub Biome Coal and Corpses -->
+		<subbiome prob="0.08"> <!-- Burnt Forest Sub Biome Coal and Marijuana -->
 			<layers>
 				<layer depth="1" blockname="snow" > <resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					<resource blockname="fertilizedFarmland" cluster="1" prob="0.25" rwgGenerationType="all" /></layer>
@@ -850,23 +832,12 @@
 				<layer depth="3" blockname="bedrock" />
 			</layers>
 			<decorations>
-				<decoration type="prefab" name="resource_oilshale_pile" prob=".0007" rotatemax="7"/>
-				<decoration type="prefab" name="resource_nitrate_pile" prob=".0007" rotatemax="7"/>
 				<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7"/>
-				<decoration type="block" blockname="rockResource" prob =".0025" rotatemax="3"/>
-				<decoration type="block" blockname="rockResource02" prob =".0025" rotatemax="3"/>
-				<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7"/>
-				<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7"/>
-				<decoration type="block" blockname="treeDeadTree02" prob="0.01" rotatemax="7"/>
-				<decoration type="block" blockname="cntTrashPile01" prob="0.007" rotatemax="7"/>
-				<decoration type="block" blockname="cntTrashPile08" prob="0.007" rotatemax="7"/>
-			    <decoration type="block" blockname="arcticRock01" prob =".001" />
-			    <decoration type="block" blockname="arcticRock02" prob =".001" />
-				<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".4" />
+			    <decoration type="block" blockname="cropMarijuana" prob ="0.6" />
 			</decorations>
 		</subbiome>
 
-		<subbiome prob="0.04"> <!-- Burnt Forest Sub Biome Thick Grass and Shrubs -->
+		<subbiome prob="0.1"> <!-- Burnt Forest Sub Biome Thick Grass and Shrubs -->
 			<layers>
 				<layer depth="1" blockname="snow" > <resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					<resource blockname="fertilizedFarmland" cluster="1" prob="0.25" rwgGenerationType="all" /></layer>
@@ -990,6 +961,7 @@
 			<decoration type="block" blockname="lawnGnome" prob ="0.00001" />
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />
@@ -1394,6 +1366,7 @@
 			<decoration type="block" blockname="cntWreckedChopper" prob ="0.000001" />
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
+			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
 			<!-- Sphereii trees -->
 			<decoration type="block" blockname="WinterBirch2" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="WinterBirch3" prob="0.001" rotatemax="7" />

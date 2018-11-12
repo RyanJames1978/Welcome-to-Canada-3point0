@@ -2591,6 +2591,30 @@
 	<lootcontainer id="182" count="0" size="5,5" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="1,2" />
 	</lootcontainer>
+	<!-- Ammo Pile  -->
+	<lootcontainer id="183" count="0,1" size="3,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+		<item group="ammo" />
+	</lootcontainer>
+	<!-- Hutch -->
+	<lootcontainer id="184" count="0" size="5,5" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
+		<item name="cobweb" count="1,2" />
+	</lootcontainer>
+	<!-- Backpack -->
+	<lootcontainer id="185" count="0" size="14,13" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="baseTemplate">
+		<item name="cobweb" count="1,2" />
+	</lootcontainer>
+	<!-- mini fridge  -->
+	<lootcontainer id="186" count="0" size="5,5" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
+		<item name="cobweb" count="1,2" />
+	</lootcontainer>
+	<!-- Home Fridge  -->
+	<lootcontainer id="187" count="0" size="8,8" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
+		<item name="cobweb" count="1,2" />
+	</lootcontainer>
+	<!-- Industrial Fridge  -->
+	<lootcontainer id="188" count="0" size="12,12" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
+		<item name="cobweb" count="1,2" />
+	</lootcontainer>
 	<!-- Nightmare loot -->
 	<lootcontainer id="200" count="1,4" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="30" loot_quality_template="treasureTemplate">
 		<item group="junk" prob="10" />
@@ -2599,7 +2623,7 @@
 		<item group="banditArmor" count="1,2" prob="0.5" />
 		<item group="heavyArmor" count="1,2" prob="0.5" />
 		<item group="militaryArmor" count="1,2" prob="0.5" />
-	</lootcontainer>	
+	</lootcontainer>
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->

@@ -19643,6 +19643,7 @@
 		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Decor/Miscellaneous" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- Containers Master -->
 	<block id="1759" name="containersMaster">
@@ -19676,6 +19677,8 @@
 		<property name="Extends" value="decorationsMaster" />
 		<property name="Material" value="metal" />
 		<property name="Model" value="#pollIron?ironPoleSnowPrefab" />
+		<property name="CustomIcon" value="ironPollIcon" />
+		<property name="DescriptionKey" value="ironPollSnowDesc" />
 	</block>
 	<!-- RJ lawn Gnome -->
 	<block id="1763" name="lawnGnome">
@@ -19702,12 +19705,10 @@
 	<!-- RJ Gramophone -->
 	<block id="1764" name="gramophone">
 		<property name="Extends" value="decorationsMaster" />
-		<property name="CustomIcon" value="gramophoneIcon" />
+		<property name="CustomIcon" value="gramaphoneIcon" />
 		<property name="DescriptionKey" value="gramophoneDesc" />
-		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#gramophone?gramophonePrefab" />
-		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Material" value="brass" />
 	</block>
 	<!-- Rj Deer Head -->
 	<block id="1765" name="deerHead">
@@ -19754,6 +19755,7 @@
 		<property name="CanPickup" value="true" />
 		<property class="RepairItems">
 			<property name="cloth" value="10" />
+			<property name="cottonPlant" value="10" />
 		</property>
 		<drop event="Destroy" name="cloth" count="1,3" />
 		<drop event="Fall" name="cloth" count="5" prob="1" stick_chance="0" />
@@ -20144,6 +20146,8 @@
 		<property name="Model" value="#ammoPile?ammoPilePrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="LootList" value="183" />
+		<property name="Material" value="metal" />
 	</block>
 	<!-- RJ Hutch -->
 	<block id="1834" name="furnitureHutch">
@@ -20153,7 +20157,8 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#furnitureHutch?hutchPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="LootList" value="184" />
 	</block>
 	<!-- RJ Back pack storage -->
 	<block id="1835" name="backpackStorageInsecure">
@@ -20164,6 +20169,9 @@
 		<property name="Model" value="#backpacks?backpackPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="LootList" value="185" />
+		<property name="Material" value="cloth" />
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
 	</block>
 	<!-- Mini Fridge -->
 	<block id="1836" name="fridgeMini">
@@ -20174,26 +20182,46 @@
 		<property name="Model" value="#refridgerators?fridgeMiniPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="LootList" value="186" />
+		<property name="Material" value="metal" />
+		<property name="PlaySound" value="FridgeLP" />
+		<property class="RepairItems">
+			<property name="forgedIron" value="10" />
+			<property name="shortMetalPipe" value="2" />
+			<property name="electricParts" value="8" />
+			<property name="electronicParts" value="2" />
+		</property>
+		<drop event="Harvest" name="mechanicalParts" count="1,2" prob="0.1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1,6" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="20,50" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapPlastics" count="0,3" prob="0.2" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="EconomicValue" value="192" />
 	</block>
 	<!-- RJ Fridge -->
 	<block id="1837" name="kitchenFridgeHome">
-		<property name="Extends" value="containersMaster" />
-		<property name="CustomIcon" value="kitchenFridgeHomeIcon" />
+		<property name="Extends" value="fridgeMini" />
+		<property name="CustomIcon" value="fridgeHomeIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeHomeDesc" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#refridgerators?fridgeHomePrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="LootList" value="187" />
 	</block>
 	<!-- RJ Fridge Industrial -->
 	<block id="1838" name="kitchenFridgeIndustrial">
-		<property name="Extends" value="containersMaster" />
-		<property name="CustomIcon" value="kitchenFridgeIndustrialIcon" />
+		<property name="Extends" value="fridgeMini" />
+		<property name="CustomIcon" value="fridgeIndustrialIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeIndustrialDesc" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#refridgerators?fridgeIndustrialPrefab" />
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="MultiBlockDim" value="2,3,1" />
+		<property name="LootList" value="188" />
 	</block>
 	<!-- ############# Electricity ############### -->
 	<!-- RJ drown out the noise -->
@@ -20266,6 +20294,7 @@
 		<property name="MaxDamage" value="50" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#dollCreepy?dollCreepyDeadPrefab" />
+		<property name="ModelOffset" value="0,-0.5,0" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Place" value="TowardsPlacerInverted" />
@@ -20326,6 +20355,8 @@
 		<property name="Model" value="#housePlants?plantLily02Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="EconomicValue" value="100" />
+		<property name="CanPickup" value="true" />
 	</block>
 	<!-- #################### CROPS ########################### -->
 	<!-- RJ Wheat -->
@@ -20337,12 +20368,13 @@
 		<property name="Model" value="#crops?cropsWheat11Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<drop event="Harvest" name="wheatPlant" count="1" />
 	</block>
 	<!-- RJ Weed -->
 	<block id="1846" name="cropMarijuana">
 		<property name="Extends" value="cropWheat" />
-		<property name="CustomIcon" value="cropMarijuanaIcon" />
+		<property name="CustomIcon" value="plantMarijuanaIcon" />
 		<property name="DescriptionKey" value="cropMarijuanaDesc" />
 		<property name="Model" value="#crops?potPlantPrefab" />
 	</block>

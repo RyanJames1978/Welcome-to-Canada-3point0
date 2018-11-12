@@ -4814,7 +4814,7 @@
 	
 <!-- Blue Jay -->
 <SoundDataNode name="bluejayalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="40" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="#birdSounds?blueJay"/>
 	<AudioClip ClipName="#birdSounds?blueJay2"/>
 	<Channel name="Mouth"/>
@@ -4822,7 +4822,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="bluejaydeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?blueJay"/>
 	<AudioClip ClipName="#birdSounds?blueJay2"/>
 	<Channel name="Mouth"/>
@@ -4830,7 +4830,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="bluejayroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?blueJay"/>
 	<AudioClip ClipName="#birdSounds?blueJay2"/>
 	<Channel name="Mouth"/>
@@ -4838,7 +4838,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="bluejaysense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?blueJay"/>
 	<AudioClip ClipName="#birdSounds?blueJay2"/>
 	<Channel name="Mouth"/>
@@ -4846,7 +4846,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 <!-- cardinal -->
 <SoundDataNode name="cardinalalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="40" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="#birdSounds?cardinal"/>
 	<AudioClip ClipName="#birdSounds?cardinal2"/>
 	<Channel name="Mouth"/>
@@ -4854,7 +4854,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="cardinaldeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?cardinal"/>
 	<AudioClip ClipName="#birdSounds?cardinal2"/>
 	<Channel name="Mouth"/>
@@ -4862,7 +4862,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="cardinalroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?cardinal"/>
 	<AudioClip ClipName="#birdSounds?cardinal2"/>
 	<Channel name="Mouth"/>
@@ -4870,7 +4870,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="cardinalsense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?cardinal"/>
 	<AudioClip ClipName="#birdSounds?cardinal2"/>
 	<Channel name="Mouth"/>
@@ -4878,7 +4878,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 <!-- chickadee -->
 <SoundDataNode name="chickadeealert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="40" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="#birdSounds?chickadee"/>
 	<AudioClip ClipName="#birdSounds?chickadee2"/>
 	<Channel name="Mouth"/>
@@ -4886,7 +4886,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="chickadeedeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?chickadee"/>
 	<AudioClip ClipName="#birdSounds?chickadee2"/>
 	<Channel name="Mouth"/>
@@ -4894,7 +4894,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="chickadeeroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?chickadee"/>
 	<AudioClip ClipName="#birdSounds?chickadee2"/>
 	<Channel name="Mouth"/>
@@ -4902,7 +4902,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="chickadeesense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?chickadee"/>
 	<AudioClip ClipName="#birdSounds?chickadee2"/>
 	<Channel name="Mouth"/>
@@ -4910,7 +4910,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 <!-- crow -->
 <SoundDataNode name="crowalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="40" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="#birdSounds?crow1"/>
 	<AudioClip ClipName="#birdSounds?crow2"/>
 	<Channel name="Mouth"/>
@@ -4918,7 +4918,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="crowdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?crow1"/>
 	<AudioClip ClipName="#birdSounds?crow2"/>
 	<Channel name="Mouth"/>
@@ -4926,7 +4926,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="crowroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?crow1"/>
 	<AudioClip ClipName="#birdSounds?crow2"/>
 	<Channel name="Mouth"/>
@@ -4950,7 +4950,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="finchdeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?finch"/>
 	<AudioClip ClipName="#birdSounds?finch2"/>
 	<Channel name="Mouth"/>
@@ -4958,7 +4958,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="finchroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?finch"/>
 	<AudioClip ClipName="#birdSounds?finch2"/>
 	<Channel name="Mouth"/>
@@ -4966,7 +4966,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="finchsense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?finch"/>
 	<AudioClip ClipName="#birdSounds?finch2"/>
 	<Channel name="Mouth"/>
@@ -4974,7 +4974,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 <!-- robin -->
 <SoundDataNode name="robinalert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="40" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="#birdSounds?robin"/>
 	<AudioClip ClipName="#birdSounds?robin2"/>
 	<Channel name="Mouth"/>
@@ -4982,7 +4982,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="robindeath"> <AudioSource name="Sounds/AudioSource_Pain"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="40" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="#birdSounds?robin"/>
 	<AudioClip ClipName="#birdSounds?robin2"/>
 	<Channel name="Mouth"/>
@@ -4998,7 +4998,7 @@
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.9"/> </SoundDataNode>
 
 <SoundDataNode name="robinsense"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="40" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="#birdSounds?robin"/>
 	<AudioClip ClipName="#birdSounds?robin2"/>
 	<Channel name="Mouth"/>
@@ -5086,7 +5086,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="afroShamanSounds">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="15" volume="6" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AfroShamanSounds?all_alone" />
 		<AudioClip ClipName="#AfroShamanSounds?all_is_lost2" />
 		<AudioClip ClipName="#AfroShamanSounds?all_is_lost" />
@@ -5337,6 +5337,8 @@
 		<AudioClip ClipName="#AfroShamanSounds?you_will_never_see" />
 		<AudioClip ClipName="#AfroShamanSounds?you_will_pay_for_what_youve_done" />
 		<AudioClip ClipName="#AfroShamanSounds?you_will_pay" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />

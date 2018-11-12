@@ -626,8 +626,8 @@
 			<item name="shutters1Plate" count="4,15" />
 		</trader_item_group>
 		<trader_item_group name="traderAlways" count="all">
-			<item name="aloeCream" count="250,1000" />
-			<item name="titanium" count="500,1000" />
+			<item name="aloeCream" count="2,10" />
+			<item name="titanium" count="50,100" />
 			<item name="armorForm" count="1" />
 			<item name="grinder" count="1" />
 			<item name="electronicsToolKit" count="1" />
@@ -640,6 +640,7 @@
 			<item name="50dollars" count="100" />
 			<item name="100dollars" count="100" />
 			<item name="gasCan" count="50,200" />
+			<item name="hpLily" />
 		</trader_item_group>
 		<trader_item_group name="traderGeneral" count="3">
 			<item name="beerBook" count="1" prob="0.3" />

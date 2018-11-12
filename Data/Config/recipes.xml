@@ -1681,8 +1681,72 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="electricParts" count="20" />
 		<ingredient name="electronicParts" count="35" />
 	</recipe>
+	<!-- RJ bedrolls -->
+	<recipe name="bedroll" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="5" />
+		<ingredient name="cottonPlant" count="5" />
+	</recipe>
+	<recipe name="bedroll02" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="5" />
+		<ingredient name="cottonPlant" count="5" />
+	</recipe>
+	<recipe name="bedroll03" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="5" />
+		<ingredient name="cottonPlant" count="5" />
+	</recipe>
+	<!-- Hutch -->
+	<recipe name="furnitureHutch" count="1" craft_area="AdvancedWorkbench">
+		<ingredient name="wood" count="80" />
+	</recipe>
+	<!-- Backpack -->
+	<recipe name="backpackStorageInsecure" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="40" />
+	</recipe>
+	<!-- Fridges -->
+	<recipe name="fridgeMini" count="1" craft_area="AdvancedWorkbench" craft_tool="electronicsToolKit">
+		<ingredient name="rjbolts" count="10" />
+		<ingredient name="forgedIron" count="10" />
+		<ingredient name="electricParts" count="10" />
+		<ingredient name="electronicParts" count="15" />
+		<ingredient name="mechanicalParts" count="10" />
+	</recipe>
+	<recipe name="kitchenFridgeHome" count="1" craft_area="AdvancedWorkbench" craft_tool="electronicsToolKit">
+		<ingredient name="rjbolts" count="20" />
+		<ingredient name="forgedIron" count="20" />
+		<ingredient name="electricParts" count="20" />
+		<ingredient name="electronicParts" count="25" />
+		<ingredient name="mechanicalParts" count="20" />
+	</recipe>
+	<recipe name="kitchenFridgeIndustrial" count="1" craft_area="AdvancedWorkbench" craft_tool="electronicsToolKit">
+		<ingredient name="rjbolts" count="40" />
+		<ingredient name="steelPlates" count="18" />
+		<ingredient name="electricParts" count="40" />
+		<ingredient name="electronicParts" count="45" />
+		<ingredient name="mechanicalParts" count="40" />
+	</recipe>
+	<!-- Poll Iron --> 
+	<recipe name="ironPollSnow" count="1" craft_area="forge" material_based="true">
+		<ingredient name="unit_iron" count="80" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<!-- Hockey Puck --> 
+	<recipe name="hockeyPuck" count="1" craft_area="AdvancedWorkbench">
+		<ingredient name="rubberMulch" count="10" />
+	</recipe>
+	<!-- Gramophone --> 
+	<recipe name="gramophone" count="1" craft_area="AdvancedWorkbench" craft_tool="powerHammer">
+		<ingredient name="scrapBrass" count="100" />
+		<ingredient name="wood" count="60" />
+		<ingredient name="nail" count="20" />
+		<ingredient name="mechanicalParts" count="4" />
+		<ingredient name="rjbolts" count="4" />
+	</recipe>
 	
-	
+	<!-- Teddy Bear --> 
+	<recipe name="teddyBear" count="1" craft_area="workbench">
+		<ingredient name="cloth" count="40" />
+		<ingredient name="cottonPlant" count="20" />
+	</recipe>
 	
 	
 	<!-- ################################ END RJ edits ####################################### -->
@@ -1867,19 +1931,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="spring" count="20" />
 		<ingredient name="wood" count="20" />
 		<ingredient name="shortMetalPipe" count="10" />
-	</recipe>
-	<!-- RJ bedrolls -->
-	<recipe name="bedroll" count="1" craft_area="workbench">
-		<ingredient name="cloth" count="5" />
-		<ingredient name="cottonPlant" count="5" />
-	</recipe>
-	<recipe name="bedroll02" count="1" craft_area="workbench">
-		<ingredient name="cloth" count="5" />
-		<ingredient name="cottonPlant" count="5" />
-	</recipe>
-	<recipe name="bedroll03" count="1" craft_area="workbench">
-		<ingredient name="cloth" count="5" />
-		<ingredient name="cottonPlant" count="5" />
 	</recipe>
 	<recipe name="bellows" count="1" craft_area="workbench">
 		<ingredient name="wood" count="4" />
