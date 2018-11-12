@@ -2615,6 +2615,19 @@
 	<lootcontainer id="188" count="0" size="12,12" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="1,2" />
 	</lootcontainer>
+	<!-- Ice Treasure chest -->
+	<lootcontainer id="189" count="0,1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="treasureTemplate">
+		<item group="weaponsMilitaryGuns+ammo" />
+		<item group="treasureAmmo" />
+		<item name="casinoCoin" count="3000,8000" />
+		<item group="rareOres" count="5,11" />
+		<item name="2dollars" count="10,20" />
+		<item name="5dollars" count="2,3" />
+		<item name="10dollars" count="1,2" />
+		<item name="20dollars" count="1,3" />
+		<item name="50dollars" count="1,2" prob="0.1" />
+		<item name="100dollars" count="10,50" prob="0.05" />
+	</lootcontainer>
 	<!-- Nightmare loot -->
 	<lootcontainer id="200" count="1,4" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="30" loot_quality_template="treasureTemplate">
 		<item group="junk" prob="10" />
@@ -2624,6 +2637,7 @@
 		<item group="heavyArmor" count="1,2" prob="0.5" />
 		<item group="militaryArmor" count="1,2" prob="0.5" />
 	</lootcontainer>
+	
 <!-- ###############################################################################################################  -->
 <!-- ###############################################################################################################  -->
 <!-- ############################ BEGIN SDX AREA - Only other peoples SDX goes here ################################  -->

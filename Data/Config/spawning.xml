@@ -140,7 +140,7 @@
         <!-- RAD Animals -->
         <spawn maxcount="5" respawndelay="3" time="Any" entitygroup="RADAnimalGroup" spawnDeadChance="0" />
         <!-- Spider King -->
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" />
+		<!-- <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="spiderKingGroup" /> -->
 		<!-- Nightmares -->
 		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="Nightmares" />
 		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="Nightmares" />

@@ -5368,6 +5368,8 @@
 		<AudioSource name="Sounds/AudioSource_VO" />
 		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?roar1" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
@@ -5378,6 +5380,8 @@
 		<AudioSource name="Sounds/AudioSource_VO" />
 		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?grrr7" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
@@ -5392,6 +5396,8 @@
 		<AudioClip ClipName="#AbominableSounds?grrr3" />
 		<AudioClip ClipName="#AbominableSounds?grrr4" />
 		<AudioClip ClipName="#AbominableSounds?grrr5" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
@@ -5402,6 +5408,8 @@
 		<AudioSource name="Sounds/AudioSource_VO" />
 		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?hit1" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
@@ -5412,6 +5420,8 @@
 		<AudioSource name="Sounds/AudioSource_VO" />
 		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?grrr6" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
@@ -5422,6 +5432,8 @@
 		<AudioSource name="Sounds/AudioSource_VO" />
 		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?die" />
+	    <Channel name="Mouth"/>
+	    <Priority name="6"/>
 		<LocalCrouchVolumeScale name="1.0" />
 		<CrouchNoiseScale name="0.5" />
 		<NoiseScale name="1" />
