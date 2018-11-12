@@ -11792,6 +11792,7 @@
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="45" />
+		<property name="RepairAmount" value="50" />
 		<property name="Weight" value="5" />
 		<property name="EconomicValue" value="49" />
 		<property name="SellableToTrader" value="false" />
