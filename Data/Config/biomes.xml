@@ -802,7 +802,7 @@
 			<decoration type="block" blockname="shitBucket" prob ="0.00003" />
 			<decoration type="block" blockname="campfireOld" prob ="0.00003" />
 			<decoration type="block" blockname="ammoPile" prob ="0.00003" />
-			<!-- <decoration type="block" blockname="cropTobacco" prob="0.002"/>
+			<!-- <decoration type="block" blockname="cropTobacco" prob="0.002"/> -->
 			<!-- Sphereii summer decor -->
 				<decoration type="block" blockname="Butterflies_00" prob="0.001" rotatemax="4" />
 		</decorations>
