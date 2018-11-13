@@ -398,8 +398,6 @@
 		<entity name="birdFinch" />
 		<!-- <entity name="birdRobin" /> -->
 		<entity name="birdSparrow" />
-		<!-- Sphereii -->
-		<entity name="ArcticFox" prob="0.3" />
 		<!-- RJ Animals -->
 		<entity name="beaver" />
 		<entity name="moose" prob="0.075" />
@@ -414,10 +412,12 @@
 		<entity name="animalBear" prob="0.25" />
 		<entity name="animalZombieDog" />
 		<entity name="animalZombieBear" prob="0.05" />
-		<entity name="PolarBear" />
 		<!-- RJ Animals -->
 		<entity name="moose" prob="0.2" />
 		<entity name="spider" />
+		<!-- Sphereii -->
+		<entity name="ArcticFox" prob="0.03" />
+		<entity name="PolarBear" />
 	</entitygroup>
 	<!-- RJ spider -->
 	<entitygroup name="spiderCity">
