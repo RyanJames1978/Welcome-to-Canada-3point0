@@ -1288,6 +1288,8 @@
 	
 	<!-- Puck Bunny -->
 	<entity_class name="zombieStripper" extends="zombieDarlene">
+		<property name="Class" value="EntityZombieCopSDX, Mods" />
+		<property name="RightHandJointName" value="Jaw" />
 		<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll" />
 		<property name="HandItem" value="handZombieStripper" />
 		<property name="MaxHealth" value="250" />
@@ -2656,20 +2658,20 @@
 		<property name="AITask-1" value="BreakDoor" param2="5" />
 		<property name="AITask-2" value="BreakBlock" param2="5" />
 		<property name="AITask-3" value="BlockingTargetTask" />
-		<!-- <property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-6" value="BreakDoor" param2="5" />
 		<property name="AITask-7" value="BreakBlock" param2="5" />
 		<property name="AITask-8" value="BlockingTargetTask" />
-		<!-- <property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-11" value="BreakDoor" param2="5" />
 		<property name="AITask-12" value="BreakBlock" param2="5" />
 		<property name="AITask-13" value="BlockingTargetTask" />
-		<!-- <property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITask-16" value="BreakDoor" param2="5" />
 		<property name="AITask-17" value="BreakBlock" param2="5" />
 		<property name="AITask-18" value="BlockingTargetTask" />
-		<!-- <property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />
 		<property name="AITask-22" value="SetAsTargetIfHurt" param1="EntityNPC" />
@@ -3531,7 +3533,6 @@
 		<property name="Explosion.BlockDamage" value="500" />
 		<property name="Explosion.EntityDamage" value="150" />
 		<property name="Explosion.DamageBonus.earth" value="0" />
-
 		<property name="MaxTurnSpeed" value="180" />
 		<property name="MaxViewAngle" value="270" />
 		<property name="AnimationIdle" value="Idle" />
@@ -3554,25 +3555,25 @@
 		<property name="AITask-1" value="BreakDoor" param2="5" />
 		<property name="AITask-2" value="BreakBlock" param2="5" />
 		<property name="AITask-3" value="BlockingTargetTask" />
-		<!-- <property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-4" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityEnemyAnimal" />
 		<property name="AITarget-2" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 		<property name="AITask-6" value="BreakDoor" param2="5" />
 		<property name="AITask-7" value="BreakBlock" param2="5" />
 		<property name="AITask-8" value="BlockingTargetTask" />
-		<!-- <property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-9" value="RangedAttackTarget" param1="2" param2="0" /> -->
 		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
 		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITask-11" value="BreakDoor" param2="5" />
 		<property name="AITask-12" value="BreakBlock" param2="5" />
 		<property name="AITask-13" value="BlockingTargetTask" />
-		<!-- <property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" /> -->
+		<property name="AITask-14" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-15" value="ApproachAndAttackTarget" param1="EntityNPC" />
 		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITask-16" value="BreakDoor" param2="5" />
 		<property name="AITask-17" value="BreakBlock" param2="5" />
 		<property name="AITask-18" value="BlockingTargetTask" />
-		<!--				<property name="AITask-19" value="RangedAttackTarget" param1="1" param2="5"/> -->
+		<property name="AITask-19" value="RangedAttackTarget" param1="1" param2="5"/>
 		<property name="AITask-19" value="RangedAttackTarget" param1="2" param2="0" />
 		<property name="AITask-20" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<property name="AITask-21" value="SetAsTargetIfHurt" param1="EntityEnemyAnimal" />

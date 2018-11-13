@@ -12050,7 +12050,7 @@
 			<property name="Buff" value="spiderBite" />
 			<property name="Buff_chance" value="1" />
 		</property>
-		<!-- <property class="Action1">
+		<property class="Action1">
 			<property name="Class" value="Vomit" />
 			<property name="Delay" value="0.35" />
 			<property name="Range" value="200" />
@@ -12068,7 +12068,7 @@
 			<property name="Sound_reload" value="" />
 			<property name="Buff" value="spiderBite" />
 			<property name="Buff_chance" value="0.2" />
-		</property> -->
+		</property>
 	</item>
 	<item id="220" name="projectileSpiderVenom">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />
