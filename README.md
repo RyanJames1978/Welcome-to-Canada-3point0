@@ -42,8 +42,7 @@ SDX MOD LIST:
 - Guppycur's Blood moon Trickle fix by Guppycur
 - Nanite Terrain by StompyNZ
 - No Ammo by HaidrGna
-- Rain UI by DUST2DEATH
-- Bigger Backpack, storage by Stedman420 (ui), Ryan James (c#)
+- SImple UI, Bigger Backpack, storage by Stedman420 (ui), Ryan James (c#)
 - Bad Company Zombies by Bad Company
 - Custom Workstation Categories by Sphereii
 - Entity Player by Sphereii

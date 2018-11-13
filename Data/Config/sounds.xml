@@ -5366,7 +5366,7 @@
 			</SoundDataNode> -->
 	<SoundDataNode name="AbominableAlert">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?roar1" />
 	    <Channel name="Mouth"/>
 	    <Priority name="6"/>
@@ -5378,7 +5378,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="AbominableAttack">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?grrr7" />
 	    <Channel name="Mouth"/>
 	    <Priority name="6"/>
@@ -5390,7 +5390,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="AbominableRandom">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?grrr1" />
 		<AudioClip ClipName="#AbominableSounds?grrr2" />
 		<AudioClip ClipName="#AbominableSounds?grrr3" />
@@ -5406,7 +5406,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="AbominableHurt">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?hit1" />
 	    <Channel name="Mouth"/>
 	    <Priority name="6"/>
@@ -5418,7 +5418,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="AbominableSense">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?grrr6" />
 	    <Channel name="Mouth"/>
 	    <Priority name="6"/>
@@ -5430,7 +5430,7 @@
 	</SoundDataNode>
 	<SoundDataNode name="AbominableDie">
 		<AudioSource name="Sounds/AudioSource_VO" />
-		<Noise ID="3" range="100" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+		<Noise ID="3" range="10" volume="12" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
 		<AudioClip ClipName="#AbominableSounds?die" />
 	    <Channel name="Mouth"/>
 	    <Priority name="6"/>

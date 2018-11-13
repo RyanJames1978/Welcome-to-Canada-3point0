@@ -1353,7 +1353,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
 	<!-- RJ Coloured Doors -->
-	<recipe name="secureDoorWoodenRed" count="1" craft_area="workbench">
+	<!-- <recipe name="secureDoorWoodenRed" count="1" craft_area="workbench">
 		<ingredient name="wood" count="10" />
 		<ingredient name="nail" count="10" />
 		<ingredient name="padlock" count="1" />
@@ -1377,7 +1377,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="padlock" count="1" />
 		<ingredient name="paint" count="20" />
 	</recipe>
-	<!-- yellow disabled <recipe name="secureDoorWoodenYellow" count="1" craft_area="workbench">
+	yellow disabled <recipe name="secureDoorWoodenYellow" count="1" craft_area="workbench">
 	<ingredient name="wood" count="10"/>
 	<ingredient name="nail" count="10"/>
 	<ingredient name="padlock" count="1"/>

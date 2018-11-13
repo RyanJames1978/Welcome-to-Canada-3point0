@@ -2629,7 +2629,7 @@
 		<item name="100dollars" count="10,50" prob="0.05" />
 	</lootcontainer>
 	<!-- Nightmare loot -->
-	<lootcontainer id="200" count="1,4" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="30" loot_quality_template="treasureTemplate">
+	<lootcontainer id="200" count="1,4" size="3,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="7" loot_quality_template="treasureTemplate">
 		<item group="junk" prob="10" />
 		<item group="weaponsMilitaryGuns+ammo" prob="0.8" />
 		<item group="rareBooks" count="1,2" prob="0.5" />
