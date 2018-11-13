@@ -1448,12 +1448,9 @@
 			</layer>
 			<layer depth="1" blockname="snow">
 				<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
-				<resource blockname="SeaShell" cluster="1" prob="0.01" rwgGenerationType="all" />
 				<resource blockname="cntSecureTreasureChest" cluster="1" prob="0.001" rwgGenerationType="all" />
 				<resource blockname="shoppingCartEmpty" cluster="2" prob="0.001" rwgGenerationType="all" />
-				<resource blockname="cntSecureTreasureChest" cluster="2" prob="0.01" rwgGenerationType="all" />
 				<resource blockname="RustyCar01" cluster="2" prob="0.001" rwgGenerationType="all" />
-				<resource blockname="shoppingCartEmpty" cluster="2" prob="0.01" rwgGenerationType="all" />
 			</layer>
 			<layer depth="5" blockname="stone" >
 				<resource blockname="clay" prob="0.15" rwgGenerationType="all" />
